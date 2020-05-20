@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element avst_data_in_clock
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element cross_to_image_clock
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element cross_to_image_clock.s0
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element image_proc_clk
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element nios_avalon_mm
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "MAX 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element wave_capture_0
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element wave_capture_0.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "896";
+         type = "String";
+      }
+   }
+   element wave_capture_1
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element wave_capture_1.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "768";
+         type = "String";
+      }
+   }
+   element wave_capture_2
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element wave_capture_2.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "640";
+         type = "String";
+      }
+   }
+   element wave_capture_3
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element wave_capture_3.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "512";
+         type = "String";
+      }
+   }
+   element wave_capture_4
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element wave_capture_4.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "384";
+         type = "String";
+      }
+   }
+   element wave_capture_5
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element wave_capture_5.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "256";
+         type = "String";
+      }
+   }
+   element wave_capture_6
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element wave_capture_6.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "128";
+         type = "String";
+      }
+   }
+   element wave_capture_7
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element wave_capture_7.avalon_mm_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="5AGXFB5H4F35C4" />
+ <parameter name="deviceFamily" value="Arria V" />
+ <parameter name="deviceSpeedGrade" value="4_H4" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="3" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="num_of_pixels_in_frame"
+   displayName="Num. of Pixels In Frame"
+   type="integer"
+   defaultValue="102"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_locations_in_fifo"
+   displayName="Num. of Locations in Input FIFO"
+   type="integer"
+   defaultValue="32"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="parallelization_ratio"
+   displayName="Parallelization Ratio"
+   type="integer"
+   defaultValue="4"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_bits_per_pixel"
+   displayName="Num of Bits Per Pixel"
+   type="integer"
+   defaultValue="16"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="dma_enabled_at_startup"
+   displayName="DMA Enabled at Startup"
+   type="integer"
+   defaultValue="1"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="swap_symbol_order_for_dma"
+   displayName="Swap Symbol Order for DMA"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="watchdog_enabled"
+   displayName="Watchdog Enabled"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="watchdog_limit"
+   displayName="Watchdog Limit"
+   type="string"
+   defaultValue="5678"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="address_width"
+   displayName="Address Width"
+   type="integer"
+   defaultValue="32"
+   legalRanges="1:32"
+   description="" />
+ <instanceScript><![CDATA[package require -exact qsys 14.1
+
+# Set the name of the procedure to manipulate parameters
+set_module_property COMPOSITION_CALLBACK compose
+
+proc compose {} {
+    # manipulate parameters in here
+    # Example: set_instance_parameter_value child0 param0 [ get_parameter_value new_parameter_0 ]
+
+	set num_of_pixels_in_frame    [get_parameter_value num_of_pixels_in_frame]
+	set parallelization_ratio     [get_parameter_value parallelization_ratio ] 
+	set num_of_bits_per_pixel     [get_parameter_value num_of_bits_per_pixel ] 
+	set num_of_locations_in_fifo  [get_parameter_value num_of_locations_in_fifo ] 
+	set dma_enabled_at_startup  [get_parameter_value dma_enabled_at_startup ] 
+	set swap_symbol_order_for_dma  [get_parameter_value swap_symbol_order_for_dma ] 
+	set watchdog_enabled  [get_parameter_value watchdog_enabled ] 
+	set watchdog_limit  [get_parameter_value watchdog_limit ] 
+	set address_width  [get_parameter_value address_width ] 
+	
+    set_instance_parameter_value wave_capture_0 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_0 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_0 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_0 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_0 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_0 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_0 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_0 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_0 {address_width}  $address_width
+	
+    set_instance_parameter_value wave_capture_1 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_1 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_1 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_1 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_1 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_1 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_1 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_1 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_1 {address_width}  $address_width
+	
+    set_instance_parameter_value wave_capture_2 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_2 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_2 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_2 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_2 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_2 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_2 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_2 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_2 {address_width}  $address_width
+	
+    set_instance_parameter_value wave_capture_3 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_3 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_3 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_3 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_3 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_3 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_3 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_3 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_3 {address_width}  $address_width
+	
+		
+    set_instance_parameter_value wave_capture_4 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_4 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_4 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_4 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_4 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_4 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_4 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_4 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_4 {address_width}  $address_width
+	
+    set_instance_parameter_value wave_capture_5 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_5 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_5 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_5 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_5 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_5 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_5 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_5 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_5 {address_width}  $address_width
+	
+    set_instance_parameter_value wave_capture_6 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_6 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_6 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_6 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_6 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_6 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_6 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_6 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_6 {address_width}  $address_width
+	
+    set_instance_parameter_value wave_capture_7 {num_of_pixels_in_frame} $num_of_pixels_in_frame  
+    set_instance_parameter_value wave_capture_7 {parallelization_ratio}  $parallelization_ratio   
+    set_instance_parameter_value wave_capture_7 {num_of_bits_per_pixel}  $num_of_bits_per_pixel   
+    set_instance_parameter_value wave_capture_7 {num_of_locations_in_fifo}  $num_of_locations_in_fifo
+    set_instance_parameter_value wave_capture_7 {dma_enabled_at_startup}  $dma_enabled_at_startup
+    set_instance_parameter_value wave_capture_7 {swap_symbol_order_for_dma}  $swap_symbol_order_for_dma
+    set_instance_parameter_value wave_capture_7 {watchdog_enabled}  $watchdog_enabled
+    set_instance_parameter_value wave_capture_7 {watchdog_limit}  $watchdog_limit
+    set_instance_parameter_value wave_capture_7 {address_width}  $address_width
+	
+}
+]]></instanceScript>
+ <interface
+   name="avalon_mm_slave"
+   internal="cross_to_image_clock.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="avst_data_in_clock"
+   internal="avst_data_in_clock.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="avst_data_in_reset"
+   internal="avst_data_in_clock.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="image_processing_clk"
+   internal="image_proc_clk.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="image_processing_reset"
+   internal="image_proc_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="nios_avalon_mm_clk"
+   internal="nios_avalon_mm.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="nios_avalon_mm_reset"
+   internal="nios_avalon_mm.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="wave_capture_0_dma_master"
+   internal="wave_capture_0.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_0_frame_writer_avalon_st_in"
+   internal="wave_capture_0.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_0_frame_writer_hw_control"
+   internal="wave_capture_0.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_0_frame_writer_out_irq"
+   internal="wave_capture_0.frame_writer_out_irq" />
+ <interface
+   name="wave_capture_0_frame_writer_snoop"
+   internal="wave_capture_0.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_1_dma_master"
+   internal="wave_capture_1.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_1_frame_writer_avalon_st_in"
+   internal="wave_capture_1.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_1_frame_writer_hw_control"
+   internal="wave_capture_1.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_1_frame_writer_out_irq"
+   internal="wave_capture_1.frame_writer_out_irq" />
+ <interface
+   name="wave_capture_1_frame_writer_snoop"
+   internal="wave_capture_1.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_2_dma_master"
+   internal="wave_capture_2.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_2_frame_writer_avalon_st_in"
+   internal="wave_capture_2.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_2_frame_writer_hw_control"
+   internal="wave_capture_2.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_2_frame_writer_out_irq"
+   internal="wave_capture_2.frame_writer_out_irq" />
+ <interface
+   name="wave_capture_2_frame_writer_snoop"
+   internal="wave_capture_2.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_3_dma_master"
+   internal="wave_capture_3.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_3_frame_writer_avalon_st_in"
+   internal="wave_capture_3.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_3_frame_writer_hw_control"
+   internal="wave_capture_3.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_3_frame_writer_out_irq"
+   internal="wave_capture_3.frame_writer_out_irq" />
+ <interface
+   name="wave_capture_3_frame_writer_snoop"
+   internal="wave_capture_3.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_4_dma_master"
+   internal="wave_capture_4.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_4_frame_writer_avalon_st_in"
+   internal="wave_capture_4.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_4_frame_writer_hw_control"
+   internal="wave_capture_4.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_4_frame_writer_snoop"
+   internal="wave_capture_4.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_5_dma_master"
+   internal="wave_capture_5.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_5_frame_writer_avalon_st_in"
+   internal="wave_capture_5.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_5_frame_writer_hw_control"
+   internal="wave_capture_5.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_5_frame_writer_snoop"
+   internal="wave_capture_5.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_6_dma_master"
+   internal="wave_capture_6.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_6_frame_writer_avalon_st_in"
+   internal="wave_capture_6.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_6_frame_writer_hw_control"
+   internal="wave_capture_6.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_6_frame_writer_snoop"
+   internal="wave_capture_6.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_7_dma_master"
+   internal="wave_capture_7.frame_writer_avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="wave_capture_7_frame_writer_avalon_st_in"
+   internal="wave_capture_7.frame_writer_avalon_st_in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="wave_capture_7_frame_writer_hw_control"
+   internal="wave_capture_7.frame_writer_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="wave_capture_7_frame_writer_snoop"
+   internal="wave_capture_7.frame_writer_snoop"
+   type="conduit"
+   dir="end" />
+ <module
+   name="avst_data_in_clock"
+   kind="clock_source"
+   version="18.1"
+   enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module
+   name="cross_to_image_clock"
+   kind="altera_avalon_mm_clock_crossing_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="28" />
+  <parameter name="COMMAND_FIFO_DEPTH" value="4" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="MASTER_SYNC_DEPTH" value="2" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="RESPONSE_FIFO_DEPTH" value="4" />
+  <parameter name="SLAVE_SYNC_DEPTH" value="2" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="10" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+ </module>
+ <module name="image_proc_clk" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module name="nios_avalon_mm" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module
+   name="wave_capture_0"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_0</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_1"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_1</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_2"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_2</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_3"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_3</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_4"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_4</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_5"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_5</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_6"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_6</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <module
+   name="wave_capture_7"
+   kind="frame_writer_with_input_fifo"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5AGXFB5H4F35C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_DRIVER_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DRIVER_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_FRAME_WRITER_AVALON_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_IMAGE_PROCESSING_CLOCK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_wave_capture_7</parameter>
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="128" />
+  <parameter name="num_of_pixels_in_frame" value="1048576" />
+  <parameter name="parallelization_ratio" value="8" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+  <parameter name="watchdog_enabled" value="0" />
+  <parameter name="watchdog_limit" value="1234" />
+ </module>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_0.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0380" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_1.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0300" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_2.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0280" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_3.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0200" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_4.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0180" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_5.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0100" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_6.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clock.m0"
+   end="wave_capture_7.avalon_mm_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_1.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_0.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_2.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_3.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_4.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_5.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_6.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avst_data_in_clock.clk"
+   end="wave_capture_7.driver_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_0.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_1.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_3.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_2.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_4.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_5.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_6.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="wave_capture_7.image_processing_clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="cross_to_image_clock.m0_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="nios_avalon_mm.clk"
+   end="cross_to_image_clock.s0_clk" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_1.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_0.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_2.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_3.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_4.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_5.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_6.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avst_data_in_clock.clk_reset"
+   end="wave_capture_7.driver_clk_reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="cross_to_image_clock.m0_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_1.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_0.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_2.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_3.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_4.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_5.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_6.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="wave_capture_7.reset_n" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios_avalon_mm.clk_reset"
+   end="cross_to_image_clock.s0_reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="3" />
+</system>

@@ -1,0 +1,5 @@
+config altddio_input_1bit_cfg;
+		design altddio_input_1bit;
+		instance altddio_input_1bit.gpio_0 use altddio_input_1bit_altera_gpio_181.altddio_input_1bit_altera_gpio_181_nysxhoa;
+endconfig
+

@@ -1,0 +1,11 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst altddio_input_5bit.gpio_0.core -pg 1
+preplace inst altddio_input_5bit.gpio_0 -pg 1 -lvl 1 -y 50
+preplace inst altddio_input_5bit -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>altddio_input_5bit</net_container>(SLAVE)altddio_input_5bit.ck,(SLAVE)gpio_0.ck) 1 0 1 NJ
+preplace netloc EXPORT<net_container>altddio_input_5bit</net_container>(SLAVE)altddio_input_5bit.dataout_h,(SLAVE)gpio_0.dataout_h) 1 0 1 NJ
+preplace netloc EXPORT<net_container>altddio_input_5bit</net_container>(SLAVE)altddio_input_5bit.dataout_l,(SLAVE)gpio_0.dataout_l) 1 0 1 NJ
+preplace netloc EXPORT<net_container>altddio_input_5bit</net_container>(SLAVE)gpio_0.pad_in,(SLAVE)altddio_input_5bit.pad_in) 1 0 1 NJ
+levelinfo -pg 1 0 70 250
+levelinfo -hier altddio_input_5bit 80 160 240

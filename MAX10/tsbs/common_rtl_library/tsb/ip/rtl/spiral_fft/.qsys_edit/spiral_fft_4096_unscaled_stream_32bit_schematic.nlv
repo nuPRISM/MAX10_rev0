@@ -1,0 +1,11 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst spiral_fft_4096_unscaled_stream_32bit.clock_bridge -pg 1 -lvl 1 -y 30
+preplace inst spiral_fft_4096_unscaled_stream_32bit.spiral_fft_4096_unscaled_streaming_32bit -pg 1 -lvl 2 -y 30
+preplace inst spiral_fft_4096_unscaled_stream_32bit -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>spiral_fft_4096_unscaled_stream_32bit</net_container>(SLAVE)spiral_fft_4096_unscaled_streaming_32bit.reset,(SLAVE)spiral_fft_4096_unscaled_stream_32bit.fft_reset) 1 0 2 NJ 160 NJ
+preplace netloc POINT_TO_POINT<net_container>spiral_fft_4096_unscaled_stream_32bit</net_container>(SLAVE)spiral_fft_4096_unscaled_streaming_32bit.clock,(MASTER)clock_bridge.out_clk) 1 1 1 NJ
+preplace netloc EXPORT<net_container>spiral_fft_4096_unscaled_stream_32bit</net_container>(SLAVE)clock_bridge.in_clk,(SLAVE)spiral_fft_4096_unscaled_stream_32bit.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>spiral_fft_4096_unscaled_stream_32bit</net_container>(SLAVE)spiral_fft_4096_unscaled_stream_32bit.spiral_fft,(SLAVE)spiral_fft_4096_unscaled_streaming_32bit.conduit_end) 1 0 2 NJ 140 NJ
+levelinfo -pg 1 0 80 600
+levelinfo -hier spiral_fft_4096_unscaled_stream_32bit 90 120 390 530

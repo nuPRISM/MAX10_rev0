@@ -1,0 +1,2 @@
+source do_altera_hardware_load.cmd
+source do_app_nios_load.cmd

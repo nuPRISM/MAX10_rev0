@@ -1,0 +1,9 @@
+#ifndef UART_NIOS_DACS_ADDRESS_MAP_H
+#define UART_NIOS_DACS_ADDRESS_MAP_H
+
+#define UART_NIOS_DACS_TRIGGER_CONTROL_REG_ADDRESS                            (1)
+#define UART_NIOS_DACS_DECIMATION_RATIO_CONTROL_REG_ADDRESS                   (2)
+#define UART_NIOS_DACS_TRIGGER_RESET_BIT_INDEX                                (1)
+#define UART_NIOS_DACS_TIME_BETWEEN_TRIGGERS_STATUS_REG_ADDRESS               (10)
+
+#endif

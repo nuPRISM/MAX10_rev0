@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element avmm_bridge
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element avmm_clk
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element clk_100
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clk_cross_100
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element dma_reader_and_diag0
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element dma_reader_and_diag0.avmm_bridge_slave
+   {
+      datum baseAddress
+      {
+         value = "24576";
+         type = "String";
+      }
+   }
+   element dma_reader_and_diag1
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element dma_reader_and_diag1.avmm_bridge_slave
+   {
+      datum baseAddress
+      {
+         value = "16384";
+         type = "String";
+      }
+   }
+   element dma_reader_and_diag2
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element dma_reader_and_diag2.avmm_bridge_slave
+   {
+      datum baseAddress
+      {
+         value = "8192";
+         type = "String";
+      }
+   }
+   element dma_reader_and_diag3
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element dma_reader_and_diag3.avmm_bridge_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element image_proc_clk
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element image_proc_clock_export
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "MAX 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element nios_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10AS066H2F34I1SG" />
+ <parameter name="deviceFamily" value="Arria 10" />
+ <parameter name="deviceSpeedGrade" value="1" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="4" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="num_of_pixels_in_frame"
+   displayName="Num. of Pixels In Frame"
+   type="integer"
+   defaultValue="100"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_locations_in_fifo"
+   displayName="Num. of Locations in Output FIFO"
+   type="integer"
+   defaultValue="16"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="parallelization_ratio"
+   displayName="Parallelization Ratio"
+   type="integer"
+   defaultValue="4"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_bits_per_pixel"
+   displayName="Num of Bits Per Pixel"
+   type="integer"
+   defaultValue="16"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="dma_enabled_at_startup"
+   displayName="DMA Enabled at Startup"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="swap_symbol_order_for_dma"
+   displayName="Swap Symbol Order for DMA"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="override_external_swap_buffers_now"
+   displayName="Override External Swap Bufs Now"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="override_val_for_external_swap_buffers_now"
+   displayName="Override Val for External Swap Bufs Now"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="num_watchdog_bits"
+   displayName="Num Watchdog Bits"
+   type="integer"
+   defaultValue="32"
+   legalRanges="1:64"
+   description="" />
+ <instanceParameter
+   name="address_width"
+   displayName="Address Width"
+   type="integer"
+   defaultValue="32"
+   legalRanges="1:32"
+   description="" />
+ <instanceParameter
+   name="num_packet_diag_compared_packets"
+   displayName="Num Packet Diag Compared Packets"
+   type="integer"
+   defaultValue="1"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_packet_diag_counter_bits"
+   displayName="Num Packet Diag Counter Bits"
+   type="integer"
+   defaultValue="32"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="packet_diag_enable_statistics_gathering"
+   displayName="Packet Diag Enable Statistics Gathering"
+   type="integer"
+   defaultValue="1"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="default_valid_packet_length"
+   displayName="Packet Diag Default Valid Packet Length"
+   type="integer"
+   defaultValue="1024"
+   legalRanges=""
+   description="" />
+ <instanceScript><![CDATA[# request a specific version of the scripting API
+package require -exact qsys 14.1
+
+# Set the name of the procedure to manipulate parameters
+set_module_property COMPOSITION_CALLBACK compose
+
+proc compose {} {
+ # manipulate parameters in here
+    # Example: set_instance_parameter_value child0 param0 [ get_parameter_value new_parameter_0 ]
+
+    set dma_enabled_at_startup                      [get_parameter_value dma_enabled_at_startup ] 
+	set swap_symbol_order_for_dma                   [get_parameter_value swap_symbol_order_for_dma ] 
+	set num_watchdog_bits                           [get_parameter_value num_watchdog_bits ] 
+	set override_external_swap_buffers_now          [get_parameter_value override_external_swap_buffers_now         ] 
+	set override_val_for_external_swap_buffers_now  [get_parameter_value override_val_for_external_swap_buffers_now ] 
+	set address_width                               [get_parameter_value address_width ] 
+	set num_of_locations_in_fifo                    [get_parameter_value num_of_locations_in_fifo] 
+	set parallelization_ratio                       [get_parameter_value parallelization_ratio   ]
+	set num_of_bits_per_pixel                       [get_parameter_value num_of_bits_per_pixel   ]  
+	set num_packet_diag_compared_packets            [get_parameter_value num_packet_diag_compared_packets   ]  
+	set num_packet_diag_counter_bits                [get_parameter_value num_packet_diag_counter_bits   ]  
+	set packet_diag_enable_statistics_gathering     [get_parameter_value packet_diag_enable_statistics_gathering   ]  
+	set default_valid_packet_length                 [get_parameter_value default_valid_packet_length   ]  
+		
+    for { set i 0 } { $i < 4 } { incr i } {
+		
+	set_instance_parameter_value dma_reader_and_diag$i	dma_enabled_at_startup                                $dma_enabled_at_startup                     
+	set_instance_parameter_value dma_reader_and_diag$i	swap_symbol_order_for_dma                             $swap_symbol_order_for_dma                  
+	set_instance_parameter_value dma_reader_and_diag$i	num_watchdog_bits                                     $num_watchdog_bits                          
+	set_instance_parameter_value dma_reader_and_diag$i	override_external_swap_buffers_now                    $override_external_swap_buffers_now         
+	set_instance_parameter_value dma_reader_and_diag$i	override_val_for_external_swap_buffers_now            $override_val_for_external_swap_buffers_now 
+	set_instance_parameter_value dma_reader_and_diag$i	address_width                                         $address_width                              
+	set_instance_parameter_value dma_reader_and_diag$i	num_of_locations_in_fifo                              $num_of_locations_in_fifo                   
+	set_instance_parameter_value dma_reader_and_diag$i	parallelization_ratio                                 $parallelization_ratio                      
+	set_instance_parameter_value dma_reader_and_diag$i	num_of_bits_per_pixel                                 $num_of_bits_per_pixel                      
+	set_instance_parameter_value dma_reader_and_diag$i	num_packet_diag_compared_packets                      $num_packet_diag_compared_packets           
+	set_instance_parameter_value dma_reader_and_diag$i	num_packet_diag_counter_bits                          $num_packet_diag_counter_bits               
+	set_instance_parameter_value dma_reader_and_diag$i	packet_diag_enable_statistics_gathering               $packet_diag_enable_statistics_gathering    
+	set_instance_parameter_value dma_reader_and_diag$i	default_valid_packet_length                           $default_valid_packet_length                
+		
+	
+	}
+    
+
+}]]></instanceScript>
+ <interface
+   name="avmm_bridge_slave"
+   internal="avmm_bridge.s0"
+   type="avalon"
+   dir="end" />
+ <interface name="avmm_clk" internal="avmm_clk.clk_in" type="clock" dir="end" />
+ <interface
+   name="avmm_reset"
+   internal="avmm_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface name="clk_100" internal="clk_100.clk_in" type="clock" dir="end" />
+ <interface
+   name="clk_100_reset"
+   internal="clk_100.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="diag_dma_2_split_snoop0"
+   internal="dma_reader_and_diag0.packet_diag_udp_dma_2_split_snoop_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="diag_dma_2_split_snoop1"
+   internal="dma_reader_and_diag1.packet_diag_udp_dma_2_split_snoop_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="diag_dma_2_split_snoop2"
+   internal="dma_reader_and_diag2.packet_diag_udp_dma_2_split_snoop_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="diag_dma_2_split_snoop3"
+   internal="dma_reader_and_diag3.packet_diag_udp_dma_2_split_snoop_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag0_pio_udp_xmit_ctrl_in"
+   internal="dma_reader_and_diag0.pio_udp_xmit_ctrl_in"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag0_pio_udp_xmit_ctrl_out"
+   internal="dma_reader_and_diag0.pio_udp_xmit_ctrl_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag1_pio_udp_xmit_ctrl_in"
+   internal="dma_reader_and_diag1.pio_udp_xmit_ctrl_in"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag1_pio_udp_xmit_ctrl_out"
+   internal="dma_reader_and_diag1.pio_udp_xmit_ctrl_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag2_pio_udp_xmit_ctrl_in"
+   internal="dma_reader_and_diag2.pio_udp_xmit_ctrl_in"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag2_pio_udp_xmit_ctrl_out"
+   internal="dma_reader_and_diag2.pio_udp_xmit_ctrl_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag3_pio_udp_xmit_ctrl_in"
+   internal="dma_reader_and_diag3.pio_udp_xmit_ctrl_in"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_reader_and_diag3_pio_udp_xmit_ctrl_out"
+   internal="dma_reader_and_diag3.pio_udp_xmit_ctrl_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_avst_out0"
+   internal="dma_reader_and_diag0.dma_to_udp_frame_reader_avalon_st_out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="dma_to_udp_avst_out1"
+   internal="dma_reader_and_diag1.dma_to_udp_frame_reader_avalon_st_out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="dma_to_udp_avst_out2"
+   internal="dma_reader_and_diag2.dma_to_udp_frame_reader_avalon_st_out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="dma_to_udp_avst_out3"
+   internal="dma_reader_and_diag3.dma_to_udp_frame_reader_avalon_st_out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="dma_to_udp_dma_master0"
+   internal="dma_reader_and_diag0.dma_to_udp_frame_reader_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="dma_to_udp_dma_master1"
+   internal="dma_reader_and_diag1.dma_to_udp_frame_reader_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="dma_to_udp_dma_master2"
+   internal="dma_reader_and_diag2.dma_to_udp_frame_reader_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="dma_to_udp_dma_master3"
+   internal="dma_reader_and_diag3.dma_to_udp_frame_reader_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="dma_to_udp_hw_control0"
+   internal="dma_reader_and_diag0.dma_to_udp_frame_reader_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_hw_control1"
+   internal="dma_reader_and_diag1.dma_to_udp_frame_reader_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_hw_control2"
+   internal="dma_reader_and_diag2.dma_to_udp_frame_reader_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_hw_control3"
+   internal="dma_reader_and_diag3.dma_to_udp_frame_reader_hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_snoop0"
+   internal="dma_reader_and_diag0.dma_to_udp_frame_reader_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_snoop1"
+   internal="dma_reader_and_diag1.dma_to_udp_frame_reader_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_snoop2"
+   internal="dma_reader_and_diag2.dma_to_udp_frame_reader_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dma_to_udp_snoop3"
+   internal="dma_reader_and_diag3.dma_to_udp_frame_reader_snoop"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="image_proc_clk"
+   internal="image_proc_clk.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="image_proc_clock_export_out_clk"
+   internal="image_proc_clock_export.out_clk"
+   type="clock"
+   dir="start" />
+ <interface
+   name="image_proc_reset"
+   internal="image_proc_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="user_packet_words0"
+   internal="dma_reader_and_diag0.user_packet_words"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="user_packet_words1"
+   internal="dma_reader_and_diag1.user_packet_words"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="user_packet_words2"
+   internal="dma_reader_and_diag2.user_packet_words"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="user_packet_words3"
+   internal="dma_reader_and_diag3.user_packet_words"
+   type="conduit"
+   dir="end" />
+ <module
+   name="avmm_bridge"
+   kind="altera_avalon_mm_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="10" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="16" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+  <parameter name="USE_RESPONSE" value="0" />
+ </module>
+ <module name="avmm_clk" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="DEASSERT" />
+ </module>
+ <module name="clk_100" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module
+   name="clk_cross_100"
+   kind="altera_avalon_mm_clock_crossing_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="10" />
+  <parameter name="COMMAND_FIFO_DEPTH" value="4" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="MASTER_SYNC_DEPTH" value="2" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="RESPONSE_FIFO_DEPTH" value="4" />
+  <parameter name="SLAVE_SYNC_DEPTH" value="2" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="15" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+ </module>
+ <module
+   name="dma_reader_and_diag0"
+   kind="dma_and_packet_diag"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_AVMM_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_AVMM_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_AVMM_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_100_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_CLK_100_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_CLK_100_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_DOMAIN" value="5" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_RATE" value="150000000" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_RESET_DOMAIN" value="5" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_dma_reader_and_diag0</parameter>
+  <parameter name="address_width" value="32" />
+  <parameter name="default_valid_packet_length" value="1024" />
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="16" />
+  <parameter name="num_of_pixels_in_frame" value="100" />
+  <parameter name="num_packet_diag_compared_packets" value="1" />
+  <parameter name="num_packet_diag_counter_bits" value="32" />
+  <parameter name="num_watchdog_bits" value="32" />
+  <parameter name="override_external_swap_buffers_now" value="0" />
+  <parameter name="override_val_for_external_swap_buffers_now" value="0" />
+  <parameter name="packet_diag_enable_statistics_gathering" value="1" />
+  <parameter name="parallelization_ratio" value="4" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+ </module>
+ <module
+   name="dma_reader_and_diag1"
+   kind="dma_and_packet_diag"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_AVMM_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_AVMM_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_AVMM_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_100_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_CLK_100_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_CLK_100_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_DOMAIN" value="5" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_RATE" value="150000000" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_RESET_DOMAIN" value="5" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_dma_reader_and_diag1</parameter>
+  <parameter name="address_width" value="32" />
+  <parameter name="default_valid_packet_length" value="1024" />
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="16" />
+  <parameter name="num_of_pixels_in_frame" value="100" />
+  <parameter name="num_packet_diag_compared_packets" value="1" />
+  <parameter name="num_packet_diag_counter_bits" value="32" />
+  <parameter name="num_watchdog_bits" value="32" />
+  <parameter name="override_external_swap_buffers_now" value="0" />
+  <parameter name="override_val_for_external_swap_buffers_now" value="0" />
+  <parameter name="packet_diag_enable_statistics_gathering" value="1" />
+  <parameter name="parallelization_ratio" value="4" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+ </module>
+ <module
+   name="dma_reader_and_diag2"
+   kind="dma_and_packet_diag"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_AVMM_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_AVMM_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_AVMM_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_100_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_CLK_100_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_CLK_100_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_DOMAIN" value="5" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_RATE" value="150000000" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_RESET_DOMAIN" value="5" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_dma_reader_and_diag2</parameter>
+  <parameter name="address_width" value="32" />
+  <parameter name="default_valid_packet_length" value="1024" />
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="16" />
+  <parameter name="num_of_pixels_in_frame" value="100" />
+  <parameter name="num_packet_diag_compared_packets" value="1" />
+  <parameter name="num_packet_diag_counter_bits" value="32" />
+  <parameter name="num_watchdog_bits" value="32" />
+  <parameter name="override_external_swap_buffers_now" value="0" />
+  <parameter name="override_val_for_external_swap_buffers_now" value="0" />
+  <parameter name="packet_diag_enable_statistics_gathering" value="1" />
+  <parameter name="parallelization_ratio" value="4" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+ </module>
+ <module
+   name="dma_reader_and_diag3"
+   kind="dma_and_packet_diag"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_AVMM_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_AVMM_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_AVMM_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_100_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_CLK_100_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_CLK_100_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_MAP" value="" />
+  <parameter
+     name="AUTO_DMA_TO_UDP_FRAME_READER_DMA_MASTER_ADDRESS_WIDTH"
+     value="AddressWidth = -1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_DOMAIN" value="5" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_CLOCK_RATE" value="150000000" />
+  <parameter name="AUTO_IMAGE_PROC_CLK_RESET_DOMAIN" value="5" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_dma_reader_and_diag3</parameter>
+  <parameter name="address_width" value="32" />
+  <parameter name="default_valid_packet_length" value="1024" />
+  <parameter name="dma_enabled_at_startup" value="0" />
+  <parameter name="num_of_bits_per_pixel" value="16" />
+  <parameter name="num_of_locations_in_fifo" value="16" />
+  <parameter name="num_of_pixels_in_frame" value="100" />
+  <parameter name="num_packet_diag_compared_packets" value="1" />
+  <parameter name="num_packet_diag_counter_bits" value="32" />
+  <parameter name="num_watchdog_bits" value="32" />
+  <parameter name="override_external_swap_buffers_now" value="0" />
+  <parameter name="override_val_for_external_swap_buffers_now" value="0" />
+  <parameter name="packet_diag_enable_statistics_gathering" value="1" />
+  <parameter name="parallelization_ratio" value="4" />
+  <parameter name="swap_symbol_order_for_dma" value="0" />
+ </module>
+ <module name="image_proc_clk" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="150000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module
+   name="image_proc_clock_export"
+   kind="altera_clock_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="150000000" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="avmm_bridge.m0"
+   end="dma_reader_and_diag0.avmm_bridge_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x6000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="avmm_bridge.m0"
+   end="dma_reader_and_diag1.avmm_bridge_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="avmm_bridge.m0"
+   end="dma_reader_and_diag2.avmm_bridge_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x2000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="avmm_bridge.m0"
+   end="dma_reader_and_diag3.avmm_bridge_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="clk_cross_100.m0"
+   end="dma_reader_and_diag0.avmm_slv_100mhz">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="clk_cross_100.m0"
+   end="dma_reader_and_diag1.avmm_slv_100mhz">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x2000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="clk_cross_100.m0"
+   end="dma_reader_and_diag2.avmm_slv_100mhz">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="clk_cross_100.m0"
+   end="dma_reader_and_diag3.avmm_slv_100mhz">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x6000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="avmm_bridge.m0"
+   end="clk_cross_100.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x8000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avmm_clk.clk"
+   end="dma_reader_and_diag0.avmm_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avmm_clk.clk"
+   end="dma_reader_and_diag1.avmm_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avmm_clk.clk"
+   end="dma_reader_and_diag2.avmm_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avmm_clk.clk"
+   end="dma_reader_and_diag3.avmm_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avmm_clk.clk"
+   end="avmm_bridge.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_100.clk"
+   end="dma_reader_and_diag0.clk_100" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_100.clk"
+   end="dma_reader_and_diag1.clk_100" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_100.clk"
+   end="dma_reader_and_diag2.clk_100" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_100.clk"
+   end="dma_reader_and_diag3.clk_100" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="dma_reader_and_diag0.image_proc_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="dma_reader_and_diag1.image_proc_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="dma_reader_and_diag2.image_proc_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="dma_reader_and_diag3.image_proc_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_proc_clk.clk"
+   end="image_proc_clock_export.in_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_100.clk"
+   end="clk_cross_100.m0_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="avmm_clk.clk"
+   end="clk_cross_100.s0_clk" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avmm_clk.clk_reset"
+   end="dma_reader_and_diag0.avmm_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avmm_clk.clk_reset"
+   end="dma_reader_and_diag1.avmm_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avmm_clk.clk_reset"
+   end="dma_reader_and_diag2.avmm_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avmm_clk.clk_reset"
+   end="dma_reader_and_diag3.avmm_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_100.clk_reset"
+   end="dma_reader_and_diag0.clk_100_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_100.clk_reset"
+   end="dma_reader_and_diag1.clk_100_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_100.clk_reset"
+   end="dma_reader_and_diag2.clk_100_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_100.clk_reset"
+   end="dma_reader_and_diag3.clk_100_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="dma_reader_and_diag0.image_proc_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="dma_reader_and_diag1.image_proc_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="dma_reader_and_diag2.image_proc_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="image_proc_clk.clk_reset"
+   end="dma_reader_and_diag3.image_proc_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_100.clk_reset"
+   end="clk_cross_100.m0_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avmm_clk.clk_reset"
+   end="avmm_bridge.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="avmm_clk.clk_reset"
+   end="clk_cross_100.s0_reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="4" />
+</system>

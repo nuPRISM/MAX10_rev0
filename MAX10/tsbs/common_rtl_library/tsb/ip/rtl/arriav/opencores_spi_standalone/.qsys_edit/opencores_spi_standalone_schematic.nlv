@@ -1,0 +1,25 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst opencores_spi_standalone.simple_master_connection_without_burst_0 -pg 1 -lvl 2 -y 330
+preplace inst opencores_spi_standalone.opencores_spi_currently_active -pg 1 -lvl 3 -y 30
+preplace inst opencores_spi_standalone.clk_0 -pg 1 -lvl 1 -y 310
+preplace inst opencores_spi_standalone -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst opencores_spi_standalone.opencores_spi_sdio_helper -pg 1 -lvl 3 -y 360
+preplace inst opencores_spi_standalone.opencores_spi_debug_tag_word -pg 1 -lvl 3 -y 140
+preplace inst opencores_spi_standalone.opencores_spi_manual_reset -pg 1 -lvl 3 -y 250
+preplace inst opencores_spi_standalone.opencores_spi -pg 1 -lvl 3 -y 470
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_standalone.opencores_spi_interrupt_sender,(SLAVE)opencores_spi.interrupt_sender) 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_standalone.avalon_mm_slave,(SLAVE)simple_master_connection_without_burst_0.s0) 1 0 2 NJ 300 NJ
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_manual_reset.external_connection,(SLAVE)opencores_spi_standalone.opencores_spi_manual_reset_out) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc FAN_OUT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_manual_reset.clk,(SLAVE)opencores_spi.clock_sink,(SLAVE)opencores_spi_debug_tag_word.clk,(SLAVE)opencores_spi_sdio_helper.clk,(MASTER)clk_0.clk,(SLAVE)opencores_spi_currently_active.clk,(SLAVE)simple_master_connection_without_burst_0.clock) 1 1 2 450 320 650
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_standalone.opencores_spi_currently_active,(SLAVE)opencores_spi_currently_active.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>opencores_spi_standalone</net_container>(MASTER)simple_master_connection_without_burst_0.m0,(SLAVE)opencores_spi_currently_active.s1,(SLAVE)opencores_spi_debug_tag_word.s1,(SLAVE)opencores_spi_manual_reset.s1,(SLAVE)opencores_spi.avalon_slave_0,(SLAVE)opencores_spi_sdio_helper.s1) 1 2 1 710
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_sdio_helper.external_connection,(SLAVE)opencores_spi_standalone.opencores_spi_sdio_helper) 1 0 3 NJ 390 NJ 430 NJ
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi.conduit_end,(SLAVE)opencores_spi_standalone.opencores_spi) 1 0 3 NJ 520 NJ 520 NJ
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi_standalone.opencores_spi_debug_tag_word,(SLAVE)opencores_spi_debug_tag_word.external_connection) 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc FAN_OUT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi.reset_sink,(SLAVE)opencores_spi_debug_tag_word.reset,(MASTER)clk_0.clk_reset,(SLAVE)opencores_spi_manual_reset.reset,(SLAVE)opencores_spi_sdio_helper.reset,(SLAVE)opencores_spi_currently_active.reset,(SLAVE)simple_master_connection_without_burst_0.reset) 1 1 2 430 300 670
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)clk_0.clk_in,(SLAVE)opencores_spi_standalone.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)opencores_spi_standalone.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>opencores_spi_standalone</net_container>(SLAVE)opencores_spi.debug,(SLAVE)opencores_spi_standalone.opencores_spi_debug) 1 0 3 NJ 540 NJ 540 NJ
+levelinfo -pg 1 0 190 930
+levelinfo -hier opencores_spi_standalone 200 230 520 740 900

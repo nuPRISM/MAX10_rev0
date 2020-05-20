@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filters version="18.1">
+ <filter name="Custom Filter">
+  <rule what="INTERFACE_TYPE" how="IS_NOT" value="interrupt" set="all" />
+ </filter>
+ <filter name="bel" />
+</filters>

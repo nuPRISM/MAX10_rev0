@@ -1,0 +1,5 @@
+Copyright (c) 2006, Oliver Schoenborn
+Distributed under the BSD Software License (see accompanying 
+LICENSE_IOF_1_0.txt in root folder of library for complete 
+terms and conditions). 
+

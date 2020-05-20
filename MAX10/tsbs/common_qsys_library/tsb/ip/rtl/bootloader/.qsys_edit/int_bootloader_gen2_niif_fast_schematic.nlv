@@ -1,0 +1,92 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_5 -pg 1 -lvl 4 -y 770
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_19 -pg 1 -lvl 4 -y 1810
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.private_clock_crossing_bridge_to_50_MHz -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.pio_reset_and_bootloader_request -pg 1
+preplace inst int_bootloader_gen2_niif_fast.nios_clk -pg 1 -lvl 1 -y 30
+preplace inst int_bootloader_gen2_niif_fast.mm_bridge_to_memory -pg 1 -lvl 4 -y 140
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_6 -pg 1 -lvl 4 -y 850
+preplace inst int_bootloader_gen2_niif_fast.clk_50 -pg 1 -lvl 1 -y 530
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_7 -pg 1 -lvl 4 -y 1970
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.jtag_uart_1 -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.clk_50 -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_nios.cpu -pg 1
+preplace inst int_bootloader_gen2_niif_fast -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_8 -pg 1 -lvl 4 -y 2050
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.spi_master_to_maxv -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.boot_success_confirm_pio_out -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.boot_loader_gpio_out -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_nios.clock_bridge -pg 1
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_9 -pg 1 -lvl 4 -y 2130
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_10 -pg 1 -lvl 4 -y 1010
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_11 -pg 1 -lvl 4 -y 1090
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.boot_success_confirm_pio_in -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_nios -pg 1 -lvl 3 -y 80
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_12 -pg 1 -lvl 4 -y 1170
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.main_cpu_reset_pio -pg 1
+preplace inst int_bootloader_gen2_niif_fast.boot_ram -pg 1 -lvl 3 -y 410
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_13 -pg 1 -lvl 4 -y 1250
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_20 -pg 1 -lvl 4 -y 1890
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_14 -pg 1 -lvl 4 -y 1330
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_0 -pg 1 -lvl 4 -y 2210
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.boot_loader_main_nios_pc_monitor -pg 1
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_15 -pg 1 -lvl 4 -y 1410
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_1 -pg 1 -lvl 4 -y 930
+preplace inst int_bootloader_gen2_niif_fast.bridge_to_joint_elements -pg 1 -lvl 2 -y 50
+preplace inst int_bootloader_gen2_niif_fast.bridge_to_internal_slaves -pg 1 -lvl 2 -y 190
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.clk_main_nios -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.boot_loader_timer -pg 1
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_2 -pg 1 -lvl 4 -y 1730
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_16 -pg 1 -lvl 4 -y 1490
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support -pg 1 -lvl 4 -y 250
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_3 -pg 1 -lvl 4 -y 610
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_17 -pg 1 -lvl 4 -y 1570
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.mm_bridge_joint -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_nios.reset_bridge -pg 1
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_4 -pg 1 -lvl 4 -y 690
+preplace inst int_bootloader_gen2_niif_fast.irq_bridge_18 -pg 1 -lvl 4 -y 1650
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.mm_bridge_private -pg 1
+preplace inst int_bootloader_gen2_niif_fast.bootloader_support.boot_loader_enable_and_params_pio -pg 1
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)clk_50.clk_in,(SLAVE)int_bootloader_gen2_niif_fast.clk50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_20_receiver_irq,(MASTER)irq_bridge_20.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.bootloader_support_boot_loader_main_nios_pc_monitor,(SLAVE)bootloader_support.boot_loader_main_nios_pc_monitor) 1 0 4 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_10.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_10_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_11.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_11_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_13.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_13_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_12_receiver_irq,(MASTER)irq_bridge_12.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_1.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_1_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_7_receiver_irq,(MASTER)irq_bridge_7.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_5.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_5_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_6.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_6_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_4.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_4_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.nios_clk,(SLAVE)nios_clk.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)mm_bridge_to_memory.m0,(MASTER)int_bootloader_gen2_niif_fast.bootloader_avalon_mm_master) 1 4 1 NJ
+preplace netloc POINT_TO_POINT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)bootloader_support.clk_50,(MASTER)clk_50.clk) 1 1 3 NJ 480 NJ 400 N
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_2.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_2_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_17_receiver_irq,(MASTER)irq_bridge_17.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.nios_reset,(SLAVE)nios_clk.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_8_receiver_irq,(MASTER)irq_bridge_8.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.bootloader_support_spi_master_to_maxv,(SLAVE)bootloader_support.spi_master_to_maxv_external) 1 0 4 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_14_receiver_irq,(MASTER)irq_bridge_14.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.bootloader_support_main_cpu_reset_pio,(SLAVE)bootloader_support.main_cpu_reset_pio) 1 0 4 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_15_receiver_irq,(MASTER)irq_bridge_15.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_16.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_16_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_3.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_3_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_18_receiver_irq,(MASTER)irq_bridge_18.receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_19_receiver_irq,(MASTER)irq_bridge_19.receiver_irq) 1 4 1 NJ
+preplace netloc FAN_OUT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)irq_bridge_2.clk,(SLAVE)irq_bridge_13.clk,(SLAVE)irq_bridge_20.clk,(SLAVE)bridge_to_internal_slaves.clk,(SLAVE)irq_bridge_7.clk,(SLAVE)bootloader_support.clk,(MASTER)nios_clk.clk,(SLAVE)irq_bridge_16.clk,(SLAVE)irq_bridge_15.clk,(SLAVE)boot_ram.clk1,(SLAVE)irq_bridge_8.clk,(SLAVE)irq_bridge_0.clk,(SLAVE)bootloader_nios.clk,(SLAVE)irq_bridge_12.clk,(SLAVE)irq_bridge_17.clk,(SLAVE)irq_bridge_14.clk,(SLAVE)bridge_to_joint_elements.clk,(SLAVE)irq_bridge_3.clk,(SLAVE)irq_bridge_10.clk,(SLAVE)irq_bridge_6.clk,(SLAVE)irq_bridge_5.clk,(SLAVE)irq_bridge_19.clk,(SLAVE)mm_bridge_to_memory.clk,(SLAVE)irq_bridge_1.clk,(SLAVE)irq_bridge_18.clk,(SLAVE)irq_bridge_4.clk,(SLAVE)irq_bridge_9.clk,(SLAVE)irq_bridge_11.clk) 1 1 3 430 140 650 260 1130
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.bootloader_support_boot_loader_enable_and_params_pio,(SLAVE)bootloader_support.boot_loader_enable_and_params_pio) 1 0 4 NJ 300 NJ 300 NJ 300 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_9.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_9_receiver_irq) 1 4 1 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)irq_bridge_0.receiver_irq,(MASTER)int_bootloader_gen2_niif_fast.irq_bridge_0_receiver_irq) 1 4 1 NJ
+preplace netloc INTERCONNECT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)bootloader_nios.debug_mem_slave,(SLAVE)bootloader_support.avalon_mm_slave_private,(MASTER)bridge_to_internal_slaves.m0,(SLAVE)bootloader_support.avalon_mm_slave_joint,(MASTER)bridge_to_joint_elements.m0,(SLAVE)boot_ram.s1) 1 2 2 670 280 1150
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)bootloader_support.pio_reset_and_bootloader_request,(SLAVE)int_bootloader_gen2_niif_fast.bootloader_support_pio_reset_and_bootloader_request) 1 0 4 NJ 380 NJ 380 NJ 380 NJ
+preplace netloc INTERCONNECT<net_container>int_bootloader_gen2_niif_fast</net_container>(MASTER)bootloader_nios.instruction_master,(SLAVE)bridge_to_internal_slaves.s0,(MASTER)bootloader_nios.data_master,(SLAVE)mm_bridge_to_memory.s0) 1 1 3 450 160 NJ 240 1070
+preplace netloc FAN_OUT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)bootloader_support.reset_50,(MASTER)clk_50.clk_reset,(SLAVE)boot_ram.reset1) 1 1 3 NJ 560 710 520 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)bootloader_support.boot_loader_gpio_out,(SLAVE)int_bootloader_gen2_niif_fast.bootloader_support_boot_loader_gpio_out) 1 0 4 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.clk50_reset,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)irq_bridge_15.clk_reset,(SLAVE)irq_bridge_0.clk_reset,(SLAVE)irq_bridge_2.clk_reset,(SLAVE)bridge_to_joint_elements.reset,(MASTER)nios_clk.clk_reset,(SLAVE)irq_bridge_19.clk_reset,(SLAVE)bootloader_nios.reset,(SLAVE)irq_bridge_20.clk_reset,(SLAVE)irq_bridge_5.clk_reset,(SLAVE)irq_bridge_1.clk_reset,(SLAVE)bridge_to_internal_slaves.reset,(SLAVE)irq_bridge_8.clk_reset,(SLAVE)irq_bridge_4.clk_reset,(SLAVE)mm_bridge_to_memory.reset,(SLAVE)irq_bridge_18.clk_reset,(SLAVE)irq_bridge_16.clk_reset,(SLAVE)irq_bridge_3.clk_reset,(SLAVE)irq_bridge_10.clk_reset,(SLAVE)irq_bridge_12.clk_reset,(SLAVE)irq_bridge_9.clk_reset,(SLAVE)bootloader_support.reset,(SLAVE)irq_bridge_7.clk_reset,(SLAVE)irq_bridge_6.clk_reset,(SLAVE)irq_bridge_11.clk_reset,(SLAVE)irq_bridge_13.clk_reset,(SLAVE)irq_bridge_14.clk_reset,(SLAVE)irq_bridge_17.clk_reset) 1 1 3 410 180 710 220 1170
+preplace netloc EXPORT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)int_bootloader_gen2_niif_fast.joint_avalon_mm_slave,(SLAVE)bridge_to_joint_elements.s0) 1 0 2 NJ 100 NJ
+preplace netloc FAN_OUT<net_container>int_bootloader_gen2_niif_fast</net_container>(SLAVE)irq_bridge_14.sender0_irq,(SLAVE)irq_bridge_12.sender0_irq,(SLAVE)irq_bridge_2.sender0_irq,(SLAVE)bootloader_support.jtag_uart_1_irq,(SLAVE)irq_bridge_20.sender0_irq,(SLAVE)irq_bridge_19.sender0_irq,(SLAVE)irq_bridge_10.sender0_irq,(SLAVE)irq_bridge_5.sender0_irq,(SLAVE)irq_bridge_9.sender0_irq,(SLAVE)bootloader_support.spi_master_to_maxv_irq,(SLAVE)irq_bridge_4.sender0_irq,(SLAVE)bootloader_support.boot_loader_timer_irq,(SLAVE)irq_bridge_0.sender0_irq,(SLAVE)irq_bridge_16.sender0_irq,(SLAVE)irq_bridge_6.sender0_irq,(SLAVE)irq_bridge_13.sender0_irq,(SLAVE)irq_bridge_15.sender0_irq,(SLAVE)irq_bridge_7.sender0_irq,(MASTER)bootloader_nios.irq,(SLAVE)irq_bridge_3.sender0_irq,(SLAVE)irq_bridge_11.sender0_irq,(SLAVE)irq_bridge_8.sender0_irq,(SLAVE)irq_bridge_17.sender0_irq,(SLAVE)irq_bridge_18.sender0_irq,(SLAVE)irq_bridge_1.sender0_irq) 1 3 1 1090
+levelinfo -pg 1 0 200 1750
+levelinfo -hier int_bootloader_gen2_niif_fast 210 240 520 830 1380 1550

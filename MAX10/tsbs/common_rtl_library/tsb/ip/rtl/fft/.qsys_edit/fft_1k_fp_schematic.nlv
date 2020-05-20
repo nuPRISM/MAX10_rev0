@@ -1,0 +1,10 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst fft_1k -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst fft_1k.fft_ii_0 -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>fft_1k</net_container>(SLAVE)fft_ii_0.rst,(SLAVE)fft_1k.rst) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fft_1k</net_container>(SLAVE)fft_1k.clk,(SLAVE)fft_ii_0.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fft_1k</net_container>(SLAVE)fft_ii_0.source,(SLAVE)fft_1k.source) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fft_1k</net_container>(SLAVE)fft_ii_0.sink,(SLAVE)fft_1k.sink) 1 0 1 NJ
+levelinfo -pg 1 0 50 180
+levelinfo -hier fft_1k 60 90 170

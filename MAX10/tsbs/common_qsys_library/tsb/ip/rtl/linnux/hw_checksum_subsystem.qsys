@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element afi_clk_in
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element checksum_block
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element controller_block
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element controller_block.avalon_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element dma_checksum_read_master_0
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element nios_bridge
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element nios_bridge.s0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="5AGXFB3H4F35C4" />
+ <parameter name="deviceFamily" value="Arria V" />
+ <parameter name="deviceSpeedGrade" value="4_H4" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="3" />
+ <parameter name="projectName">TR4_DDR3_UniPHY_1G_QSYS.qpf</parameter>
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="VME_FIFO_SUBSYSTEM_ENABLED"
+   displayName="VME_FIFO_SUBSYSTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   displayName="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceScript></instanceScript>
+ <interface
+   name="controller_block_interrupt_sender"
+   internal="controller_block.interrupt_sender"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="dma_checksum_read_master"
+   internal="dma_checksum_read_master_0.Data_Read_Master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="nios_bridge_s0"
+   internal="nios_bridge.s0"
+   type="avalon"
+   dir="end" />
+ <interface name="nios_clk" internal="afi_clk_in.clk_in" type="clock" dir="end" />
+ <interface
+   name="reset"
+   internal="afi_clk_in.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <module name="afi_clk_in" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module name="checksum_block" kind="checksum" version="1.0" enabled="1">
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="0" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+ </module>
+ <module name="controller_block" kind="controller" version="1.0" enabled="1">
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="0" />
+ </module>
+ <module
+   name="dma_checksum_read_master_0"
+   kind="dma_checksum_read_master"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="BURST_ENABLE" value="0" />
+  <parameter name="CHANNEL_ENABLE" value="0" />
+  <parameter name="CHANNEL_WIDTH" value="8" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="ERROR_ENABLE" value="0" />
+  <parameter name="ERROR_WIDTH" value="8" />
+  <parameter name="FIFO_DEPTH" value="32" />
+  <parameter name="FIFO_SPEED_OPTIMIZATION" value="1" />
+  <parameter name="GUI_BURST_WRAPPING_SUPPORT" value="1" />
+  <parameter name="GUI_MAX_BURST_COUNT" value="4" />
+  <parameter name="GUI_PROGRAMMABLE_BURST_ENABLE" value="0" />
+  <parameter name="GUI_STRIDE_WIDTH" value="1" />
+  <parameter name="LENGTH_WIDTH" value="32" />
+  <parameter name="PACKET_ENABLE" value="1" />
+  <parameter name="STRIDE_ENABLE" value="0" />
+  <parameter name="TRANSFER_TYPE" value="Aligned Accesses" />
+ </module>
+ <module
+   name="nios_bridge"
+   kind="altera_avalon_mm_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="10" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="5" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="0" />
+  <parameter name="USE_RESPONSE" value="0" />
+ </module>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="nios_bridge.m0"
+   end="controller_block.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="dma_checksum_read_master_0.Data_Source"
+   end="checksum_block.data_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="dma_checksum_read_master_0.Response_Source"
+   end="controller_block.response_snk" />
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="controller_block.cmd_src"
+   end="dma_checksum_read_master_0.Command_Sink" />
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="checksum_block.result_source"
+   end="controller_block.result_snk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="afi_clk_in.clk"
+   end="dma_checksum_read_master_0.Clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="afi_clk_in.clk"
+   end="nios_bridge.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="afi_clk_in.clk"
+   end="checksum_block.clock_reset" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="afi_clk_in.clk"
+   end="controller_block.clock_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="afi_clk_in.clk_reset"
+   end="dma_checksum_read_master_0.Clock_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="afi_clk_in.clk_reset"
+   end="checksum_block.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="afi_clk_in.clk_reset"
+   end="controller_block.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="afi_clk_in.clk_reset"
+   end="nios_bridge.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="3" />
+</system>

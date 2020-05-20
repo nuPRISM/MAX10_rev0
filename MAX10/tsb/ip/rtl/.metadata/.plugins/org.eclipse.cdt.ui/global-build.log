@@ -1,0 +1,1452 @@
+10:43:10 **** Clean-only build of configuration Nios II for project hello_world ****
+make clean 
+[hello_world clean complete]
+10:43:15 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:33:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:36:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:39:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:43:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:46:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:55:9: error: conflicting types for 'display_commands'
+ alt_u32 display_commands(void){
+         ^
+src/control.c:33:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:65:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:36:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c: In function 'select_base':
+src/control.c:67:19: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  alt_u8 basenum = atoi((str + strlen("selbase"))+1);
+                   ^
+src/control.c: At top level:
+src/control.c:73:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:39:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:74:24: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  char * cmd = (char *) malloc(256);
+                        ^
+src/control.c:74:24: warning: incompatible implicit declaration of built-in function 'malloc'
+src/control.c:74:24: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+src/control.c:79:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:80:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c:86:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(cmd);
+  ^
+src/control.c:86:2: warning: incompatible implicit declaration of built-in function 'free'
+src/control.c:86:2: note: include '<stdlib.h>' or provide a declaration of 'free'
+src/control.c: At top level:
+src/control.c:91:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:46:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:97:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:43:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:43:16 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:43:31 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:34:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:37:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:40:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:44:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:47:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:56:9: error: conflicting types for 'display_commands'
+ alt_u32 display_commands(void){
+         ^
+src/control.c:34:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:66:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:37:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c: In function 'select_base':
+src/control.c:68:19: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  alt_u8 basenum = atoi((str + strlen("selbase"))+1);
+                   ^
+src/control.c: At top level:
+src/control.c:74:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:40:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:75:24: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  char * cmd = (char *) malloc(256);
+                        ^
+src/control.c:75:24: warning: incompatible implicit declaration of built-in function 'malloc'
+src/control.c:75:24: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+src/control.c:80:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:81:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c:87:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(cmd);
+  ^
+src/control.c:87:2: warning: incompatible implicit declaration of built-in function 'free'
+src/control.c:87:2: note: include '<stdlib.h>' or provide a declaration of 'free'
+src/control.c: At top level:
+src/control.c:92:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:47:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:98:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:44:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:43:32 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:43:47 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:34:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:37:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:40:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:44:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:47:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:66:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:37:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c: In function 'select_base':
+src/control.c:68:19: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  alt_u8 basenum = atoi((str + strlen("selbase"))+1);
+                   ^
+src/control.c: At top level:
+src/control.c:74:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:40:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:75:24: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  char * cmd = (char *) malloc(256);
+                        ^
+src/control.c:75:24: warning: incompatible implicit declaration of built-in function 'malloc'
+src/control.c:75:24: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+src/control.c:80:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:81:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c:87:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(cmd);
+  ^
+src/control.c:87:2: warning: incompatible implicit declaration of built-in function 'free'
+src/control.c:87:2: note: include '<stdlib.h>' or provide a declaration of 'free'
+src/control.c: At top level:
+src/control.c:92:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:47:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:98:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:44:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:43:48 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:44:24 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:34:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:37:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:40:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:44:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:47:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:56:9: error: conflicting types for 'display_commands'
+ alt_u32 display_commands(void){
+         ^
+src/control.c:34:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:66:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:37:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c: In function 'select_base':
+src/control.c:68:19: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  alt_u8 basenum = atoi((str + strlen("selbase"))+1);
+                   ^
+src/control.c: At top level:
+src/control.c:74:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:40:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:75:24: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  char * cmd = (char *) malloc(256);
+                        ^
+src/control.c:75:24: warning: incompatible implicit declaration of built-in function 'malloc'
+src/control.c:75:24: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+src/control.c:80:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:81:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c:87:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(cmd);
+  ^
+src/control.c:87:2: warning: incompatible implicit declaration of built-in function 'free'
+src/control.c:87:2: note: include '<stdlib.h>' or provide a declaration of 'free'
+src/control.c: At top level:
+src/control.c:92:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:47:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:98:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:44:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:44:24 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:44:48 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:57:9: error: conflicting types for 'display_commands'
+ alt_u32 display_commands(void){
+         ^
+src/control.c:35:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:67:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:38:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c:75:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:41:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c: At top level:
+src/control.c:93:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:48:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:99:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:45:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:44:48 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:45:46 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:57:9: error: conflicting types for 'display_commands'
+ alt_u32 display_commands(void){
+         ^
+src/control.c:35:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:67:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:38:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c:75:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:41:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c: At top level:
+src/control.c:93:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:48:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:99:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:45:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:45:47 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:45:50 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:57:9: error: conflicting types for 'display_commands'
+ alt_u32 display_commands(void){
+         ^
+src/control.c:35:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:67:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:38:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c:75:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:41:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c: At top level:
+src/control.c:93:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:48:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:99:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:45:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:45:50 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:46:07 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:57:14: error: conflicting types for 'display_commands'
+ unsigned int display_commands(void){
+              ^
+src/control.c:35:10: note: previous implicit declaration of 'display_commands' was here
+   return display_commands();;
+          ^
+src/control.c:67:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:38:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c:75:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:41:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c: At top level:
+src/control.c:93:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:48:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:99:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:45:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:46:08 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:46:22 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: At top level:
+src/control.c:67:9: error: conflicting types for 'select_base'
+ alt_u32 select_base(char * command){
+         ^
+src/control.c:38:10: note: previous implicit declaration of 'select_base' was here
+   return select_base(command);;
+          ^
+src/control.c:75:9: error: conflicting types for 'send_pmt_uart_command'
+ alt_u32 send_pmt_uart_command(char* command){
+         ^
+src/control.c:41:10: note: previous implicit declaration of 'send_pmt_uart_command' was here
+   return send_pmt_uart_command(command);
+          ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+src/control.c: At top level:
+src/control.c:93:9: error: conflicting types for 'display_eop_status'
+ alt_u32 display_eop_status(void){
+         ^
+src/control.c:48:11: note: previous implicit declaration of 'display_eop_status' was here
+    return display_eop_status();
+           ^
+src/control.c:99:9: error: conflicting types for 'clear_eop_flag'
+ alt_u32 clear_eop_flag(void){
+         ^
+src/control.c:45:11: note: previous implicit declaration of 'clear_eop_flag' was here
+    return clear_eop_flag();
+           ^
+make: *** [obj/default/src/control.o] Error 1
+10:46:23 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:46:40 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();;
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);;
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Compiling src/hello_world.c to obj/default/src/hello_world.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/hello_world.o src/hello_world.c
+src/hello_world.c: In function 'main':
+src/hello_world.c:55:9: warning: unused variable 'i' [-Wunused-variable]
+  alt_u8 i = 0;
+         ^
+src/hello_world.c:54:7: warning: unused variable 'msg_in' [-Wunused-variable]
+  char msg_in[256] = "";
+       ^
+Info: Compiling src/setup.c to obj/default/src/setup.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/setup.o src/setup.c
+Info: Compiling src/timer.c to obj/default/src/timer.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/timer.o src/timer.c
+src/timer.c:11:25: warning: 'timer_flag' initialized and declared 'extern'
+ extern volatile alt_u32 timer_flag = 0;
+                         ^
+Info: Compiling src/uart.c to obj/default/src/uart.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/uart.o src/uart.c
+src/uart.c: In function 'uart_trx':
+src/uart.c:81:12: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  rx_str[i] = NULL;
+            ^
+Info: Compiling ../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/rsscanf.c to obj/default/rsscanf.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/rsscanf.o ../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/rsscanf.c
+../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/rsscanf.c: In function 'rsscanf':
+../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/rsscanf.c:16:14: warning: variable 'pf' set but not used [-Wunused-but-set-variable]
+  const char* pf;
+              ^
+Info: Compiling ../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/xprintf.c to obj/default/xprintf.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/xprintf.o ../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/xprintf.c
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6292 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+10:46:42 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:47:22 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Compiling src/hello_world.c to obj/default/src/hello_world.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/hello_world.o src/hello_world.c
+src/hello_world.c: In function 'main':
+src/hello_world.c:55:9: warning: unused variable 'i' [-Wunused-variable]
+  alt_u8 i = 0;
+         ^
+src/hello_world.c:54:7: warning: unused variable 'msg_in' [-Wunused-variable]
+  char msg_in[256] = "";
+       ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6292 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+10:47:24 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:47:39 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+10:47:40 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:02:20 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:02:21 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+11:04:29 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6300 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+11:04:31 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+11:04:34 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:04:36 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:27:48 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:27:49 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+11:27:55 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:27:57 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:33:26 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/uart.c to obj/default/src/uart.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/uart.o src/uart.c
+src/uart.c: In function 'uart_trx':
+src/uart.c:81:12: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  rx_str[i] = NULL;
+            ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6300 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+11:33:27 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+11:33:32 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:33:33 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:35:52 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:35:53 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+11:35:58 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:36:01 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+12:40:31 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/uart.c to obj/default/src/uart.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/uart.o src/uart.c
+src/uart.c: In function 'uart_trx':
+src/uart.c:81:12: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  rx_str[i] = NULL;
+            ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6316 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+12:40:33 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+12:40:38 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+12:40:39 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+12:49:28 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/uart.c to obj/default/src/uart.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/uart.o src/uart.c
+src/uart.c: In function 'uart_trx':
+src/uart.c:82:12: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  rx_str[i] = NULL;
+            ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6280 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+12:49:29 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+12:49:35 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+12:49:36 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+12:51:44 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/uart.c to obj/default/src/uart.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/uart.o src/uart.c
+src/uart.c: In function 'uart_trx':
+src/uart.c:82:12: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  rx_str[i] = NULL;
+            ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6296 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+12:51:46 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+12:51:50 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+12:51:51 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:00:34 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:85:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:86:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6236 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:00:35 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:00:43 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:00:44 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:02:36 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c:52:9: error: 'i' undeclared (first use in this function)
+    for (i=0; i<80; i++)
+         ^
+src/control.c:52:9: note: each undeclared identifier is reported only once for each function it appears in
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:88:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:89:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+make: *** [obj/default/src/control.o] Error 1
+13:02:37 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:02:52 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:89:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:90:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6232 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:02:53 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:02:59 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:03:01 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:04:00 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:90:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:91:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6212 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:04:02 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:04:05 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:04:06 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:22:48 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6296 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:22:50 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:24:40 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Compiling src/hello_world.c to obj/default/src/hello_world.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/hello_world.o src/hello_world.c
+src/hello_world.c: In function 'main':
+src/hello_world.c:55:9: warning: unused variable 'i' [-Wunused-variable]
+  alt_u8 i = 0;
+         ^
+src/hello_world.c:54:7: warning: unused variable 'msg_in' [-Wunused-variable]
+  char msg_in[256] = "";
+       ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6296 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:24:42 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:24:47 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:24:49 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:25:25 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6296 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:25:26 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:25:31 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:25:32 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:26:32 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling src/control.c to obj/default/src/control.o
+nios2-elf-gcc -xc -std=c99 -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc -Isrc/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/rsscanf/ -I../../../../../tsbs/common_sw_library/tsb/ip/software/xprintf/  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/control.o src/control.c
+src/control.c: In function 'parse_command':
+src/control.c:35:10: warning: implicit declaration of function 'display_commands' [-Wimplicit-function-declaration]
+   return display_commands();
+          ^
+src/control.c:38:10: warning: implicit declaration of function 'select_base' [-Wimplicit-function-declaration]
+   return select_base(command);
+          ^
+src/control.c:41:10: warning: implicit declaration of function 'send_pmt_uart_command' [-Wimplicit-function-declaration]
+   return send_pmt_uart_command(command);
+          ^
+src/control.c:45:11: warning: implicit declaration of function 'clear_eop_flag' [-Wimplicit-function-declaration]
+    return clear_eop_flag();
+           ^
+src/control.c:48:11: warning: implicit declaration of function 'display_eop_status' [-Wimplicit-function-declaration]
+    return display_eop_status();
+           ^
+src/control.c: In function 'send_pmt_uart_command':
+src/control.c:81:2: warning: implicit declaration of function 'uart_tx' [-Wimplicit-function-declaration]
+  uart_tx(UART_0_BASE, strcat(cmd,"\r"));
+  ^
+src/control.c:82:10: warning: implicit declaration of function 'uart_rx' [-Wimplicit-function-declaration]
+  check = uart_rx(UART_0_BASE, ret);
+          ^
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/src/control.o obj/default/src/hello_world.o obj/default/src/setup.o obj/default/src/timer.o obj/default/src/uart.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\edevel00610_max10_enclustra\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1580173232 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/edevel00610_max10_enclustra/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 13 KBytes program size (code + initialized data).
+Info:                   6260 Bytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+13:26:33 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+13:26:39 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+13:26:40 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]

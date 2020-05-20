@@ -1,0 +1,12 @@
+base referer
+rect $output_8hpp.html 114,134 200,161
+rect $input_8hpp.html 118,236 196,262
+rect $cerrf_8hpp.html 260,8 353,34
+rect $coutf_8hpp.html 260,58 353,85
+rect $tostr_8hpp.html 261,109 352,136
+rect $omanips_8hpp.html 249,160 364,186
+rect $stringizer_8hpp.html 413,210 533,237
+rect $prints_8hpp.html 424,84 522,110
+rect $fmtr_8hpp.html 582,210 670,237
+rect $cinf_8hpp.html 264,261 349,288
+rect $scans_8hpp.html 422,261 524,288

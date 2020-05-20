@@ -1,0 +1,21 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst arria_v_sfp.ethernet_125_MHz_clock -pg 1 -lvl 1 -y 290
+preplace inst arria_v_sfp.mm_bridge_to_arria_sfp -pg 1 -lvl 2 -y 190
+preplace inst arria_v_sfp.arriav_v_standalone_gigabit_xcvr -pg 1 -lvl 3 -y 250
+preplace inst arria_v_sfp -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst arria_v_sfp.alt_xcvr_reconfig -pg 1 -lvl 3 -y 30
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)ethernet_125_MHz_clock.clk_in,(SLAVE)arria_v_sfp.ethernet_clk_125mhz) 1 0 1 NJ
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)alt_xcvr_reconfig.reconfig_busy,(SLAVE)arria_v_sfp.alt_xcvr_reconfig_reconfig_busy) 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)ethernet_125_MHz_clock.clk_in_reset,(SLAVE)arria_v_sfp.ethernet_clk_125mhz_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)arria_v_sfp.avalon_slave,(SLAVE)mm_bridge_to_arria_sfp.s0) 1 0 2 NJ 240 NJ
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)arria_v_sfp.alt_xcvr_reconfig_tx_cal_busy,(SLAVE)alt_xcvr_reconfig.tx_cal_busy) 1 0 3 NJ 180 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>arria_v_sfp</net_container>(MASTER)mm_bridge_to_arria_sfp.m0,(SLAVE)arriav_v_standalone_gigabit_xcvr.phy_mgmt,(SLAVE)alt_xcvr_reconfig.reconfig_mgmt) 1 2 1 670
+preplace netloc FAN_OUT<net_container>arria_v_sfp</net_container>(SLAVE)alt_xcvr_reconfig.mgmt_clk_clk,(MASTER)ethernet_125_MHz_clock.clk,(SLAVE)arriav_v_standalone_gigabit_xcvr.clock_sink,(SLAVE)mm_bridge_to_arria_sfp.clk) 1 1 2 410 300 630
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)alt_xcvr_reconfig.reconfig_from_xcvr,(SLAVE)arria_v_sfp.alt_xcvr_reconfig_reconfig_from_xcvr) 1 0 3 NJ 100 NJ 100 NJ
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)arria_v_sfp.arriav_v_standalone_gigabit_xcvr,(SLAVE)arriav_v_standalone_gigabit_xcvr.conduit_end) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc FAN_OUT<net_container>arria_v_sfp</net_container>(SLAVE)mm_bridge_to_arria_sfp.reset,(SLAVE)arriav_v_standalone_gigabit_xcvr.reset_sink,(MASTER)ethernet_125_MHz_clock.clk_reset,(SLAVE)alt_xcvr_reconfig.mgmt_rst_reset) 1 1 2 430 320 650
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)alt_xcvr_reconfig.rx_cal_busy,(SLAVE)arria_v_sfp.alt_xcvr_reconfig_rx_cal_busy) 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc EXPORT<net_container>arria_v_sfp</net_container>(SLAVE)alt_xcvr_reconfig.reconfig_to_xcvr,(SLAVE)arria_v_sfp.alt_xcvr_reconfig_reconfig_to_xcvr) 1 0 3 NJ 140 NJ 140 NJ
+levelinfo -pg 1 0 200 910
+levelinfo -hier arria_v_sfp 210 240 500 730 880

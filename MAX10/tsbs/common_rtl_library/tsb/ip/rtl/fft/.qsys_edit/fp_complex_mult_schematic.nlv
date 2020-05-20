@@ -1,0 +1,14 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst fp_complex_mult -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst fp_complex_mult.fp_functions_0 -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_complex_mult.q,(SLAVE)fp_functions_0.q) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_functions_0.r,(SLAVE)fp_complex_mult.r) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_functions_0.b,(SLAVE)fp_complex_mult.b) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_functions_0.areset,(SLAVE)fp_complex_mult.areset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_functions_0.c,(SLAVE)fp_complex_mult.c) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_functions_0.clk,(SLAVE)fp_complex_mult.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_complex_mult.d,(SLAVE)fp_functions_0.d) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_complex_mult</net_container>(SLAVE)fp_complex_mult.a,(SLAVE)fp_functions_0.a) 1 0 1 NJ
+levelinfo -pg 1 0 50 210
+levelinfo -hier fp_complex_mult 60 100 200

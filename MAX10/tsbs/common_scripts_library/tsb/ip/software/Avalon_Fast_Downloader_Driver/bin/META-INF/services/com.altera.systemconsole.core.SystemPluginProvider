@@ -1,0 +1,9 @@
+#
+# When using the JRE-based (Java Runtime Environment) service provider you
+# will want to have the com.altera.service.jre jar file in your classpath.
+# A file with this path will be scanned in each classpath location and the 
+# contents are expected to have the name of a class that extends the api 
+# provided in the class with the same name as the file (in this case
+# com.altera.systemconsole.core.SystemPluginProvider.
+#
+com.altera.systemconsole.Avalon_Fast_Downloader.AvalonFastDownloaderPlugin

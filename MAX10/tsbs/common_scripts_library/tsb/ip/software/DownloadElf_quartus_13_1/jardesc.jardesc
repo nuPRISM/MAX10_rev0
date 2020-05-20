@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="D:/griffin/edevel00249_grifc_slave/tsbs/common_scripts_library/tsb/ip/scripts/DownloadElf.jar"/>
+    <options buildIfNeeded="true" compress="false" descriptionLocation="/DownloadEfl/jardesc.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=DownloadEfl/src&lt;systemconsole.fast.downloader{DownloadElf.java[DownloadElf" manifestLocation="/DownloadEfl/src/MANIFEST.MF" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=DownloadEfl/src"/>
+        <file path="/DownloadEfl/.classpath"/>
+        <file path="/DownloadEfl/DownloadElf.jardesc"/>
+        <file path="/DownloadEfl/.project"/>
+    </selectedElements>
+</jardesc>

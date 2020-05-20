@@ -1,0 +1,5 @@
+config spiral_fft_4096_unscaled_iter_32bit_cfg;
+		design spiral_fft_4096_unscaled_iter_32bit;
+		instance spiral_fft_4096_unscaled_iter_32bit.fft use spiral_fft_4096_unscaled_iter_32bit_spiral_fft_4096_unscaled_iterative_32bit_10.dft_4096_fixed_32_bit_unscaled_iter_d;
+endconfig
+

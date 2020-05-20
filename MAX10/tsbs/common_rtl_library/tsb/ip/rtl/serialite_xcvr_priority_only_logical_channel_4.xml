@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<MEGACORE title="SerialLite II MegaCore Function"  version="13.0"  build="232"  iptb_version="1.3.0 Build 232"  format_version="120" >
+<NETLIST_SECTION class="altera.ipbu.flowbase.netlist.model.MVCModel"  active_core="serialite_xcvr_priority_only_logical_channel_4_slite2_top" >
+<STATIC_SECTION>
+<PRIVATES>
+<NAMESPACE name = "parameterization">
+<PRIVATE name = "T_CFG_TEST" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "alt_top" value="serialite_xcvr_priority_only_logical_channel_4_sister_slite2_top"  type="STRING"  enable="1" />
+<PRIVATE name = "megawizard2" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "activate_atstartup" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "window_location" value="center"  type="STRING"  enable="1" />
+<PRIVATE name = "p_iptb_top" value="serialite_xcvr_priority_only_logical_channel_4"  type="STRING"  enable="1" />
+<PRIVATE name = "p_cbx_hdl_language" value="verilog"  type="STRING"  enable="1" />
+<PRIVATE name = "p_altgxb_config" value="Configure Transceiver..."  type="STRING"  enable="1" />
+<PRIVATE name = "p_family_id" value="df_stratixIV"  type="STRING"  enable="1" />
+<PRIVATE name = "intended_family" value="df_stratixIV"  type="STRING"  enable="1" />
+<PRIVATE name = "p_port_type" value="bidir"  type="STRING"  enable="1" />
+<PRIVATE name = "p_SSYNC" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_TSZE" value="4"  type="STRING"  enable="1" />
+<PRIVATE name = "p_DRATE" value="5000"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_ref_clk_freq" value="125.0"  type="STRING"  enable="1" />
+<PRIVATE name = "ref_clk_config" value="125.0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_SCRAM_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "p_BROADCAST" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_DSCRAM_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "tx_lane_config" value="1"  type="INTEGER"  enable="1" />
+<PRIVATE name = "rx_lane_config" value="1"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_TX_NUM_LANES" value="1"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_RX_NUM_LANES" value="1"  type="INTEGER"  enable="1" />
+<PRIVATE name = "tx_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "rx_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "reconfig_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "clk_comp_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_FREQ_TOLERANCE" value="3"  type="STRING"  enable="1" />
+<PRIVATE name = "p_STREAM" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_packet_select" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PRI_PORT_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "p_DATA_PORT_ENA" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_DATA_FC_ENA" value="0"  type="STRING"  enable="0" />
+<PRIVATE name = "p_DATA_FC_TIME" value="128"  type="STRING"  enable="0" />
+<PRIVATE name = "p_DATA_FC_THRES" value="128"  type="STRING"  enable="0" />
+<PRIVATE name = "p_DATA_FC_REFRESH" value="64"  type="STRING"  enable="0" />
+<PRIVATE name = "p_TX_DATA_PSIZE" value="1024"  type="STRING"  enable="0" />
+<PRIVATE name = "p_RX_DATA_PSIZE" value="1024"  type="STRING"  enable="0" />
+<PRIVATE name = "p_PRI_FC_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PRI_FC_TIME" value="128"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PRI_FC_THRES" value="256"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PRI_FC_REFRESH" value="64"  type="STRING"  enable="1" />
+<PRIVATE name = "p_TX_PRI_PSIZE" value="512"  type="STRING"  enable="1" />
+<PRIVATE name = "p_RX_PRI_PSIZE" value="4096"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PRI_SEGSIZE" value="2048"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_ROE_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "p_ROE_TIMEOUT" value="1024"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_TX_DATA_CRC_ENA" value="0"  type="STRING"  enable="0" />
+<PRIVATE name = "p_RX_DATA_CRC_ENA" value="0"  type="STRING"  enable="0" />
+<PRIVATE name = "p_TX_PRI_CRC_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "p_RX_PRI_CRC_ENA" value="1"  type="STRING"  enable="1" />
+<PRIVATE name = "p_TX_CRC" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_RX_CRC" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "priority_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "data_panel" value="0"  type="INTEGER"  enable="0" />
+<PRIVATE name = "tx_crc_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "rx_crc_panel" value="0"  type="INTEGER"  enable="1" />
+<PRIVATE name = "p_VOD" value="4"  type="STRING"  enable="1" />
+<PRIVATE name = "p_VOD_CONFIG" value="CONTROL"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PREEMPH" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_PREEMP_CONFIG" value="CONTROL"  type="STRING"  enable="1" />
+<PRIVATE name = "p_RXEQ" value="0"  type="STRING"  enable="1" />
+<PRIVATE name = "p_RXEX_CONFIG" value="CONTROL"  type="STRING"  enable="1" />
+<PRIVATE name = "p_TX_PLL_BW" value="LOW"  type="STRING"  enable="1" />
+<PRIVATE name = "p_RX_PLL_BW" value="NEW_LOW"  type="STRING"  enable="1" />
+<PRIVATE name = "p_VCCH" value="1.4"  type="STRING"  enable="0" />
+<PRIVATE name = "p_RECONFIG_START_CHANNEL" value="4"  type="INTEGER"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "greybox">
+<PRIVATE name = "family" value="@simgen.family@"  type="STRING"  enable="1" />
+<PRIVATE name = "filename" value="serialite_xcvr_priority_only_logical_channel_4_syn.v"  type="STRING"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "simgen_enable">
+<PRIVATE name = "enabled" value="1"  type="BOOLEAN"  enable="1" />
+<PRIVATE name = "language" value="Verilog HDL"  type="STRING"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "simgen">
+<PRIVATE name = "filename" value="serialite_xcvr_priority_only_logical_channel_4.vo"  type="STRING"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "hdl_generator">
+<PRIVATE name = "report" value="1"  type="BOOLEAN"  enable="1" />
+<PRIVATE name = "blackbox" value="1"  type="BOOLEAN"  enable="1" />
+<PRIVATE name = "component" value="0"  type="BOOLEAN"  enable="1" />
+<PRIVATE name = "symbol" value="1"  type="BOOLEAN"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "simgen_sister">
+<PRIVATE name = "filename" value="serialite_xcvr_priority_only_logical_channel_4_sister_slite2_top.vo"  type="STRING"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "quartus_settings">
+<PRIVATE name = "DEVICE" value="EP4SGX230KF40C2"  type="STRING"  enable="1" />
+<PRIVATE name = "FAMILY" value="Stratix IV"  type="STRING"  enable="1" />
+</NAMESPACE>
+<NAMESPACE name = "serializer"/>
+</PRIVATES>
+<FILES/>
+<PORTS/>
+<LIBRARIES/>
+</STATIC_SECTION>
+</NETLIST_SECTION>
+</MEGACORE>

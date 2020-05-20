@@ -1,0 +1,52 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.i_custom_phyip_0 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.sgdma_rx -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.i_tse_mac -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.clk_100 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.clk_50 -pg 1 -lvl 1 -y 30
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.clk_50 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.reg_rst_module -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.descriptor_memory -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.mm_bridge_0 -pg 1 -lvl 2 -y 50
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.phyip_rxclkout_splitter_instance_0 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.clock_10 -pg 1 -lvl 2 -y 140
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.i_tse_pcs_0 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.avalon_arbiter -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.reg_clk_module -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.sgdma_tx -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse -pg 1 -lvl 3 -y 160
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.i_phyip_terminator_0 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.mm_bridge_to_tse_mac -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.clk_10 -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.tse.tse_mac.ref_clk_module -pg 1
+preplace inst tse_w_sfp_2_intercon_no_mdio.clk_125_enet_base -pg 1 -lvl 2 -y 320
+preplace inst tse_w_sfp_2_intercon_no_mdio.clk_100 -pg 1 -lvl 2 -y 240
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.tse_mac_serial_connection,(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_tse_mac_serial_connection) 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.tse_mac_status_led_connection,(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_tse_mac_status_led_connection) 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_tse_mac_transmit,(SLAVE)tse.tse_mac_transmit) 1 0 3 NJ 450 NJ 450 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.clk_10,(MASTER)clock_10.out_clk) 1 2 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.mm_bridge_0_s0,(SLAVE)mm_bridge_0.s0) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)clk_100.clk_in,(SLAVE)tse_w_sfp_2_intercon_no_mdio.clk_100) 1 0 2 NJ 250 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)tse_w_sfp_2_intercon_no_mdio.reset_50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.clk_50,(SLAVE)clk_50.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.reset_50,(MASTER)clk_50.clk_reset,(SLAVE)mm_bridge_0.reset) 1 1 2 410 210 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.reset_100,(SLAVE)clk_100.clk_in_reset) 1 0 2 NJ 270 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(MASTER)clk_125_enet_base.out_clk,(SLAVE)tse.tse_mac_pcs_ref_clk_clock_connection) 1 2 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_sgdma_rx_csr_irq,(SLAVE)tse.sgdma_rx_csr_irq) 1 0 3 NJ 230 NJ 230 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(MASTER)clk_100.clk_reset,(SLAVE)tse.reset_100) 1 2 1 N
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)clock_10.in_clk,(SLAVE)tse_w_sfp_2_intercon_no_mdio.clk_10) 1 0 2 NJ 150 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.avalon_slave,(MASTER)mm_bridge_0.m0) 1 2 1 740
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_tse_mac_serdes_control_connection,(SLAVE)tse.tse_mac_serdes_control_connection) 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.clk_50,(SLAVE)mm_bridge_0.clk,(MASTER)clk_50.clk) 1 1 2 430 190 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(MASTER)tse_w_sfp_2_intercon_no_mdio.tse_sgdma_tx_out,(MASTER)tse.sgdma_tx_out) 1 3 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(MASTER)tse_w_sfp_2_intercon_no_mdio.tse_sgdma_rx_m_write,(MASTER)tse.sgdma_rx_m_write) 1 3 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)clk_125_enet_base.in_clk,(SLAVE)tse_w_sfp_2_intercon_no_mdio.clk_125_enet_base_in_clk) 1 0 2 NJ 330 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.clk_100,(MASTER)clk_100.clk) 1 2 1 660
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse.sgdma_tx_csr_irq,(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_sgdma_tx_csr_irq) 1 0 3 NJ 310 NJ 310 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(SLAVE)tse_w_sfp_2_intercon_no_mdio.tse_tse_mac_mac_misc_connection,(SLAVE)tse.tse_mac_mac_misc_connection) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_2_intercon_no_mdio</net_container>(MASTER)tse.sgdma_tx_m_read,(MASTER)tse_w_sfp_2_intercon_no_mdio.tse_sgdma_tx_m_read) 1 3 1 NJ
+levelinfo -pg 1 0 200 1300
+levelinfo -hier tse_w_sfp_2_intercon_no_mdio 210 240 470 950 1140

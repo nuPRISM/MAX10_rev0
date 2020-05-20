@@ -1,0 +1,150 @@
+0x000	SPI mode serial port configuration
+0x004	Readback control
+0x005	EEPROM customer version ID LSB
+0x006	EEPROM customer version ID MSB
+0x010	PLL1 REFA R divider control LSB
+0x011	PLL1 REFA R divider control MSB
+0x012	PLL1 REFB R divider control LSB
+0x013	PLL1 REFB R divider control LSB
+0x014	PLL1 reference test divider
+0x015	PLL1 reserved
+0x016	PLL1 feedback N divider control LSB
+0x017	PLL1 feedback N divider control MSB
+0x018	PLL1 charge pump control A
+0x019	PLL1 charge pump control B 
+0x01A	PLL1 input receiver control
+0x01B	REF_TEST, REFA, REFB, and ZD_IN control
+0x01C	PLL1 miscellaneous control
+0x01D	PLL1 loop filter zero resistor control
+0x0F0	PLL2 charge pump control
+0x0F1	PLL2 feedback N divider control
+0x0F2	PLL2 control
+0x0F3	VCO control
+0x0F4	VCO dividers
+0x0F5	PLL2 loop filter control A
+0x0F6	PLL2 loop filter control B
+0x0F7	PLL2 R2 divider
+0x190	Channel 0 control A
+0x191	Channel 0 control B
+0x192	Channel 0 control C
+0x193	Channel 1 control A
+0x194	Channel 1 control B
+0x195	Channel 1 control C
+0x196	Channel 2 control A
+0x197	Channel 2 control B
+0x198	Channel 2 control C
+0x199	Channel 3 control A
+0x19A	Channel 3 control B
+0x19B	Channel 3 control C
+0x19C	Channel 4 control A
+0x19D	Channel 4 control B
+0x19E	Channel 4 control C
+0x19F	Channel 5 control A
+0x1A0	Channel 5 control B
+0x1A1	Channel 5 control C
+0x1A2	Channel 6 control A
+0x1A3	Channel 6 control B
+0x1A4	Channel 6 control C
+0x1A5	Channel 7 control A
+0x1A6	Channel 7 control B
+0x1A7	Channel 7 control C
+0x1A8	Channel 8 control A
+0x1A9	Channel 8 control B
+0x1AA	Channel 8 control C
+0x1AB	Channel 9 control A
+0x1AC	Channel 9 control B
+0x1AD	Channel 9 control C
+0x1AE	Channel 10 control A
+0x1AF	Channel 10 control B
+0x1B0	Channel 10 control C
+0x1B1	Channel 11 control A
+0x1B2	Channel 11 control B
+0x1B3	Channel 11 control C
+0x1B4	Channel 12 control A
+0x1B5	Channel 12 control B
+0x1B6	Channel 12 control C
+0x1B7	Channel 13 control A
+0x1B8	Channel 13 control B
+0x1B9	Channel 13 control C
+0x1BA	PLL1 output control
+0x1BB	PLL1 output channel control
+0x22C	Readback 0
+0x22D	Readback 1
+0x22E	Readback 2
+0x22F	Readback 3
+0x230	Status signals A
+0x231	Status signals B
+0x232	Status signals C
+0x233	Power-down control
+0x234	Update all registers
+0xA00	EEPROM Buffer Segment Register 1
+0xA01	EEPROM Buffer Segment Register 2
+0xA02	EEPROM Buffer Segment Register 3
+0xA03	EEPROM Buffer Segment Register 4
+0xA04	0xA00	EEPROM
+Buffer Segment Register 1 to EEPROM
+Buffer Segment Register 3
+0xA01	
+0xA02	
+0xA03	EEPROM
+Buffer Segment Register 4 to EEPROM
+Buffer Segment Register 6
+0xA04	
+0xA05	
+0xA06	EEPROM
+Buffer Segment Register 7 to EEPROM
+Buffer Segment Register 9
+0xA07	
+0xA08	
+0xA09	EEPROM
+Buffer Segment Register 10 to EEPROM
+Buffer Segment Register 12
+0xA0A	
+0xA0B	
+0xA0C	EEPROM
+Buffer Segment Register 13 to EEPROM
+Buffer Segment Register 15
+0xA0D	
+0xA0E	
+0xA0F	EEPROM
+Buffer Segment Register 16 to EEPROM
+Buffer Segment Register 18
+0xA10	
+0xA11	
+0xA12	EEPROM
+Buffer Segment Register 19 to EEPROM
+Buffer Segment Register 21
+0xA13	
+0xA14	
+0xA15	EEPROM
+Buffer Segment Register 22
+
+0xA05	
+0xA06	EEPROM
+Buffer Segment Register 7 to EEPROM
+Buffer Segment Register 9
+0xA07	
+0xA08	
+0xA09	EEPROM
+Buffer Segment Register 10 to EEPROM
+Buffer Segment Register 12
+0xA0A	
+0xA0B	
+0xA0C	EEPROM
+Buffer Segment Register 13 to EEPROM
+Buffer Segment Register 15
+0xA0D	
+0xA0E	
+0xA0F	EEPROM
+Buffer Segment Register 16 to EEPROM
+Buffer Segment Register 18
+0xA10	
+0xA11	
+0xA12	EEPROM
+Buffer Segment Register 19 to EEPROM
+Buffer Segment Register 21
+0xA13	
+0xA14	
+0xA15	EEPROM
+Buffer Segment Register 22
+

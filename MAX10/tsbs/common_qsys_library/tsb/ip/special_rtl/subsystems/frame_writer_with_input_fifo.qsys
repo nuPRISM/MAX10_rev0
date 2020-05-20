@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element driver_clock_in
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_writer
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element frame_writer.avalon_dma_control_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element frame_writer_in_fifo
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element frame_writer_in_fifo.out_csr
+   {
+      datum baseAddress
+      {
+         value = "1024";
+         type = "String";
+      }
+   }
+   element frame_writer_in_fifo_old
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element frame_writer_with_input_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_writer_with_input_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element image_processing_clock_in
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element mm_bridge_to_nios
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element reset_bridge_driver_clk
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element reset_bridge_for_image_proc_clk
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element reset_controller_driver_clk
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element reset_controller_image_proc_clk
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element write_input_width_converter
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="5CGXFC9E6F31C7" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="7_H6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="3" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="num_of_pixels_in_frame"
+   displayName="Num. of Pixels In Frame"
+   type="integer"
+   defaultValue="102"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_locations_in_fifo"
+   displayName="Num. of Locations in Input FIFO"
+   type="integer"
+   defaultValue="32"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="parallelization_ratio"
+   displayName="Parallelization Ratio"
+   type="integer"
+   defaultValue="4"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_bits_per_pixel"
+   displayName="Num of Bits Per Pixel"
+   type="integer"
+   defaultValue="16"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="dma_enabled_at_startup"
+   displayName="DMA Enabled at Startup"
+   type="integer"
+   defaultValue="1"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="swap_symbol_order_for_dma"
+   displayName="Swap Symbol Order for DMA"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="watchdog_enabled"
+   displayName="Watchdog Enabled"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="watchdog_limit"
+   displayName="Watchdog Limit"
+   type="string"
+   defaultValue="1234"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_watchdog_bits"
+   displayName="Num Watchdog Bits"
+   type="integer"
+   defaultValue="64"
+   legalRanges="1:64"
+   description="" />
+ <instanceParameter
+   name="override_external_swap_buffers_now"
+   displayName="Override External Swap Bufs Now"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="override_val_for_external_swap_buffers_now"
+   displayName="Override Val for Swap Bufs Now"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+   <instanceParameter
+   name="address_width"
+   displayName="Address Width"
+   type="integer"
+   defaultValue="32"
+   legalRanges="1:32"
+   description="" />
+ <instanceScript><![CDATA[package require -exact qsys 14.1
+
+# Set the name of the procedure to manipulate parameters
+set_module_property COMPOSITION_CALLBACK compose
+
+proc compose {} {
+    # manipulate parameters in here
+    # Example: set_instance_parameter_value child0 param0 [ get_parameter_value new_parameter_0 ]
+	
+	set watchdog_enabled  [get_parameter_value watchdog_enabled ] 
+	set watchdog_limit  [get_parameter_value watchdog_limit ] 
+	set dma_enabled_at_startup  [get_parameter_value dma_enabled_at_startup ] 
+	set swap_symbol_order_for_dma  [get_parameter_value swap_symbol_order_for_dma ] 
+	set num_watchdog_bits  [get_parameter_value num_watchdog_bits ] 
+	set override_external_swap_buffers_now          [get_parameter_value override_external_swap_buffers_now         ] 
+	set override_val_for_external_swap_buffers_now  [get_parameter_value override_val_for_external_swap_buffers_now ] 
+	set address_width  [get_parameter_value address_width ] 
+
+    set_instance_parameter_value frame_writer {num_pixels_in_frame} [get_parameter_value num_of_pixels_in_frame]
+    set_instance_parameter_value frame_writer {parallelization_ratio} [get_parameter_value parallelization_ratio] 
+    set_instance_parameter_value frame_writer {bits_per_pixel} [get_parameter_value num_of_bits_per_pixel] 
+    set_instance_parameter_value frame_writer {dma_enabled} $dma_enabled_at_startup 
+    set_instance_parameter_value frame_writer {swap_symbols_for_ddr_write} $swap_symbol_order_for_dma 
+    set_instance_parameter_value frame_writer {watchdog_enabled} $watchdog_enabled 
+    set_instance_parameter_value frame_writer {watchdog_count} $watchdog_limit 
+    set_instance_parameter_value frame_writer {num_watchdog_bits} $num_watchdog_bits 
+    set_instance_parameter_value frame_writer {override_external_swap_buffers_now} $override_external_swap_buffers_now         
+    set_instance_parameter_value frame_writer {override_val_for_external_swap_buffers_now} $override_val_for_external_swap_buffers_now 
+    set_instance_parameter_value frame_writer {address_width} $address_width
+
+    set_instance_parameter_value frame_writer_in_fifo {FIFO_DEPTH}   [get_parameter_value num_of_locations_in_fifo]
+    set_instance_parameter_value frame_writer_in_fifo {BITS_PER_SYMBOL}   [get_parameter_value num_of_bits_per_pixel]
+    set_instance_parameter_value frame_writer_in_fifo {SYMBOLS_PER_BEAT}   [get_parameter_value parallelization_ratio]
+ 
+    set_instance_parameter_value write_input_width_converter {inBitsPerSymbol} [get_parameter_value num_of_bits_per_pixel]
+    set_instance_parameter_value write_input_width_converter {outSymbolsPerBeat}  [get_parameter_value parallelization_ratio] 
+}]]></instanceScript>
+ <interface
+   name="avalon_mm_slave"
+   internal="mm_bridge_to_nios.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="driver_clk_reset_n"
+   internal="reset_bridge_driver_clk.in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="driver_clock"
+   internal="driver_clock_in.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="frame_writer_avalon_dma_master"
+   internal="frame_writer.avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="frame_writer_avalon_st_in"
+   internal="write_input_width_converter.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="frame_writer_hw_control"
+   internal="frame_writer.hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="frame_writer_out_irq"
+   internal="frame_writer_in_fifo_old.out_irq" />
+ <interface
+   name="frame_writer_snoop"
+   internal="frame_writer.snoop_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="image_processing_clock"
+   internal="image_processing_clock_in.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="reset_n"
+   internal="reset_bridge_for_image_proc_clk.in_reset"
+   type="reset"
+   dir="end" />
+ <module
+   name="driver_clock_in"
+   kind="altera_clock_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="frame_writer"
+   kind="frame_buffer_avalon_video_dma_controller"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="always_do_buffer_swap" value="true" />
+  <parameter name="bits_per_pixel" value="16" />
+  <parameter name="dma_enabled" value="true" />
+  <parameter name="mode">From Stream to Memory</parameter>
+  <parameter name="num_pixels_in_frame" value="1048576" />
+  <parameter name="num_watchdog_bits" value="64" />
+  <parameter name="override_external_swap_buffers_now" value="false" />
+  <parameter name="override_val_for_external_swap_buffers_now" value="false" />
+  <parameter name="parallelization_ratio" value="4" />
+  <parameter name="swap_symbols_for_ddr_write" value="true" />
+  <parameter name="use_external_backbuffer" value="true" />
+  <parameter name="watchdog_count" value="2000000000" />
+  <parameter name="watchdog_enabled" value="true" />
+ </module>
+ <module
+   name="frame_writer_in_fifo"
+   kind="altera_avalon_dc_fifo"
+   version="18.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="16" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="1024" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="1" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module
+   name="frame_writer_in_fifo_old"
+   kind="altera_avalon_fifo"
+   version="18.1"
+   enabled="0">
+  <parameter name="avalonMMAvalonMMDataWidth" value="32" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="64" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="1024" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONST_SOURCE" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="false" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="4" />
+  <parameter name="useBackpressure" value="true" />
+  <parameter name="useIRQ" value="true" />
+  <parameter name="usePacket" value="true" />
+  <parameter name="useReadControl" value="true" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="false" />
+ </module>
+ <module
+   name="image_processing_clock_in"
+   kind="altera_clock_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="mm_bridge_to_nios"
+   kind="altera_avalon_mm_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="8" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="11" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+  <parameter name="USE_RESPONSE" value="0" />
+ </module>
+ <module
+   name="reset_bridge_driver_clk"
+   kind="altera_reset_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_RESET" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="both" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
+ </module>
+ <module
+   name="reset_bridge_for_image_proc_clk"
+   kind="altera_reset_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_RESET" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="both" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
+ </module>
+ <module
+   name="reset_controller_driver_clk"
+   kind="altera_reset_controller"
+   version="18.1"
+   enabled="1">
+  <parameter name="MIN_RST_ASSERTION_TIME" value="3" />
+  <parameter name="NUM_RESET_INPUTS" value="2" />
+  <parameter name="OUTPUT_RESET_SYNC_EDGES" value="both" />
+  <parameter name="RESET_REQUEST_PRESENT" value="0" />
+  <parameter name="RESET_REQ_EARLY_DSRT_TIME" value="1" />
+  <parameter name="RESET_REQ_WAIT_TIME" value="1" />
+  <parameter name="SYNC_DEPTH" value="3" />
+  <parameter name="USE_RESET_REQUEST_IN0" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN1" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN10" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN11" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN12" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN13" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN14" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN15" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN2" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN3" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN4" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN5" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN6" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN7" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN8" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN9" value="0" />
+  <parameter name="USE_RESET_REQUEST_INPUT" value="0" />
+ </module>
+ <module
+   name="reset_controller_image_proc_clk"
+   kind="altera_reset_controller"
+   version="18.1"
+   enabled="1">
+  <parameter name="MIN_RST_ASSERTION_TIME" value="3" />
+  <parameter name="NUM_RESET_INPUTS" value="2" />
+  <parameter name="OUTPUT_RESET_SYNC_EDGES" value="both" />
+  <parameter name="RESET_REQUEST_PRESENT" value="0" />
+  <parameter name="RESET_REQ_EARLY_DSRT_TIME" value="1" />
+  <parameter name="RESET_REQ_WAIT_TIME" value="1" />
+  <parameter name="SYNC_DEPTH" value="3" />
+  <parameter name="USE_RESET_REQUEST_IN0" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN1" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN10" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN11" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN12" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN13" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN14" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN15" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN2" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN3" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN4" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN5" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN6" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN7" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN8" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN9" value="0" />
+  <parameter name="USE_RESET_REQUEST_INPUT" value="0" />
+ </module>
+ <module
+   name="write_input_width_converter"
+   kind="data_format_adapter"
+   version="18.1"
+   enabled="1">
+  <parameter name="inBitsPerSymbol" value="16" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="inSymbolsPerBeat" value="1" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inUseEmptyPort" value="NO" />
+  <parameter name="inUsePackets" value="true" />
+  <parameter name="outSymbolsPerBeat" value="4" />
+  <parameter name="outUseEmpty" value="false" />
+  <parameter name="outUseEmptyPort" value="YES" />
+ </module>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="mm_bridge_to_nios.m0"
+   end="frame_writer.avalon_dma_control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="mm_bridge_to_nios.m0"
+   end="frame_writer_in_fifo_old.out_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="mm_bridge_to_nios.m0"
+   end="frame_writer_in_fifo.out_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0400" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="frame_writer_in_fifo.out"
+   end="frame_writer.avalon_dma_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="write_input_width_converter.out"
+   end="frame_writer_in_fifo.in" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="frame_writer.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="mm_bridge_to_nios.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="reset_bridge_driver_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="reset_bridge_for_image_proc_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="reset_controller_image_proc_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="reset_controller_driver_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="write_input_width_converter.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="frame_writer_in_fifo_old.clk_in" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="frame_writer_in_fifo_old.clk_out" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="frame_writer_in_fifo.in_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="frame_writer_in_fifo.out_clk" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_for_image_proc_clk.out_reset"
+   end="mm_bridge_to_nios.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_driver_clk.out_reset"
+   end="reset_controller_image_proc_clk.reset_in0" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_driver_clk.out_reset"
+   end="reset_controller_driver_clk.reset_in0" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_for_image_proc_clk.out_reset"
+   end="reset_controller_image_proc_clk.reset_in1" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_for_image_proc_clk.out_reset"
+   end="reset_controller_driver_clk.reset_in1" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_controller_driver_clk.reset_out"
+   end="frame_writer_in_fifo.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_controller_image_proc_clk.reset_out"
+   end="frame_writer_in_fifo.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_controller_image_proc_clk.reset_out"
+   end="frame_writer.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_controller_driver_clk.reset_out"
+   end="write_input_width_converter.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_controller_driver_clk.reset_out"
+   end="frame_writer_in_fifo_old.reset_in" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_controller_image_proc_clk.reset_out"
+   end="frame_writer_in_fifo_old.reset_out" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="3" />
+</system>

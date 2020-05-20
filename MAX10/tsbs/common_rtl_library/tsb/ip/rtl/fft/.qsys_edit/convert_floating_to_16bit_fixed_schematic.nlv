@@ -1,0 +1,10 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst convert_floating_to_16bit_fixed -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst convert_floating_to_16bit_fixed.fp_functions_0 -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>convert_floating_to_16bit_fixed</net_container>(SLAVE)convert_floating_to_16bit_fixed.q,(SLAVE)fp_functions_0.q) 1 0 1 NJ
+preplace netloc EXPORT<net_container>convert_floating_to_16bit_fixed</net_container>(SLAVE)fp_functions_0.a,(SLAVE)convert_floating_to_16bit_fixed.a) 1 0 1 NJ
+preplace netloc EXPORT<net_container>convert_floating_to_16bit_fixed</net_container>(SLAVE)fp_functions_0.clk,(SLAVE)convert_floating_to_16bit_fixed.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>convert_floating_to_16bit_fixed</net_container>(SLAVE)convert_floating_to_16bit_fixed.areset,(SLAVE)fp_functions_0.areset) 1 0 1 NJ
+levelinfo -pg 1 0 50 220
+levelinfo -hier convert_floating_to_16bit_fixed 60 100 200

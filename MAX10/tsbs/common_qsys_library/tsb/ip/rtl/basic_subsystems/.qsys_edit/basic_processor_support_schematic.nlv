@@ -1,0 +1,64 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst linnux_support_red_uarts_w_sd_card.sd_clk -pg 1 -lvl 3 -y 600
+preplace inst linnux_support_red_uarts_w_sd_card.pio_leds -pg 1 -lvl 3 -y 1540
+preplace inst linnux_support_red_uarts_w_sd_card.fmc_present -pg 1 -lvl 3 -y 140
+preplace inst linnux_support_red_uarts_w_sd_card.uart_internal_disable -pg 1 -lvl 3 -y 1760
+preplace inst linnux_support_red_uarts_w_sd_card.pio_dips -pg 1 -lvl 3 -y 1430
+preplace inst linnux_support_red_uarts_w_sd_card.clk_50 -pg 1 -lvl 1 -y 370
+preplace inst linnux_support_red_uarts_w_sd_card -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst linnux_support_red_uarts_w_sd_card.uart_enabled -pg 1 -lvl 3 -y 1650
+preplace inst linnux_support_red_uarts_w_sd_card.uart_7 -pg 1 -lvl 3 -y 1170
+preplace inst linnux_support_red_uarts_w_sd_card.mm_bridge_0 -pg 1 -lvl 2 -y 410
+preplace inst linnux_support_red_uarts_w_sd_card.sd_spi_miso -pg 1 -lvl 3 -y 820
+preplace inst linnux_support_red_uarts_w_sd_card.sd_card_clock -pg 1 -lvl 1 -y 890
+preplace inst linnux_support_red_uarts_w_sd_card.pio_button -pg 1 -lvl 3 -y 470
+preplace inst linnux_support_red_uarts_w_sd_card.uart_internal_enable -pg 1 -lvl 3 -y 1870
+preplace inst linnux_support_red_uarts_w_sd_card.uart_10 -pg 1 -lvl 3 -y 1300
+preplace inst linnux_support_red_uarts_w_sd_card.counter_64_bit_0 -pg 1 -lvl 3 -y 30
+preplace inst linnux_support_red_uarts_w_sd_card.sd_spi_cs_n -pg 1 -lvl 3 -y 710
+preplace inst linnux_support_red_uarts_w_sd_card.uart_13 -pg 1 -lvl 3 -y 2090
+preplace inst linnux_support_red_uarts_w_sd_card.sd_spi_mosi -pg 1 -lvl 3 -y 930
+preplace inst linnux_support_red_uarts_w_sd_card.uart_0 -pg 1 -lvl 3 -y 1040
+preplace inst linnux_support_red_uarts_w_sd_card.generic_hdl_info -pg 1 -lvl 3 -y 250
+preplace inst linnux_support_red_uarts_w_sd_card.uart_is_regfile -pg 1 -lvl 3 -y 1980
+preplace inst linnux_support_red_uarts_w_sd_card.hires_timer -pg 1 -lvl 3 -y 360
+preplace inst linnux_support_red_uarts_w_sd_card.mm_bridge_sd_card -pg 1 -lvl 2 -y 970
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_0.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_0_external_connection) 1 0 3 NJ 1070 NJ 1070 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)pio_button.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.pio_button) 1 0 3 NJ 500 NJ 500 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.uart_0_irq,(SLAVE)uart_0.irq) 1 0 3 NJ 1090 NJ 1090 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_spi_cs_n.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.sd_spi_cs_n) 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.pio_dips,(SLAVE)pio_dips.external_connection) 1 0 3 NJ 1460 NJ 1460 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.hires_timer_irq,(SLAVE)hires_timer.irq) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)fmc_present.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.fmc_present_external_connection) 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_internal_enable.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_internal_enable_external_connection) 1 0 3 NJ 1900 NJ 1900 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.uart_enabled_word,(SLAVE)uart_enabled.external_connection) 1 0 3 NJ 1680 NJ 1680 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.uart_10_external_connection,(SLAVE)uart_10.external_connection) 1 0 3 NJ 1330 NJ 1330 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.mm_bridge_sd_card_avalon_slave,(SLAVE)mm_bridge_sd_card.s0) 1 0 2 NJ 1020 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)mm_bridge_sd_card.reset,(MASTER)sd_card_clock.clk_reset,(SLAVE)sd_clk.reset,(SLAVE)sd_spi_cs_n.reset,(SLAVE)sd_spi_mosi.reset,(SLAVE)sd_spi_miso.reset) 1 1 2 410 920 730
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_is_regfile.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_is_regfile_external_connection) 1 0 3 NJ 2010 NJ 2010 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.uart_7_external_connection,(SLAVE)uart_7.external_connection) 1 0 3 NJ 1200 NJ 1200 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.pio_leds,(SLAVE)pio_leds.external_connection) 1 0 3 NJ 1570 NJ 1570 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_13.clk,(SLAVE)pio_dips.clk,(SLAVE)pio_button.clk,(SLAVE)uart_enabled.clk,(SLAVE)uart_internal_enable.clk,(SLAVE)uart_7.clk,(SLAVE)uart_internal_disable.clk,(SLAVE)hires_timer.clk,(SLAVE)uart_0.clk,(SLAVE)generic_hdl_info.clk,(SLAVE)mm_bridge_0.clk,(SLAVE)uart_is_regfile.clk,(SLAVE)uart_10.clk,(MASTER)clk_50.clk,(SLAVE)fmc_present.clk,(SLAVE)pio_leds.clk,(SLAVE)counter_64_bit_0.clock_reset) 1 1 2 410 400 670
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_internal_disable.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_internal_disable_external_connection) 1 0 3 NJ 1790 NJ 1790 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_spi_mosi.clk,(SLAVE)mm_bridge_sd_card.clk,(SLAVE)sd_spi_miso.clk,(MASTER)sd_card_clock.clk,(SLAVE)sd_spi_cs_n.clk,(SLAVE)sd_clk.clk) 1 1 2 430 900 690
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_card_clock.clk_in,(SLAVE)linnux_support_red_uarts_w_sd_card.sd_card_clock) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)pio_button.s1,(SLAVE)pio_dips.s1,(SLAVE)generic_hdl_info.s1,(SLAVE)uart_10.s1,(SLAVE)uart_enabled.s1,(SLAVE)counter_64_bit_0.avalon_slave_0,(MASTER)mm_bridge_0.m0,(SLAVE)uart_0.s1,(SLAVE)uart_internal_disable.s1,(SLAVE)pio_leds.s1,(SLAVE)uart_internal_enable.s1,(SLAVE)uart_13.s1,(SLAVE)fmc_present.s1,(SLAVE)hires_timer.s1,(SLAVE)uart_7.s1,(SLAVE)uart_is_regfile.s1) 1 2 1 610
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.uart_13_irq,(SLAVE)uart_13.irq) 1 0 3 NJ 2140 NJ 2140 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.sd_card_reset,(SLAVE)sd_card_clock.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)pio_button.irq,(SLAVE)linnux_support_red_uarts_w_sd_card.pio_button_irq) 1 0 3 NJ 520 NJ 520 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_clk.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.sd_clk) 1 0 3 NJ 630 NJ 630 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)mm_bridge_0.s0,(SLAVE)linnux_support_red_uarts_w_sd_card.nios_avalon_mm_50mhz) 1 0 2 NJ 460 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.generic_hdl_info_word,(SLAVE)generic_hdl_info.external_connection) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.counter_64_bit_0_current_count,(SLAVE)counter_64_bit_0.current_count) 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_spi_mosi.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.sd_spi_mosi) 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)linnux_support_red_uarts_w_sd_card.clk_50,(SLAVE)clk_50.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_clk.s1,(SLAVE)sd_spi_mosi.s1,(SLAVE)sd_spi_cs_n.s1,(SLAVE)sd_spi_miso.s1,(MASTER)mm_bridge_sd_card.m0) 1 2 1 710
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_7.irq,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_7_irq) 1 0 3 NJ 1220 NJ 1220 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)linnux_support_red_uarts_w_sd_card.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_13.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_13_external_connection) 1 0 3 NJ 2120 NJ 2120 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)uart_10.irq,(SLAVE)linnux_support_red_uarts_w_sd_card.uart_10_irq) 1 0 3 NJ 1350 NJ 1350 NJ
+preplace netloc EXPORT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)sd_spi_miso.external_connection,(SLAVE)linnux_support_red_uarts_w_sd_card.sd_spi_miso) 1 0 3 NJ 850 NJ 850 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_red_uarts_w_sd_card</net_container>(SLAVE)pio_button.reset,(SLAVE)hires_timer.reset,(SLAVE)uart_13.reset,(SLAVE)counter_64_bit_0.reset,(SLAVE)uart_internal_enable.reset,(SLAVE)mm_bridge_0.reset,(SLAVE)uart_7.reset,(SLAVE)uart_enabled.reset,(SLAVE)generic_hdl_info.reset,(SLAVE)uart_10.reset,(SLAVE)pio_dips.reset,(SLAVE)fmc_present.reset,(MASTER)clk_50.clk_reset,(SLAVE)pio_leds.reset,(SLAVE)uart_is_regfile.reset,(SLAVE)uart_0.reset,(SLAVE)uart_internal_disable.reset) 1 1 2 430 380 630
+levelinfo -pg 1 0 200 930
+levelinfo -hier linnux_support_red_uarts_w_sd_card 210 240 490 760 920

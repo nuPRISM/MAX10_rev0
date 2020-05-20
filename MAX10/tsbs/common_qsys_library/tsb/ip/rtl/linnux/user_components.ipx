@@ -1,0 +1,4 @@
+<library>
+	<path path="../../special_rtl/fifoed_avalon_uart_13_1/**/*" />
+	<path path="../../rtl/**/*" />
+</library>

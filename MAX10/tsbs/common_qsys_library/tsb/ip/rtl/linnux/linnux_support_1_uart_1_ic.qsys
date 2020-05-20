@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element clk_50
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element counter_64_bit_0
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element counter_64_bit_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "1520";
+         type = "String";
+      }
+   }
+   element fmc_present
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element fmc_present.s1
+   {
+      datum baseAddress
+      {
+         value = "1328";
+         type = "String";
+      }
+   }
+   element generic_hdl_info
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element generic_hdl_info.s1
+   {
+      datum baseAddress
+      {
+         value = "1376";
+         type = "String";
+      }
+   }
+   element hires_timer
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element hires_timer.s1
+   {
+      datum baseAddress
+      {
+         value = "1184";
+         type = "String";
+      }
+   }
+   element mm_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element pio_button
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element pio_button.s1
+   {
+      datum baseAddress
+      {
+         value = "1216";
+         type = "String";
+      }
+   }
+   element pio_dips
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element pio_dips.s1
+   {
+      datum baseAddress
+      {
+         value = "1232";
+         type = "String";
+      }
+   }
+   element pio_leds
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element pio_leds.s1
+   {
+      datum baseAddress
+      {
+         value = "1408";
+         type = "String";
+      }
+   }
+   element sd_clk
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element sd_clk.s1
+   {
+      datum baseAddress
+      {
+         value = "1248";
+         type = "String";
+      }
+   }
+   element sd_spi_cs_n
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element sd_spi_cs_n.s1
+   {
+      datum baseAddress
+      {
+         value = "1296";
+         type = "String";
+      }
+   }
+   element sd_spi_miso
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element sd_spi_miso.s1
+   {
+      datum baseAddress
+      {
+         value = "1264";
+         type = "String";
+      }
+   }
+   element sd_spi_mosi
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element sd_spi_mosi.s1
+   {
+      datum baseAddress
+      {
+         value = "1280";
+         type = "String";
+      }
+   }
+   element uart_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element uart_0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "960";
+         type = "String";
+      }
+   }
+   element uart_enabled
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element uart_enabled.s1
+   {
+      datum baseAddress
+      {
+         value = "1392";
+         type = "String";
+      }
+   }
+   element uart_internal_disable
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element uart_internal_disable.s1
+   {
+      datum baseAddress
+      {
+         value = "1312";
+         type = "String";
+      }
+   }
+   element uart_internal_enable
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element uart_internal_enable.s1
+   {
+      datum baseAddress
+      {
+         value = "1344";
+         type = "String";
+      }
+   }
+   element uart_is_regfile
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element uart_is_regfile.s1
+   {
+      datum baseAddress
+      {
+         value = "1360";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="EP4SGX530KH40C2" />
+ <parameter name="deviceFamily" value="Stratix IV" />
+ <parameter name="deviceSpeedGrade" value="2" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="VME_FIFO_SUBSYSTEM_ENABLED"
+   displayName="VME_FIFO_SUBSYSTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   displayName="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceScript></instanceScript>
+ <interface name="clk_50" internal="clk_50.clk_in" type="clock" dir="end" />
+ <interface
+   name="counter_64_bit_0_current_count"
+   internal="counter_64_bit_0.current_count"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="fmc_present_external_connection"
+   internal="fmc_present.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="generic_hdl_info_word"
+   internal="generic_hdl_info.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="hires_timer_irq"
+   internal="hires_timer.irq"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="nios_avalon_mm_50mhz"
+   internal="mm_bridge_0.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="pio_button"
+   internal="pio_button.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pio_button_irq"
+   internal="pio_button.irq"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="pio_dips"
+   internal="pio_dips.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pio_leds"
+   internal="pio_leds.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface name="reset" internal="clk_50.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="sd_clk"
+   internal="sd_clk.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sd_spi_cs_n"
+   internal="sd_spi_cs_n.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sd_spi_miso"
+   internal="sd_spi_miso.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sd_spi_mosi"
+   internal="sd_spi_mosi.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="uart_0_external_connection"
+   internal="uart_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface name="uart_0_irq" internal="uart_0.irq" type="interrupt" dir="end" />
+ <interface
+   name="uart_enabled_word"
+   internal="uart_enabled.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="uart_internal_disable_external_connection"
+   internal="uart_internal_disable.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="uart_internal_enable_external_connection"
+   internal="uart_internal_enable.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="uart_is_regfile_external_connection"
+   internal="uart_is_regfile.external_connection"
+   type="conduit"
+   dir="end" />
+ <module name="clk_50" kind="clock_source" version="16.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module
+   name="counter_64_bit_0"
+   kind="generic_avalon_mm_64bit_counter"
+   version="2.0"
+   enabled="1" />
+ <module
+   name="fmc_present"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="generic_hdl_info"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="hires_timer"
+   kind="altera_avalon_timer"
+   version="16.1"
+   enabled="1">
+  <parameter name="alwaysRun" value="false" />
+  <parameter name="counterSize" value="32" />
+  <parameter name="fixedPeriod" value="false" />
+  <parameter name="period" value="1" />
+  <parameter name="periodUnits" value="MSEC" />
+  <parameter name="resetOutput" value="false" />
+  <parameter name="snapshot" value="true" />
+  <parameter name="systemFrequency" value="50000000" />
+  <parameter name="timeoutPulseOutput" value="false" />
+  <parameter name="watchdogPulse" value="2" />
+ </module>
+ <module
+   name="mm_bridge_0"
+   kind="altera_avalon_mm_bridge"
+   version="16.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="27" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="11" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+  <parameter name="USE_RESPONSE" value="0" />
+ </module>
+ <module name="pio_button" kind="altera_avalon_pio" version="16.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="true" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="true" />
+  <parameter name="irqType" value="EDGE" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module name="pio_dips" kind="altera_avalon_pio" version="16.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module name="pio_leds" kind="altera_avalon_pio" version="16.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="9" />
+ </module>
+ <module name="sd_clk" kind="altera_avalon_pio" version="16.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="sd_spi_cs_n"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="1" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="sd_spi_miso"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="sd_spi_mosi"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="1" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module name="uart_0" kind="fifoed_avalon_uart" version="13.1" enabled="1">
+  <parameter name="add_error_bits" value="false" />
+  <parameter name="baud" value="2000000" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="dataBits" value="8" />
+  <parameter name="driver_pass_error_bits" value="false" />
+  <parameter name="export_handshake" value="false" />
+  <parameter name="fifo_export_used" value="false" />
+  <parameter name="fifo_size_rx" value="128" />
+  <parameter name="fifo_size_tx" value="128" />
+  <parameter name="fixedBaud" value="false" />
+  <parameter name="gap_value" value="4" />
+  <parameter name="hw_cts" value="false" />
+  <parameter name="parity" value="NONE" />
+  <parameter name="rx_IRQ_Threshold" value="1" />
+  <parameter name="rx_fifo_LE" value="false" />
+  <parameter name="simCharStream" value="" />
+  <parameter name="simInteractiveInputEnable" value="false" />
+  <parameter name="simInteractiveOutputEnable" value="false" />
+  <parameter name="simTrueBaud" value="false" />
+  <parameter name="stopBits" value="1" />
+  <parameter name="syncRegDepth" value="2" />
+  <parameter name="timeout_value" value="20" />
+  <parameter name="timestamp_width" value="8" />
+  <parameter name="trans_pin" value="false" />
+  <parameter name="tx_IRQ_Threshold" value="1" />
+  <parameter name="tx_fifo_LE" value="false" />
+  <parameter name="useCtsRts" value="false" />
+  <parameter name="useEopRegister" value="false" />
+  <parameter name="useRelativePathForSimFile" value="false" />
+  <parameter name="use_ext_timestamp" value="false" />
+  <parameter name="use_gap_detection" value="false" />
+  <parameter name="use_rx_fifo" value="true" />
+  <parameter name="use_status_bit_clear" value="false" />
+  <parameter name="use_timestamp" value="false" />
+  <parameter name="use_timout" value="true" />
+  <parameter name="use_tx_fifo" value="false" />
+ </module>
+ <module
+   name="uart_enabled"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="uart_internal_disable"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="uart_internal_enable"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="uart_is_regfile"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="counter_64_bit_0.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x05f0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="generic_hdl_info.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0560" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="fmc_present.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0530" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="pio_button.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="hires_timer.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="16.1" start="mm_bridge_0.m0" end="pio_dips.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04d0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="sd_spi_cs_n.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0510" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="16.1" start="mm_bridge_0.m0" end="sd_clk.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04e0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="16.1" start="mm_bridge_0.m0" end="pio_leds.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0580" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="sd_spi_miso.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04f0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="sd_spi_mosi.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0500" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="16.1" start="mm_bridge_0.m0" end="uart_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x03c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="uart_enabled.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0570" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="uart_internal_enable.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0540" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="uart_is_regfile.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0550" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_bridge_0.m0"
+   end="uart_internal_disable.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0520" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="sd_clk.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="pio_leds.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="uart_enabled.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_50.clk"
+   end="generic_hdl_info.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_50.clk"
+   end="uart_is_regfile.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_50.clk"
+   end="uart_internal_enable.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="fmc_present.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_50.clk"
+   end="uart_internal_disable.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="sd_spi_cs_n.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="sd_spi_mosi.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="sd_spi_miso.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="hires_timer.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="uart_0.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="pio_dips.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="pio_button.clk" />
+ <connection kind="clock" version="16.1" start="clk_50.clk" end="mm_bridge_0.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_50.clk"
+   end="counter_64_bit_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="pio_leds.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="sd_clk.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="uart_enabled.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="generic_hdl_info.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="uart_is_regfile.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="uart_internal_enable.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="fmc_present.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="uart_internal_disable.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="sd_spi_cs_n.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="sd_spi_mosi.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="sd_spi_miso.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="hires_timer.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="uart_0.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="pio_dips.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="pio_button.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="mm_bridge_0.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_50.clk_reset"
+   end="counter_64_bit_0.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

@@ -1,0 +1,66 @@
+Reg Addr (Hex)	
+Register Name
+0x00	Global SPI config
+0x01	CHIP ID
+0x02	Chip info
+0x05	Channel index
+0x08	PDWN modes
+0x09	Global clock (local)
+0x0A	PLL status
+0x0B	Global clock divider (local)
+0x0D	Test control reg (local)
+0x10	Customer offset (local)
+0x14	Output mode (local)
+0x15	CML output adjust
+0x18	ADC VREF
+0x19	User Test Pattern 1 L
+0x1A	User Test Pattern 1 M
+0x1B	User Test Pattern 2 L
+0x1C	User Test Pattern 2 M
+0x1D	User Test Pattern 3 L
+0x1E	User Test Pattern 3 M
+0x1F	User Test Pattern 4 L
+0x20	User Test Pattern 4 M
+0x21	PLL low encode
+0x3A	SYNCINB±/SYSREF± CTRL (local)
+0x40	DCC CTRL (local)
+0x41	DCC value LSB (local)
+0x42	DCC value MSB (local)
+0x45	Fast detect control (local)
+0x47	FD upper threshold (local)
+0x48	FD upper threshold (local)
+0x49	FD lower threshold (local)
+0x4A	FD lower threshold (local)
+0x4B	FD dwell time (local)
+0x4C	FD dwell time (local)
+0x5E	204B quick config
+0x5F	204B Link CTRL 1
+0x60	204B Link CTRL 2
+0x61	204B Link CTRL 3
+0x62	204B Link CTRL 4
+0x63	204B Link CTRL 5
+0x64	204B DID config
+0x65	204B BID config
+0x66	204B LID Config 0
+0x67	204B LID Config 1
+0x6E	204B parameters SCR/L
+0x6F	204B parameters F
+0x70	204B parameters K
+0x71	204B parameters M
+0x72	204B parameters CS/N
+0x73	204B parameters subclass/Np
+0x74	204B parameters S
+0x75	204B parameters HD and CF
+0x76	204B RESV1
+0x77	204B RESV2
+0x78	204B CHKSUM0
+0x79	204B CHKSUM1
+0x82	204B Lane Assign 1
+0x83	204B Lane Assign 2
+0x8B	204B LMFC offset
+0xA8	204B pre- emphasis
+0xEE	Internal digital clock delay
+0xEF	Internal digital clock delay
+0xF3	Internal digital clock alignment
+0xFF	Device update (global)
+

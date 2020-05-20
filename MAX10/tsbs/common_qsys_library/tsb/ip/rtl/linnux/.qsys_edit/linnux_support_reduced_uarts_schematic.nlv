@@ -1,0 +1,101 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst linnux_support_simplified_1_interconnect.uart_0 -pg 1 -lvl 3 -y 1170
+preplace inst linnux_support_simplified_1_interconnect.pio_leds -pg 1 -lvl 3 -y 3190
+preplace inst linnux_support_simplified_1_interconnect.GP_FIFO_0_Control -pg 1 -lvl 3 -y 30
+preplace inst linnux_support_simplified_1_interconnect.uart_1 -pg 1 -lvl 3 -y 1300
+preplace inst linnux_support_simplified_1_interconnect.spi_master_to_maxv -pg 1 -lvl 3 -y 1040
+preplace inst linnux_support_simplified_1_interconnect.pio_dips -pg 1 -lvl 3 -y 3080
+preplace inst linnux_support_simplified_1_interconnect.generic_hdl_info -pg 1 -lvl 3 -y 2860
+preplace inst linnux_support_simplified_1_interconnect.counter_64_bit_0 -pg 1 -lvl 3 -y 690
+preplace inst linnux_support_simplified_1_interconnect.uart_2 -pg 1 -lvl 3 -y 1430
+preplace inst linnux_support_simplified_1_interconnect.uart_10 -pg 1 -lvl 3 -y 2470
+preplace inst linnux_support_simplified_1_interconnect.uart_3 -pg 1 -lvl 3 -y 1560
+preplace inst linnux_support_simplified_1_interconnect.uart_11 -pg 1 -lvl 3 -y 2600
+preplace inst linnux_support_simplified_1_interconnect.uart_4 -pg 1 -lvl 3 -y 1690
+preplace inst linnux_support_simplified_1_interconnect.uart_12 -pg 1 -lvl 3 -y 2730
+preplace inst linnux_support_simplified_1_interconnect.sd_spi_cs_n -pg 1 -lvl 3 -y 3410
+preplace inst linnux_support_simplified_1_interconnect.pio_button -pg 1 -lvl 3 -y 910
+preplace inst linnux_support_simplified_1_interconnect.mm_bridge_0 -pg 1 -lvl 2 -y 850
+preplace inst linnux_support_simplified_1_interconnect.hires_timer -pg 1 -lvl 3 -y 2970
+preplace inst linnux_support_simplified_1_interconnect.uart_internal_enable -pg 1 -lvl 3 -y 3960
+preplace inst linnux_support_simplified_1_interconnect.uart_5 -pg 1 -lvl 3 -y 1820
+preplace inst linnux_support_simplified_1_interconnect.uart_13 -pg 1 -lvl 3 -y 4180
+preplace inst linnux_support_simplified_1_interconnect.GP_FIFO_1_Read_Data -pg 1 -lvl 3 -y 580
+preplace inst linnux_support_simplified_1_interconnect.GP_FIFO_0_Flags -pg 1 -lvl 3 -y 140
+preplace inst linnux_support_simplified_1_interconnect.uart_internal_disable -pg 1 -lvl 3 -y 3850
+preplace inst linnux_support_simplified_1_interconnect.uart_enabled -pg 1 -lvl 3 -y 3740
+preplace inst linnux_support_simplified_1_interconnect.uart_6 -pg 1 -lvl 3 -y 1950
+preplace inst linnux_support_simplified_1_interconnect.sd_clk -pg 1 -lvl 3 -y 3300
+preplace inst linnux_support_simplified_1_interconnect.clk_50 -pg 1 -lvl 1 -y 840
+preplace inst linnux_support_simplified_1_interconnect.GP_FIFO_0_Read_Data -pg 1 -lvl 3 -y 250
+preplace inst linnux_support_simplified_1_interconnect -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst linnux_support_simplified_1_interconnect.uart_7 -pg 1 -lvl 3 -y 2080
+preplace inst linnux_support_simplified_1_interconnect.sd_spi_mosi -pg 1 -lvl 3 -y 3630
+preplace inst linnux_support_simplified_1_interconnect.GP_FIFO_1_Control -pg 1 -lvl 3 -y 360
+preplace inst linnux_support_simplified_1_interconnect.uart_8 -pg 1 -lvl 3 -y 2210
+preplace inst linnux_support_simplified_1_interconnect.uart_9 -pg 1 -lvl 3 -y 2340
+preplace inst linnux_support_simplified_1_interconnect.fmc_present -pg 1 -lvl 3 -y 800
+preplace inst linnux_support_simplified_1_interconnect.uart_is_regfile -pg 1 -lvl 3 -y 4070
+preplace inst linnux_support_simplified_1_interconnect.GP_FIFO_1_Flags -pg 1 -lvl 3 -y 470
+preplace inst linnux_support_simplified_1_interconnect.sd_spi_miso -pg 1 -lvl 3 -y 3520
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_9_irq,(SLAVE)uart_9.irq) 1 0 3 NJ 2390 NJ 2390 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_11_external_connection,(SLAVE)uart_11.external_connection) 1 0 3 NJ 2630 NJ 2630 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)sd_spi_cs_n.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.sd_spi_cs_n) 1 0 3 NJ 3440 NJ 3440 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.sd_clk,(SLAVE)sd_clk.external_connection) 1 0 3 NJ 3330 NJ 3330 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)linnux_support_simplified_1_interconnect.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)pio_leds.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.pio_leds) 1 0 3 NJ 3220 NJ 3220 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)hires_timer.irq,(SLAVE)linnux_support_simplified_1_interconnect.hires_timer_irq) 1 0 3 NJ 3000 NJ 3000 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.clk_50,(SLAVE)clk_50.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_internal_enable_external_connection,(SLAVE)uart_internal_enable.external_connection) 1 0 3 NJ 3990 NJ 3990 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_7.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_7_external_connection) 1 0 3 NJ 2110 NJ 2110 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)counter_64_bit_0.current_count,(SLAVE)linnux_support_simplified_1_interconnect.counter_64_bit_0_current_count) 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_internal_disable.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_internal_disable_external_connection) 1 0 3 NJ 3880 NJ 3880 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_6.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_6_external_connection) 1 0 3 NJ 1980 NJ 1980 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.pio_button_irq,(SLAVE)pio_button.irq) 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)GP_FIFO_1_Flags.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.gp_fifo_1_flags) 1 0 3 NJ 500 NJ 500 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)GP_FIFO_1_Control.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.gp_fifo_1_control) 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)pio_leds.reset,(SLAVE)generic_hdl_info.reset,(SLAVE)fmc_present.reset,(SLAVE)GP_FIFO_0_Read_Data.reset,(SLAVE)uart_7.reset,(SLAVE)GP_FIFO_0_Control.reset,(SLAVE)uart_10.reset,(SLAVE)uart_13.reset,(SLAVE)uart_internal_disable.reset,(SLAVE)uart_8.reset,(SLAVE)uart_0.reset,(MASTER)clk_50.clk_reset,(SLAVE)uart_9.reset,(SLAVE)uart_3.reset,(SLAVE)uart_6.reset,(SLAVE)uart_enabled.reset,(SLAVE)pio_dips.reset,(SLAVE)uart_4.reset,(SLAVE)uart_is_regfile.reset,(SLAVE)pio_button.reset,(SLAVE)uart_11.reset,(SLAVE)uart_5.reset,(SLAVE)GP_FIFO_0_Flags.reset,(SLAVE)uart_12.reset,(SLAVE)mm_bridge_0.reset,(SLAVE)uart_2.reset,(SLAVE)GP_FIFO_1_Control.reset,(SLAVE)uart_1.reset,(SLAVE)GP_FIFO_1_Flags.reset,(SLAVE)hires_timer.reset,(SLAVE)sd_clk.reset,(SLAVE)spi_master_to_maxv.reset,(SLAVE)uart_internal_enable.reset,(SLAVE)GP_FIFO_1_Read_Data.reset,(SLAVE)counter_64_bit_0.reset,(SLAVE)sd_spi_cs_n.reset,(SLAVE)sd_spi_mosi.reset,(SLAVE)sd_spi_miso.reset) 1 1 2 410 4250 590
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_enabled_word,(SLAVE)uart_enabled.external_connection) 1 0 3 NJ 3770 NJ 3770 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_5.irq,(SLAVE)linnux_support_simplified_1_interconnect.uart_5_irq) 1 0 3 NJ 1870 NJ 1870 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_4.irq,(SLAVE)linnux_support_simplified_1_interconnect.uart_4_irq) 1 0 3 NJ 1740 NJ 1740 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_0.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_0_external_connection) 1 0 3 NJ 1200 NJ 1200 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_is_regfile_external_connection,(SLAVE)uart_is_regfile.external_connection) 1 0 3 NJ 4100 NJ 4100 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_3.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_3_external_connection) 1 0 3 NJ 1590 NJ 1590 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.pio_dips,(SLAVE)pio_dips.external_connection) 1 0 3 NJ 3110 NJ 3110 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_8_irq,(SLAVE)uart_8.irq) 1 0 3 NJ 2260 NJ 2260 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_6_irq,(SLAVE)uart_6.irq) 1 0 3 NJ 2000 NJ 2000 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_13_external_connection,(SLAVE)uart_13.external_connection) 1 0 3 NJ 4210 NJ 4210 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_0_irq,(SLAVE)uart_0.irq) 1 0 3 NJ 1220 NJ 1220 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)GP_FIFO_1_Read_Data.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.gp_fifo_1_read_data) 1 0 3 NJ 610 NJ 610 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_3.clk,(SLAVE)uart_9.clk,(SLAVE)pio_dips.clk,(SLAVE)uart_4.clk,(SLAVE)GP_FIFO_0_Read_Data.clk,(SLAVE)spi_master_to_maxv.clk,(SLAVE)hires_timer.clk,(SLAVE)fmc_present.clk,(SLAVE)uart_0.clk,(SLAVE)uart_6.clk,(SLAVE)sd_clk.clk,(SLAVE)uart_enabled.clk,(SLAVE)GP_FIFO_1_Control.clk,(SLAVE)uart_5.clk,(SLAVE)uart_internal_enable.clk,(SLAVE)uart_13.clk,(SLAVE)mm_bridge_0.clk,(SLAVE)GP_FIFO_1_Flags.clk,(SLAVE)GP_FIFO_1_Read_Data.clk,(SLAVE)pio_button.clk,(SLAVE)GP_FIFO_0_Flags.clk,(SLAVE)uart_2.clk,(SLAVE)uart_8.clk,(SLAVE)uart_11.clk,(SLAVE)uart_1.clk,(SLAVE)uart_7.clk,(SLAVE)pio_leds.clk,(SLAVE)sd_spi_miso.clk,(SLAVE)counter_64_bit_0.clock_reset,(SLAVE)sd_spi_mosi.clk,(SLAVE)uart_10.clk,(SLAVE)uart_12.clk,(SLAVE)uart_is_regfile.clk,(SLAVE)sd_spi_cs_n.clk,(SLAVE)GP_FIFO_0_Control.clk,(MASTER)clk_50.clk,(SLAVE)generic_hdl_info.clk,(SLAVE)uart_internal_disable.clk) 1 1 2 450 4120 570
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_12_irq,(SLAVE)uart_12.irq) 1 0 3 NJ 2780 NJ 2780 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_11.irq,(SLAVE)linnux_support_simplified_1_interconnect.uart_11_irq) 1 0 3 NJ 2650 NJ 2650 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)sd_spi_mosi.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.sd_spi_mosi) 1 0 3 NJ 3660 NJ 3660 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)pio_button.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.pio_button) 1 0 3 NJ 940 NJ 940 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.gp_fifo_0_flags,(SLAVE)GP_FIFO_0_Flags.external_connection) 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.gp_fifo_0_control,(SLAVE)GP_FIFO_0_Control.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)GP_FIFO_0_Flags.s1,(SLAVE)uart_enabled.s1,(SLAVE)pio_dips.s1,(SLAVE)uart_2.s1,(SLAVE)uart_7.s1,(SLAVE)generic_hdl_info.s1,(SLAVE)pio_button.s1,(SLAVE)uart_0.s1,(SLAVE)uart_9.s1,(SLAVE)sd_spi_cs_n.s1,(SLAVE)uart_12.s1,(SLAVE)sd_spi_mosi.s1,(SLAVE)uart_3.s1,(SLAVE)uart_1.s1,(SLAVE)uart_is_regfile.s1,(SLAVE)hires_timer.s1,(SLAVE)uart_5.s1,(SLAVE)fmc_present.s1,(SLAVE)GP_FIFO_1_Flags.s1,(SLAVE)sd_spi_miso.s1,(SLAVE)GP_FIFO_0_Control.s1,(SLAVE)counter_64_bit_0.avalon_slave_0,(SLAVE)uart_4.s1,(SLAVE)uart_internal_enable.s1,(SLAVE)GP_FIFO_1_Read_Data.s1,(MASTER)mm_bridge_0.m0,(SLAVE)sd_clk.s1,(SLAVE)pio_leds.s1,(SLAVE)uart_internal_disable.s1,(SLAVE)uart_11.s1,(SLAVE)uart_8.s1,(SLAVE)spi_master_to_maxv.spi_control_port,(SLAVE)GP_FIFO_0_Read_Data.s1,(SLAVE)uart_6.s1,(SLAVE)uart_13.s1,(SLAVE)GP_FIFO_1_Control.s1,(SLAVE)uart_10.s1) 1 2 1 610
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_9_external_connection,(SLAVE)uart_9.external_connection) 1 0 3 NJ 2370 NJ 2370 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_2_irq,(SLAVE)uart_2.irq) 1 0 3 NJ 1480 NJ 1480 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_10_irq,(SLAVE)uart_10.irq) 1 0 3 NJ 2520 NJ 2520 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)spi_master_to_maxv.irq,(SLAVE)linnux_support_simplified_1_interconnect.spi_master_to_maxv_irq) 1 0 3 NJ 1090 NJ 1090 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)spi_master_to_maxv.external,(SLAVE)linnux_support_simplified_1_interconnect.spi_master_to_maxv) 1 0 3 NJ 1070 NJ 1070 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.gp_fifo_0_read_data,(SLAVE)GP_FIFO_0_Read_Data.external_connection) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_3.irq,(SLAVE)linnux_support_simplified_1_interconnect.uart_3_irq) 1 0 3 NJ 1610 NJ 1610 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_10.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_10_external_connection) 1 0 3 NJ 2500 NJ 2500 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)fmc_present.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.fmc_present_external_connection) 1 0 3 NJ 830 NJ 830 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_1_external_connection,(SLAVE)uart_1.external_connection) 1 0 3 NJ 1330 NJ 1330 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_8_external_connection,(SLAVE)uart_8.external_connection) 1 0 3 NJ 2240 NJ 2240 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_5_external_connection,(SLAVE)uart_5.external_connection) 1 0 3 NJ 1850 NJ 1850 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_2.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_2_external_connection) 1 0 3 NJ 1460 NJ 1460 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_13.irq,(SLAVE)linnux_support_simplified_1_interconnect.uart_13_irq) 1 0 3 NJ 4230 NJ 4230 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.sd_spi_miso,(SLAVE)sd_spi_miso.external_connection) 1 0 3 NJ 3550 NJ 3550 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_7.irq,(SLAVE)linnux_support_simplified_1_interconnect.uart_7_irq) 1 0 3 NJ 2130 NJ 2130 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_12_external_connection,(SLAVE)uart_12.external_connection) 1 0 3 NJ 2760 NJ 2760 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)mm_bridge_0.s0,(SLAVE)linnux_support_simplified_1_interconnect.nios_avalon_mm_50mhz) 1 0 2 NJ 910 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)uart_4.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.uart_4_external_connection) 1 0 3 NJ 1720 NJ 1720 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)linnux_support_simplified_1_interconnect.uart_1_irq,(SLAVE)uart_1.irq) 1 0 3 NJ 1350 NJ 1350 NJ
+preplace netloc EXPORT<net_container>linnux_support_simplified_1_interconnect</net_container>(SLAVE)generic_hdl_info.external_connection,(SLAVE)linnux_support_simplified_1_interconnect.generic_hdl_info_word) 1 0 3 NJ 2890 NJ 2890 NJ
+levelinfo -pg 1 0 200 810
+levelinfo -hier linnux_support_simplified_1_interconnect 210 240 480 640 800

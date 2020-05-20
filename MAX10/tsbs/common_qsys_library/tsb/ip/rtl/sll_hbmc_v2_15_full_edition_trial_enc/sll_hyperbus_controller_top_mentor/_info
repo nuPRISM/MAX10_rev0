@@ -1,0 +1,241 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/Mark/synaptic/Sandbox/SynShared/DevProjects/AVnet/SLL_Hyperbus_Controller_V01_2/revisions/opencores_v2.15_beta/enc_hypermax
+vID_S_13bb3fed_719c024a_E
+Z1 !s110 1504084522
+!s100 DC1]d:>XiiBi>BhTOU]lE2
+I5i]ClCEF0e9;z^4@K<Kc?2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+d.
+Z3 Fnofile
+L0 736
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!i113 1
+Z5 o-nodebug -work sll_hyperbus_controller_top_mentor
+Z6 tShow_Lint 1 CvgOpt 0
+n@i@d_@s_13bb3fed_719c024a_@e
+vID_S_1b58793a_7890c465_E
+R1
+!s100 Uc5gj;9aVVF:>=im5QiGa1
+IG8fL<hS1`I9^PWE:Qh7M90
+R2
+d.
+R3
+L0 644
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_1b58793a_7890c465_@e
+vID_S_3737a5ef_84b9e8f_E
+R1
+!s100 =NCRZoADD@:QGonk1zlSH0
+ICk1fXG1KH:@V1gQhlj`Vn3
+R2
+d.
+R3
+L0 1223
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_3737a5ef_84b9e8f_@e
+vID_S_40d79062_5b05bec_E
+R1
+!s100 XBT3TX_:O8o]jo^@GnLQ71
+Ic4NFla]BcQJPm^HT4zU>R1
+R2
+d.
+R3
+L0 497
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_40d79062_5b05bec_@e
+vID_S_49e5fc40_2eb2fcd_E
+R1
+!s100 ^;;QRV4VmTJBJiU87eESf2
+I?KSofb9c1T_Q2bFE=olm32
+R2
+d.
+R3
+L0 385
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_49e5fc40_2eb2fcd_@e
+vID_S_4a300f3f_39278bd3_E
+R1
+!s100 YoU83f2cFJgSCKMc3QM]N2
+IE6ZBF5EZAo_Vl9070YD?W3
+R2
+d.
+R3
+L0 46
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_4a300f3f_39278bd3_@e
+vID_S_5022eb8d_23b491dc_E
+R1
+!s100 J0Ui^IKKD5k3aG[CCco`l1
+IQC_a6B_EO7`36iLijP3Ec2
+R2
+d.
+R3
+L0 1
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_5022eb8d_23b491dc_@e
+vID_S_5ad7685_4a903964_E
+R1
+!s100 =^ndNko[`QEJP^^IMQTT03
+IgAff5X8OdLjSa<6V`40FO1
+R2
+d.
+R3
+L0 996
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+n@i@d_@s_5ad7685_4a903964_@e
+vsll_ca_hbc_t001
+R1
+!s100 j1TnTPg8a:W:0GzAYeLQd1
+IQ<G537ImPQ06:XcQG@3n=0
+R2
+d.
+R3
+L0 1333
+R4
+r1
+!s85 0
+31
+!i113 1
+R5
+R6
+vsll_ca_hbc_t001_ddio_out
+R1
+!i10b 1
+!s100 bMaV>EX7fR[YzDzimEmTT3
+I39f7j@oTFKUJ^3dEZmAai3
+R2
+R0
+w1497358017
+8../rtl/sll_ca_hbc_t001_ddio_out.v
+F../rtl/sll_ca_hbc_t001_ddio_out.v
+L0 9
+R4
+r1
+!s85 0
+31
+Z7 !s108 1504084522.000000
+!s107 ../rtl/sll_ca_hbc_t001_ddio_out.v|
+!s90 -work|sll_hyperbus_controller_top_mentor|+define+SIM|../rtl/sll_ca_hbc_t001_ddio_out.v|
+!i113 1
+Z8 o-work sll_hyperbus_controller_top_mentor
+Z9 !s92 -work sll_hyperbus_controller_top_mentor +define+SIM
+R6
+vsll_ca_hbc_t001_io
+R1
+!i10b 1
+!s100 GgBP`BOPPe]aa]`_GMlcV0
+I5@n;c=kY`<FGYkSdoc8Y^0
+R2
+R0
+w1504084449
+8../rtl/sll_ca_hbc_t001_io.v
+F../rtl/sll_ca_hbc_t001_io.v
+L0 61
+R4
+r1
+!s85 0
+31
+R7
+!s107 ../rtl/sll_ca_hbc_t001_io.v|
+!s90 -work|sll_hyperbus_controller_top_mentor|+define+SIM|../rtl/sll_ca_hbc_t001_io.v|
+!i113 1
+R8
+R9
+R6
+vsll_ca_hbc_t001_syncpll
+R1
+!i10b 1
+!s100 om3^JoUFo2G9UW?9E^F`k0
+IKJFAa54Uf;@=XZ`4f0N6l2
+R2
+R0
+w1500636572
+8../rtl/sll_ca_hbc_t001_syncpll.v
+F../rtl/sll_ca_hbc_t001_syncpll.v
+L0 44
+R4
+r1
+!s85 0
+31
+R7
+!s107 ../rtl/sll_ca_hbc_t001_syncpll.v|
+!s90 -work|sll_hyperbus_controller_top_mentor|+define+SIM|../rtl/sll_ca_hbc_t001_syncpll.v|
+!i113 1
+R8
+R9
+R6
+vsll_hyperbus_controller_top
+R1
+!i10b 1
+!s100 YgOH7DJ2f67HdXb80j`f;2
+I;hQi]BVZJ_4CkXPY9I^GE2
+R2
+R0
+w1503675699
+8../rtl/sll_ca_hbc_t001_top.v
+F../rtl/sll_ca_hbc_t001_top.v
+L0 56
+R4
+r1
+!s85 0
+31
+R7
+!s107 ../rtl/sll_ca_hbc_t001_top.v|
+!s90 -work|sll_hyperbus_controller_top_mentor|+define+SIM|../rtl/sll_ca_hbc_t001_top.v|
+!i113 1
+R8
+R9
+R6

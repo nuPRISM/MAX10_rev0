@@ -1,0 +1,7 @@
+base referer
+rect $classiof_1_1except.html 338,58 421,85
+rect $classiof_1_1fmt__no__effect.html 486,8 612,34
+rect $classiof_1_1marker__not__closed.html 470,58 628,85
+rect $classiof_1_1too__many__markers.html 470,109 628,136
+rect $classiof_1_1marker__not__closed__fmt.html 680,33 864,60
+rect $classiof_1_1marker__not__closed__skip.html 678,84 865,110

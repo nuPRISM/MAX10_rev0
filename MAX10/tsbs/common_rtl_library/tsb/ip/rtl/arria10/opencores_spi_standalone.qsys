@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element opencores_spi
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element opencores_spi.avalon_slave_0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element opencores_spi_aux_control_in
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element opencores_spi_aux_control_in.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "160";
+         type = "String";
+      }
+   }
+   element opencores_spi_aux_control_out
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element opencores_spi_aux_control_out.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "144";
+         type = "String";
+      }
+   }
+   element opencores_spi_currently_active
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element opencores_spi_currently_active.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "96";
+         type = "String";
+      }
+   }
+   element opencores_spi_debug_tag_word
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element opencores_spi_debug_tag_word.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "128";
+         type = "String";
+      }
+   }
+   element opencores_spi_manual_reset
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element opencores_spi_manual_reset.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "64";
+         type = "String";
+      }
+   }
+   element opencores_spi_sdio_helper
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element opencores_spi_sdio_helper.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "32";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element opencores_spi_standalone
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element simple_master_connection_without_burst_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="10AS066H2F34I1SG" />
+ <parameter name="deviceFamily" value="Arria 10" />
+ <parameter name="deviceSpeedGrade" value="1" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="2" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="VME_FIFO_SUBSYSTEM_ENABLED"
+   displayName="VME_FIFO_SUBSYSTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   displayName="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceScript></instanceScript>
+ <interface
+   name="avalon_mm_slave"
+   internal="simple_master_connection_without_burst_0.s0"
+   type="avalon"
+   dir="end" />
+ <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface
+   name="opencores_spi"
+   internal="opencores_spi.conduit_end"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_aux_control_in"
+   internal="opencores_spi_aux_control_in.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_aux_control_out"
+   internal="opencores_spi_aux_control_out.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_currently_active"
+   internal="opencores_spi_currently_active.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_debug"
+   internal="opencores_spi.debug"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_debug_tag_word"
+   internal="opencores_spi_debug_tag_word.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_interrupt_sender"
+   internal="opencores_spi.interrupt_sender"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="opencores_spi_manual_reset_out"
+   internal="opencores_spi_manual_reset.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="opencores_spi_sdio_helper"
+   internal="opencores_spi_sdio_helper.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <module name="clk_0" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module name="opencores_spi" kind="opencores_spi" version="1.0" enabled="1">
+  <parameter name="Tp" value="1" />
+ </module>
+ <module
+   name="opencores_spi_aux_control_in"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="opencores_spi_aux_control_out"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="opencores_spi_currently_active"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="opencores_spi_debug_tag_word"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module
+   name="opencores_spi_manual_reset"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module
+   name="opencores_spi_sdio_helper"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module
+   name="simple_master_connection_without_burst_0"
+   kind="simple_master_connection_without_burst"
+   version="1.0"
+   enabled="1" />
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi_sdio_helper.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi_manual_reset.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi_currently_active.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0060" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi_debug_tag_word.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi_aux_control_out.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0090" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="simple_master_connection_without_burst_0.m0"
+   end="opencores_spi_aux_control_in.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi_sdio_helper.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi_manual_reset.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi_currently_active.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi_debug_tag_word.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi_aux_control_out.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi_aux_control_in.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="simple_master_connection_without_burst_0.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="opencores_spi.clock_sink" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi_sdio_helper.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="simple_master_connection_without_burst_0.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi_manual_reset.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi_currently_active.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi_debug_tag_word.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi_aux_control_out.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi_aux_control_in.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="opencores_spi.reset_sink" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="2" />
+</system>

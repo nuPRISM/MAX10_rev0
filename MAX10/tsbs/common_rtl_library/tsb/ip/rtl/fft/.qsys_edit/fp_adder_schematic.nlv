@@ -1,0 +1,11 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst fp_adder.fp_functions_0 -pg 1 -lvl 1 -y 30
+preplace inst fp_adder -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>fp_adder</net_container>(SLAVE)fp_functions_0.q,(SLAVE)fp_adder.q) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_adder</net_container>(SLAVE)fp_adder.areset,(SLAVE)fp_functions_0.areset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_adder</net_container>(SLAVE)fp_adder.a,(SLAVE)fp_functions_0.a) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_adder</net_container>(SLAVE)fp_adder.clk,(SLAVE)fp_functions_0.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>fp_adder</net_container>(SLAVE)fp_functions_0.b,(SLAVE)fp_adder.b) 1 0 1 NJ
+levelinfo -pg 1 0 50 210
+levelinfo -hier fp_adder 60 100 200

@@ -1,0 +1,80 @@
+
+#ifndef __OPENCORES_I2C_LCD_FD_H__
+#define __OPENCORES_I2C_LCD_FD_H__
+
+#include "sys/alt_dev.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif /* __cplusplus */
+
+/*
+ * Externally referenced routines
+ */
+extern int opencores_i2c_lcd_write_fd(alt_fd* fd, const char* ptr,
+  int len);
+
+/*
+ * Device structure definition. This is needed by alt_sys_init in order to
+ * reserve memory for the device instance.
+ */
+
+typedef struct opencores_i2c_lcd_dev_s
+{
+    alt_dev dev;
+    opencores_i2c_lcd_state state;
+} opencores_i2c_lcd_dev;
+
+/*
+ * The LCD panel driver is not trivial, so leave it out in the small
+ * drivers case.  Also leave it out in simulation because there is no
+ * simulated hardware for the LCD panel.  These two can be overridden
+ * by defining ALT_USE_LCD_16207 if you really want it.
+ */
+
+//#if (!defined(ALT_USE_SMALL_DRIVERS) && !defined(ALT_SIM_OPTIMIZE)) || defined ALT_USE_LCD_16207
+#if (!defined(ALT_USE_SMALL_DRIVERS) && !defined(ALT_SIM_OPTIMIZE)) || defined ALT_USE_I2C_LCD
+
+/*
+ * Macros used by alt_sys_init when the ALT file descriptor facility is used.
+ */
+#define OPENCORES_I2C_LCD_DEV_INSTANCE(name, d)    \
+  static opencores_i2c_lcd_dev d =                 \
+    {                                                    \
+      {                                                  \
+        ALT_LLIST_ENTRY,                                 \
+        name##_NAME,                                     \
+        NULL, /* open */                                 \
+        NULL, /* close */                                \
+        NULL, /* read */                                 \
+        opencores_i2c_lcd_write_fd,                \
+        NULL, /* lseek */                                \
+        NULL, /* fstat */                                \
+        NULL, /* ioctl */                                \
+      },                                                 \
+      {                                                  \
+        name##_BASE                                      \
+      },                                                 \
+    }
+
+#define OPENCORES_I2C_LCD_DEV_INIT(name, d)                            \
+  {                                                                          \
+    OPENCORES_I2C_LCD_STATE_INIT(name, d.state);                       \
+                                                                             \
+    /* make the device available to the system */                            \
+    alt_dev_reg(&d.dev);                                                     \
+  }
+
+#else /* exclude driver */
+
+#define OPENCORES_I2C_LCD_DEV_INSTANCE(name, d) extern int alt_no_storage
+#define OPENCORES_I2C_LCD_DEV_INIT(name, d) while (0)
+
+#endif
+
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
+#endif /* __OPENCORES_I2C_LCD_FD_H__ */

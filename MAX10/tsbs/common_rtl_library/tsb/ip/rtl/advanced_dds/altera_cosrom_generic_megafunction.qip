@@ -1,0 +1,9 @@
+set_global_assignment -name IP_TOOL_NAME "ROM: 2-PORT"
+set_global_assignment -name IP_TOOL_VERSION "14.1"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Arria V}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction.cmp"]

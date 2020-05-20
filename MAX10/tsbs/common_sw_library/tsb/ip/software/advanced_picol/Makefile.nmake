@@ -1,0 +1,8 @@
+all: picol.exe examples\hello.exe examples\command.exe
+
+picol.exe: interp.c picol.h
+    cl interp.c /Fepicol.exe
+examples\hello.exe: examples\hello.c picol.h
+    cl /I. examples\hello.c /Feexamples\hello.exe
+examples\command.exe: examples\command.c picol.h
+    cl /I. examples\command.c /Feexamples\command.exe

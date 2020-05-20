@@ -1,0 +1,5 @@
+config fp_complex_mult_cfg;
+		design fp_complex_mult;
+		instance fp_complex_mult.fp_functions_0 use fp_complex_mult_altera_fp_functions_181.fp_complex_mult_altera_fp_functions_181_jqzgwvq;
+endconfig
+

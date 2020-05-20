@@ -1,0 +1,45 @@
+	opencores_spi_standalone u0 (
+		.avalon_mm_slave_address               (<connected-to-avalon_mm_slave_address>),               //                avalon_mm_slave.address
+		.avalon_mm_slave_read                  (<connected-to-avalon_mm_slave_read>),                  //                               .read
+		.avalon_mm_slave_readdata              (<connected-to-avalon_mm_slave_readdata>),              //                               .readdata
+		.avalon_mm_slave_write                 (<connected-to-avalon_mm_slave_write>),                 //                               .write
+		.avalon_mm_slave_writedata             (<connected-to-avalon_mm_slave_writedata>),             //                               .writedata
+		.avalon_mm_slave_waitrequest           (<connected-to-avalon_mm_slave_waitrequest>),           //                               .waitrequest
+		.clk_clk                               (<connected-to-clk_clk>),                               //                            clk.clk
+		.opencores_spi_miso_pad_i              (<connected-to-opencores_spi_miso_pad_i>),              //                  opencores_spi.miso_pad_i
+		.opencores_spi_mosi_pad_o              (<connected-to-opencores_spi_mosi_pad_o>),              //                               .mosi_pad_o
+		.opencores_spi_sclk_pad_o              (<connected-to-opencores_spi_sclk_pad_o>),              //                               .sclk_pad_o
+		.opencores_spi_ss_pad_o                (<connected-to-opencores_spi_ss_pad_o>),                //                               .ss_pad_o
+		.opencores_spi_tx_bit_pos              (<connected-to-opencores_spi_tx_bit_pos>),              //                               .tx_bit_pos
+		.opencores_spi_rx_bit_pos              (<connected-to-opencores_spi_rx_bit_pos>),              //                               .rx_bit_pos
+		.opencores_spi_cnt                     (<connected-to-opencores_spi_cnt>),                     //                               .cnt
+		.opencores_spi_wb_err_o                (<connected-to-opencores_spi_wb_err_o>),                //                               .wb_err_o
+		.opencores_spi_wb_cyc_i                (<connected-to-opencores_spi_wb_cyc_i>),                //                               .wb_cyc_i
+		.opencores_spi_currently_active_export (<connected-to-opencores_spi_currently_active_export>), // opencores_spi_currently_active.export
+		.opencores_spi_debug_wb_clk_i          (<connected-to-opencores_spi_debug_wb_clk_i>),          //            opencores_spi_debug.wb_clk_i
+		.opencores_spi_debug_wb_rst_i          (<connected-to-opencores_spi_debug_wb_rst_i>),          //                               .wb_rst_i
+		.opencores_spi_debug_wb_adr_i          (<connected-to-opencores_spi_debug_wb_adr_i>),          //                               .wb_adr_i
+		.opencores_spi_debug_wb_dat_i          (<connected-to-opencores_spi_debug_wb_dat_i>),          //                               .wb_dat_i
+		.opencores_spi_debug_wb_dat_o          (<connected-to-opencores_spi_debug_wb_dat_o>),          //                               .wb_dat_o
+		.opencores_spi_debug_wb_sel_i          (<connected-to-opencores_spi_debug_wb_sel_i>),          //                               .wb_sel_i
+		.opencores_spi_debug_wb_we_i           (<connected-to-opencores_spi_debug_wb_we_i>),           //                               .wb_we_i
+		.opencores_spi_debug_wb_stb_i          (<connected-to-opencores_spi_debug_wb_stb_i>),          //                               .wb_stb_i
+		.opencores_spi_debug_wb_cyc_i          (<connected-to-opencores_spi_debug_wb_cyc_i>),          //                               .wb_cyc_i
+		.opencores_spi_debug_wb_ack_o          (<connected-to-opencores_spi_debug_wb_ack_o>),          //                               .wb_ack_o
+		.opencores_spi_debug_wb_err_o          (<connected-to-opencores_spi_debug_wb_err_o>),          //                               .wb_err_o
+		.opencores_spi_debug_wb_int_o          (<connected-to-opencores_spi_debug_wb_int_o>),          //                               .wb_int_o
+		.opencores_spi_debug_divider           (<connected-to-opencores_spi_debug_divider>),           //                               .divider
+		.opencores_spi_debug_ctrl              (<connected-to-opencores_spi_debug_ctrl>),              //                               .ctrl
+		.opencores_spi_debug_ss                (<connected-to-opencores_spi_debug_ss>),                //                               .ss
+		.opencores_spi_debug_wb_dat            (<connected-to-opencores_spi_debug_wb_dat>),            //                               .wb_dat
+		.opencores_spi_debug_tag_word_in       (<connected-to-opencores_spi_debug_tag_word_in>),       //                               .tag_word_in
+		.opencores_spi_debug_tag_word_out      (<connected-to-opencores_spi_debug_tag_word_out>),      //                               .tag_word_out
+		.opencores_spi_debug_tag_word_export   (<connected-to-opencores_spi_debug_tag_word_export>),   //   opencores_spi_debug_tag_word.export
+		.opencores_spi_interrupt_sender_irq    (<connected-to-opencores_spi_interrupt_sender_irq>),    // opencores_spi_interrupt_sender.irq
+		.opencores_spi_manual_reset_out_export (<connected-to-opencores_spi_manual_reset_out_export>), // opencores_spi_manual_reset_out.export
+		.opencores_spi_sdio_helper_export      (<connected-to-opencores_spi_sdio_helper_export>),      //      opencores_spi_sdio_helper.export
+		.reset_reset_n                         (<connected-to-reset_reset_n>),                         //                          reset.reset_n
+		.opencores_spi_aux_control_out_export  (<connected-to-opencores_spi_aux_control_out_export>),  //  opencores_spi_aux_control_out.export
+		.opencores_spi_aux_control_in_export   (<connected-to-opencores_spi_aux_control_in_export>)    //   opencores_spi_aux_control_in.export
+	);
+

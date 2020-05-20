@@ -1,0 +1,15 @@
+
+
+
+ 2.15 : 20 July 2017
+==================================================
+    reduced number of clocks in the internal PLL by 1
+ 
+      
+  in sll_ca_hbc_t001_top.sdc
+     changed constraint on input clock port to set the clock frequency automatically and independendt of the input clock port name
+     
+
+   
+  
+       

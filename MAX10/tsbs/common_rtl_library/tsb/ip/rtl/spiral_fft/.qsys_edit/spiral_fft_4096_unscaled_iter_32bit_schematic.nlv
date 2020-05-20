@@ -1,0 +1,11 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst spiral_fft_4096_unscaled_iter_32bit.fft -pg 1 -lvl 2 -y 50
+preplace inst spiral_fft_4096_unscaled_iter_32bit.clock_bridge -pg 1 -lvl 1 -y 30
+preplace inst spiral_fft_4096_unscaled_iter_32bit -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>spiral_fft_4096_unscaled_iter_32bit</net_container>(SLAVE)spiral_fft_4096_unscaled_iter_32bit.spiral_fft_reset,(SLAVE)fft.reset) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>spiral_fft_4096_unscaled_iter_32bit</net_container>(SLAVE)clock_bridge.in_clk,(SLAVE)spiral_fft_4096_unscaled_iter_32bit.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>spiral_fft_4096_unscaled_iter_32bit</net_container>(SLAVE)spiral_fft_4096_unscaled_iter_32bit.spiral_fft,(SLAVE)fft.conduit_end) 1 0 2 NJ 80 NJ
+preplace netloc POINT_TO_POINT<net_container>spiral_fft_4096_unscaled_iter_32bit</net_container>(MASTER)clock_bridge.out_clk,(SLAVE)fft.clock) 1 1 1 NJ
+levelinfo -pg 1 0 110 420
+levelinfo -hier spiral_fft_4096_unscaled_iter_32bit 120 150 310 410

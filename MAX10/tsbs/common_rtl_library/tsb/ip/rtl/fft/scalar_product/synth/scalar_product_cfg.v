@@ -1,0 +1,5 @@
+config scalar_product_cfg;
+		design scalar_product;
+		instance scalar_product.fp_functions_0 use scalar_product_altera_fp_functions_181.scalar_product_altera_fp_functions_181_nd36kqi;
+endconfig
+

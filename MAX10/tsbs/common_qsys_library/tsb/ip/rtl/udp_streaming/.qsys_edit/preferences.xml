@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="1" showDebugLogEntries="1" />
+ <systemtable filter="All Interfaces" showResetDomains="0" showClockDomains="1">
+  <columns>
+   <connections preferredWidth="223" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="514" />
+   <export preferredWidth="416" />
+   <inputclock preferredWidth="191" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project/Peripherals,Project,Project/Peripherals/Debug and Performance" />
+ <window width="1936" height="1216" x="-1928" y="-8" />
+ <hdlexample language="VERILOG" />
+</preferences>

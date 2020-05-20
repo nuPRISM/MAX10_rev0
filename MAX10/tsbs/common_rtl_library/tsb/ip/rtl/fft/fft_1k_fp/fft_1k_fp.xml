@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2019.07.19.13:10:54"
+ outputDirectory="D:/arria10/a10_prototype/tsbs/common_rtl_library/tsb/ip/rtl/fft/fft_1k_fp/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AS066H2F34I1SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="sink" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="sink_valid" direction="input" role="sink_valid" width="1" />
+   <port name="sink_ready" direction="output" role="sink_ready" width="1" />
+   <port name="sink_error" direction="input" role="sink_error" width="2" />
+   <port name="sink_sop" direction="input" role="sink_sop" width="1" />
+   <port name="sink_eop" direction="input" role="sink_eop" width="1" />
+   <port name="sink_real" direction="input" role="sink_real" width="32" />
+   <port name="sink_imag" direction="input" role="sink_imag" width="32" />
+   <port name="fftpts_in" direction="input" role="fftpts_in" width="11" />
+  </interface>
+  <interface name="source" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="source_valid" direction="output" role="source_valid" width="1" />
+   <port name="source_ready" direction="input" role="source_ready" width="1" />
+   <port name="source_error" direction="output" role="source_error" width="2" />
+   <port name="source_sop" direction="output" role="source_sop" width="1" />
+   <port name="source_eop" direction="output" role="source_eop" width="1" />
+   <port name="source_real" direction="output" role="source_real" width="32" />
+   <port name="source_imag" direction="output" role="source_imag" width="32" />
+   <port name="fftpts_out" direction="output" role="fftpts_out" width="11" />
+  </interface>
+ </perimeter>
+ <entity kind="fft_1k_fp" version="1.0" name="fft_1k_fp">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1563567054" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\synth\fft_1k_fp.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\synth\fft_1k_fp_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\synth\fft_1k_fp.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\synth\fft_1k_fp_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/arria10/a10_prototype/tsbs/common_rtl_library/tsb/ip/rtl/fft/fft_1k_fp.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="M:/intelfpga/18.1/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+   <file path="M:/intelFPGA/18.1/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file
+       path="M:/intelFPGA/18.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="fft_1k_fp">"Generating: fft_1k_fp"</message>
+   <message level="Info" culprit="fft_1k_fp">"Generating: fft_1k_fp_altera_fft_ii_181_6jovsdq"</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp2.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp2.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp3.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp4.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp3.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp4.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp2.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp3.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp4.hex</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_fft_ii"
+   version="18.1"
+   name="fft_1k_fp_altera_fft_ii_181_6jovsdq">
+  <parameter name="THROUGHPUT_LATENCY" value="2048" />
+  <parameter name="in_width_derived" value="32" />
+  <parameter name="in_order" value="Natural" />
+  <parameter name="hyper_opt" value="false" />
+  <parameter name="num_engines_derived" value="1" />
+  <parameter name="twid_width_derived" value="32" />
+  <parameter name="length" value="1024" />
+  <parameter name="out_order" value="Natural" />
+  <parameter name="selected_device_family" value="Arria 10" />
+  <parameter name="dsp_resource_opt" value="false" />
+  <parameter name="CALC_LATENCY" value="1024" />
+  <parameter name="design_env" value="NATIVE" />
+  <parameter name="data_rep" value="Single Floating Point" />
+  <parameter name="in_width" value="14" />
+  <parameter name="engine_arch" value="Quad Output" />
+  <parameter name="data_flow" value="Variable Streaming" />
+  <parameter name="out_width" value="16" />
+  <parameter name="num_engines" value="1" />
+  <parameter name="out_width_derived" value="32" />
+  <parameter name="hard_fp" value="false" />
+  <parameter name="twid_width" value="18" />
+  <parameter name="direction" value="Forward" />
+  <generatedFiles>
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp1.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp2.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp1.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp2.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp3.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp4.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp3.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp4.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp1.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp2.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp3.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp4.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_text_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_math_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_lib_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_avalon_streaming_block_sink.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_avalon_streaming_block_source.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_roundsat.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_avalon_streaming_block_sink_fftfprvs.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_top.ocp"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_top.ocp"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_top.ocp"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_dual_port_ram.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_dual_port_rom.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_mult_add.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_single_port_rom.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_fft_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\hyper_pipeline_interface.v"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\counter_module.sv"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_core.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_firststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_laststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_stage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_top.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_core.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_fft4.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_firststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_laststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_stage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_top.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_twiddle_opt.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_add.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_cmplxmult.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_core.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_del.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_dft4.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_fft4.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_laststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_lsft32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_mul.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_mul_2727.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_ram.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_rsft32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_rvs.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_rvsctl.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_shift.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_snorm.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_snorm_mul.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_stage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_sub.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_top.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_twiddle.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_twiddle_opt.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_unorm.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_cntsgn32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_cntusgn32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_sgnpstn.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_usgnpos.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp1.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp2.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp1.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp2.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp3.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp4.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp3.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp4.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp1.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp2.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp3.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp4.hex"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_text_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_math_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_lib_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_avalon_streaming_block_sink.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_avalon_streaming_block_source.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_roundsat.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_dspip_avalon_streaming_block_sink_fftfprvs.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_top.ocp"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_top.ocp"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_top.ocp"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_dual_port_ram.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_dual_port_rom.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_mult_add.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\altera_fft_single_port_rom.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\auk_fft_pkg.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\hyper_pipeline_interface.v"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\counter_module.sv"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_core.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_firststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_laststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_stage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfpbdr_top.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_core.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_fft4.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_firststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_laststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_stage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_top.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfprvs_twiddle_opt.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_add.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_cmplxmult.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_core.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_del.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_dft4.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_fft4.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_laststage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_lsft32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_mul.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_mul_2727.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_ram.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_rsft32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_rvs.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_rvsctl.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_shift.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_snorm.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_snorm_mul.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_stage.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_sub.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_top.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_twiddle.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_twiddle_opt.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_fftfp_unorm.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_cntsgn32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_cntusgn32.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_sgnpstn.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\apn_hcc_usgnpos.vhd"
+       attributes="" />
+   <file
+       path="D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp\altera_fft_ii_181\synth\fft_1k_fp_altera_fft_ii_181_6jovsdq.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="M:/intelfpga/18.1/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+   <file path="M:/intelFPGA/18.1/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file
+       path="M:/intelFPGA/18.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="fft_1k_fp" as="fft_ii_0" />
+  <messages>
+   <message level="Info" culprit="fft_1k_fp">"Generating: fft_1k_fp_altera_fft_ii_181_6jovsdq"</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp2.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp2.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp3.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp4.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp3.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp4.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp2.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp3.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp4.hex</message>
+  </messages>
+ </entity>
+</deploy>

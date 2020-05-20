@@ -1,0 +1,22 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x77b8e064: ntdll + 0x2e064 (RtlFreeHeap + 0x3f)
+	0x76ac14ac: kernel32 + 0x114ac (HeapFree + 0x13)
+	0x708f3c1a: MSVCR90 + 0x63c1a (free + 0xcc)
+	0x003a1006: ccl_mem_native + 0x1006 (?mem_native_array_delete@@YIXPAX@Z + 0x6)
+	0x03ca0f9c: db_vdb + 0x40f9c (?clear@VDB_LEVEL_COLLECTION@@QAIXXZ + 0x3c)
+	0x03ca1468: db_vdb + 0x41468 (??1VDB_LEVEL_COLLECTION@@QAE@XZ + 0x28)
+	0x0e05dee5: edt_wed + 0x8dee5 (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0xd905)
+	</callstack>
+	<error>Current editor: WED, SFW, RUI, RPW</error>
+	<date>Fri Dec 01 02:16:09 2017</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X77B8E064
+Current editor: WED, SFW, RUI, RPW
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

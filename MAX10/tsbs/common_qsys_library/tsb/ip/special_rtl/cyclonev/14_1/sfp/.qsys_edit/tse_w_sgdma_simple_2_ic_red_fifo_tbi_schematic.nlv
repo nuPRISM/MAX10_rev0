@@ -1,0 +1,46 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.mm_bridge_to_tse_mac -pg 1 -lvl 2 -y 50
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.i_custom_phyip_0 -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_rx -pg 1 -lvl 4 -y 70
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.phyip_rxclkout_splitter_instance_0 -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.avalon_arbiter -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.i_phyip_terminator_0 -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.clk_100 -pg 1 -lvl 2 -y 230
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.i_tse_pcs_0 -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.reg_clk_module -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac -pg 1 -lvl 3 -y 340
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.clk_10 -pg 1 -lvl 2 -y 340
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.reg_rst_module -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.i_tse_mac -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac.ref_clk_module -pg 1
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_tx -pg 1 -lvl 3 -y 90
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.descriptor_memory -pg 1 -lvl 3 -y 230
+preplace inst tse_w_sgdma_simple_2_intercon_reduced_fifos.clk_50 -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_status_led_connection,(SLAVE)tse_mac.status_led_connection) 1 0 3 NJ 530 NJ 530 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_mac.serial_connection,(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_serial_connection) 1 0 3 NJ 510 NJ 510 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_mac_misc_connection,(SLAVE)tse_mac.mac_misc_connection) 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)sgdma_tx.m_read,(MASTER)tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_tx_m_read) 1 3 2 NJ 200 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.avalon_slave,(SLAVE)mm_bridge_to_tse_mac.s0) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_mac.mac_mdio_connection,(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_mac_mdio_connection) 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)mm_bridge_to_tse_mac.clk,(MASTER)clk_50.clk) 1 1 1 430
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.clk_10,(SLAVE)clk_10.in_clk) 1 0 2 NJ 350 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)clk_10.out_clk,(SLAVE)tse_mac.control_port_clock_connection) 1 2 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_serdes_control_connection,(SLAVE)tse_mac.serdes_control_connection) 1 0 3 NJ 490 NJ 490 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_pcs_ref_clk_clock_connection,(SLAVE)tse_mac.pcs_ref_clk_clock_connection) 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.clk_50,(SLAVE)clk_50.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)sgdma_tx.descriptor_read,(MASTER)sgdma_rx.descriptor_read,(SLAVE)sgdma_tx.csr,(MASTER)sgdma_rx.descriptor_write,(SLAVE)tse_mac.control_port,(MASTER)mm_bridge_to_tse_mac.m0,(MASTER)sgdma_tx.descriptor_write,(SLAVE)descriptor_memory.s1,(SLAVE)sgdma_rx.csr) 1 2 3 690 60 1090 60 1390
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_tx_out,(MASTER)sgdma_tx.out) 1 3 2 NJ 220 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)clk_100.clk_in_reset,(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.reset_100) 1 0 2 NJ 260 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)sgdma_tx.clk,(SLAVE)tse_mac.transmit_clock_connection,(SLAVE)tse_mac.receive_clock_connection,(MASTER)clk_100.clk,(SLAVE)sgdma_rx.clk,(SLAVE)descriptor_memory.clk1) 1 2 2 710 80 N
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_tx_csr_irq,(SLAVE)sgdma_tx.csr_irq) 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)sgdma_rx.csr_irq,(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_rx_csr_irq) 1 0 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.clk_100,(SLAVE)clk_100.clk_in) 1 0 2 NJ 240 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)sgdma_rx.m_write,(MASTER)tse_w_sgdma_simple_2_intercon_reduced_fifos.sgdma_rx_m_write) 1 4 1 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)tse_mac.receive,(SLAVE)sgdma_rx.in) 1 3 1 1150
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.tse_mac_transmit,(SLAVE)tse_mac.transmit) 1 0 3 NJ 550 NJ 550 NJ
+preplace netloc EXPORT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)tse_w_sgdma_simple_2_intercon_reduced_fifos.reset_50) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sgdma_simple_2_intercon_reduced_fifos</net_container>(MASTER)clk_50.clk_reset,(SLAVE)sgdma_rx.reset,(SLAVE)sgdma_tx.reset,(SLAVE)mm_bridge_to_tse_mac.reset,(SLAVE)descriptor_memory.reset1,(SLAVE)tse_mac.reset_connection) 1 1 3 410 220 730 220 NJ
+levelinfo -pg 1 0 200 1550
+levelinfo -hier tse_w_sgdma_simple_2_intercon_reduced_fifos 210 240 500 930 1200 1410

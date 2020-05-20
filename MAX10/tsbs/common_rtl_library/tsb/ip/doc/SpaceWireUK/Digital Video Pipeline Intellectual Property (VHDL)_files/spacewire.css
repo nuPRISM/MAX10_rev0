@@ -1,0 +1,170 @@
+body
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #222222;
+  margin: 0px;
+  padding: 0px 5px 0px;
+}
+
+
+#page_whole
+{
+  width:100%;
+  height:100%;
+  padding-left:5px;
+}
+
+
+#page_body
+{
+  position:relative;
+  width:960px;
+  margin-top:5px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+#nav_left1
+{
+  width:960px;
+  height:25px;
+  margin-top:0px;
+  margin-bottom:10px;
+  background-color:#eeeeee;
+  float:left;
+  text-align:left;
+}
+
+.section_main
+{
+  width:952px;
+  height:100%;
+  padding-left:8px;
+  margin-bottom:10px;
+  clear:both;
+  float:left;
+}
+
+
+.footer_main
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #555555;
+  width:960px;
+  height:100%;
+  padding-top:5px;
+  clear:both;
+  float:left;
+  border-top:1px dashed #111111;
+}
+
+
+.footer_left
+{
+  border-right: 2px solid #ffffff;
+  float:left;
+  width:630px;
+  height:20px;
+  padding-top:5px;
+  background-color:#eeeeee;
+  text-align:center;
+}
+
+
+.footer_right
+{
+  padding-top:5px;
+  width:328px;
+  height:20px;
+  margin-top:0px;
+  margin-bottom:10px;
+  background-color:#eeeeee;
+  float:left;
+  text-align:center;
+}
+
+
+.title_main
+{
+  width:960px;
+  height:100%;
+  margin: 0px 0px 5px 0px;
+  padding: 0px 0px 2px 0px;
+  clear:both;
+  float:left;
+  color: #888888;
+  font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+  border-bottom: 1px dashed #111111;
+}
+
+
+ul.menu_ul 
+{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+ul.menu_ul li
+{
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+li.menu_li ul
+{
+  display: none;
+}
+
+
+ul.menu_ul li a
+{
+  display: block;
+  text-decoration: none;
+  color: #555555;
+  border-bottom: 1px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  padding: 5px 15px 5px 15px;
+  background: #eeeeee;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+
+
+ul.menu_ul li a:hover
+{
+  background: #dddddd;
+}
+
+
+li.menu_li:hover ul
+{
+  display: block;
+  position: absolute;
+}
+
+
+li.menu_li:hover li
+{
+  float: none;
+  font-size: 11px;
+}
+
+
+li.menu_li:hover a
+{
+  background: #eeeeee;
+}
+
+li.menu_li:hover li a:hover
+{
+  background: #dddddd;
+}

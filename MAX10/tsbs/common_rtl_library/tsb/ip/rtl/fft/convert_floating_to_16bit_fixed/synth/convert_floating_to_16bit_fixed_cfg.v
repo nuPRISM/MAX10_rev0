@@ -1,0 +1,5 @@
+config convert_floating_to_16bit_fixed_cfg;
+		design convert_floating_to_16bit_fixed;
+		instance convert_floating_to_16bit_fixed.fp_functions_0 use convert_floating_to_16bit_fixed_altera_fp_functions_181.convert_floating_to_16bit_fixed_altera_fp_functions_181_iicpk4a;
+endconfig
+

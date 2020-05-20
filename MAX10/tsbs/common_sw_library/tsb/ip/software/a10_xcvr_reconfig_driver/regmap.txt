@@ -1,0 +1,135 @@
+C.0x105[4:0]	  	pre_emp_switching_ctrl_1st_post_tap
+C.0x105[6]	  	pre_emp_sign_1st_post_tap
+C.0x106[3:0]	  	pre_emp_switching_ctrl_2nd_post_tap
+C.0x106[5]	  	pre_emp_sign_2nd_post_tap
+C.0x107[4:0]	  	pre_emp_switching_ctrl_pre_tap_1t
+C.0x107[5]	  	pre_emp_sign_pre_tap_1t
+C.0x108[2:0]	  	pre_emp_switching_ctrl_pre_tap_2t
+C.0x108[4]	  	pre_emp_sign_pre_tap_2t
+C.0x109[4:0]	  	vod_output_swing_ctrl
+C.0x109[5]	  	compensation_en
+C.0x2E1[0]	  	rx_seriallpbken
+C.0x11D[0]	  	loopback_mode / diag_lp_en
+C.0x132[5:4]		reverse_serial_loopback
+C.0x137[7]		diag_loopback_enable
+C.0x13C[7]		reverse_serial_loopback / loopback_mode
+C.0x142[4]		loopback_mode
+C.0x000[0]	  	arbiter_ctrl_pma
+C.0x000[1]	  	cal_done_pma
+C.0x100[1]	  	rx_cal_en
+C.0x100[5]	  	tx_cal_en
+C.0x166[7]	  	rate_sw_flag
+C.0x008[6:5]		
+C.0x006[2:0]	  	tx_pma_data_sel
+C.0x006[3]	  	prbs9_dwidth_tx
+C.0x006[6]	  	prbs_clken_tx
+C.0x006[7]	  	sqwgen_clken
+C.0x008[4]		
+C.0x007[7:4]	  	prbs_gen_pat
+C.0x008[3:0]	  	sq_wave_num
+C.0x110[2:0]	  	ser_mode
+C.0x00A[7]	  	prbs_clken_rx
+C.0x00B[3:2]	  	rx_prbs_mask
+C.0x00C[0]		
+C.0x00B[7:4]		prbs_ver
+C.0x00C[3]	  	prbs9_dwidth_rx
+C.0x13F[3:0]	deser_factor
+C.0x007[2]	  	tx_static_polarity_inversion
+C.0x00A[4]	  	rx_static_polarity_inversion
+C.0x300[0]	  	Counter enable (enables both error and bit counters)
+C.0x300[1]	  	Reset
+C.0x300[2]	  	Snapshot
+C.0x300[3]	  	PRBS Done
+C.0x301[7:0]	Accumulated error count[7:0]
+C.0x302[7:0]	Accumulated error count[15:8]
+C.0x303[7:0]	Accumulated error count[23:16]
+C.0x304[7:0]	Accumulated error count[31:24]
+C.0x305[7:0]	Accumulated error count[39:32]
+C.0x306[7:0]	Accumulated error count[47:40]
+C.0x307[1:0]	Accumulated error count[49:48]
+C.0x30D[7:0]	Accumulated bit count[7:0]
+C.0x30E[7:0]	Accumulated bit count[15:8]
+C.0x30F[7:0]	Accumulated bit count[23:16]
+C.0x310[7:0]	Accumulated bit count[31:24]
+C.0x311[7:0]	Accumulated bit count[39:32]
+C.0x312[7:0]	Accumulated bit count[47:40]
+C.0x313[1:0]	Accumulated bit count[49:48]
+C.0x2E2[0]	  	rx_analogreset
+C.0x2E2[1]	  	rx_digitalreset
+C.0x2E2[2]	  	tx_analogreset
+C.0x2E2[3]	  	tx_digitalreset
+C.0x2E2[4]	  	override_rx_analogreset
+C.0x2E2[5]	  	override_rx_digitalreset
+C.0x2E2[6]	  	override_tx_analogreset
+C.0x2E2[7]	  	override_tx_digitalreset
+"
+C.0x11C[3:0] C.0x11A[7:0]"	  	eq_dc_gain_trim
+C.0x11B[3]	  	one_stage_enable
+C.0x11F[5:4]	eq_bw_sel
+C.0x166[4:1]	adp_ctle_eqz_1s_sel
+C.0x167[5:1]	adp_ctle_acgain_4s
+C.0x177[3:0]	adapt_done
+C.0x160[3:1]	adp_vga_sel
+C.0x14F[6:0]	adp_dfe_fxtap1
+C.0x150[6:0]	adp_dfe_fxtap2
+C.0x150[7]	  	adp_dfe_fxtap2_sgn
+C.0x151[6:0]	adp_dfe_fxtap3
+C.0x151[7]	  	adp_dfe_fxtap3_sgn
+C.0x152[5:0]	adp_dfe_fxtap4
+C.0x152[6]	  	adp_dfe_fxtap4_sgn
+C.0x153[5:0]	adp_dfe_fxtap5
+C.0x153[6]	  	adp_dfe_fxtap5_sgn
+C.0x154[4:0]	adp_dfe_fxtap6
+C.0x154[5]	  	adp_dfe_fxtap6_sgn
+C.0x155[4:0]	adp_dfe_fxtap7
+C.0x155[5]	  	adp_dfe_fxtap7_sgn
+C.0x157[5:0]	adp_dfe_fxtap8
+C.0x157[6]	  	adp_dfe_fxtap8_sgn
+C.0x158[5:0]	adp_dfe_fxtap9
+C.0x158[6]	  	adp_dfe_fxtap9_sgn
+C.0x159[5:0]	adp_dfe_fxtap10
+C.0x159[6]	  	adp_dfe_fxtap10_sgn
+C.0x15A[5:0]	adp_dfe_fxtap11
+C.0x15A[6]	  	adp_dfe_fxtap11_sgn
+C.0x176[6:0]	testmux
+C.0x176[6:0]	testmux
+C.0x176[6:0]	testmux
+C.0x176[5:0]	testmux
+C.0x176[5:0]	testmux
+C.0x176[4:0]	testmux
+C.0x176[4:0]	testmux
+C.0x176[5:0]	testmux
+C.0x176[5:0]	testmux
+C.0x176[5:0]	testmux
+C.0x176[5:0]	testmux
+C.0x149[4]	  	adp_adapt_control_sel
+C.0x100[6]	  	adp_trigg_request
+C.0x000[0]	  	arbiter_ctrl_pma
+C.0x100[6]	  	adp_trigg_request
+C.0x340[2:0]	cfg_sel
+C.0x340[6]	  	bcast_en
+C.0x340[7]	  	cfg_load
+C.0x341[0]	  	rcfg_busy
+C.0x340[7]	  	cfg_load
+C.0x340[2:0]	cfg_sel
+C.0x341[0]	  	rcfg_busy
+C.0x200[7:0]	IP Identifier
+C.0x204[0]	  	Status Register Enabled
+C.0x205[0]	  	Control Register Enabled
+C.0x210[7:0]	Number of Channels
+C.0x211[7:0]	Channel Number
+C.0x212[7:0]	Duplex
+C.0x213[0]	  	PRBS Soft Enabled
+C.0x214[0]	  	ODI Acceleration Logic Enable
+C.0x280[0]	  	rx_is_lockedtodata
+C.0x280[1]	  	rx_is_lockedtoref
+C.0x281[0] 	  	tx_cal_busy
+C.0x281[1] 	  	rx_cal_busy
+C.0x281[2] 	  	avmm_busy
+C.0x281[4] 	  	tx_cal_busy_enable
+C.0x281[5] 	  	rx_cal_busy_enable
+C.0x2E0[0]	  	set_rx_locktodata
+C.0x2E0[1]	  	set_rx_locktoref
+C.0x2E0[2]	  	override_set_rx_locktodata
+C.0x2E0[3]	  	override_set_rx_locktoref
+C.0x2E1[0]	  	rx_seriallpbken

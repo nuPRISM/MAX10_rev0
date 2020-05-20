@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element AVMM_to_LVDS
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element Local_Bytes_to_LVDS
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element clock_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element local_avalon_slave_to_packets
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element local_st_bytes_to_packets
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element local_st_packets_to_bytes
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element rxclk
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element txclk
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CSXFC6D6F31C7" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="7_H6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="aligner_ctrl"
+   internal="Local_Bytes_to_LVDS.aligner_ctrl"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="avmm_slave"
+   internal="local_avalon_slave_to_packets.avmm_slave"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="lvds_rx"
+   internal="Local_Bytes_to_LVDS.lvds_rx"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="lvds_tx"
+   internal="Local_Bytes_to_LVDS.lvds_tx"
+   type="conduit"
+   dir="end" />
+ <interface name="reset" internal="rxclk.clk_in_reset" type="reset" dir="end" />
+ <interface name="rx_clkin" internal="rxclk.clk_in" type="clock" dir="end" />
+ <interface
+   name="rx_clkout"
+   internal="clock_bridge_0.out_clk"
+   type="clock"
+   dir="start" />
+ <interface name="tx_clkin" internal="txclk.in_clk" type="clock" dir="end" />
+ <interface
+   name="tx_clkout"
+   internal="Local_Bytes_to_LVDS.clkout_tx"
+   type="clock"
+   dir="start" />
+ <module
+   name="Local_Bytes_to_LVDS"
+   kind="Bytes_to_LVDS"
+   version="1.0"
+   enabled="1">
+  <parameter name="PT_PCFIFO" value="false" />
+  <parameter name="PT_SLAVE" value="false" />
+  <parameter name="P_ALIGNSEQ0" value="42" />
+  <parameter name="P_ALIGNSEQ1" value="42" />
+  <parameter name="P_DEV_FAMILY" value="1" />
+  <parameter name="P_OOSCNTR" value="8" />
+  <parameter name="P_SLAVE" value="0" />
+ </module>
+ <module
+   name="clock_bridge_0"
+   kind="altera_clock_bridge"
+   version="15.0"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="local_avalon_slave_to_packets"
+   kind="avalon_slave_to_packets"
+   version="1.0"
+   enabled="1">
+  <parameter name="P_AWIDTH" value="13" />
+  <parameter name="P_MAXBURSTSTRING" value="1" />
+ </module>
+ <module
+   name="local_st_bytes_to_packets"
+   kind="altera_avalon_st_bytes_to_packets"
+   version="15.0"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="CHANNEL_WIDTH" value="8" />
+  <parameter name="ENCODING" value="0" />
+ </module>
+ <module
+   name="local_st_packets_to_bytes"
+   kind="altera_avalon_st_packets_to_bytes"
+   version="15.0"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="CHANNEL_WIDTH" value="8" />
+  <parameter name="ENCODING" value="0" />
+ </module>
+ <module name="rxclk" kind="clock_source" version="15.0" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module name="txclk" kind="altera_clock_bridge" version="15.0" enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <connection
+   kind="avalon_streaming"
+   version="15.0"
+   start="local_avalon_slave_to_packets.avst_source"
+   end="local_st_packets_to_bytes.in_packets_stream" />
+ <connection
+   kind="avalon_streaming"
+   version="15.0"
+   start="local_st_packets_to_bytes.out_bytes_stream"
+   end="Local_Bytes_to_LVDS.in_bytes_stream" />
+ <connection
+   kind="avalon_streaming"
+   version="15.0"
+   start="Local_Bytes_to_LVDS.out_bytes_stream"
+   end="local_st_bytes_to_packets.in_bytes_stream" />
+ <connection
+   kind="avalon_streaming"
+   version="15.0"
+   start="local_st_bytes_to_packets.out_packets_stream"
+   end="local_avalon_slave_to_packets.avst_sink" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="rxclk.clk"
+   end="Local_Bytes_to_LVDS.clk_rxpll" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="rxclk.clk"
+   end="Local_Bytes_to_LVDS.clk_txpll" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="Local_Bytes_to_LVDS.clkout_rx"
+   end="local_st_bytes_to_packets.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="Local_Bytes_to_LVDS.clkout_rx"
+   end="local_st_packets_to_bytes.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="Local_Bytes_to_LVDS.clkout_rx"
+   end="local_avalon_slave_to_packets.clock" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="Local_Bytes_to_LVDS.clkout_rx"
+   end="clock_bridge_0.in_clk" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="rxclk.clk_reset"
+   end="local_st_bytes_to_packets.clk_reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="rxclk.clk_reset"
+   end="local_st_packets_to_bytes.clk_reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="rxclk.clk_reset"
+   end="local_avalon_slave_to_packets.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="rxclk.clk_reset"
+   end="Local_Bytes_to_LVDS.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

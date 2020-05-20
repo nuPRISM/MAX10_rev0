@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element ap_inserter_0
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element avalon_mm_clock
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element clk_100
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element dc_fifo_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element mm_to_100MHz
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element mm_to_100MHz.s0
+   {
+      datum baseAddress
+      {
+         value = "1107296256";
+         type = "String";
+      }
+   }
+   element multiplexer_ea
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element packet_mux
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element tx_dcfifo
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_0.s0
+   {
+      datum baseAddress
+      {
+         value = "192";
+         type = "String";
+      }
+   }
+   element udp_reset_pio
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element udp_reset_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "256";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="5CSXFC6D6F31C6" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="6_H6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="3" />
+ <parameter name="projectName" value="top.qpf" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript><![CDATA[# request a specific version of the scripting API
+package require -exact qsys 16.1
+
+# Set the name of the procedure to manipulate parameters
+set_module_property COMPOSITION_CALLBACK compose
+
+proc compose {} {
+    # manipulate parameters in here
+    # Example: set_instance_parameter_value child0 param0 [ get_parameter_value new_parameter_0 ]
+}]]></instanceScript>
+ <interface
+   name="avalon_mm_clk"
+   internal="avalon_mm_clock.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="avalon_mm_reset"
+   internal="avalon_mm_clock.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="avalon_mm_slave"
+   internal="mm_to_100MHz.s0"
+   type="avalon"
+   dir="end" />
+ <interface name="clk_100" internal="clk_100.clk_in" type="clock" dir="end" />
+ <interface
+   name="dc_fifo_0_in_clk"
+   internal="clock_bridge_0.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="packet_in"
+   internal="tx_dcfifo.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="packet_out"
+   internal="multiplexer_ea.out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="reset_100"
+   internal="clk_100.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="udp_inserter_0_snk"
+   internal="dc_fifo_0.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="udp_reset_pio"
+   internal="udp_reset_pio.external_connection"
+   type="conduit"
+   dir="end" />
+ <module
+   name="ap_inserter_0"
+   kind="alignment_pad_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+ </module>
+ <module name="avalon_mm_clock" kind="clock_source" version="16.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module name="clk_100" kind="clock_source" version="16.1" enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="clock_bridge_0"
+   kind="altera_clock_bridge"
+   version="16.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="dc_fifo_0"
+   kind="altera_avalon_dc_fifo"
+   version="16.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="4096" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module
+   name="mm_to_100MHz"
+   kind="altera_avalon_mm_clock_crossing_bridge"
+   version="16.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="24" />
+  <parameter name="COMMAND_FIFO_DEPTH" value="4" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="MASTER_SYNC_DEPTH" value="3" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="RESPONSE_FIFO_DEPTH" value="4" />
+  <parameter name="SLAVE_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="9" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+ </module>
+ <module name="multiplexer_ea" kind="error_adapter" version="16.1" enabled="1">
+  <parameter name="inBitsPerSymbol" value="8" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="inSymbolsPerBeat" value="4" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inUseEmptyPort" value="AUTO" />
+  <parameter name="inUsePackets" value="true" />
+  <parameter name="inUseReady" value="true" />
+  <parameter name="outErrorDescriptor" value="" />
+  <parameter name="outErrorWidth" value="1" />
+ </module>
+ <module
+   name="packet_mux"
+   kind="ethernet_packet_multiplexer"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+ </module>
+ <module
+   name="tx_dcfifo"
+   kind="altera_avalon_dc_fifo"
+   version="16.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="2048" />
+  <parameter name="RD_SYNC_DEPTH" value="2" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="2" />
+ </module>
+ <module
+   name="udp_inserter_0"
+   kind="udp_payload_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+ </module>
+ <module
+   name="udp_reset_pio"
+   kind="altera_avalon_pio"
+   version="16.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="100000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="1" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_to_100MHz.m0"
+   end="udp_inserter_0.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="mm_to_100MHz.m0"
+   end="udp_reset_pio.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0100" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="packet_mux.out"
+   end="multiplexer_ea.in" />
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="tx_dcfifo.out"
+   end="packet_mux.in4" />
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="dc_fifo_0.out"
+   end="udp_inserter_0.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="ap_inserter_0.src0"
+   end="packet_mux.in0" />
+ <connection
+   kind="avalon_streaming"
+   version="16.1"
+   start="udp_inserter_0.src0"
+   end="ap_inserter_0.snk0" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="multiplexer_ea.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="udp_reset_pio.clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="udp_inserter_0.clock" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="ap_inserter_0.clock" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="packet_mux.clock" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="tx_dcfifo.in_clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="mm_to_100MHz.m0_clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="tx_dcfifo.out_clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clk_100.clk"
+   end="dc_fifo_0.out_clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="avalon_mm_clock.clk"
+   end="mm_to_100MHz.s0_clk" />
+ <connection
+   kind="clock"
+   version="16.1"
+   start="clock_bridge_0.out_clk"
+   end="dc_fifo_0.in_clk" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="udp_inserter_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="ap_inserter_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="packet_mux.clock_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_100.clk_reset"
+   end="udp_inserter_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_100.clk_reset"
+   end="ap_inserter_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="tx_dcfifo.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="dc_fifo_0.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="mm_to_100MHz.m0_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="tx_dcfifo.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="dc_fifo_0.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_0.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="multiplexer_ea.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="udp_reset_pio.reset" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="avalon_mm_clock.clk_reset"
+   end="mm_to_100MHz.s0_reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="3" />
+</system>

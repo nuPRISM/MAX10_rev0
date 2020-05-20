@@ -1,0 +1,17 @@
+#-- init.pcl -- optional startup code for Picol
+#-- This file is sourced first if it is in current directory
+
+lappend auto_path [file dirname [file join [pwd] [info script]]]
+
+proc unknown args {
+    puts [info level 0]
+    global auto_index auto_path
+    foreach dir $auto_path {
+        if [file exists $dir/tclIndex] {source $dir/tclIndex}
+    }
+    set cmd [lindex $args 0]
+    if [info exists ::auto_index($cmd)] {
+        uplevel 1 [set ::auto_index($cmd)]
+        return [uplevel 1 $args]
+    } else {error "invalid command name \"$cmd\""}
+}

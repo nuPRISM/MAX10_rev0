@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element boot_loader_enable_and_params_pio
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element boot_loader_enable_and_params_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "144";
+         type = "String";
+      }
+   }
+   element boot_loader_gpio_out
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element boot_loader_gpio_out.s1
+   {
+      datum baseAddress
+      {
+         value = "64";
+         type = "String";
+      }
+   }
+   element boot_loader_main_nios_pc_monitor
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element boot_loader_main_nios_pc_monitor.s1
+   {
+      datum baseAddress
+      {
+         value = "160";
+         type = "String";
+      }
+   }
+   element boot_loader_timer
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element boot_loader_timer.s1
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element clk_50
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element jtag_uart_1
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element jtag_uart_1.avalon_jtag_slave
+   {
+      datum baseAddress
+      {
+         value = "176";
+         type = "String";
+      }
+   }
+   element main_cpu_reset_pio
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element main_cpu_reset_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "128";
+         type = "String";
+      }
+   }
+   element mm_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element mm_bridge_0.s0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element pio_reset_and_bootloader_request
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element pio_reset_and_bootloader_request.s1
+   {
+      datum baseAddress
+      {
+         value = "32";
+         type = "String";
+      }
+   }
+   element spi_master_to_maxv
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element spi_master_to_maxv.spi_control_port
+   {
+      datum baseAddress
+      {
+         value = "96";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="5AGXFB3H4F35C4" />
+ <parameter name="deviceFamily" value="Arria V" />
+ <parameter name="deviceSpeedGrade" value="4_H4" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="VME_FIFO_SUBSYSTEM_ENABLED"
+   displayName="VME_FIFO_SUBSYSTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   displayName="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceScript></instanceScript>
+ <interface
+   name="avalon_mm_slave"
+   internal="mm_bridge_0.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="boot_loader_enable_and_params_pio"
+   internal="boot_loader_enable_and_params_pio.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="boot_loader_gpio_out"
+   internal="boot_loader_gpio_out.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="boot_loader_main_nios_pc_monitor"
+   internal="boot_loader_main_nios_pc_monitor.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="boot_loader_timer_irq"
+   internal="boot_loader_timer.irq"
+   type="interrupt"
+   dir="end" />
+ <interface name="clk_50" internal="clk_50.clk_in" type="clock" dir="end" />
+ <interface
+   name="jtag_uart_1_irq"
+   internal="jtag_uart_1.irq"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="main_cpu_reset_pio"
+   internal="main_cpu_reset_pio.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pio_reset_and_bootloader_request"
+   internal="pio_reset_and_bootloader_request.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface name="reset_50" internal="clk_50.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="spi_master_to_maxv_external"
+   internal="spi_master_to_maxv.external"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="spi_master_to_maxv_irq"
+   internal="spi_master_to_maxv.irq"
+   type="interrupt"
+   dir="end" />
+ <module
+   name="boot_loader_enable_and_params_pio"
+   kind="altera_avalon_pio"
+   version="14.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="boot_loader_gpio_out"
+   kind="altera_avalon_pio"
+   version="14.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module
+   name="boot_loader_main_nios_pc_monitor"
+   kind="altera_avalon_pio"
+   version="14.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="boot_loader_timer"
+   kind="altera_avalon_timer"
+   version="14.1"
+   enabled="1">
+  <parameter name="alwaysRun" value="false" />
+  <parameter name="counterSize" value="32" />
+  <parameter name="fixedPeriod" value="false" />
+  <parameter name="period" value="1" />
+  <parameter name="periodUnits" value="MSEC" />
+  <parameter name="resetOutput" value="false" />
+  <parameter name="snapshot" value="true" />
+  <parameter name="systemFrequency" value="50000000" />
+  <parameter name="timeoutPulseOutput" value="false" />
+ </module>
+ <module name="clk_50" kind="clock_source" version="14.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="jtag_uart_1"
+   kind="altera_avalon_jtag_uart"
+   version="14.1"
+   enabled="1">
+  <parameter name="allowMultipleConnections" value="false" />
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="clkFreq" value="50000000" />
+  <parameter name="hubInstanceID" value="0" />
+  <parameter name="readBufferDepth" value="256" />
+  <parameter name="readIRQThreshold" value="8" />
+  <parameter name="simInputCharacterStream" value="" />
+  <parameter name="simInteractiveOptions">NO_INTERACTIVE_WINDOWS</parameter>
+  <parameter name="useRegistersForReadBuffer" value="false" />
+  <parameter name="useRegistersForWriteBuffer" value="false" />
+  <parameter name="useRelativePathForSimFile" value="false" />
+  <parameter name="writeBufferDepth" value="256" />
+  <parameter name="writeIRQThreshold" value="8" />
+ </module>
+ <module
+   name="main_cpu_reset_pio"
+   kind="altera_avalon_pio"
+   version="14.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="true" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="InOut" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="1" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="mm_bridge_0"
+   kind="altera_avalon_mm_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="16" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="8" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="0" />
+ </module>
+ <module
+   name="pio_reset_and_bootloader_request"
+   kind="altera_avalon_pio"
+   version="14.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="spi_master_to_maxv"
+   kind="altera_avalon_spi"
+   version="14.1"
+   enabled="1">
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="clockPhase" value="1" />
+  <parameter name="clockPolarity" value="0" />
+  <parameter name="dataWidth" value="8" />
+  <parameter name="disableAvalonFlowControl" value="false" />
+  <parameter name="inputClockRate" value="50000000" />
+  <parameter name="insertDelayBetweenSlaveSelectAndSClk" value="false" />
+  <parameter name="insertSync" value="true" />
+  <parameter name="lsbOrderedFirst" value="false" />
+  <parameter name="masterSPI" value="true" />
+  <parameter name="numberOfSlaves" value="1" />
+  <parameter name="syncRegDepth" value="3" />
+  <parameter name="targetClockRate" value="32000" />
+  <parameter name="targetSlaveSelectToSClkDelay" value="0.0" />
+ </module>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="jtag_uart_1.avalon_jtag_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00b0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="boot_loader_gpio_out.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="pio_reset_and_bootloader_request.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="boot_loader_main_nios_pc_monitor.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="boot_loader_timer.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="boot_loader_enable_and_params_pio.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0090" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="main_cpu_reset_pio.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="spi_master_to_maxv.spi_control_port">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0060" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="jtag_uart_1.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="main_cpu_reset_pio.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="boot_loader_enable_and_params_pio.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="boot_loader_timer.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="boot_loader_main_nios_pc_monitor.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="pio_reset_and_bootloader_request.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="boot_loader_gpio_out.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_50.clk"
+   end="spi_master_to_maxv.clk" />
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="mm_bridge_0.clk" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="jtag_uart_1.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="main_cpu_reset_pio.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="boot_loader_enable_and_params_pio.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="boot_loader_timer.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="boot_loader_main_nios_pc_monitor.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="pio_reset_and_bootloader_request.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="boot_loader_gpio_out.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="spi_master_to_maxv.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="mm_bridge_0.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

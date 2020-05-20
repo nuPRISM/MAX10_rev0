@@ -1,0 +1,60 @@
+10:50:50 **** Clean-only build of configuration Nios II for project hello_world ****
+make clean 
+[hello_world clean complete]
+10:50:56 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:58:10: warning: unused variable 'count' [-Wunused-variable]
+   alt_u8 count = 0;
+          ^
+hello_world.c: In function 'clear_jtag_buffer':
+hello_world.c:111:63: warning: value computed is not used [-Wunused-value]
+  (alt_u32)IORD_ALTERA_AVALON_JTAG_UART_DATA(JTAG_UART_0_BASE) & 0xFFFF0000;
+                                                               ^
+Info: Compiling rsscanf.c to obj/default/rsscanf.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/rsscanf.o rsscanf.c
+rsscanf.c: In function 'rsscanf':
+rsscanf.c:18:14: warning: variable 'pf' set but not used [-Wunused-but-set-variable]
+  const char* pf;
+              ^
+Info: Compiling xprintf.c to obj/default/xprintf.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/xprintf.o xprintf.c
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/  -msmallc  -Wl,-Map=hello_world.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/hello_world.o obj/default/rsscanf.o obj/default/xprintf.o -lm -msys-lib=m
+../hello_world_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\payne\NuPRISM\MAX10\FunctionalTest\edevel00608_enclustra_max10_test\tsb\ip\rtl\software\hello_world_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1579553653 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name max10_nios_basetester --quartus_project_dir "C:/payne/NuPRISM/MAX10/FunctionalTest/edevel00608_enclustra_max10_test/tsb/ip/rtl" --jdi ../..//output_files/NIOS_HyperRAM.jdi --sopcinfo C:/payne/NuPRISM/MAX10/FunctionalTest/edevel00608_enclustra_max10_test/tsb/ip/rtl/software/hello_world_bsp/../../max10_nios_basetester.sopcinfo
+Info: (hello_world.elf) 9476 Bytes program size (code + initialized data).
+Info:                   10 KBytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+10:50:58 **** Incremental Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]
+10:51:11 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+10:51:14 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:35:14 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+11:35:15 **** Build of configuration Nios II for project hello_world_bsp ****
+make all 
+[BSP build complete]

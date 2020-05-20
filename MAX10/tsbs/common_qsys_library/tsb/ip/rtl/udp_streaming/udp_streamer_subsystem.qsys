@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Stratix IV";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element NIOS_ApplicationProcessor
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element ap_inserter_0
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element ap_inserter_1
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element ap_inserter_2
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element ap_inserter_3
+   {
+      datum _sortIndex
+      {
+         value = "19";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clk_100
+   {
+      datum _sortIndex
+      {
+         value = "23";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_bridge_1
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_bridge_2
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_bridge_3
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element dc_fifo_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element dc_fifo_1
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element dc_fifo_2
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element dc_fifo_3
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element error_packet_discard_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element error_packet_discard_0.s0
+   {
+      datum baseAddress
+      {
+         value = "256";
+         type = "String";
+      }
+   }
+   element error_packet_discard_1
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element error_packet_discard_1.s0
+   {
+      datum baseAddress
+      {
+         value = "264";
+         type = "String";
+      }
+   }
+   element error_packet_discard_2
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element error_packet_discard_2.s0
+   {
+      datum baseAddress
+      {
+         value = "272";
+         type = "String";
+      }
+   }
+   element error_packet_discard_3
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element error_packet_discard_3.s0
+   {
+      datum baseAddress
+      {
+         value = "280";
+         type = "String";
+      }
+   }
+   element external_packet_clk
+   {
+      datum _sortIndex
+      {
+         value = "25";
+         type = "int";
+      }
+   }
+   element multiplexer_ea
+   {
+      datum _sortIndex
+      {
+         value = "21";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element nios_bridge
+   {
+      datum _sortIndex
+      {
+         value = "24";
+         type = "int";
+      }
+   }
+   element packet_multiplexer
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element tx_dcfifo
+   {
+      datum _sortIndex
+      {
+         value = "22";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_0.s0
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element udp_inserter_1
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_1.s0
+   {
+      datum baseAddress
+      {
+         value = "64";
+         type = "String";
+      }
+   }
+   element udp_inserter_2
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_2.s0
+   {
+      datum baseAddress
+      {
+         value = "128";
+         type = "String";
+      }
+   }
+   element udp_inserter_3
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element udp_inserter_3.s0
+   {
+      datum baseAddress
+      {
+         value = "192";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="EP4SGX230KF40C2" />
+ <parameter name="deviceFamily" value="Stratix IV" />
+ <parameter name="deviceSpeedGrade" value="2" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="maxAdditionalLatency" value="3" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="VME_FIFO_SUBSYSTEM_ENABLED"
+   displayName="VME_FIFO_SUBSYSTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   displayName="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceScript></instanceScript>
+ <interface name="clk_100" internal="clk_100.clk_in" type="clock" dir="end" />
+ <interface
+   name="dc_fifo_0_in_clk"
+   internal="clock_bridge_0.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dc_fifo_1_in_clk"
+   internal="clock_bridge_1.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dc_fifo_2_in_clk"
+   internal="clock_bridge_2.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dc_fifo_3_in_clk"
+   internal="clock_bridge_3.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="external_avalon_st_packet_in"
+   internal="tx_dcfifo.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="external_packet_clk"
+   internal="external_packet_clk.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="external_packet_reset"
+   internal="external_packet_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="nios_bridge_s0_100_mhz"
+   internal="nios_bridge.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="out_to_tse_mac"
+   internal="multiplexer_ea.out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="reset_100"
+   internal="clk_100.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface name="udp_inserter_0_debug" internal="udp_inserter_0.debug" />
+ <interface
+   name="udp_inserter_0_snk"
+   internal="dc_fifo_0.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface name="udp_inserter_1_debug" internal="udp_inserter_1.debug" />
+ <interface
+   name="udp_inserter_1_snk"
+   internal="dc_fifo_1.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface name="udp_inserter_2_debug" internal="udp_inserter_2.debug" />
+ <interface
+   name="udp_inserter_2_snk"
+   internal="dc_fifo_2.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface name="udp_inserter_3_debug" internal="udp_inserter_3.debug" />
+ <interface
+   name="udp_inserter_3_snk"
+   internal="dc_fifo_3.in"
+   type="avalon_streaming"
+   dir="end" />
+ <module
+   name="ap_inserter_0"
+   kind="alignment_pad_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="ap_inserter_1"
+   kind="alignment_pad_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="ap_inserter_2"
+   kind="alignment_pad_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="ap_inserter_3"
+   kind="alignment_pad_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module name="clk_100" kind="clock_source" version="14.1" enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="clock_bridge_0"
+   kind="altera_clock_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="clock_bridge_1"
+   kind="altera_clock_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="clock_bridge_2"
+   kind="altera_clock_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="clock_bridge_3"
+   kind="altera_clock_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="dc_fifo_0"
+   kind="altera_avalon_dc_fifo"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="8192" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module
+   name="dc_fifo_1"
+   kind="altera_avalon_dc_fifo"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="8192" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module
+   name="dc_fifo_2"
+   kind="altera_avalon_dc_fifo"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="8192" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module
+   name="dc_fifo_3"
+   kind="altera_avalon_dc_fifo"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="8192" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module
+   name="error_packet_discard_0"
+   kind="error_packet_discard"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="error_packet_discard_1"
+   kind="error_packet_discard"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="error_packet_discard_2"
+   kind="error_packet_discard"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="error_packet_discard_3"
+   kind="error_packet_discard"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="external_packet_clk"
+   kind="clock_source"
+   version="14.1"
+   enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module name="multiplexer_ea" kind="error_adapter" version="14.1" enabled="1">
+  <parameter name="inBitsPerSymbol" value="8" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="inSymbolsPerBeat" value="4" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inUseEmptyPort" value="AUTO" />
+  <parameter name="inUsePackets" value="true" />
+  <parameter name="inUseReady" value="true" />
+  <parameter name="outErrorDescriptor" value="" />
+  <parameter name="outErrorWidth" value="1" />
+ </module>
+ <module
+   name="nios_bridge"
+   kind="altera_avalon_mm_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="10" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="9" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="0" />
+ </module>
+ <module
+   name="packet_multiplexer"
+   kind="ethernet_packet_multiplexer"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="tx_dcfifo"
+   kind="altera_avalon_dc_fifo"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="BITS_PER_SYMBOL" value="8" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="2048" />
+  <parameter name="RD_SYNC_DEPTH" value="2" />
+  <parameter name="SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="1" />
+  <parameter name="WR_SYNC_DEPTH" value="2" />
+ </module>
+ <module
+   name="udp_inserter_0"
+   kind="udp_payload_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="udp_inserter_1"
+   kind="udp_payload_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="udp_inserter_2"
+   kind="udp_payload_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <module
+   name="udp_inserter_3"
+   kind="udp_payload_inserter"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+ </module>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="udp_inserter_3.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="udp_inserter_2.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="udp_inserter_1.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="udp_inserter_0.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="error_packet_discard_3.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0118" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="error_packet_discard_2.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0110" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="error_packet_discard_1.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0108" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="nios_bridge.m0"
+   end="error_packet_discard_0.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0100" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="packet_multiplexer.out"
+   end="multiplexer_ea.in" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="tx_dcfifo.out"
+   end="packet_multiplexer.in4" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="dc_fifo_3.out"
+   end="error_packet_discard_3.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="dc_fifo_0.out"
+   end="error_packet_discard_0.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="dc_fifo_1.out"
+   end="error_packet_discard_1.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="dc_fifo_2.out"
+   end="error_packet_discard_2.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="ap_inserter_0.src0"
+   end="packet_multiplexer.in0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="ap_inserter_1.src0"
+   end="packet_multiplexer.in1" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="ap_inserter_2.src0"
+   end="packet_multiplexer.in2" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="ap_inserter_3.src0"
+   end="packet_multiplexer.in3" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="udp_inserter_1.src0"
+   end="ap_inserter_1.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="udp_inserter_3.src0"
+   end="ap_inserter_3.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="udp_inserter_2.src0"
+   end="ap_inserter_2.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="udp_inserter_0.src0"
+   end="ap_inserter_0.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="error_packet_discard_3.src0"
+   end="udp_inserter_3.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="error_packet_discard_0.src0"
+   end="udp_inserter_0.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="error_packet_discard_1.src0"
+   end="udp_inserter_1.snk0" />
+ <connection
+   kind="avalon_streaming"
+   version="14.1"
+   start="error_packet_discard_2.src0"
+   end="udp_inserter_2.snk0" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="multiplexer_ea.clk" />
+ <connection kind="clock" version="14.1" start="clk_100.clk" end="nios_bridge.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="udp_inserter_0.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="udp_inserter_1.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="udp_inserter_2.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="udp_inserter_3.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="ap_inserter_0.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="ap_inserter_1.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="ap_inserter_2.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="ap_inserter_3.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="packet_multiplexer.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="error_packet_discard_0.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="error_packet_discard_1.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="error_packet_discard_2.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="error_packet_discard_3.clock" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="external_packet_clk.clk"
+   end="tx_dcfifo.in_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="tx_dcfifo.out_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="dc_fifo_0.out_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="dc_fifo_1.out_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="dc_fifo_2.out_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_100.clk"
+   end="dc_fifo_3.out_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clock_bridge_0.out_clk"
+   end="dc_fifo_0.in_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clock_bridge_1.out_clk"
+   end="dc_fifo_1.in_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clock_bridge_2.out_clk"
+   end="dc_fifo_2.in_clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clock_bridge_3.out_clk"
+   end="dc_fifo_3.in_clk" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="packet_multiplexer.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="ap_inserter_3.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="ap_inserter_2.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="ap_inserter_1.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="ap_inserter_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="udp_inserter_3.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="error_packet_discard_3.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="udp_inserter_2.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="error_packet_discard_2.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="udp_inserter_1.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="error_packet_discard_1.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="udp_inserter_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="error_packet_discard_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_3.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_2.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_1.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_0.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="external_packet_clk.clk_reset"
+   end="tx_dcfifo.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="tx_dcfifo.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_3.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_2.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_1.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="dc_fifo_0.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="multiplexer_ea.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="nios_bridge.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="3" />
+</system>

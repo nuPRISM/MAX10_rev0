@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst scalar_product.fp_functions_0 -pg 1 -lvl 1 -y 30
+preplace inst scalar_product -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)scalar_product.b1,(SLAVE)fp_functions_0.b1) 1 0 1 NJ
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)scalar_product.b0,(SLAVE)fp_functions_0.b0) 1 0 1 NJ
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)scalar_product.a1,(SLAVE)fp_functions_0.a1) 1 0 1 NJ
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)scalar_product.q,(SLAVE)fp_functions_0.q) 1 0 1 NJ
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)fp_functions_0.a0,(SLAVE)scalar_product.a0) 1 0 1 NJ
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)scalar_product.clk,(SLAVE)fp_functions_0.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>scalar_product</net_container>(SLAVE)scalar_product.areset,(SLAVE)fp_functions_0.areset) 1 0 1 NJ
+levelinfo -pg 1 0 50 210
+levelinfo -hier scalar_product 60 100 200

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="1" showDebugLogEntries="1" />
+ <systemtable filter="All Interfaces" showClockDomains="1" showResetDomains="0">
+  <columns>
+   <connections preferredWidth="207" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="419" />
+   <description preferredWidth="201" />
+   <export preferredWidth="526" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Qsys Interconnect/Interrupt,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/DSP/Signal Generation,Library/Interface Protocols/Ethernet/1G Multi-rate Ethernet,Library/Qsys Interconnect/Memory-Mapped,Library/University Program/Generic IO,Library/DSP/Transforms,Library/Processors and Peripherals/Co-Processors,Library/DSP,Library/Processors and Peripherals/Embedded Processors,Library/University Program/Audio &amp; Video/Video,Library/Basic Functions,Library/Basic Functions/DMA/mSGDMA Sub-core,Library/Basic Functions/Simulation; Debug and Verification,Library/Basic Functions/Clocks; PLLs and Resets,Library/Interface Protocols/Ethernet/10G to 1G Multi-rate Ethernet,Library/Basic Functions/DMA,Library/Processors and Peripherals/Hard Processor Systems,Project,Library/Basic Functions/Bridges and Adaptors/Reset,Library/Basic Functions/Arithmetic,Library/Interface Protocols/PCI Express/Example Design Components,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Basic Functions/Bridges and Adaptors/Interrupt,Library/Interface Protocols/Transceiver PLL,Library/Qsys Interconnect/Memory-Mapped Alpha,Library/DSP/Primitive DSP,Library/Memory Interfaces and Controllers,Library/Low Power,Library/University Program/Communications,Library/University Program/Memory,Library/Interface Protocols/Ethernet,Library/University Program/Audio &amp; Video,Library/Memory Interfaces and Controllers/SDRAM,Library/Tri-State Components,Library/Qsys Interconnect/Tri-State Components,Library/Processors and Peripherals/Inter-Process Communication,Library/Interface Protocols/PCI Express,Library/Interface Protocols/Ethernet/Reference Design Components,Library/Memory Interfaces and Controllers/Flash,Library/Processors and Peripherals/Hard Processor Components,Library/DSP/Video and Image Processing,Library/Qsys Interconnect,Library/Interface Protocols/Transceiver PHY,Library/University Program/Bridges,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Library/Memory Interfaces and Controllers/Memory Interfaces with ALTMEMPHY,Library/Basic Functions/Bridges and Adaptors,Library/Basic Functions/Clocks; PLLs and Resets/PLL,Library/Memory Interfaces and Controllers/Memory Interfaces with UniPHY,Library,Library/Interface Protocols/Audio &amp; Video,Library/DSP/Filters,Library/Analog Devices,Library/Basic Functions/Configuration and Programming,Library/Processors and Peripherals/Co-Processors/Nios II Custom Instructions,Library/Processors and Peripherals/Peripherals,Library/University Program/Clock,Library/Interface Protocols/SerialLite,Project/System,Library/DSP/Error Detection and Correction,Library/Basic Functions/Simulation; Debug and Verification/Verification,Library/University Program,Library/Interface Protocols/JESD,Library/Interface Protocols/PCI Express/QSYS Example Designs,Library/Basic Functions/Bridges and Adaptors/Clock,Library/Basic Functions/Bridges and Adaptors/Streaming,Library/Processors and Peripherals,Library/Basic Functions/On Chip Memory,Library/Interface Protocols/RapidIO,Library/Interface Protocols/Serial,Library/Interface Protocols" />
+ <window width="1920" height="1160" x="-1" y="11" />
+ <hdlexample language="VERILOG" />
+ <generation path="" />
+</preferences>

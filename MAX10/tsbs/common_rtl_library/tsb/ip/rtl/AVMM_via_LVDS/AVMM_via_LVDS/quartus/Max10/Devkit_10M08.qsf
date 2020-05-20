@@ -1,0 +1,720 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 14.1.0 Build 186 12/03/2014 SJ Full Version
+# Date created = 18:41:39  May 01, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Devkit_10M08_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:08:29  APRIL 28, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name QIP_FILE ../../source/qsys/MAX10_System/synthesis/MAX10_System.qip
+set_global_assignment -name BDF_FILE Max10_LVDS2AVMM.bdf
+set_global_assignment -name SDC_FILE Max10_LVDS2AVMM.sdc
+set_global_assignment -name SIGNALTAP_FILE dataflow.stp
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_M9 -to clk_50M
+set_location_assignment PIN_AA13 -to lvds2avmm_tx_clkout_clk
+set_location_assignment PIN_Y2 -to lvds2avmm_lvds_rx_lvds[1]
+set_location_assignment PIN_V5 -to lvds2avmm_lvds_rx_lvds[0]
+set_location_assignment PIN_U7 -to lvds2avmm_lvds_tx_lvds[1]
+set_location_assignment PIN_W3 -to lvds2avmm_lvds_tx_lvds[0]
+set_location_assignment PIN_T20 -to pio_export[0]
+set_location_assignment PIN_U22 -to pio_export[1]
+set_location_assignment PIN_U21 -to pio_export[2]
+set_location_assignment PIN_AA21 -to pio_export[3]
+set_location_assignment PIN_AA22 -to pio_export[4]
+set_location_assignment PIN_L22 -to pb_sw1
+set_location_assignment PIN_M21 -to pb_sw2
+set_location_assignment PIN_N4 -to lvds2avmm_lvds_rx_clkin
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "MAX 10 FPGA"
+set_global_assignment -name TOP_LEVEL_ENTITY Max10_LVDS2AVMM
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE 10M08DAF484C8GES
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 2
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+
+# SignalTap II Assignments
+# ========================
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE dataflow.stp
+
+# start AUTO_INSERT_SLD_NODE_ENTITY(auto_signaltap_0)
+# ---------------------------------------------------
+
+	# SignalTap II Assignments
+	# ========================
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|chipselect" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|write_n" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|chipselect" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|write_n" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "MAX10_System:inst|MAX10_System_GPIO:gpio|writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|address[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|byteenable[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|in_data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_data[7]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_endofpacket" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_ready" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_startofpacket" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[155] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[156] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[157] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[158] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[159] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[160] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[161] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[162] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[163] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[164] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[165] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[166] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[167] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[168] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[169] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[170] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[171] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[172] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[173] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[174] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[175] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[176] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[177] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[178] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[179] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[180] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[181] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[182] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[185] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[186] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[187] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_endofpacket" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_ready" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_startofpacket" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|out_valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|readdata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[158] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[159] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[160] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[161] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[162] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[163] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[164] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[165] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[166] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[167] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[168] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[169] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[170] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[171] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[172] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[173] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[174] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[175] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[176] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[177] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[178] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[179] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[180] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[181] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[182] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[185] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[186] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[187] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|altera_avalon_packets_to_master:remote_packets_to_master|writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|rx_clkout_clk" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[188] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|aligner_ena" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[189] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|aligner_oos" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[190] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[191] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[192] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[193] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[194] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[195] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[196] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[197] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[198] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|empty" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[199] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|full" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[200] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[201] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[202] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[203] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[204] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[205] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[206] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[207] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[208] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|rdreq" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[209] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[210] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[211] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[212] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[213] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[214] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[215] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|wrreq" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[216] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|data_align_q[0][0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[217] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[218] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[219] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[220] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[221] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[222] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[223] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[224] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[225] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[226] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[227] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[228] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[229] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[230] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[231] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[232] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[233] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[234] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[235] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[236] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[237] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|oos_symbol" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[238] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[239] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[240] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[241] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[242] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[243] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[244] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[245] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[246] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[247] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[248] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[249] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[250] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[251] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[252] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[253] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[254] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[255] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[256] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[257] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[258] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[259] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[260] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[261] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[262] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[263] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[264] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[265] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[266] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[267] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[268] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[269] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[188] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|aligner_ena" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[189] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|aligner_oos" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[190] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[191] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[192] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[193] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[194] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[195] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[196] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[197] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[198] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|empty" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[199] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|full" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[200] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[201] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[202] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[203] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[204] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[205] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[206] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[207] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|q[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[208] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|rdreq" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[209] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[210] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[211] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[212] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[213] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[214] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|usedw[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[215] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|avst_fifo:U_LVDSFIFO|wrreq" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[216] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|data_align_q[0][0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[217] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[218] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[219] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[220] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[221] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[222] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[223] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[224] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[225] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[226] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_rx_x2:U_LVDSRX|rx_out[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[227] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[228] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[229] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[230] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[231] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[232] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[233] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[234] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[235] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[236] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|lvds_tx_x2:U_LVDSTX|tx_in[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[237] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|oos_symbol" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[238] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[239] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[240] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[241] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[242] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[243] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[244] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[245] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[246] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[247] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[248] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[249] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[250] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[251] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[252] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[253] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[254] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[255] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[256] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[257] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[258] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[259] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[260] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[261] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[262] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[263] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[264] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[265] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[266] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[267] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[268] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[269] -to "MAX10_System:inst|MAX10_System_LVDS2AVMM:lvds2avmm|bytes_to_lvds:remote_bytes_to_lvds|ooscntr[9]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=270" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=270" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=270" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=834" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+
+# Pin & Location Assignments
+# ==========================
+set_instance_assignment -name VIRTUAL_PIN ON -to pio_export[7]
+set_instance_assignment -name VIRTUAL_PIN ON -to pio_export[6]
+set_instance_assignment -name VIRTUAL_PIN ON -to pio_export[5]
+
+# Fitter Assignments
+# ==================
+set_instance_assignment -name IO_STANDARD "1.5 V" -to pb_sw1
+set_instance_assignment -name IO_STANDARD "1.5 V" -to pb_sw2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lvds2avmm_tx_clkout_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to clk_50M
+set_instance_assignment -name IO_STANDARD "1.5 V" -to pio_export
+set_instance_assignment -name IO_STANDARD LVDS -to lvds2avmm_lvds_rx_lvds
+set_instance_assignment -name IO_STANDARD LVDS -to lvds2avmm_lvds_tx_lvds
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lvds2avmm_lvds_rx_clkin
+set_instance_assignment -name CLOCK_TO_OUTPUT_DELAY 0 -to lvds2avmm_lvds_tx_lvds
+
+# start DESIGN_PARTITION(Top)
+# ---------------------------
+
+# Incremental Compilation Assignments
+# ===================================
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/dataflow_auto_stripped.stp

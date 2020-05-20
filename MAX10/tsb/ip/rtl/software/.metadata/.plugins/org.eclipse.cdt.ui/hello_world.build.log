@@ -1,0 +1,9 @@
+11:35:14 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+
+11:35:14 Build Finished (took 654ms)
+

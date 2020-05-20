@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element alt_xcvr_reconfig
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element alt_xcvr_reconfig.reconfig_mgmt
+   {
+      datum baseAddress
+      {
+         value = "2048";
+         type = "String";
+      }
+   }
+   element arria_v_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element arria_v_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element arria_v_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element arriav_v_standalone_gigabit_xcvr
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element arriav_v_standalone_gigabit_xcvr.phy_mgmt
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element ethernet_125_MHz_clock
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element mm_bridge_to_arria_sfp
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element mm_bridge_to_arria_sfp.s0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5ASTFD5K3F40I3ES" />
+ <parameter name="deviceFamily" value="Arria V" />
+ <parameter name="deviceSpeedGrade" value="3_H3" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="maxAdditionalLatency" value="2" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="VME_FIFO_SUBSYSTEM_ENABLED"
+   displayName="VME_FIFO_SUBSYSTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   displayName="LEGACY_ITEMS_SUSBSYTEM_ENABLED"
+   type="integer"
+   defaultValue="0"
+   legalRanges=""
+   description="" />
+ <instanceScript></instanceScript>
+ <interface
+   name="alt_xcvr_reconfig_0_ch0_1_from_xcvr"
+   internal="alt_xcvr_reconfig.ch0_1_from_xcvr" />
+ <interface
+   name="alt_xcvr_reconfig_0_ch0_1_to_xcvr"
+   internal="alt_xcvr_reconfig.ch0_1_to_xcvr" />
+ <interface
+   name="alt_xcvr_reconfig_0_ch2_3_from_xcvr"
+   internal="alt_xcvr_reconfig.ch2_3_from_xcvr" />
+ <interface
+   name="alt_xcvr_reconfig_0_ch2_3_to_xcvr"
+   internal="alt_xcvr_reconfig.ch2_3_to_xcvr" />
+ <interface
+   name="alt_xcvr_reconfig_0_ch4_5_from_xcvr"
+   internal="alt_xcvr_reconfig.ch4_5_from_xcvr" />
+ <interface
+   name="alt_xcvr_reconfig_0_ch4_5_to_xcvr"
+   internal="alt_xcvr_reconfig.ch4_5_to_xcvr" />
+ <interface
+   name="alt_xcvr_reconfig_reconfig_busy"
+   internal="alt_xcvr_reconfig.reconfig_busy"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="alt_xcvr_reconfig_reconfig_from_xcvr"
+   internal="alt_xcvr_reconfig.reconfig_from_xcvr"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="alt_xcvr_reconfig_reconfig_to_xcvr"
+   internal="alt_xcvr_reconfig.reconfig_to_xcvr"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="alt_xcvr_reconfig_rx_cal_busy"
+   internal="alt_xcvr_reconfig.rx_cal_busy"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="alt_xcvr_reconfig_tx_cal_busy"
+   internal="alt_xcvr_reconfig.tx_cal_busy"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="arriav_v_standalone_gigabit_xcvr"
+   internal="arriav_v_standalone_gigabit_xcvr.conduit_end"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="avalon_slave"
+   internal="mm_bridge_to_arria_sfp.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="ethernet_clk_125mhz"
+   internal="ethernet_125_MHz_clock.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="ethernet_clk_125mhz_reset"
+   internal="ethernet_125_MHz_clock.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <module
+   name="alt_xcvr_reconfig"
+   kind="alt_xcvr_reconfig"
+   version="14.1"
+   enabled="1">
+  <parameter name="ber_en" value="0" />
+  <parameter name="device_family" value="Arria V" />
+  <parameter name="enable_adce" value="0" />
+  <parameter name="enable_analog" value="1" />
+  <parameter name="enable_dcd" value="0" />
+  <parameter name="enable_dcd_power_up" value="1" />
+  <parameter name="enable_dfe" value="0" />
+  <parameter name="enable_eyemon" value="0" />
+  <parameter name="enable_mif" value="0" />
+  <parameter name="enable_offset" value="1" />
+  <parameter name="gui_cal_status_port" value="true" />
+  <parameter name="gui_enable_pll" value="0" />
+  <parameter name="gui_split_sizes" value="" />
+  <parameter name="number_of_reconfig_interfaces" value="2" />
+ </module>
+ <module
+   name="arriav_v_standalone_gigabit_xcvr"
+   kind="arriav_v_standalone_gigabit_xcvr"
+   version="1.0"
+   enabled="1" />
+ <module
+   name="ethernet_125_MHz_clock"
+   kind="clock_source"
+   version="14.1"
+   enabled="1">
+  <parameter name="clockFrequency" value="125000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="mm_bridge_to_arria_sfp"
+   kind="altera_avalon_mm_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="16" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="125000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="12" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="0" />
+ </module>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_to_arria_sfp.m0"
+   end="arriav_v_standalone_gigabit_xcvr.phy_mgmt">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_to_arria_sfp.m0"
+   end="alt_xcvr_reconfig.reconfig_mgmt">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0800" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="14.1"
+   start="ethernet_125_MHz_clock.clk"
+   end="mm_bridge_to_arria_sfp.clk" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="ethernet_125_MHz_clock.clk"
+   end="arriav_v_standalone_gigabit_xcvr.clock_sink" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="ethernet_125_MHz_clock.clk"
+   end="alt_xcvr_reconfig.mgmt_clk_clk" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="ethernet_125_MHz_clock.clk_reset"
+   end="alt_xcvr_reconfig.mgmt_rst_reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="ethernet_125_MHz_clock.clk_reset"
+   end="mm_bridge_to_arria_sfp.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="ethernet_125_MHz_clock.clk_reset"
+   end="arriav_v_standalone_gigabit_xcvr.reset_sink" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="2" />
+</system>

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<pinplan variation_name="five_lane_seriallite_rx_only" megafunction_name="SerialLite II" default_scope="internal" specifies="all_ports" >
+<global>
+<pin name="rx_parallel_data_out[31..0]"  direction="input"/>
+<pin name="rx_parallel_data_out[31]"  direction="input"/>
+<pin name="rx_parallel_data_out[30]"  direction="input"/>
+<pin name="rx_parallel_data_out[29]"  direction="input"/>
+<pin name="rx_parallel_data_out[28]"  direction="input"/>
+<pin name="rx_parallel_data_out[27]"  direction="input"/>
+<pin name="rx_parallel_data_out[26]"  direction="input"/>
+<pin name="rx_parallel_data_out[25]"  direction="input"/>
+<pin name="rx_parallel_data_out[24]"  direction="input"/>
+<pin name="rx_parallel_data_out[23]"  direction="input"/>
+<pin name="rx_parallel_data_out[22]"  direction="input"/>
+<pin name="rx_parallel_data_out[21]"  direction="input"/>
+<pin name="rx_parallel_data_out[20]"  direction="input"/>
+<pin name="rx_parallel_data_out[19]"  direction="input"/>
+<pin name="rx_parallel_data_out[18]"  direction="input"/>
+<pin name="rx_parallel_data_out[17]"  direction="input"/>
+<pin name="rx_parallel_data_out[16]"  direction="input"/>
+<pin name="rx_parallel_data_out[15]"  direction="input"/>
+<pin name="rx_parallel_data_out[14]"  direction="input"/>
+<pin name="rx_parallel_data_out[13]"  direction="input"/>
+<pin name="rx_parallel_data_out[12]"  direction="input"/>
+<pin name="rx_parallel_data_out[11]"  direction="input"/>
+<pin name="rx_parallel_data_out[10]"  direction="input"/>
+<pin name="rx_parallel_data_out[9]"  direction="input"/>
+<pin name="rx_parallel_data_out[8]"  direction="input"/>
+<pin name="rx_parallel_data_out[7]"  direction="input"/>
+<pin name="rx_parallel_data_out[6]"  direction="input"/>
+<pin name="rx_parallel_data_out[5]"  direction="input"/>
+<pin name="rx_parallel_data_out[4]"  direction="input"/>
+<pin name="rx_parallel_data_out[3]"  direction="input"/>
+<pin name="rx_parallel_data_out[2]"  direction="input"/>
+<pin name="rx_parallel_data_out[1]"  direction="input"/>
+<pin name="rx_parallel_data_out[0]"  direction="input"/>
+<pin name="rx_coreclk" direction="input"/>
+<pin name="rx_ctrldetect[3..0]"  direction="input"/>
+<pin name="rx_ctrldetect[3]"  direction="input"/>
+<pin name="rx_ctrldetect[2]"  direction="input"/>
+<pin name="rx_ctrldetect[1]"  direction="input"/>
+<pin name="rx_ctrldetect[0]"  direction="input"/>
+<pin name="stat_rr_pattdet[3..0]"  direction="input"/>
+<pin name="stat_rr_pattdet[3]"  direction="input"/>
+<pin name="stat_rr_pattdet[2]"  direction="input"/>
+<pin name="stat_rr_pattdet[1]"  direction="input"/>
+<pin name="stat_rr_pattdet[0]"  direction="input"/>
+<pin name="err_rr_disp[3..0]"  direction="input"/>
+<pin name="err_rr_disp[3]"  direction="input"/>
+<pin name="err_rr_disp[2]"  direction="input"/>
+<pin name="err_rr_disp[1]"  direction="input"/>
+<pin name="err_rr_disp[0]"  direction="input"/>
+<pin name="flip_polarity" direction="output"/>
+<pin name="rrefclk" direction="output"/>
+<pin name="stat_rr_link" direction="output"/>
+<pin name="err_rr_8berrdet[3..0]"  direction="output"/>
+<pin name="err_rr_8berrdet[3]"  direction="output"/>
+<pin name="err_rr_8berrdet[2]"  direction="output"/>
+<pin name="err_rr_8berrdet[1]"  direction="output"/>
+<pin name="err_rr_8berrdet[0]"  direction="output"/>
+<pin name="mreset_n" direction="input"/>
+<pin name="rxrdp_ena" direction="output"/>
+<pin name="rxrdp_dat[31..0]"  direction="output"/>
+<pin name="rxrdp_dat[31]"  direction="output"/>
+<pin name="rxrdp_dat[30]"  direction="output"/>
+<pin name="rxrdp_dat[29]"  direction="output"/>
+<pin name="rxrdp_dat[28]"  direction="output"/>
+<pin name="rxrdp_dat[27]"  direction="output"/>
+<pin name="rxrdp_dat[26]"  direction="output"/>
+<pin name="rxrdp_dat[25]"  direction="output"/>
+<pin name="rxrdp_dat[24]"  direction="output"/>
+<pin name="rxrdp_dat[23]"  direction="output"/>
+<pin name="rxrdp_dat[22]"  direction="output"/>
+<pin name="rxrdp_dat[21]"  direction="output"/>
+<pin name="rxrdp_dat[20]"  direction="output"/>
+<pin name="rxrdp_dat[19]"  direction="output"/>
+<pin name="rxrdp_dat[18]"  direction="output"/>
+<pin name="rxrdp_dat[17]"  direction="output"/>
+<pin name="rxrdp_dat[16]"  direction="output"/>
+<pin name="rxrdp_dat[15]"  direction="output"/>
+<pin name="rxrdp_dat[14]"  direction="output"/>
+<pin name="rxrdp_dat[13]"  direction="output"/>
+<pin name="rxrdp_dat[12]"  direction="output"/>
+<pin name="rxrdp_dat[11]"  direction="output"/>
+<pin name="rxrdp_dat[10]"  direction="output"/>
+<pin name="rxrdp_dat[9]"  direction="output"/>
+<pin name="rxrdp_dat[8]"  direction="output"/>
+<pin name="rxrdp_dat[7]"  direction="output"/>
+<pin name="rxrdp_dat[6]"  direction="output"/>
+<pin name="rxrdp_dat[5]"  direction="output"/>
+<pin name="rxrdp_dat[4]"  direction="output"/>
+<pin name="rxrdp_dat[3]"  direction="output"/>
+<pin name="rxrdp_dat[2]"  direction="output"/>
+<pin name="rxrdp_dat[1]"  direction="output"/>
+<pin name="rxrdp_dat[0]"  direction="output"/>
+<pin name="rxrdp_ena" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[0]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[1]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[2]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[3]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[4]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[5]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[6]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[7]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[8]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[9]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[10]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[11]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[12]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[13]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[14]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[15]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[16]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[17]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[18]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[19]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[20]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[21]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[22]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[23]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[24]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[25]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[26]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[27]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[28]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[29]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[30]" direction="output" source="logic" scope="internal" />
+<pin name="rxrdp_dat[31]" direction="output" source="logic" scope="internal" />
+<pin name="rrefclk" direction="output" source="logic" scope="internal" />
+<pin name="mreset_n" direction="input" source="logic" scope="internal" />
+<pin name="rx_parallel_data_out[0]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[1]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[2]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[3]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[4]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[5]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[6]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[7]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[8]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[9]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[10]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[11]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[12]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[13]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[14]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[15]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[16]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[17]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[18]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[19]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[20]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[21]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[22]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[23]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[24]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[25]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[26]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[27]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[28]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[29]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[30]" direction="input" source="logic" scope="external" />
+<pin name="rx_parallel_data_out[31]" direction="input" source="logic" scope="external" />
+<pin name="rx_coreclk" direction="input" source="logic" scope="external" />
+<pin name="rx_ctrldetect[0]" direction="input" source="logic" scope="external" />
+<pin name="rx_ctrldetect[1]" direction="input" source="logic" scope="external" />
+<pin name="rx_ctrldetect[2]" direction="input" source="logic" scope="external" />
+<pin name="rx_ctrldetect[3]" direction="input" source="logic" scope="external" />
+<pin name="stat_rr_pattdet[0]" direction="input" source="logic" scope="external" />
+<pin name="stat_rr_pattdet[1]" direction="input" source="logic" scope="external" />
+<pin name="stat_rr_pattdet[2]" direction="input" source="logic" scope="external" />
+<pin name="stat_rr_pattdet[3]" direction="input" source="logic" scope="external" />
+<pin name="err_rr_disp[0]" direction="input" source="logic" scope="external" />
+<pin name="err_rr_disp[1]" direction="input" source="logic" scope="external" />
+<pin name="err_rr_disp[2]" direction="input" source="logic" scope="external" />
+<pin name="err_rr_disp[3]" direction="input" source="logic" scope="external" />
+<pin name="flip_polarity" direction="output" source="logic" scope="external" />
+<pin name="stat_rr_link" direction="output" source="logic" scope="internal" />
+<pin name="err_rr_8berrdet[0]" direction="output" source="logic" scope="internal" />
+<pin name="err_rr_8berrdet[1]" direction="output" source="logic" scope="internal" />
+<pin name="err_rr_8berrdet[2]" direction="output" source="logic" scope="internal" />
+<pin name="err_rr_8berrdet[3]" direction="output" source="logic" scope="internal" />
+</global>
+</pinplan>

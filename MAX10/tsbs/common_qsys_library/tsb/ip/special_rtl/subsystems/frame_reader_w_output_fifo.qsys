@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element DDR3_Qsys
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element cross_to_image_clk
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element driver_clock_in
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_buffer_with_io_fifos
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_reader
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element frame_reader.avalon_dma_control_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element frame_reader_out_fifo
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element frame_reader_out_fifo.in_csr
+   {
+      datum baseAddress
+      {
+         value = "1024";
+         type = "String";
+      }
+   }
+   element frame_reader_w_output_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element frame_reader_w_output_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element image_processing_clock_in
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element nios_avmm_clk
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element reset_bridge_driver_clk
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element reset_bridge_img_clk
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element reset_ctrl_driver_clk
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element reset_ctrl_image_clk
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element st_adapter_for_reader_output
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="EP4SGX230KF40C2" />
+ <parameter name="deviceFamily" value="Stratix IV" />
+ <parameter name="deviceSpeedGrade" value="2" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="3" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceParameter
+   name="num_of_pixels_in_frame"
+   displayName="Num. of Pixels In Frame"
+   type="integer"
+   defaultValue="100"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_locations_in_fifo"
+   displayName="Num. of Locations in Output FIFO"
+   type="integer"
+   defaultValue="16"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="parallelization_ratio"
+   displayName="Parallelization Ratio"
+   type="integer"
+   defaultValue="4"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="num_of_bits_per_pixel"
+   displayName="Num of Bits Per Pixel"
+   type="integer"
+   defaultValue="16"
+   legalRanges=""
+   description="" />
+ <instanceParameter
+   name="dma_enabled_at_startup"
+   displayName="DMA Enabled at Startup"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="swap_symbol_order_for_dma"
+   displayName="Swap Symbol Order for DMA"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="override_external_swap_buffers_now"
+   displayName="Override External Swap Bufs Now"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="override_val_for_external_swap_buffers_now"
+   displayName="Override Val for External Swap Bufs Now"
+   type="integer"
+   defaultValue="0"
+   legalRanges="0 1"
+   description="" />
+ <instanceParameter
+   name="num_watchdog_bits"
+   displayName="Num Watchdog Bits"
+   type="integer"
+   defaultValue="32"
+   legalRanges="1:64"
+   description="" />
+ <instanceParameter
+   name="address_width"
+   displayName="Address Width"
+   type="integer"
+   defaultValue="32"
+   legalRanges="1:32"
+   description="" />
+ <instanceScript><![CDATA[# request a specific version of the scripting API
+package require -exact qsys 14.1
+
+# Set the name of the procedure to manipulate parameters
+set_module_property COMPOSITION_CALLBACK compose
+
+proc compose {} {
+    # manipulate parameters in here
+    # Example: set_instance_parameter_value child0 param0 [ get_parameter_value new_parameter_0 ]
+
+	set dma_enabled_at_startup  [get_parameter_value dma_enabled_at_startup ] 
+	set swap_symbol_order_for_dma  [get_parameter_value swap_symbol_order_for_dma ] 
+	set num_watchdog_bits  [get_parameter_value num_watchdog_bits ] 
+	set override_external_swap_buffers_now          [get_parameter_value override_external_swap_buffers_now         ] 
+	set override_val_for_external_swap_buffers_now  [get_parameter_value override_val_for_external_swap_buffers_now ] 
+	set address_width  [get_parameter_value address_width ] 
+	
+    set_instance_parameter_value frame_reader {num_pixels_in_frame} [get_parameter_value num_of_pixels_in_frame] 
+    set_instance_parameter_value frame_reader {parallelization_ratio} [get_parameter_value parallelization_ratio] 
+    set_instance_parameter_value frame_reader {bits_per_pixel} [get_parameter_value num_of_bits_per_pixel] 
+    set_instance_parameter_value frame_reader {dma_enabled}  $dma_enabled_at_startup 
+    set_instance_parameter_value frame_reader {swap_symbols_for_ddr_write}  $swap_symbol_order_for_dma
+    set_instance_parameter_value frame_reader {override_external_swap_buffers_now}  $override_external_swap_buffers_now
+    set_instance_parameter_value frame_reader {override_val_for_external_swap_buffers_now}  $override_val_for_external_swap_buffers_now
+    set_instance_parameter_value frame_reader {num_watchdog_bits}  $num_watchdog_bits
+    set_instance_parameter_value frame_reader {address_width}  $address_width
+
+    set_instance_parameter_value frame_reader_out_fifo {fifoDepth}  [get_parameter_value num_of_locations_in_fifo] 
+    set_instance_parameter_value frame_reader_out_fifo {symbolsPerBeat}  [get_parameter_value parallelization_ratio]
+    set_instance_parameter_value frame_reader_out_fifo {bitsPerSymbol}  [get_parameter_value num_of_bits_per_pixel]  
+    
+    set_instance_parameter_value st_adapter_for_reader_output {inBitsPerSymbol} [get_parameter_value num_of_bits_per_pixel]
+    set_instance_parameter_value st_adapter_for_reader_output {inDataWidth} [expr {[get_parameter_value parallelization_ratio] *[get_parameter_value num_of_bits_per_pixel] }]
+    set_instance_parameter_value st_adapter_for_reader_output {outDataWidth} [get_parameter_value num_of_bits_per_pixel]
+}]]></instanceScript>
+ <interface
+   name="avalon_mm_slave"
+   internal="cross_to_image_clk.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="avst_out_clk"
+   internal="driver_clock_in.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="driver_clk_reset_n"
+   internal="reset_bridge_driver_clk.in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="frame_reader_avalon_dma_master"
+   internal="frame_reader.avalon_dma_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="frame_reader_avalon_st_out"
+   internal="st_adapter_for_reader_output.out_0"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="frame_reader_hw_control"
+   internal="frame_reader.hw_control"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="frame_reader_out_fifo_in_irq"
+   internal="frame_reader_out_fifo.in_irq"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="frame_reader_snoop"
+   internal="frame_reader.snoop_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="image_clk_reset_n"
+   internal="reset_bridge_img_clk.in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="image_processing_clock"
+   internal="image_processing_clock_in.in_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="nios_avmm_clk"
+   internal="nios_avmm_clk.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="nios_avmm_reset"
+   internal="nios_avmm_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <module
+   name="cross_to_image_clk"
+   kind="altera_avalon_mm_clock_crossing_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="10" />
+  <parameter name="COMMAND_FIFO_DEPTH" value="4" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="MASTER_SYNC_DEPTH" value="2" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="RESPONSE_FIFO_DEPTH" value="4" />
+  <parameter name="SLAVE_SYNC_DEPTH" value="2" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="11" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
+ </module>
+ <module
+   name="driver_clock_in"
+   kind="altera_clock_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="frame_reader"
+   kind="frame_buffer_avalon_video_dma_controller"
+   version="14.1"
+   enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="address_width" value="32" />
+  <parameter name="always_do_buffer_swap" value="true" />
+  <parameter name="bits_per_pixel" value="16" />
+  <parameter name="dma_enabled" value="true" />
+  <parameter name="mode">From Memory to Stream</parameter>
+  <parameter name="num_pixels_in_frame" value="1048576" />
+  <parameter name="num_watchdog_bits" value="64" />
+  <parameter name="override_external_swap_buffers_now" value="false" />
+  <parameter name="override_val_for_external_swap_buffers_now" value="false" />
+  <parameter name="parallelization_ratio" value="2" />
+  <parameter name="swap_symbols_for_ddr_write" value="false" />
+  <parameter name="use_external_backbuffer" value="true" />
+  <parameter name="watchdog_count" value="2000000000" />
+  <parameter name="watchdog_enabled" value="true" />
+ </module>
+ <module
+   name="frame_reader_out_fifo"
+   kind="altera_avalon_fifo"
+   version="18.1"
+   enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="32" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="16" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Stratix IV" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="512" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONST_SOURCE" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="false" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="4" />
+  <parameter name="useBackpressure" value="true" />
+  <parameter name="useIRQ" value="true" />
+  <parameter name="usePacket" value="true" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
+ </module>
+ <module
+   name="image_processing_clock_in"
+   kind="altera_clock_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module name="nios_avmm_clk" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="BOTH" />
+ </module>
+ <module
+   name="reset_bridge_driver_clk"
+   kind="altera_reset_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_RESET" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="both" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
+ </module>
+ <module
+   name="reset_bridge_img_clk"
+   kind="altera_reset_bridge"
+   version="18.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_RESET" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="both" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
+ </module>
+ <module
+   name="reset_ctrl_driver_clk"
+   kind="altera_reset_controller"
+   version="18.1"
+   enabled="1">
+  <parameter name="MIN_RST_ASSERTION_TIME" value="3" />
+  <parameter name="NUM_RESET_INPUTS" value="2" />
+  <parameter name="OUTPUT_RESET_SYNC_EDGES" value="deassert" />
+  <parameter name="RESET_REQUEST_PRESENT" value="0" />
+  <parameter name="RESET_REQ_EARLY_DSRT_TIME" value="1" />
+  <parameter name="RESET_REQ_WAIT_TIME" value="1" />
+  <parameter name="SYNC_DEPTH" value="3" />
+  <parameter name="USE_RESET_REQUEST_IN0" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN1" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN10" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN11" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN12" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN13" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN14" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN15" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN2" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN3" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN4" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN5" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN6" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN7" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN8" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN9" value="0" />
+  <parameter name="USE_RESET_REQUEST_INPUT" value="0" />
+ </module>
+ <module
+   name="reset_ctrl_image_clk"
+   kind="altera_reset_controller"
+   version="18.1"
+   enabled="1">
+  <parameter name="MIN_RST_ASSERTION_TIME" value="3" />
+  <parameter name="NUM_RESET_INPUTS" value="2" />
+  <parameter name="OUTPUT_RESET_SYNC_EDGES" value="deassert" />
+  <parameter name="RESET_REQUEST_PRESENT" value="0" />
+  <parameter name="RESET_REQ_EARLY_DSRT_TIME" value="1" />
+  <parameter name="RESET_REQ_WAIT_TIME" value="1" />
+  <parameter name="SYNC_DEPTH" value="3" />
+  <parameter name="USE_RESET_REQUEST_IN0" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN1" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN10" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN11" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN12" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN13" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN14" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN15" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN2" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN3" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN4" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN5" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN6" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN7" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN8" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN9" value="0" />
+  <parameter name="USE_RESET_REQUEST_INPUT" value="0" />
+ </module>
+ <module
+   name="st_adapter_for_reader_output"
+   kind="altera_avalon_st_adapter"
+   version="18.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="EP4SGX230KF40C2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="inBitsPerSymbol" value="16" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inDataWidth" value="64" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="inUseEmptyPort" value="0" />
+  <parameter name="inUsePackets" value="1" />
+  <parameter name="inUseReady" value="1" />
+  <parameter name="inUseValid" value="1" />
+  <parameter name="outChannelWidth" value="0" />
+  <parameter name="outDataWidth" value="16" />
+  <parameter name="outErrorDescriptor" value="" />
+  <parameter name="outErrorWidth" value="0" />
+  <parameter name="outMaxChannel" value="0" />
+  <parameter name="outReadyLatency" value="0" />
+  <parameter name="outUseEmptyPort" value="0" />
+  <parameter name="outUseReady" value="1" />
+  <parameter name="outUseValid" value="1" />
+ </module>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clk.m0"
+   end="frame_reader.avalon_dma_control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="cross_to_image_clk.m0"
+   end="frame_reader_out_fifo.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0400" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="frame_reader.avalon_pixel_source"
+   end="frame_reader_out_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="18.1"
+   start="frame_reader_out_fifo.out"
+   end="st_adapter_for_reader_output.in_0" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="nios_avmm_clk.clk"
+   end="cross_to_image_clk.s0_clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="frame_reader.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="reset_bridge_driver_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="reset_bridge_img_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="reset_ctrl_image_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="reset_ctrl_driver_clk.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="frame_reader_out_fifo.clk_in" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="frame_reader_out_fifo.clk_out" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="driver_clock_in.out_clk"
+   end="st_adapter_for_reader_output.in_clk_0" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="image_processing_clock_in.out_clk"
+   end="cross_to_image_clk.m0_clk" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios_avmm_clk.clk_reset"
+   end="cross_to_image_clk.s0_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_img_clk.out_reset"
+   end="frame_reader_out_fifo.reset_in" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_driver_clk.out_reset"
+   end="reset_ctrl_image_clk.reset_in0" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_driver_clk.out_reset"
+   end="reset_ctrl_driver_clk.reset_in0" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_img_clk.out_reset"
+   end="reset_ctrl_image_clk.reset_in1" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_bridge_img_clk.out_reset"
+   end="reset_ctrl_driver_clk.reset_in1" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_ctrl_driver_clk.reset_out"
+   end="st_adapter_for_reader_output.in_rst_0" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_ctrl_image_clk.reset_out"
+   end="cross_to_image_clk.m0_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_ctrl_image_clk.reset_out"
+   end="frame_reader.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="reset_ctrl_driver_clk.reset_out"
+   end="frame_reader_out_fifo.reset_out" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="3" />
+</system>

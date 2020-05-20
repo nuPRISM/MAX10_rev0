@@ -1,0 +1,3 @@
+source do_generate_fmc0_hex_files.cmd
+source do_generate_fmc1_hex_files.cmd
+source do_generate_fmc2_hex_files.cmd

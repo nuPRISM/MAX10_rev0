@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2019.01.04.16:15:07"
+ outputDirectory="D:/arria10/triumf.reflexa10/tsb/ip/rtl/arria10_altddio_1bit/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AS066H2F34I1SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="ck" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="ck" direction="input" role="export" width="1" />
+  </interface>
+  <interface name="datain_h" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="datain_h" direction="input" role="fragment" width="1" />
+  </interface>
+  <interface name="datain_l" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="datain_l" direction="input" role="fragment" width="1" />
+  </interface>
+  <interface name="pad_out" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="dataout" direction="output" role="export" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="arria10_altddio_1bit" version="1.0" name="arria10_altddio_1bit">
+  <parameter name="AUTO_GENERATION_ID" value="1546647306" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\synth\arria10_altddio_1bit.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\synth\arria10_altddio_1bit_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\synth\arria10_altddio_1bit.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\synth\arria10_altddio_1bit_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/arria10/triumf.reflexa10/tsb/ip/rtl/arria10_altddio_1bit.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="M:/intelfpga/18.1/ip/altera/altera_gpio/altera_gpio_top/altera_gpio_hw.tcl" />
+   <file
+       path="M:/intelfpga/18.1/ip/altera/altera_gpio/altera_gpio_core20/altera_gpio_core_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="arria10_altddio_1bit">"Generating: arria10_altddio_1bit"</message>
+   <message level="Info" culprit="arria10_altddio_1bit">"Generating: arria10_altddio_1bit_altera_gpio_181_q6lqrny"</message>
+   <message level="Info" culprit="arria10_altddio_1bit">"Generating: altera_gpio"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_gpio"
+   version="18.1"
+   name="arria10_altddio_1bit_altera_gpio_181_q6lqrny">
+  <parameter name="BUS_HOLD" value="false" />
+  <parameter name="EXT_DRIVER_PARAM" value="false" />
+  <parameter name="ENABLE_TERM" value="false" />
+  <parameter name="PIN_TYPE" value="output" />
+  <parameter name="gui_use_oe_off_shadow" value="false" />
+  <parameter name="gui_io_reg_mode" value="DDIO" />
+  <parameter name="OPEN_DRAIN" value="false" />
+  <parameter name="device_family" value="Arria 10" />
+  <parameter name="PIN_TYPE_GUI" value="Output" />
+  <parameter name="gui_diff_buff" value="false" />
+  <parameter name="gui_bus_hold_shadow" value="false" />
+  <parameter name="gui_separate_io_clks" value="false" />
+  <parameter name="gui_separate_io_clks_off_shadow" value="false" />
+  <parameter name="gui_pseudo_diff_on_shadow" value="true" />
+  <parameter name="SEPARATE_I_O_CLOCKS" value="false" />
+  <parameter name="gui_pseudo_diff_off_shadow" value="false" />
+  <parameter name="gui_enable_termination_ports" value="false" />
+  <parameter name="gui_areset_mode_off_shadow" value="None" />
+  <parameter name="gui_enable_cke_off_shadow" value="false" />
+  <parameter name="REGISTER_MODE" value="ddr" />
+  <parameter name="gui_use_oe" value="false" />
+  <parameter name="gui_sreset_mode" value="None" />
+  <parameter name="gui_enable_migratable_port_names" value="true" />
+  <parameter name="gui_sreset_mode_off_shadow" value="None" />
+  <parameter name="ENABLE_OE" value="false" />
+  <parameter name="GENERATE_SDC_FILE" value="false" />
+  <parameter name="gui_pseudo_diff" value="true" />
+  <parameter name="SRESET_MODE" value="none" />
+  <parameter name="IP_MIGRATE_PORT_MAP_FILE" value="altddio_bidir_port_map.csv" />
+  <parameter name="SIZE" value="1" />
+  <parameter name="BUFFER_TYPE" value="single-ended" />
+  <parameter name="PSEUDO_DIFF" value="false" />
+  <parameter name="gui_use_oe_on_shadow" value="true" />
+  <parameter name="gui_open_drain_shadow" value="false" />
+  <parameter name="gui_hr_logic" value="false" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="gui_enable_cke" value="false" />
+  <parameter name="ENABLE_CKE" value="false" />
+  <parameter name="HALF_RATE" value="false" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="gui_areset_mode" value="None" />
+  <parameter name="gui_bus_hold" value="false" />
+  <parameter name="ARESET_MODE" value="none" />
+  <parameter name="gui_open_drain" value="false" />
+  <generatedFiles>
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\altera_gpio_181\synth\arria10_altddio_1bit_altera_gpio_181_q6lqrny.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\altera_gpio_181\synth\arria10_altddio_1bit_altera_gpio_181_q6lqrny_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\altera_gpio_181\synth\arria10_altddio_1bit_altera_gpio_181_q6lqrny.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\altera_gpio_181\synth\arria10_altddio_1bit_altera_gpio_181_q6lqrny_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="M:/intelfpga/18.1/ip/altera/altera_gpio/altera_gpio_top/altera_gpio_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="M:/intelfpga/18.1/ip/altera/altera_gpio/altera_gpio_core20/altera_gpio_core_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="arria10_altddio_1bit" as="gpio_0" />
+  <messages>
+   <message level="Info" culprit="arria10_altddio_1bit">"Generating: arria10_altddio_1bit_altera_gpio_181_q6lqrny"</message>
+   <message level="Info" culprit="arria10_altddio_1bit">"Generating: altera_gpio"</message>
+  </messages>
+ </entity>
+ <entity kind="altera_gpio_core20" version="18.1" name="altera_gpio">
+  <parameter name="BUS_HOLD" value="false" />
+  <parameter name="EXT_DRIVER_PARAM" value="false" />
+  <parameter name="ENABLE_TERM" value="false" />
+  <parameter name="PIN_TYPE" value="output" />
+  <parameter name="gui_use_oe_off_shadow" value="false" />
+  <parameter name="gui_io_reg_mode" value="DDIO" />
+  <parameter name="OPEN_DRAIN" value="false" />
+  <parameter name="PIN_TYPE_GUI" value="Output" />
+  <parameter name="gui_diff_buff" value="false" />
+  <parameter name="gui_bus_hold_shadow" value="false" />
+  <parameter name="gui_separate_io_clks" value="false" />
+  <parameter name="gui_separate_io_clks_off_shadow" value="false" />
+  <parameter name="gui_pseudo_diff_on_shadow" value="true" />
+  <parameter name="SEPARATE_I_O_CLOCKS" value="false" />
+  <parameter name="gui_pseudo_diff_off_shadow" value="false" />
+  <parameter name="gui_enable_termination_ports" value="false" />
+  <parameter name="gui_areset_mode_off_shadow" value="None" />
+  <parameter name="gui_enable_cke_off_shadow" value="false" />
+  <parameter name="REGISTER_MODE" value="ddr" />
+  <parameter name="gui_use_oe" value="false" />
+  <parameter name="gui_sreset_mode" value="None" />
+  <parameter name="gui_enable_migratable_port_names" value="true" />
+  <parameter name="gui_sreset_mode_off_shadow" value="None" />
+  <parameter name="ENABLE_OE" value="false" />
+  <parameter name="GENERATE_SDC_FILE" value="false" />
+  <parameter name="gui_pseudo_diff" value="true" />
+  <parameter name="SRESET_MODE" value="none" />
+  <parameter name="IP_MIGRATE_PORT_MAP_FILE" value="altddio_bidir_port_map.csv" />
+  <parameter name="SIZE" value="1" />
+  <parameter name="BUFFER_TYPE" value="single-ended" />
+  <parameter name="PSEUDO_DIFF" value="false" />
+  <parameter name="gui_use_oe_on_shadow" value="true" />
+  <parameter name="gui_open_drain_shadow" value="false" />
+  <parameter name="gui_hr_logic" value="false" />
+  <parameter name="gui_enable_cke" value="false" />
+  <parameter name="ENABLE_CKE" value="false" />
+  <parameter name="HALF_RATE" value="false" />
+  <parameter name="gui_areset_mode" value="None" />
+  <parameter name="gui_bus_hold" value="false" />
+  <parameter name="ARESET_MODE" value="none" />
+  <parameter name="gui_open_drain" value="false" />
+  <generatedFiles>
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\altera_gpio_core20_181\synth\altera_gpio.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\arria10\triumf.reflexa10\tsb\ip\rtl\arria10_altddio_1bit\altera_gpio_core20_181\synth\altera_gpio.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="M:/intelfpga/18.1/ip/altera/altera_gpio/altera_gpio_core20/altera_gpio_core_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="arria10_altddio_1bit_altera_gpio_181_q6lqrny" as="core" />
+  <messages>
+   <message level="Info" culprit="arria10_altddio_1bit">"Generating: altera_gpio"</message>
+  </messages>
+ </entity>
+</deploy>

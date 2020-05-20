@@ -1,0 +1,3 @@
+
+source do_compile_rtl_fmc0.cmd
+source do_compile_xilinx_fmc0_software.cmd

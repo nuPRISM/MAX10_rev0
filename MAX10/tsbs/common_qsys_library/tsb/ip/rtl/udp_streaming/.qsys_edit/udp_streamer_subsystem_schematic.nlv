@@ -1,0 +1,70 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst udp_streamer_subsystem.dc_fifo_2 -pg 1 -lvl 3 -y 630
+preplace inst udp_streamer_subsystem.packet_multiplexer -pg 1 -lvl 6 -y 650
+preplace inst udp_streamer_subsystem.dc_fifo_3 -pg 1 -lvl 2 -y 610
+preplace inst udp_streamer_subsystem -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst udp_streamer_subsystem.udp_inserter_0 -pg 1 -lvl 4 -y 570
+preplace inst udp_streamer_subsystem.error_packet_discard_0 -pg 1 -lvl 3 -y 30
+preplace inst udp_streamer_subsystem.ap_inserter_0 -pg 1 -lvl 5 -y 570
+preplace inst udp_streamer_subsystem.udp_inserter_1 -pg 1 -lvl 4 -y 450
+preplace inst udp_streamer_subsystem.error_packet_discard_1 -pg 1 -lvl 3 -y 140
+preplace inst udp_streamer_subsystem.clock_bridge_0 -pg 1 -lvl 2 -y 520
+preplace inst udp_streamer_subsystem.ap_inserter_1 -pg 1 -lvl 5 -y 480
+preplace inst udp_streamer_subsystem.udp_inserter_2 -pg 1 -lvl 4 -y 680
+preplace inst udp_streamer_subsystem.error_packet_discard_2 -pg 1 -lvl 3 -y 250
+preplace inst udp_streamer_subsystem.clock_bridge_1 -pg 1 -lvl 2 -y 380
+preplace inst udp_streamer_subsystem.ap_inserter_2 -pg 1 -lvl 5 -y 690
+preplace inst udp_streamer_subsystem.udp_inserter_3 -pg 1 -lvl 4 -y 800
+preplace inst udp_streamer_subsystem.tx_dcfifo -pg 1 -lvl 5 -y 900
+preplace inst udp_streamer_subsystem.multiplexer_ea -pg 1 -lvl 7 -y 590
+preplace inst udp_streamer_subsystem.error_packet_discard_3 -pg 1 -lvl 3 -y 760
+preplace inst udp_streamer_subsystem.clock_bridge_2 -pg 1 -lvl 2 -y 740
+preplace inst udp_streamer_subsystem.ap_inserter_3 -pg 1 -lvl 5 -y 780
+preplace inst udp_streamer_subsystem.nios_bridge -pg 1 -lvl 2 -y 820
+preplace inst udp_streamer_subsystem.clock_bridge_3 -pg 1 -lvl 1 -y 630
+preplace inst udp_streamer_subsystem.external_packet_clk -pg 1 -lvl 4 -y 920
+preplace inst udp_streamer_subsystem.dc_fifo_0 -pg 1 -lvl 3 -y 500
+preplace inst udp_streamer_subsystem.clk_100 -pg 1 -lvl 1 -y 800
+preplace inst udp_streamer_subsystem.dc_fifo_1 -pg 1 -lvl 3 -y 360
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)external_packet_clk.clk_reset,(SLAVE)tx_dcfifo.in_clk_reset) 1 4 1 N
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)dc_fifo_0.in_clk,(MASTER)clock_bridge_0.out_clk) 1 2 1 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)udp_inserter_3.src0,(SLAVE)ap_inserter_3.snk0) 1 4 1 N
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)ap_inserter_1.src0,(SLAVE)packet_multiplexer.in1) 1 5 1 1400
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_inserter_1.snk0,(MASTER)dc_fifo_1.out) 1 3 1 930
+preplace netloc FAN_OUT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_inserter_2.s0,(SLAVE)udp_inserter_1.s0,(SLAVE)error_packet_discard_2.s0,(SLAVE)udp_inserter_0.s0,(SLAVE)error_packet_discard_0.s0,(SLAVE)error_packet_discard_3.s0,(SLAVE)udp_inserter_3.s0,(SLAVE)error_packet_discard_1.s0,(MASTER)nios_bridge.m0) 1 2 2 680 890 930
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)clock_bridge_1.out_clk,(SLAVE)dc_fifo_1.in_clk) 1 2 1 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)error_packet_discard_3.src0,(SLAVE)udp_inserter_3.snk0) 1 3 1 870
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)udp_inserter_2.src0,(SLAVE)ap_inserter_2.snk0) 1 4 1 1130
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)clk_100.clk_in_reset,(SLAVE)udp_streamer_subsystem.reset_100) 1 0 1 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_streamer_subsystem.external_packet_clk,(SLAVE)external_packet_clk.clk_in) 1 0 4 NJ 930 NJ 930 NJ 930 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)tx_dcfifo.in,(SLAVE)udp_streamer_subsystem.externa_avalon_st_packet_in) 1 0 5 NJ 910 NJ 910 NJ 910 NJ 910 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)clock_bridge_2.out_clk,(SLAVE)dc_fifo_2.in_clk) 1 2 1 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)error_packet_discard_3.snk0,(MASTER)dc_fifo_3.out) 1 2 1 640
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(MASTER)udp_streamer_subsystem.out_to_tse_mac,(MASTER)multiplexer_ea.out) 1 7 1 N
+preplace netloc FAN_OUT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_inserter_0.clock_reset,(SLAVE)dc_fifo_2.in_clk_reset,(SLAVE)multiplexer_ea.reset,(SLAVE)nios_bridge.reset,(SLAVE)error_packet_discard_1.clock_reset,(SLAVE)dc_fifo_0.out_clk_reset,(SLAVE)error_packet_discard_2.clock_reset,(SLAVE)ap_inserter_0.clock_reset,(SLAVE)dc_fifo_3.in_clk_reset,(SLAVE)ap_inserter_1.clock_reset,(SLAVE)error_packet_discard_3.clock_reset,(SLAVE)dc_fifo_1.in_clk_reset,(SLAVE)udp_inserter_2.clock_reset,(SLAVE)dc_fifo_3.out_clk_reset,(SLAVE)udp_inserter_1.clock_reset,(SLAVE)dc_fifo_1.out_clk_reset,(SLAVE)udp_inserter_3.clock_reset,(SLAVE)error_packet_discard_0.clock_reset,(SLAVE)packet_multiplexer.clock_reset,(SLAVE)tx_dcfifo.out_clk_reset,(MASTER)clk_100.clk_reset,(SLAVE)dc_fifo_0.in_clk_reset,(SLAVE)ap_inserter_3.clock_reset,(SLAVE)ap_inserter_2.clock_reset,(SLAVE)dc_fifo_2.out_clk_reset) 1 1 6 410 810 620 870 910 790 1150 680 1420 640 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)ap_inserter_2.src0,(SLAVE)packet_multiplexer.in2) 1 5 1 1360
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)packet_multiplexer.in4,(MASTER)tx_dcfifo.out) 1 5 1 1420
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)packet_multiplexer.out,(SLAVE)multiplexer_ea.in) 1 6 1 1600
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)clock_bridge_0.in_clk,(SLAVE)udp_streamer_subsystem.dc_fifo_0_in_clk) 1 0 2 NJ 530 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)udp_inserter_1.src0,(SLAVE)ap_inserter_1.snk0) 1 4 1 1170
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_streamer_subsystem.udp_inserter_0_snk,(SLAVE)dc_fifo_0.in) 1 0 3 NJ 510 NJ 510 NJ
+preplace netloc FAN_OUT<net_container>udp_streamer_subsystem</net_container>(SLAVE)nios_bridge.clk,(SLAVE)udp_inserter_2.clock,(SLAVE)udp_inserter_3.clock,(SLAVE)dc_fifo_1.out_clk,(SLAVE)ap_inserter_3.clock,(SLAVE)error_packet_discard_3.clock,(SLAVE)ap_inserter_0.clock,(SLAVE)dc_fifo_2.out_clk,(MASTER)clk_100.clk,(SLAVE)udp_inserter_0.clock,(SLAVE)tx_dcfifo.out_clk,(SLAVE)error_packet_discard_0.clock,(SLAVE)udp_inserter_1.clock,(SLAVE)multiplexer_ea.clk,(SLAVE)ap_inserter_1.clock,(SLAVE)error_packet_discard_1.clock,(SLAVE)packet_multiplexer.clock,(SLAVE)error_packet_discard_2.clock,(SLAVE)dc_fifo_3.out_clk,(SLAVE)ap_inserter_2.clock,(SLAVE)dc_fifo_0.out_clk) 1 1 6 390 790 580 490 890 560 1190 660 1380 600 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)dc_fifo_2.in,(SLAVE)udp_streamer_subsystem.udp_inserter_2_snk) 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)dc_fifo_1.in,(SLAVE)udp_streamer_subsystem.udp_inserter_1_snk) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)nios_bridge.s0,(SLAVE)udp_streamer_subsystem.nios_bridge_s0_100_mhz) 1 0 2 NJ 870 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)clk_100.clk_in,(SLAVE)udp_streamer_subsystem.clk_100) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_inserter_0.snk0,(MASTER)dc_fifo_0.out) 1 3 1 870
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)clock_bridge_3.out_clk,(SLAVE)dc_fifo_3.in_clk) 1 1 1 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)ap_inserter_3.src0,(SLAVE)packet_multiplexer.in3) 1 5 1 1380
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_streamer_subsystem.udp_inserter_3_snk,(SLAVE)dc_fifo_3.in) 1 0 2 NJ 620 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_streamer_subsystem.external_packet_reset,(SLAVE)external_packet_clk.clk_in_reset) 1 0 4 NJ 950 NJ 950 NJ 950 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)clock_bridge_1.in_clk,(SLAVE)udp_streamer_subsystem.dc_fifo_1_in_clk) 1 0 2 NJ 390 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_streamer_subsystem.dc_fifo_3_in_clk,(SLAVE)clock_bridge_3.in_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>udp_streamer_subsystem</net_container>(SLAVE)clock_bridge_2.in_clk,(SLAVE)udp_streamer_subsystem.dc_fifo_2_in_clk) 1 0 2 NJ 750 NJ
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(MASTER)external_packet_clk.clk,(SLAVE)tx_dcfifo.in_clk) 1 4 1 N
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)packet_multiplexer.in0,(MASTER)ap_inserter_0.src0) 1 5 1 1360
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)udp_inserter_2.snk0,(MASTER)dc_fifo_2.out) 1 3 1 870
+preplace netloc POINT_TO_POINT<net_container>udp_streamer_subsystem</net_container>(SLAVE)ap_inserter_0.snk0,(MASTER)udp_inserter_0.src0) 1 4 1 1130
+levelinfo -pg 1 0 180 1860
+levelinfo -hier udp_streamer_subsystem 190 220 440 720 960 1220 1470 1640 1740

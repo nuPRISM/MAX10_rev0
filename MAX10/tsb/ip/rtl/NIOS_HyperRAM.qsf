@@ -1,0 +1,687 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other
+# applicable license agreement, including, without limitation,
+# that your use is for the sole purpose of programming logic
+# devices manufactured by Altera and sold by Altera or its
+# authorized distributors.  Please refer to the applicable
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 15.0.2 Build 153 07/15/2015 SJ Full Version
+# Date created = 16:08:12  October 15, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Implementation1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M08DAF256C8G
+set_global_assignment -name TOP_LEVEL_ENTITY NIOS_HyperRAM
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.2
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:08:12  OCTOBER 15, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+
+
+
+#Reference Clock
+
+#Externel Reset
+
+#addtional Refernce Clock - 100Mhz
+
+#Hyperbus Signals
+
+
+#LED signals
+
+#arduino LEDs
+
+
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp3.stp
+set_instance_assignment -name VIRTUAL_PIN ON -to virt*
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
+
+# set_global_assignment -name QIP_FILE hypernios/synthesis/hypernios.qip
+set_location_assignment PIN_J2 -to FPGA_DONE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_DONE
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_DONE
+set_location_assignment PIN_J3 -to ModPwrGood
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ModPwrGood
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to ModPwrGood
+set_location_assignment PIN_J1 -to POR_N_LOAD_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POR_N_LOAD_N
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to POR_N_LOAD_N
+# set_location_assignment PIN_J6 -to "MAX10_CLK_p(n)"
+# set_instance_assignment -name RESERVE_PIN AS_OUTPUT_DRIVING_AN_UNSPECIFIED_SIGNAL -to "SMA_CLK_p(n)"
+# set_location_assignment PIN_N3 -to "ADC_SYSREF_p(n)"
+set_location_assignment PIN_C1 -to FPGA_UART_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_UART_TX
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_UART_TX
+set_location_assignment PIN_D1 -to FPGA_UART_RX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_UART_RX
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_UART_RX
+# set_location_assignment PIN_F7 -to Max10_nSTATUS
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Max10_nSTATUS
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to Max10_nSTATUS
+# set_location_assignment PIN_E7 -to MAX10_CONF_DONE
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_CONF_DONE
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_CONF_DONE
+set_location_assignment PIN_E1 -to SRSTn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRSTn
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SRSTn
+# set_location_assignment PIN_F8 -to B8_F8
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B8_F8
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B8_F8
+# set_location_assignment PIN_E8 -to MAX10_nCONFIG
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_nCONFIG
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_nCONFIG
+# set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to "MAX10_CLK_p(n)"
+# set_instance_assignment -name RESERVE_PIN AS_OUTPUT_DRIVING_AN_UNSPECIFIED_SIGNAL -to "ADC_SYSREF_p(n)"
+set_location_assignment PIN_F1 -to FPGA_I2C_INTn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_I2C_INTn
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_I2C_INTn
+set_location_assignment PIN_B1 -to ModPwrEn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ModPwrEn
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to ModPwrEn
+# set_location_assignment PIN_H3 -to JTAG_MAX10_TCK
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to JTAG_MAX10_TCK
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to JTAG_MAX10_TCK
+# set_location_assignment PIN_H2 -to JTAG_MAX10_TMS
+# set_instance_assignment -name IO_STANDARD "1.2 V" -to JTAG_MAX10_TMS
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to JTAG_MAX10_TMS
+# set_location_assignment PIN_H1 -to JTAG_MAX10_TDO
+# set_instance_assignment -name IO_STANDARD "1.2 V" -to JTAG_MAX10_TDO
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to JTAG_MAX10_TDO
+set_location_assignment PIN_J5 -to B1_1B_J5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1_1B_J5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1_1B_J5
+set_location_assignment PIN_G6 -to JTAGEN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to JTAGEN
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to JTAGEN
+set_location_assignment PIN_F4 -to B1A_F4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_F4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_F4
+set_location_assignment PIN_F5 -to B1A_F5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_F5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_F5
+set_location_assignment PIN_C3 -to B1A_C3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_C3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_C3
+set_location_assignment PIN_C4 -to B1A_C4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_C4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_C4
+set_location_assignment PIN_G5 -to B1A_G5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_G5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_G5
+set_location_assignment PIN_H5 -to B1A_H5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_H5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_H5
+set_location_assignment PIN_F2 -to B1A_F2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_F2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_F2
+set_location_assignment PIN_E3 -to B1A_E3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_E3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_E3
+set_location_assignment PIN_G2 -to B1A_G2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_G2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_G2
+set_location_assignment PIN_H6 -to B1A_B2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_B2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_B2
+set_location_assignment PIN_C2 -to B1A_C2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B1A_C2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B1A_C2
+set_location_assignment PIN_N1 -to B2_N1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_N1
+set_location_assignment PIN_L3 -to B2_L3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_L3
+set_location_assignment PIN_M3 -to CLK_50MHz
+set_location_assignment PIN_K2 -to B2_K2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_K2
+set_location_assignment PIN_L1 -to B2_L1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_L1
+set_location_assignment PIN_K6 -to MAX10_CLK_p
+set_location_assignment PIN_L2 -to B2_L2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_L2
+set_location_assignment PIN_M2 -to B2_M2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_M2
+set_location_assignment PIN_P1 -to SMA_CLK_p
+set_location_assignment PIN_L6 -to B2_L6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_L6
+set_location_assignment PIN_K5 -to B2_K5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_K5
+set_location_assignment PIN_N4 -to ADC_SYSREF_p
+set_instance_assignment -name RESERVE_PIN AS_OUTPUT_DRIVING_AN_UNSPECIFIED_SIGNAL -to ADC_SYSREF_p
+set_location_assignment PIN_M1 -to B2_M1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B2_M1
+set_location_assignment PIN_T6 -to FPGA_SPI_SEL1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SEL1
+set_location_assignment PIN_N5 -to B3_N5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_N5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_N5
+set_location_assignment PIN_P4 -to B3_P4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_P4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_P4
+set_location_assignment PIN_R1 -to FPGA_SMA_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SMA_CLK
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SMA_CLK
+set_location_assignment PIN_P2 -to FPGA_SMA_TRIG
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SMA_TRIG
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SMA_TRIG
+set_location_assignment PIN_L7 -to B3_L7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_L7
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_L7
+set_location_assignment PIN_M6 -to B3_M6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_M6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_M6
+set_location_assignment PIN_R2 -to FPGA_UART_SEL4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_UART_SEL4
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to FPGA_UART_SEL4
+set_location_assignment PIN_R3 -to FPGA_UART_SEL2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_UART_SEL2
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to FPGA_UART_SEL2
+set_location_assignment PIN_P5 -to FPGA_SPI_SCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SCLK
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SCLK
+set_location_assignment PIN_R4 -to FPGA_UART_SEL0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_UART_SEL0
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to FPGA_UART_SEL0
+set_location_assignment PIN_R6 -to FPGA_SPI_SEL2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SEL2
+set_location_assignment PIN_T4 -to FPGA_SPI_SDOUT
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SDOUT
+set_instance_assignment -name RESERVE_PIN AS_OUTPUT_DRIVING_AN_UNSPECIFIED_SIGNAL -to FPGA_SPI_SDOUT
+set_location_assignment PIN_T5 -to FPGA_SPI_SDATA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SDATA
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SDATA
+set_location_assignment PIN_L8 -to B3_L8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_L8
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_L8
+set_location_assignment PIN_M7 -to B3_M7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_M7
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_M7
+set_location_assignment PIN_P6 -to B3_P6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_P6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_P6
+set_location_assignment PIN_R7 -to FPGA_SPI_SEL4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SEL4
+set_location_assignment PIN_R8 -to FPGA_SPI_SEL6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SEL6
+set_location_assignment PIN_T8 -to FPGA_SPI_SEL5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SEL5
+set_location_assignment PIN_P8 -to B3_P8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_P8
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_P8
+set_location_assignment PIN_P9 -to B3_P9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_P9
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_P9
+set_location_assignment PIN_R9 -to MAX10_SPARE1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE1
+set_location_assignment PIN_T9 -to MAX10_SPARE0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE0
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE0
+set_location_assignment PIN_M9 -to B3_M9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_M9
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_M9
+set_location_assignment PIN_M8 -to B3_M8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B3_M8
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B3_M8
+set_location_assignment PIN_R10 -to MAX10_SPARE2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE2
+set_location_assignment PIN_T11 -to MAX10_SPARE3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE3
+set_location_assignment PIN_T7 -to FPGA_SPI_SEL3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_SPI_SEL3
+set_location_assignment PIN_T3 -to FPGA_UART_SEL1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_UART_SEL1
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to FPGA_UART_SEL1
+set_location_assignment PIN_T2 -to FPGA_UART_SEL3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_UART_SEL3
+set_location_assignment PIN_R5 -to FPGA_SPI_SEL0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SPI_SEL0
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to FPGA_SPI_SEL0
+set_location_assignment PIN_T12 -to MAX10_SPARE5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE5
+set_location_assignment PIN_P11 -to B4_P11
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_P11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_P11
+set_location_assignment PIN_P10 -to B4_P10
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_P10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_P10
+set_location_assignment PIN_R12 -to MAX10_SPARE6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE6
+set_location_assignment PIN_R11 -to MAX10_SPARE4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE4
+set_location_assignment PIN_L9 -to B4_L9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_L9
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_L9
+set_location_assignment PIN_M10 -to B4_M10
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_M10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_M10
+set_location_assignment PIN_L10 -to B4_L10
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_L10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_L10
+set_location_assignment PIN_M11 -to B4_M11
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_M11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_M11
+set_location_assignment PIN_T13 -to MAX10_SPARE7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE7
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE7
+set_location_assignment PIN_P12 -to B4_P12
+set_location_assignment PIN_P13 -to MAX10_SPARE8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE8
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B4_P12
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B4_P12
+set_location_assignment PIN_R15 -to MAX10_SPARE12
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE12
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE12
+set_location_assignment PIN_P14 -to B5_P14
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_P14
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_P14
+set_location_assignment PIN_R14 -to MAX10_SPARE10
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE10
+set_location_assignment PIN_T14 -to MAX10_SPARE9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE9
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE9
+set_location_assignment PIN_T15 -to MAX10_SPARE11
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE11
+set_location_assignment PIN_L11 -to B5_L11
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_L11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_L11
+set_location_assignment PIN_L12 -to B5_L12
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_L12
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_L12
+set_location_assignment PIN_N14 -to B5_N14
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_N14
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_N14
+set_location_assignment PIN_P15 -to B5_P15
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_P15
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_P15
+set_location_assignment PIN_M15 -to B5_M15
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_M15
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_M15
+set_location_assignment PIN_N16 -to B5_N16
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_N16
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_N16
+set_location_assignment PIN_K11 -to B5_K11
+set_location_assignment PIN_K12 -to B5_K12
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_K11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_K11
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_K12
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_K12
+set_location_assignment PIN_K14 -to B5_K14
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_K14
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_K14
+set_location_assignment PIN_L15 -to B5_L15
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_L15
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_L15
+set_location_assignment PIN_M16 -to B5_M16
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_M16
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_M16
+set_location_assignment PIN_L16 -to B5_L16
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_L16
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_L16
+set_location_assignment PIN_M14 -to B5_M14
+set_instance_assignment -name IO_STANDARD "1.8 V" -to B5_M14
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B5_M14
+set_location_assignment PIN_R16 -to MAX10_SPARE13
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MAX10_SPARE13
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_SPARE13
+set_location_assignment PIN_B16 -to TX_UART19
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART19
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART19
+set_location_assignment PIN_J11 -to RX_UART1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART1
+set_location_assignment PIN_J12 -to RX_UART3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART3
+set_location_assignment PIN_J14 -to RX_UART2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART2
+set_location_assignment PIN_K15 -to SFP_MAX_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SFP_MAX_SDA
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SFP_MAX_SDA
+set_location_assignment PIN_J15 -to SFP_MAC_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SFP_MAC_SCL
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SFP_MAC_SCL
+set_location_assignment PIN_J16 -to TX_UART3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART3
+set_location_assignment PIN_H15 -to TX_UART2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART2
+set_location_assignment PIN_D16 -to TX_UART9
+set_location_assignment PIN_C16 -to TX_UART15
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART15
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART15
+set_location_assignment PIN_H11 -to RX_UART0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART0
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART0
+set_location_assignment PIN_H12 -to RX_UART7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART7
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART7
+set_location_assignment PIN_G14 -to TX_UART0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART0
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART0
+set_location_assignment PIN_G15 -to TX_UART6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART6
+set_location_assignment PIN_G16 -to TX_UART7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART7
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART7
+set_location_assignment PIN_F16 -to TX_UART5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART5
+set_location_assignment PIN_G12 -to RX_UART6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART6
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART6
+set_location_assignment PIN_F14 -to RX_UART5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART5
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART5
+set_location_assignment PIN_E14 -to RX_UART4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART4
+set_location_assignment PIN_E15 -to TX_UART4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART4
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART4
+set_location_assignment PIN_E16 -to TX_UART11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART11
+set_location_assignment PIN_D14 -to RX_UART10
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART10
+set_location_assignment PIN_C14 -to RX_UART8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART8
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART8
+set_location_assignment PIN_D15 -to TX_UART10
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART10
+set_location_assignment PIN_C15 -to TX_UART8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART8
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART8
+set_location_assignment PIN_B15 -to TX_UART14
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART14
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART14
+set_location_assignment PIN_H16 -to TX_UART1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART1
+set_location_assignment PIN_A14 -to RX_UART12
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART12
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART12
+set_location_assignment PIN_D12 -to RX_UART11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART11
+set_location_assignment PIN_E11 -to B7_E11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B7_E11
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B7_E11
+set_location_assignment PIN_C13 -to RX_UART9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART9
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART9
+set_location_assignment PIN_C12 -to RX_UART15
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART15
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART15
+set_location_assignment PIN_E10 -to B7_E10
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B7_E10
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to B7_E10
+set_location_assignment PIN_B13 -to RX_UART13
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART13
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART13
+set_location_assignment PIN_A13 -to RX_UART19
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART19
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART19
+set_location_assignment PIN_A15 -to RX_UART14
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART14
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART14
+set_location_assignment PIN_A10 -to TX_UART17
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART17
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART17
+set_location_assignment PIN_D9 -to CLNR_nINT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLNR_nINT
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to CLNR_nINT
+set_location_assignment PIN_C9 -to TX_UART16
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART16
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART16
+set_location_assignment PIN_B12 -to RX_UART18
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART18
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART18
+set_location_assignment PIN_B11 -to RX_UART17
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART17
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART17
+set_location_assignment PIN_C10 -to TX_UART12
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART12
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART12
+set_location_assignment PIN_B10 -to TX_UART18
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART18
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART18
+set_location_assignment PIN_A11 -to TX_UART13
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART13
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART13
+set_location_assignment PIN_A12 -to RX_UART16
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_UART16
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to RX_UART16
+set_location_assignment PIN_B8 -to CLNR_GPIO0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLNR_GPIO0
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to CLNR_GPIO0
+set_location_assignment PIN_B7 -to SFP_LOS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SFP_LOS
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SFP_LOS
+set_location_assignment PIN_B9 -to CLNR_GPIO2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLNR_GPIO2
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to CLNR_GPIO2
+set_location_assignment PIN_A8 -to CLNR_GPIO3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLNR_GPIO3
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to CLNR_GPIO3
+set_location_assignment PIN_B6 -to FPGA_I2C_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_I2C_SCL
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_I2C_SCL
+set_location_assignment PIN_A7 -to CLNR_GPIO1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLNR_GPIO1
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to CLNR_GPIO1
+set_location_assignment PIN_A6 -to SFP_ModDet
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SFP_ModDet
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SFP_ModDet
+set_location_assignment PIN_B5 -to SFP_TX_Fault
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SFP_TX_Fault
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SFP_TX_Fault
+set_location_assignment PIN_B4 -to SMA_TTL_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_TTL_CLK
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SMA_TTL_CLK
+set_location_assignment PIN_A5 -to FPGA_I2C_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_I2C_SDA
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to FPGA_I2C_SDA
+# set_location_assignment PIN_F7 -to MAX10_nSTATUS
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_nSTATUS
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_nSTATUS
+# set_location_assignment PIN_E7 -to MAX10_CONF_DONE
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_CONF_DONE
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_CONF_DONE
+set_location_assignment PIN_A3 -to SMA_NIM_SYNC
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_NIM_SYNC
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SMA_NIM_SYNC
+set_location_assignment PIN_A2 -to SMA_RJ45_CLK_SEL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_RJ45_CLK_SEL
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SMA_RJ45_CLK_SEL
+set_location_assignment PIN_B3 -to SMA_TTL_SYNC
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_TTL_SYNC
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SMA_TTL_SYNC
+set_location_assignment PIN_A4 -to SMA_NIM_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_NIM_CLK
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to SMA_NIM_CLK
+set_location_assignment PIN_A9 -to CLNR_RESETn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLNR_RESETn
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to CLNR_RESETn
+# set_location_assignment PIN_E8 -to MAX10_nConfig
+# set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_nConfig
+# set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to MAX10_nConfig
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_UART9
+set_instance_assignment -name RESERVE_PIN AS_BIDIRECTIONAL -to TX_UART9
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to CLK_50MHz
+set_instance_assignment -name RESERVE_PIN AS_INPUT_TRI_STATED -to FPGA_UART_SEL3
+set_instance_assignment -name IO_STANDARD LVDS_E_3R -to ADC_SYSREF_p
+set_instance_assignment -name IO_STANDARD LVDS_E_3R -to SMA_CLK_p
+set_instance_assignment -name IO_STANDARD LVDS -to MAX10_CLK_p
+set_location_assignment PIN_J6 -to "MAX10_CLK_p(n)"
+
+
+
+
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=2" -section_id auto_signaltap_0
+set_global_assignment -name QIP_FILE max10_nios_basetester/synthesis/max10_nios_basetester.qip
+set_global_assignment -name SDC_FILE timing_constraints.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE NIOS_HyperRAM.v
+set_global_assignment -name SIGNALTAP_FILE output_files/stp3.stp
+set_global_assignment -name QIP_FILE clk_gen.qip
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name SEARCH_PATH ../../../tsbs/common_rtl_library/tsb/ip/rtl/cookbook/muxing
+set_global_assignment -name SEARCH_PATH ../../../tsbs/common_rtl_library/tsb/ip/rtl/cookbook
+set_global_assignment -name SEARCH_PATH ../../../tsbs/common_rtl_library/tsb/ip/rtl
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to B3_L8 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to B3_P9 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to B3_L8 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to B3_P9 -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=64" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=64" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to B5_L12 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to B5_L15 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to CLNR_GPIO0 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to CLNR_GPIO1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to CLNR_GPIO2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to CLNR_GPIO3 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to SMA_NIM_CLK -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to SMA_NIM_SYNC -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to SMA_TTL_CLK -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to SMA_TTL_SYNC -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to SRSTn -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to B5_L15 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to CLNR_GPIO0 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to CLNR_GPIO1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to CLNR_GPIO2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to CLNR_GPIO3 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to SMA_NIM_CLK -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to SMA_NIM_SYNC -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to SMA_TTL_CLK -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to SMA_TTL_SYNC -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to SRSTn -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=12" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=12" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=12" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=56" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp3_auto_stripped.stp

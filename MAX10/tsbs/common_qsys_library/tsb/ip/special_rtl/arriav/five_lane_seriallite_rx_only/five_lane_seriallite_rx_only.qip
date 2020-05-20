@@ -1,0 +1,21 @@
+set_global_assignment -name IP_TOOL_NAME "SerialLite II"
+set_global_assignment -name IP_TOOL_VERSION "14.1"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Stratix}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "five_lane_seriallite_rx_only.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "five_lane_seriallite_rx_only_slite2_wrapper.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "five_lane_seriallite_rx_only_slite2_unenc.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "five_lane_seriallite_rx_only_slite2_top.v"]
+set_global_assignment -name SEARCH_PATH  [file join $::quartus(qip_path) "." ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only_bb.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.cmp ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.bsf ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only_constraints.tcl ]
+set_global_assignment -name OCP_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only_slite2_phy.ocp ]
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.sdc ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.ppf ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only_slite2_top.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only_slite2_unenc.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only_slite2_wrapper.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.qip ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) five_lane_seriallite_rx_only.html ]

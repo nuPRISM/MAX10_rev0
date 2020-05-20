@@ -1,0 +1,6 @@
+config avalon_st_sc_fifo_only_cfg;
+		design avalon_st_sc_fifo_only;
+		instance avalon_st_sc_fifo_only.sc_fifo_0 use avalon_st_sc_fifo_only_altera_avalon_sc_fifo_181.altera_avalon_sc_fifo;
+		instance avalon_st_sc_fifo_only.rst_controller use avalon_st_sc_fifo_only_altera_reset_controller_181.altera_reset_controller;
+endconfig
+

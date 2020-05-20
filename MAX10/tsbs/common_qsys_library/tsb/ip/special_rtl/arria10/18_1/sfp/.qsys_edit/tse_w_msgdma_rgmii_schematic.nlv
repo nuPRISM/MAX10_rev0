@@ -1,0 +1,48 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst tse_w_msgdma_rgmii.sgdma_tx.rst_inst -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_tx -pg 1 -lvl 3 -y 160
+preplace inst tse_w_msgdma_rgmii.sgdma_rx.cb_inst -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_rx.dispatcher_internal -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_rx.write_mstr_internal -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_rx -pg 1 -lvl 4 -y 70
+preplace inst tse_w_msgdma_rgmii.descriptor_memory -pg 1 -lvl 3 -y 350
+preplace inst tse_w_msgdma_rgmii.tse_mac.i_tse_mac -pg 1
+preplace inst tse_w_msgdma_rgmii.clk_10 -pg 1 -lvl 2 -y 440
+preplace inst tse_w_msgdma_rgmii.mm_bridge_to_tse_mac -pg 1 -lvl 2 -y 30
+preplace inst tse_w_msgdma_rgmii -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst tse_w_msgdma_rgmii.tse_mac -pg 1 -lvl 3 -y 460
+preplace inst tse_w_msgdma_rgmii.sgdma_tx.prefetcher_internal -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_rx.prefetcher_internal -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_tx.dispatcher_internal -pg 1
+preplace inst tse_w_msgdma_rgmii.sgdma_tx.cb_inst -pg 1
+preplace inst tse_w_msgdma_rgmii.clk_50 -pg 1 -lvl 1 -y 30
+preplace inst tse_w_msgdma_rgmii.sgdma_tx.read_mstr_internal -pg 1
+preplace inst tse_w_msgdma_rgmii.clk_100 -pg 1 -lvl 2 -y 170
+preplace inst tse_w_msgdma_rgmii.sgdma_rx.rst_inst -pg 1
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_mac.mac_rgmii_connection,(SLAVE)tse_w_msgdma_rgmii.tse_mac_mac_rgmii_connection) 1 0 3 NJ 550 NJ 550 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(MASTER)tse_w_msgdma_rgmii.sgdma_rx_m_write,(MASTER)sgdma_rx.mm_write) 1 4 1 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_msgdma_rgmii</net_container>(MASTER)tse_mac.receive,(SLAVE)sgdma_rx.st_sink) 1 3 1 1330
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.tse_mac_mac_mdio_connection,(SLAVE)tse_mac.mac_mdio_connection) 1 0 3 NJ 510 NJ 510 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.clk_100,(SLAVE)clk_100.clk_in) 1 0 2 NJ 180 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)tse_w_msgdma_rgmii.reset_50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(MASTER)sgdma_tx.st_source,(MASTER)tse_w_msgdma_rgmii.sgdma_tx_out) 1 3 2 NJ 270 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)sgdma_rx.csr_irq,(SLAVE)tse_w_msgdma_rgmii.sgdma_rx_csr_irq) 1 0 4 NJ 120 NJ 120 NJ 120 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(MASTER)tse_w_msgdma_rgmii.sgdma_tx_m_read,(MASTER)sgdma_tx.mm_read) 1 3 2 NJ 250 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.tse_mac_pcs_mac_rx_clock_connection,(SLAVE)tse_mac.pcs_mac_rx_clock_connection) 1 0 3 NJ 610 NJ 610 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_mac.pcs_mac_tx_clock_connection,(SLAVE)tse_w_msgdma_rgmii.tse_mac_pcs_mac_tx_clock_connection) 1 0 3 NJ 590 NJ 590 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)mm_bridge_to_tse_mac.clk,(MASTER)clk_50.clk) 1 1 1 N
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.sgdma_tx_csr_irq,(SLAVE)sgdma_tx.csr_irq) 1 0 3 NJ 160 NJ 140 NJ
+preplace netloc FAN_OUT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)descriptor_memory.clk1,(MASTER)clk_100.clk,(SLAVE)sgdma_rx.clock,(SLAVE)tse_mac.receive_clock_connection,(SLAVE)tse_mac.transmit_clock_connection,(SLAVE)sgdma_tx.clock) 1 2 2 730 300 1230
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.clk_50,(SLAVE)clk_50.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_mac.transmit,(SLAVE)tse_w_msgdma_rgmii.tse_mac_transmit) 1 0 3 NJ 670 NJ 670 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.clk_10,(SLAVE)clk_10.in_clk) 1 0 2 NJ 450 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_mac.mac_misc_connection,(SLAVE)tse_w_msgdma_rgmii.tse_mac_mac_misc_connection) 1 0 3 NJ 490 NJ 490 NJ
+preplace netloc INTERCONNECT<net_container>tse_w_msgdma_rgmii</net_container>(MASTER)sgdma_tx.descriptor_read_master,(SLAVE)sgdma_rx.csr,(SLAVE)tse_mac.control_port,(SLAVE)sgdma_tx.prefetcher_csr,(MASTER)sgdma_rx.descriptor_write_master,(MASTER)sgdma_rx.descriptor_read_master,(SLAVE)descriptor_memory.s1,(SLAVE)sgdma_tx.csr,(SLAVE)sgdma_rx.prefetcher_csr,(MASTER)mm_bridge_to_tse_mac.m0,(MASTER)sgdma_tx.descriptor_write_master) 1 2 3 770 340 1270 230 1660
+preplace netloc POINT_TO_POINT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_mac.control_port_clock_connection,(MASTER)clk_10.out_clk) 1 2 1 710
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.tse_mac_mac_status_connection,(SLAVE)tse_mac.mac_status_connection) 1 0 3 NJ 570 NJ 570 NJ
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.reset_100,(SLAVE)clk_100.clk_in_reset) 1 0 2 NJ 200 NJ
+preplace netloc FAN_OUT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)sgdma_tx.reset_n,(SLAVE)descriptor_memory.reset1,(SLAVE)tse_mac.reset_connection,(SLAVE)sgdma_rx.reset_n,(MASTER)clk_50.clk_reset,(SLAVE)mm_bridge_to_tse_mac.reset) 1 1 3 430 160 690 320 1290
+preplace netloc EXPORT<net_container>tse_w_msgdma_rgmii</net_container>(SLAVE)tse_w_msgdma_rgmii.avalon_slave,(SLAVE)mm_bridge_to_tse_mac.s0) 1 0 2 NJ 100 NJ
+levelinfo -pg 1 0 200 1810
+levelinfo -hier tse_w_msgdma_rgmii 210 240 500 1010 1440 1680

@@ -1,0 +1,15 @@
+
+//order of include here is important
+#include "bootloader_config_of_main_reset_addr.h"
+
+unsigned long get_main_processor_reset_address() {
+	return	(BOOTLOADER_MAIN_PROCESSOR_RESET_ADDRESS_NAME_IN_MAIN_PROCESSOR_SYSTEM_H - BOOTLOADER_MAIN_PROCESSOR_DDR_SPACE_BASE_ADDRESS_IN_MAIN_PROCESSOR_SYSTEM_H);
+}
+unsigned long get_main_processor_absolute_reset_address_in_main_processor_address_space() {
+	return	(BOOTLOADER_MAIN_PROCESSOR_RESET_ADDRESS_NAME_IN_MAIN_PROCESSOR_SYSTEM_H);
+}
+
+unsigned long get_main_processor_ddr_base_in_main_processor_address_space() {
+	return	BOOTLOADER_MAIN_PROCESSOR_DDR_SPACE_BASE_ADDRESS_IN_MAIN_PROCESSOR_SYSTEM_H;
+}
+

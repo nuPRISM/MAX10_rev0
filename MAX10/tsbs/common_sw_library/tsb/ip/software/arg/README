@@ -1,0 +1,23 @@
+arg-1.0
+
+For simple applications, you just need to copy `arg.cc' and `arg.hh' to your
+program directory, then, compile your program with something like:
+
+	$ c++ my_prog.cc arg.cc -I. -o my_exec
+
+You can also install `libarg' to your system with the usual:
+
+	$ ./configure
+	$ make
+	$ make install
+
+Then, you can compile your program with something like:
+
+	$ c++ my_prog.cc -I/usr/local/include/arg-1.0 -larg -o my_exec
+
+For more details, please see the file `INSTALL'.
+
+Homepage URL of arg is http://ccdw.org/~cjj/prog/arg/ where you can
+also find all the documentation.
+
+Chun-Chung Chen 2010

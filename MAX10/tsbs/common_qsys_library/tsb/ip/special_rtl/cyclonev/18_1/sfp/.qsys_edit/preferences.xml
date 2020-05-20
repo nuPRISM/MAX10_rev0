@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="1" showDebugLogEntries="1" />
+ <systemtable filter="All Interfaces" showClockDomains="1" showResetDomains="0">
+  <columns>
+   <connections preferredWidth="255" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="419" />
+   <description preferredWidth="201" />
+   <export preferredWidth="526" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions/DMA,Library/Basic Functions/DMA/mSGDMA Sub-core,Library/Processors and Peripherals/Inter-Process Communication,Library/Basic Functions,Library/Processors and Peripherals,Library,Project" />
+ <window width="1920" height="1160" x="0" y="0" />
+ <hdlexample language="VERILOG" />
+</preferences>

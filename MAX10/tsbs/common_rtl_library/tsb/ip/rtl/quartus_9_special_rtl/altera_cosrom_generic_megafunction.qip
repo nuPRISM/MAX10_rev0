@@ -1,0 +1,4 @@
+set_global_assignment -name IP_TOOL_NAME "ROM: 2-PORT"
+set_global_assignment -name IP_TOOL_VERSION "9.0"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "altera_cosrom_generic_megafunction_inst.v"]

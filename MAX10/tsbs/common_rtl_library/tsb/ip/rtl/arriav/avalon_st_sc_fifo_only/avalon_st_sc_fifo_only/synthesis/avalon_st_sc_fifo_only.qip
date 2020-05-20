@@ -1,0 +1,21 @@
+set_global_assignment -entity "avalon_st_sc_fifo_only" -library "avalon_st_sc_fifo_only" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "avalon_st_sc_fifo_only" -library "avalon_st_sc_fifo_only" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "avalon_st_sc_fifo_only" -library "avalon_st_sc_fifo_only" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "avalon_st_sc_fifo_only" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../avalon_st_sc_fifo_only.sopcinfo"]
+set_instance_assignment -entity "avalon_st_sc_fifo_only" -library "avalon_st_sc_fifo_only" -name SLD_INFO "QSYS_NAME avalon_st_sc_fifo_only HAS_SOPCINFO 1 GENERATION_ID 1405975095"
+set_global_assignment -library "avalon_st_sc_fifo_only" -name MISC_FILE [file join $::quartus(qip_path) "../../avalon_st_sc_fifo_only.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "avalon_st_sc_fifo_only" -name MISC_FILE [file join $::quartus(qip_path) "../../avalon_st_sc_fifo_only.qsys"]
+
+set_global_assignment -library "avalon_st_sc_fifo_only" -name VERILOG_FILE [file join $::quartus(qip_path) "avalon_st_sc_fifo_only.v"]
+set_global_assignment -library "avalon_st_sc_fifo_only" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "avalon_st_sc_fifo_only" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "avalon_st_sc_fifo_only" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "avalon_st_sc_fifo_only" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+
+set_global_assignment -entity "altera_reset_controller" -library "avalon_st_sc_fifo_only" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "avalon_st_sc_fifo_only" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "avalon_st_sc_fifo_only" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "avalon_st_sc_fifo_only" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "avalon_st_sc_fifo_only" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "avalon_st_sc_fifo_only" -name IP_TOOL_ENV "Qsys"

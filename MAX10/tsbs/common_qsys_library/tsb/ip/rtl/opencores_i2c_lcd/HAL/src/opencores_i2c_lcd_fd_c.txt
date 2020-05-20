@@ -1,0 +1,16 @@
+
+#include "alt_types.h"
+#include "sys/alt_dev.h"
+#include "opencores_i2c_lcd.h"
+
+extern int opencores_i2c_lcd_write(opencores_i2c_lcd_state* sp,
+  const char* ptr, int count, int flags);
+
+int
+opencores_i2c_lcd_write_fd(alt_fd* fd, const char* buffer, int space)
+{
+    opencores_i2c_lcd_dev* dev = (opencores_i2c_lcd_dev*) fd->dev;
+
+    return opencores_i2c_lcd_write(&dev->state, buffer, space,
+      fd->fd_flags);
+}

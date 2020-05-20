@@ -1,0 +1,121 @@
+
+#include <stdio.h>
+#include <string.h>
+#include <io.h>
+#include "system.h"
+#include "db_tests.h"
+
+//#define SLL_HYPERRAM_ONLY
+
+#define SLL_HYPERFLASH_BASE  HYPERFLASH_BASE 
+
+#define SLL_HYPERRAM_BASE    HYPERRAM_BASE 
+#define SLL_HYPERRAM_SPAN    HYPERRAM_SPAN
+
+#define USE_PRINTF 1
+
+
+int main()
+{
+	unsigned long pass = 0;
+	unsigned long error = 0;
+	unsigned long number_of_passes = 4;
+
+	if( USE_PRINTF ){
+		printf("\nRunning a few HyperBus Tests on the HyperMax board!\n");
+	}
+
+	// Inspect HyperFlash
+#ifdef SLL_HYPERRAM_ONLY
+#else
+	error += db_tests_hypermax_check_cfi (SLL_HYPERFLASH_BASE, USE_PRINTF);
+#endif
+
+	// Run HyperRAM tests
+	//
+	number_of_passes = 4;
+	for (pass=0; pass < number_of_passes; pass++)
+	{
+		int skip	 = 0;
+		int base 	 = SLL_HYPERRAM_BASE + skip;
+		int amount = SLL_HYPERRAM_SPAN - skip;
+
+		if( USE_PRINTF ){
+		printf("\n\n== Running pass %lu of %lu passes == \n", pass + 1, number_of_passes);
+		}
+
+  	// Set counter value on LED.
+		IOWR(PIO_0_BASE,0,pass);
+
+		// Check the data path
+		error = error + db_tests_single_data_bit_test(base, USE_PRINTF);
+
+		// Check the byte enable logic
+		error = error + db_tests_byte_enable_test(base, USE_PRINTF);
+
+		// Do various other tests and measure the execution time.
+		error = error + db_tests_read_write_span_accessibility_test(base, amount, USE_PRINTF);
+
+		if( USE_PRINTF ){
+		printf("\n Pass Number: %4lu,  Errors: %4lu \n", pass, error);
+		}
+	}
+
+	if( USE_PRINTF ){
+		// Report to UART.
+		if (error != 0){
+			printf("\n\nTotal number of errors detected: %lu\n",error);
+		}
+		printf("\nDEVBOARDS_TESTS_PERFORMED\n");
+		printf("%c",0x04);	// End nios2-terminal
+	}
+
+	if (error){
+		while(1){
+			volatile int i = 0;
+			for( i = 0; i != 0x1FFFFF; i++ );
+ 				IOWR(PIO_0_BASE,0,0xAA);
+			for( i = 0; i != 0x1FFFFF; i++ );
+				IOWR(PIO_0_BASE,0,0x55);
+		}
+	}else{
+		IOWR(PIO_0_BASE,0,0xFF);
+	}
+
+	return 0;
+}
+
+
+/*
+*  DISCLAIMER:
+*
+*      THIS SOFTWARE, SOURCE CODE AND ASSOCIATED MATERIALS INCLUDING BUT NOT LIMITED TO TUTORIALS,
+*      GUIDES AND COMMENTARY PROVIDED WITH THIS EXERCISE ARE ONLY DESIGNED FOR REFERENCE PURPOSES
+*      TO GIVE AN EXAMPLE TO LICENSEE FOR THEIR OWN NECESSARY DEVELOPMENT OF THEIR OWN SOFTWARE AND/OR
+*      APPLICATION. IT IS NOT DESIGNED FOR ANY SPECIAL PURPOSE, SERIAL PRODUCTION OR USE IN MEDICAL,
+*      MILITARY, AIR CRAFT, AVIATION, SPACE OF LIFE SUPPORT EQUIPMENT.
+*
+*      TO THE EXTENT PERMITTED BY LAW, THE EXERCISE SOFTWARE AND/OR SOURCE CODE AND/OR AND ASSOCIATED
+*      MATERIALS IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND AND ONLY FOR REFERENCE PURPOSES.
+*
+*      SYNAPTIC LABORATORIES LTD. MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, WITH RESPECT TO THE
+*      LICENSED SOFTWARE AND/OR SOURCE CODE AND/OR ASSOCIATED MATERIALS, CONFIDENTIAL INFORMATION AND
+*      DOCUMENTATION PROVIDED HEREUNDER. 
+*
+*      SYNAPTIC LABORATORIES LTD. SPECIFICALLY DISCLAIMS THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+*      FITNESS FOR A PARTICULAR PURPOSE AND ANY WARRANTY AGAINST INFRINGEMENT OF ANY INTELLECTUAL
+*      PROPERTY RIGHT OF ANY THIRD PARTY WITH REGARD TO THE SOFTWARE, DOCUMENTATION (SCHEMATICS ETC.),
+*      SOURCE CODE AND ASSOCIATED MATERIALS, CONFIDENTIAL INFORMATION AND DOCUMENTATION.
+*
+*      ANY USE, COMPILATION AND TESTING OF THE SOFTWARE AND/OR SOURCE CODE IS AT LICENSEE`S OWN RISK
+*      AND LICENSEE IS OBLIGED TO CONDUCT EXTENSIVE TESTS TO AVOID ANY ERRORS AND FAILURE IN THE
+*      COMPILED SOURCE CODE, DOCUMENTATION (SCHEMATICS ETC.) AND THE HEREFROM GENERATED SOFTWARE
+*      OF LICENSEE.
+*
+*      EXCEPT FOR WILFULL INTENT SYNAPTIC LABORATORIES LTD. SHALL IN NO EVENT BE ENTITLED TO OR LIABLE
+*      FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY KIND OR NATURE, INCLUDING,
+*      WITHOUT LIMITATION, BUSINESS INTERRUPTION COSTS, LOSS OF PROFIT OR REVENUE, LOSS OF DATA,
+*      PROMOTIONAL OR MANUFACTURING EXPENSES, OVERHEAD, COSTS OR EXPENSES ASSOCIATED WITH WARRANTY
+*      OR INTELLECTUAL PROPERTY INFRINGEMENT CLAIMS, INJURY TO REPUTATION OR LOSS OF CUSTOMERS.
+*
+*/

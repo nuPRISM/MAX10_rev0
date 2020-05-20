@@ -1,0 +1,49 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.tse_mac -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.tse_mac.reg_rst_module -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.sgdma_rx -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.clk_50 -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.clk_100 -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.tse_mac.i_tse_mac -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.descriptor_memory -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.sgdma_tx -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.clock_10 -pg 1 -lvl 2 -y 140
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_50 -pg 1 -lvl 1 -y 30
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_125_enet_base -pg 1 -lvl 1 -y 110
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_100 -pg 1 -lvl 2 -y 240
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.clk_10 -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.tse_mac.reg_clk_module -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.tse_mac.avalon_arbiter -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.mm_bridge_to_tse_mac -pg 1
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse -pg 1 -lvl 3 -y 160
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.mm_bridge_0 -pg 1 -lvl 2 -y 50
+preplace inst tse_w_sfp_simple_2_ic_red_fifo_tbi.tse.tse_mac.i_tse_pcs_0 -pg 1
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)clk_125_enet_base.out_clk,(SLAVE)tse.tse_mac_pcs_ref_clk_clock_connection) 1 1 1 N
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.reset_100,(MASTER)clk_100.clk_reset) 1 2 1 N
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.sgdma_tx_csr_irq,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_sgdma_tx_csr_irq) 1 0 3 NJ 310 NJ 310 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)clk_50.clk_reset,(SLAVE)tse.reset_50,(SLAVE)mm_bridge_0.reset) 1 1 2 420 210 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)mm_bridge_0.s0,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.mm_bridge_0_s0) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.tse_mac_mac_mdio_connection,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_tse_mac_mac_mdio_connection) 1 0 3 NJ 330 NJ 330 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_tse_mac_mac_misc_connection,(SLAVE)tse.tse_mac_mac_misc_connection) 1 0 3 NJ 350 NJ 350 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.tse_mac_transmit,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_tse_mac_transmit) 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_sgdma_rx_m_write,(MASTER)tse.sgdma_rx_m_write) 1 3 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.reset_100,(SLAVE)clk_100.clk_in_reset) 1 0 2 NJ 270 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.reset_50,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_125_enet_base_in_clk,(SLAVE)clk_125_enet_base.in_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_10,(SLAVE)clock_10.in_clk) 1 0 2 NJ 160 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)clk_100.clk_in,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_100) 1 0 2 NJ 250 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)clk_50.clk_in,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.clk_50) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)mm_bridge_0.m0,(SLAVE)tse.avalon_slave) 1 2 1 760
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.tse_mac_serdes_control_connection,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_tse_mac_serdes_control_connection) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)tse.sgdma_tx_m_read,(MASTER)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_sgdma_tx_m_read) 1 3 1 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)clk_50.clk,(SLAVE)tse.clk_50,(SLAVE)mm_bridge_0.clk) 1 1 2 460 190 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_sgdma_rx_csr_irq,(SLAVE)tse.sgdma_rx_csr_irq) 1 0 3 NJ 230 NJ 230 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)clk_100.clk,(SLAVE)tse.clk_100) 1 2 1 680
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.tse_mac_tbi_connection,(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_tse_mac_tbi_connection) 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse.clk_10,(MASTER)clock_10.out_clk) 1 2 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(MASTER)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_sgdma_tx_out,(MASTER)tse.sgdma_tx_out) 1 3 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple_2_ic_red_fifo_tbi</net_container>(SLAVE)tse_w_sfp_simple_2_ic_red_fifo_tbi.tse_tse_mac_status_led_connection,(SLAVE)tse.tse_mac_status_led_connection) 1 0 3 NJ 390 NJ 390 NJ
+levelinfo -pg 1 0 200 1320
+levelinfo -hier tse_w_sfp_simple_2_ic_red_fifo_tbi 210 250 490 970 1160

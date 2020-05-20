@@ -1,0 +1,249 @@
+0x0000	SPI Configuration A
+0x0001	SPI Configuration B
+0x0002	Chip configuration (local)	
+0x0003	Chip type
+0x0004	Chip ID LSB
+0x0005	Chip ID MSB
+0x0006	Chip grade	
+0x0008	Device index	
+0x000A	Scratch pad
+0x000B	SPI revision
+0x000C	Vendor ID LSB
+0x000D	Vendor ID MSB
+0x000F	Transfer
+0x003F	Chip power- down pin (local)
+0x0040	Chip Pin Control 1
+0x0041	Chip Pin Control 2
+0x0042	Chip Pin Control 3
+0x0108	Clock divider control
+0x0109	Clock divider phase (local)
+0x010A	Clock divider and SYSREF control
+0x010B	Clock divider SYSREF status
+0x0110	Clock delay control
+0x0111	Clock super fine delay (local)
+0x0112	Clock fine delay (local)
+0x0113	Digital clock super fine delay
+0x0114	Digital clock fine delay
+0x011A	Clock detection control
+0x011B	Clock status
+0x011C	Clock Duty Cycle Stabilizer 1 (DCS1) control (local)
+0x011E	Clock Duty Cycle Stabilizer 2 (DCS2) control
+0x0120	SYSREF± Control 1
+0x0121	SYSREF± Control 2
+0x0122	SYSREF±  Control 3
+0x0123	SYSREF Control 4
+0x0128	SYSREF Status 1
+0x0129	SYSREF Status 2
+0x012A	SYSREF Status 3
+0x01FF	Chip sync mode
+0x0200	Chip mode
+0x0201	Chip decimation ratio
+0x0245	Fast detect control (local)
+0x0247	Fast detect uppper LSB (local)
+0x0248	Fast detect upper MSB (local)
+0x0249	Fast detect low LSB (local)
+0x024A	Fast detect low MSB (local)
+0x024B	Fast detect dwell LSB (local)
+0x024C	FAST detect dwell MSB (local)
+0x026F	SIgnal monitor sync control
+0x0270	Signal monitor control (local)
+0x0271	Signal Monitor Period 0 (local)
+0x0272	Signal Monitor Period 1 (local)
+0x0273	Signal Monitor Period 2 (local)
+0x0274	Signal monitor status control (local)
+0x0275	Signal Monitor Status 0 (local)
+0x0276	Signal Monitor Status 1 (local)
+0x0277	Signal Monitor Status 2 (local)
+0x0278	Signal monitor status frame counter (local)
+0x0279	Signal monitor serial framer control (local)
+0x027A	SPORT over JESD204B input selection (local)
+0x0300	DDC sync control
+0x0310	DDC 0 control
+0x0311	DDC 0 input select
+0x0314	DDC 0 NCO control
+0x0315	DDC 0 phase control
+0x0316	DDC 0 Phase Increment 0
+0x0317	DDC 0 Phase Increment 1
+0x0318	DDC 0 Phase Increment 2
+0x0319	DDC 0 Phase Increment 3
+0x031A	DDC 0 Phase Increment 4
+0x031B	DDC 0 Phase Increment 5
+0x031D	DDC 0 Phase Offset 0
+0x031E	DDC 0 Phase Offset 1
+0x031F	DDC 0 Phase Offset 2
+0x0320	DDC 0 Phase Offset 3
+0x0321	DDC 0 Phase Offset 4
+0x0322	DDC 0 Phase Offset 5
+0x0327	DDC 0 test enable
+0x0330	DDC 1 control
+0x0331	DDC 1 input select
+0x0334	DDC 1 NCO control
+0x0335	DDC 1 phase control
+0x0336	DDC 1 Phase Increment 0
+0x0337	DDC 1 Phase Increment 1
+0x0338	DDC 1 Phase Increment 2
+0x0339	DDC 1 Phase Increment 3
+0x033A	DDC 1 Phase Increment 4
+0x033B	DDC 1 Phase Increment 5
+0x033D	DDC 1 Phase Offset 0
+0x033E	DDC 1 Phase Offset 1
+0x033F	DDC 1 Phase Offset 2
+0x0340	DDC 1 Phase Offset 3
+0x0341	DDC 1 Phase Offset 4
+0x0342	DDC 1 Phase Offset 5
+0x0347	DDC 1 test enable	
+0x0350	DDC 2 control	
+0x0351	DDC 2 input select
+0x0354	DDC 2 NCO control
+0x0355	DDC 2 phase control
+0x0356	DDC 2 Phase Increment 0
+0x0357	DDC 2 Phase Increment 1
+0x0358	DDC 2 Phase Increment 2
+0x0359	DDC 2 Phase Increment 3
+0x035A	DDC 2 Phase Increment 4
+0x035B	DDC 2 Phase Increment 5
+0x035D	DDC 2 Phase Offset 0
+0x035E	DDC 2 Phase Offset 1
+0x035F	DDC 2 Phase Offset 2
+0x0360	DDC 2 Phase Offset 3
+0x0361	DDC 2 Phase Offset 4
+0x0362	DDC 2 Phase Offset 5
+0x0367	DDC 2 test enable
+0x0370	DDC 3 control
+0x0371	DDC 3 input select
+0x0374	DDC 3 NCO control
+0x0375	DDC 3 phase control
+0x0376	DDC 3 Phase Increment 0
+0x0377	DDC 3 Phase Increment 1
+0x0378	DDC 3 Phase Increment 2
+0x0379	DDC 3 Phase Increment 3
+0x037A	DDC 3 Phase Increment 4
+0x037B	DDC 3 Phase Increment 5
+0x037D	DDC 3 Phase Offset 0
+0x037E	DDC 3 Phase Offset 1
+0x037F	DDC 3 Phase Offset 2
+0x0380	DDC 3 Phase Offset 3
+0x0381	DDC 3 Phase Offset 4
+0x0382	DDC 3 Phase Offset 5
+0x0387	DDC 3 test enable		
+0x0390	DDC 0 Phase Increment Fractional A0
+0x0391	DDC 0 Phase Increment Fractional A1
+0x0392	DDC 0 Phase Increment Fractional A2
+0x0393	DDC 0 Phase Increment Fractional A3
+0x0394	DDC 0 Phase Increment Fractional A4
+0x0395	DDC 0 Phase Increment Fractional A5
+0x0398	DDC 0 Phase Increment Fractional B0
+0x0399	DDC 0 Phase Increment Fractional B1
+0x039A	DDC 0 Phase Increment Fractional B2
+0x039B	DDC 0 Phase Increment Fractional B3
+0x039C	DDC 0 Phase Increment Fractional B4
+0x039D	DDC 0 Phase Increment Fractional B5
+0x03A0	DDC 1 Phase Increment Fractional A0
+0x03A1	DDC 1 Phase Increment Fractional A1
+0x03A2	DDC 1 Phase Increment Fractional A2
+0x03A3	DDC 1 Phase Increment Fractional A3
+0x03A4	DDC 1 Phase Increment Fractional A4
+0x03A5	DDC 1 Phase Increment Fractional A5
+0x03A8	DDC 1 Phase Increment Fractional B0
+0x03A9	DDC 1 Phase Increment Fractional B1
+0x03AA	DDC 1 Phase Increment Fractional B2
+0x03AB	DDC 1 Phase Increment Fractional B3
+0x03AC	DDC 1 Phase Increment Fractional B4
+0x03AD	DDC 1 Phase Increment Fractional B5
+0x03B0	DDC 2 Phase Increment Fractional A0
+0x03B1	DDC 2 Phase Increment Fractional A1
+0x03B2	DDC 2 Phase Increment Fractional A2
+0x03B3	DDC 2 Phase Increment Fractional A3
+0x03B4	DDC 2 Phase Increment Fractional A4
+0x03B5	DDC 2 Phase Increment Fractional A5
+0x03B8	DDC 2 Phase Increment Fractional B0
+0x03B9	DDC 2 Phase Increment Fractional B1
+0x03BA	DDC 2 Phase Increment Fractional B2
+0x03BB	DDC 2 Phase Increment Fractional B3
+0x03BC	DDC 2 Phase Increment Fractional B4
+0x03BD	DDC 2 Phase Increment Fractional B5
+0x03C0	DDC 3 Phase Increment Fractional A0
+0x03C1	DDC 3 Phase Increment Fractional A1
+0x03C2	DDC 3 Phase Increment Fractional A2
+0x03C3	DDC 3 Phase Increment Fractional A3
+0x03C4	DDC 3 Phase Increment Fractional A4
+0x03C5	DDC 3 Phase Increment Fractional A5
+0x03C8	DDC 3 Phase Increment Fractional B0
+0x03C9	DDC 3 Phase Increment Fractional B1
+0x03CA	DDC 3 Phase Increment Fractional B2
+0x03CB	DDC 3 Phase Increment Fractional B3
+0x03CC	DDC 3 Phase Increment Fractional B4
+0x03CD	DDC 3 Phase Increment Fractional B5
+0x0550	ADC test mode control (local)	
+0x0551	User Pattern 1 LSB
+0x0552	User Pattern 1 MSB
+0x0553	User Pattern 2 LSB
+0x0554	User Pattern 2 MSB
+0x0555	User Pattern 3 LSB
+0x0556	User Pattern 3 MSB
+0x0557	User Pattern 4 LSB
+0x0558	User Pattern 4 MSB
+0x0559	Output Mode Control 1
+0x055A	Output Mode Control 2
+0x0561	Output sample mode
+0x0562	Output overrange clear
+0x0563	Output overrange status
+0x0564	Output channel select
+0x056E	PLL control
+0x056F	PLL status
+0x0571	JESD204B Link Control 1
+0x0572	JESD204B Link Control 2
+0x0573	JESD204B Link Control 3
+0x0574	JESD204B Link Control 4
+0x0578	JESD204B LMFC offset
+0x0580	JESD204B device identification (DID) config- uration
+0x0581	JESD204B bank identification (BID) config- uration
+0x0583	JESD204B Lane Identification 0 (LID0) config- uration
+0x0584	JESD204B LID1 configuration
+0x0585	JESD204B LID2 configuration
+0x0586	JESD204B LID3 configuration
+0x058B	JESD204B scrambling and number of lanes(L) configuration
+0x058C	JESD204B link number of octets per frames (F)
+0x058D	JESD204B link number of frames per multiframe (K)
+0x058E	JESD204B link number of converters (M)
+0x058F	JESD204B number Of control bits (CS) and ADC resolution (N)
+0x0590	JESD204B SCV NP configuration
+0x0591	JESD204B JV S configuration
+0x0592	JESD204B HD CF configuration
+0x05A0	JESD204B Checksum 0 configuration
+0x05A1	JESD204B Checksum 1 configuration
+0x05A2	JESD204B Checksum 2 configuration
+0x05A3	JESD204B Checksum 3 configuration
+0x05B0	JESD204B lane power-down
+0x05B2	JESD204B Lane Assignment 1
+0x05B3	JESD204B Lane Assignment 2
+0x05B5	JESD204B Lane Assignment 3
+0x05B6	JESD204B Lane Assignment 4
+0x05BF	SERDOUTx± data invert
+0x05C0	JESD204B Swing Adjust 1
+0x05C1	JESD204B Swing Adjust 2
+0x05C2	JESD204B Swing Adjust 3
+0x05C3	JESD204B Swing Adjust 4
+0x05C4	SERDOUT0± pre-emphasis select
+0x05C6	SERDOUT1± pre-emphasis select
+0x05C8	SERDOUT2± pre-emphasis select
+0x05CA	SERDOUT3± pre-emphasis select
+0x1222	JESD204B PLL calibration
+0x1228	JESD204B PLL start-up control
+0x1262	JESD204B PLL LOL bit control
+0x0DF8	Programmable filter control
+0x0DF9	PFILT gain
+0x0E00 to 0x0E7F Programmable Filter X Coefficient x
+0x0F00 to 0x0F7F Programmable Filter Y Coefficient x
+0x0701	DC Offset Calibration	Control 1 (local)
+0x073B	DC Offset Calibration Control 2 (local)
+0x18A6	VREF control
+0x18E3	External VCM buffer control
+0x18E6	Temperature diode export
+0x1908	Analog input control (local)
+0x1910	Input full-scale control (local)
+0x1A4C	Buffer Control 1 (local)
+0x1A4D	Buffer Control 2 (local)
+0x1B03	Buffer Control 3 (local)
+0x1B08	Buffer Control 4 (local)
+0x1B10	Buffer Control 5 (local)

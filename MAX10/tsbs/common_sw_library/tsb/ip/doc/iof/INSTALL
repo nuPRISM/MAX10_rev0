@@ -1,0 +1,19 @@
+Unix: 
+-----
+Copy the include/iof folder to a location of your choice. 
+You can then add that location to your include path for your compiler. E.g.
+
+> cp -r include/iof /usr/local/include
+> ls /usr/local/include
+iof
+> g++ -I /usr/local/includes ...
+
+
+Windows:
+--------
+Open root of distribution
+Go to the folder named 'include'
+Select the folder named 'iof' 
+Drag it to a location of your choice
+You can then add this location to your include path for your compiler
+

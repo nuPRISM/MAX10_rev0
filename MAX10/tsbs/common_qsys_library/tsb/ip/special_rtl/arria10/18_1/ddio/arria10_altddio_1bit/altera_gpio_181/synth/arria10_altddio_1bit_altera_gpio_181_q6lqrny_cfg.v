@@ -1,0 +1,5 @@
+config arria10_altddio_1bit_altera_gpio_181_q6lqrny_cfg;
+		design arria10_altddio_1bit_altera_gpio_181_q6lqrny;
+		instance arria10_altddio_1bit_altera_gpio_181_q6lqrny.core use arria10_altddio_1bit_altera_gpio_core20_181.altera_gpio;
+endconfig
+

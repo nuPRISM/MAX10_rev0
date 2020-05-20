@@ -1,0 +1,53 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst tse_w_sfp_simple.tse.tse_mac.phyip_rxclkout_splitter_instance_0 -pg 1
+preplace inst tse_w_sfp_simple.clk_125_enet_base -pg 1 -lvl 2 -y 340
+preplace inst tse_w_sfp_simple.clock_10 -pg 1 -lvl 2 -y 120
+preplace inst tse_w_sfp_simple.clk_50 -pg 1 -lvl 1 -y 30
+preplace inst tse_w_sfp_simple.tse.tse_mac.ref_clk_module -pg 1
+preplace inst tse_w_sfp_simple.tse.tse_mac.reg_rst_module -pg 1
+preplace inst tse_w_sfp_simple.tse.sgdma_tx -pg 1
+preplace inst tse_w_sfp_simple.tse -pg 1 -lvl 3 -y 140
+preplace inst tse_w_sfp_simple.tse.tse_mac.i_phyip_terminator_0 -pg 1
+preplace inst tse_w_sfp_simple.tse.tse_mac.i_custom_phyip_0 -pg 1
+preplace inst tse_w_sfp_simple.tse.clk_10 -pg 1
+preplace inst tse_w_sfp_simple.tse.mm_bridge_to_tse_mac -pg 1
+preplace inst tse_w_sfp_simple.tse.descriptor_memory -pg 1
+preplace inst tse_w_sfp_simple.tse.tse_mac.avalon_arbiter -pg 1
+preplace inst tse_w_sfp_simple.tse.sgdma_rx -pg 1
+preplace inst tse_w_sfp_simple.tse.tse_mac.reg_clk_module -pg 1
+preplace inst tse_w_sfp_simple.tse.tse_mac.i_tse_mac -pg 1
+preplace inst tse_w_sfp_simple.tse.clk_50 -pg 1
+preplace inst tse_w_sfp_simple.tse.clk_100 -pg 1
+preplace inst tse_w_sfp_simple -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst tse_w_sfp_simple.tse.tse_mac.i_tse_pcs_0 -pg 1
+preplace inst tse_w_sfp_simple.tse.tse_mac -pg 1
+preplace inst tse_w_sfp_simple.mm_bridge_0 -pg 1 -lvl 2 -y 30
+preplace inst tse_w_sfp_simple.clk_100 -pg 1 -lvl 2 -y 220
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(MASTER)tse_w_sfp_simple.tse_sgdma_tx_m_read,(MASTER)tse.sgdma_tx_m_read) 1 3 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(MASTER)tse.sgdma_rx_m_write,(MASTER)tse_w_sfp_simple.tse_sgdma_rx_m_write) 1 3 1 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sfp_simple</net_container>(SLAVE)mm_bridge_0.reset,(SLAVE)tse.reset_50,(MASTER)clk_50.clk_reset) 1 1 2 410 190 700
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse.clk_100,(MASTER)clk_100.clk) 1 2 1 680
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(MASTER)tse.sgdma_tx_out,(MASTER)tse_w_sfp_simple.tse_sgdma_tx_out) 1 3 1 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple</net_container>(MASTER)clk_100.clk_reset,(SLAVE)tse.reset_100) 1 2 1 N
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.tse_tse_mac_mac_misc_connection,(SLAVE)tse.tse_mac_mac_misc_connection) 1 0 3 NJ 330 NJ 330 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse.avalon_slave,(MASTER)mm_bridge_0.m0) 1 2 1 760
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.clk_10,(SLAVE)clock_10.in_clk) 1 0 2 NJ 130 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.clk_125_enet_base_in_clk,(SLAVE)clk_125_enet_base.in_clk) 1 0 2 NJ 350 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.tse_sgdma_tx_csr_irq,(SLAVE)tse.sgdma_tx_csr_irq) 1 0 3 NJ 310 NJ 310 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse.tse_mac_status_led_connection,(SLAVE)tse_w_sfp_simple.tse_tse_mac_status_led_connection) 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)clk_100.clk_in,(SLAVE)tse_w_sfp_simple.clk_100) 1 0 2 NJ 230 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple</net_container>(MASTER)clk_125_enet_base.out_clk,(SLAVE)tse.tse_mac_pcs_ref_clk_clock_connection) 1 2 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)clk_50.clk_in,(SLAVE)tse_w_sfp_simple.clk_50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.tse_tse_mac_transmit,(SLAVE)tse.tse_mac_transmit) 1 0 3 NJ 470 NJ 470 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse.tse_mac_serdes_control_connection,(SLAVE)tse_w_sfp_simple.tse_tse_mac_serdes_control_connection) 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.reset_50,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.reset_100,(SLAVE)clk_100.clk_in_reset) 1 0 2 NJ 270 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)mm_bridge_0.s0,(SLAVE)tse_w_sfp_simple.mm_bridge_0_s0) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.tse_tse_mac_serial_connection,(SLAVE)tse.tse_mac_serial_connection) 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc POINT_TO_POINT<net_container>tse_w_sfp_simple</net_container>(MASTER)clock_10.out_clk,(SLAVE)tse.clk_10) 1 2 1 NJ
+preplace netloc FAN_OUT<net_container>tse_w_sfp_simple</net_container>(SLAVE)mm_bridge_0.clk,(MASTER)clk_50.clk,(SLAVE)tse.clk_50) 1 1 2 450 170 720
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse_w_sfp_simple.tse_tse_mac_mac_mdio_connection,(SLAVE)tse.tse_mac_mac_mdio_connection) 1 0 3 NJ 290 NJ 290 NJ
+preplace netloc EXPORT<net_container>tse_w_sfp_simple</net_container>(SLAVE)tse.sgdma_rx_csr_irq,(SLAVE)tse_w_sfp_simple.tse_sgdma_rx_csr_irq) 1 0 3 NJ 210 NJ 210 NJ
+levelinfo -pg 1 0 200 1320
+levelinfo -hier tse_w_sfp_simple 210 240 490 970 1160

@@ -1,0 +1,9 @@
+<library>
+	<path path="../../../../tsbs/common_qsys_library/tsb/ip/rtl/**/*" />
+	<path path="../../../../tsbs/common_qsys_library/tsb/ip/special_rtl/fifoed_avalon_uart_13_1/**/*" />
+	<path path="../../../../tsbs/common_qsys_library/tsb/ip/special_rtl/cyclonev/16_1/**/*" />
+	<path path="sockit_ghrd/**/*" />
+	<path path="sockit_ghrd/ip/**/*" />
+	<path path="../../../../tsbs/common_qsys_library/tsb/ip/special_rtl/University_Program_13_1/**/*" />
+	<path path="../../../../tsbs/common_qsys_library/tsb/ip/special_rtl/University_Program/**/*" />
+</library>

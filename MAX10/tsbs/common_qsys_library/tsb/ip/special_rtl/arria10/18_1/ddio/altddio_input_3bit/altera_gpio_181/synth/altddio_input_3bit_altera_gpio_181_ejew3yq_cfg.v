@@ -1,0 +1,5 @@
+config altddio_input_3bit_altera_gpio_181_ejew3yq_cfg;
+		design altddio_input_3bit_altera_gpio_181_ejew3yq;
+		instance altddio_input_3bit_altera_gpio_181_ejew3yq.core use altddio_input_3bit_altera_gpio_core20_181.altera_gpio;
+endconfig
+

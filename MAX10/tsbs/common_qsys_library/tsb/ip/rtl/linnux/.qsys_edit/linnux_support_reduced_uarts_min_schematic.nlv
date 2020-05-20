@@ -1,0 +1,71 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst linnux_support_reduced_uarts.uart_0 -pg 1 -lvl 3 -y 1610
+preplace inst linnux_support_reduced_uarts.mm_bridge_0 -pg 1 -lvl 2 -y 1070
+preplace inst linnux_support_reduced_uarts.counter_64_bit_0 -pg 1 -lvl 3 -y 690
+preplace inst linnux_support_reduced_uarts.GP_FIFO_0_Flags -pg 1 -lvl 3 -y 140
+preplace inst linnux_support_reduced_uarts.GP_FIFO_0_Control -pg 1 -lvl 3 -y 30
+preplace inst linnux_support_reduced_uarts.pio_dips -pg 1 -lvl 3 -y 1260
+preplace inst linnux_support_reduced_uarts.fmc_present -pg 1 -lvl 3 -y 800
+preplace inst linnux_support_reduced_uarts.uart_is_regfile -pg 1 -lvl 3 -y 2770
+preplace inst linnux_support_reduced_uarts.uart_internal_disable -pg 1 -lvl 3 -y 2550
+preplace inst linnux_support_reduced_uarts.GP_FIFO_1_Read_Data -pg 1 -lvl 3 -y 580
+preplace inst linnux_support_reduced_uarts.GP_FIFO_0_Read_Data -pg 1 -lvl 3 -y 250
+preplace inst linnux_support_reduced_uarts.uart_internal_enable -pg 1 -lvl 3 -y 2660
+preplace inst linnux_support_reduced_uarts -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst linnux_support_reduced_uarts.uart_7 -pg 1 -lvl 3 -y 1740
+preplace inst linnux_support_reduced_uarts.GP_FIFO_1_Control -pg 1 -lvl 3 -y 360
+preplace inst linnux_support_reduced_uarts.sd_spi_cs_n -pg 1 -lvl 3 -y 2110
+preplace inst linnux_support_reduced_uarts.pio_leds -pg 1 -lvl 3 -y 1370
+preplace inst linnux_support_reduced_uarts.generic_hdl_info -pg 1 -lvl 3 -y 910
+preplace inst linnux_support_reduced_uarts.uart_enabled -pg 1 -lvl 3 -y 2440
+preplace inst linnux_support_reduced_uarts.uart_10 -pg 1 -lvl 3 -y 1870
+preplace inst linnux_support_reduced_uarts.sd_spi_mosi -pg 1 -lvl 3 -y 2330
+preplace inst linnux_support_reduced_uarts.spi_master_to_maxv -pg 1 -lvl 3 -y 1480
+preplace inst linnux_support_reduced_uarts.sd_clk -pg 1 -lvl 3 -y 2000
+preplace inst linnux_support_reduced_uarts.sd_spi_miso -pg 1 -lvl 3 -y 2220
+preplace inst linnux_support_reduced_uarts.pio_button -pg 1 -lvl 3 -y 1130
+preplace inst linnux_support_reduced_uarts.hires_timer -pg 1 -lvl 3 -y 1020
+preplace inst linnux_support_reduced_uarts.clk_50 -pg 1 -lvl 1 -y 1060
+preplace inst linnux_support_reduced_uarts.GP_FIFO_1_Flags -pg 1 -lvl 3 -y 470
+preplace inst linnux_support_reduced_uarts.uart_13 -pg 1 -lvl 3 -y 2880
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_13.external_connection,(SLAVE)linnux_support_reduced_uarts.uart_13_external_connection) 1 0 3 NJ 2910 NJ 2910 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_0.irq,(SLAVE)linnux_support_reduced_uarts.uart_0_irq) 1 0 3 NJ 1660 NJ 1660 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_enabled.external_connection,(SLAVE)linnux_support_reduced_uarts.uart_enabled_word) 1 0 3 NJ 2470 NJ 2470 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.uart_7_external_connection,(SLAVE)uart_7.external_connection) 1 0 3 NJ 1770 NJ 1770 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.uart_13_irq,(SLAVE)uart_13.irq) 1 0 3 NJ 2930 NJ 2930 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)linnux_support_reduced_uarts.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)GP_FIFO_1_Control.external_connection,(SLAVE)linnux_support_reduced_uarts.gp_fifo_1_control) 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)fmc_present.external_connection,(SLAVE)linnux_support_reduced_uarts.fmc_present_external_connection) 1 0 3 NJ 830 NJ 830 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_internal_disable.external_connection,(SLAVE)linnux_support_reduced_uarts.uart_internal_disable_external_connection) 1 0 3 NJ 2580 NJ 2580 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.pio_dips,(SLAVE)pio_dips.external_connection) 1 0 3 NJ 1290 NJ 1290 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.nios_avalon_mm_50mhz,(SLAVE)mm_bridge_0.s0) 1 0 2 NJ 1130 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.hires_timer_irq,(SLAVE)hires_timer.irq) 1 0 3 NJ 1050 NJ 1050 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.pio_button,(SLAVE)pio_button.external_connection) 1 0 3 NJ 1160 NJ 1160 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.generic_hdl_info_word,(SLAVE)generic_hdl_info.external_connection) 1 0 3 NJ 940 NJ 940 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)clk_50.clk_in,(SLAVE)linnux_support_reduced_uarts.clk_50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.gp_fifo_0_read_data,(SLAVE)GP_FIFO_0_Read_Data.external_connection) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)GP_FIFO_0_Flags.clk,(MASTER)clk_50.clk,(SLAVE)mm_bridge_0.clk,(SLAVE)uart_enabled.clk,(SLAVE)sd_spi_miso.clk,(SLAVE)pio_leds.clk,(SLAVE)pio_button.clk,(SLAVE)GP_FIFO_1_Control.clk,(SLAVE)fmc_present.clk,(SLAVE)counter_64_bit_0.clock_reset,(SLAVE)sd_spi_cs_n.clk,(SLAVE)uart_10.clk,(SLAVE)uart_is_regfile.clk,(SLAVE)sd_spi_mosi.clk,(SLAVE)GP_FIFO_1_Read_Data.clk,(SLAVE)uart_0.clk,(SLAVE)uart_7.clk,(SLAVE)spi_master_to_maxv.clk,(SLAVE)GP_FIFO_0_Control.clk,(SLAVE)GP_FIFO_0_Read_Data.clk,(SLAVE)GP_FIFO_1_Flags.clk,(SLAVE)uart_internal_enable.clk,(SLAVE)hires_timer.clk,(SLAVE)pio_dips.clk,(SLAVE)sd_clk.clk,(SLAVE)generic_hdl_info.clk,(SLAVE)uart_internal_disable.clk,(SLAVE)uart_13.clk) 1 1 2 450 2820 570
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.uart_10_external_connection,(SLAVE)uart_10.external_connection) 1 0 3 NJ 1900 NJ 1900 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)sd_clk.external_connection,(SLAVE)linnux_support_reduced_uarts.sd_clk) 1 0 3 NJ 2030 NJ 2030 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)GP_FIFO_0_Flags.external_connection,(SLAVE)linnux_support_reduced_uarts.gp_fifo_0_flags) 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.gp_fifo_0_control,(SLAVE)GP_FIFO_0_Control.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.counter_64_bit_0_current_count,(SLAVE)counter_64_bit_0.current_count) 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_is_regfile.external_connection,(SLAVE)linnux_support_reduced_uarts.uart_is_regfile_external_connection) 1 0 3 NJ 2800 NJ 2800 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.spi_master_to_maxv_irq,(SLAVE)spi_master_to_maxv.irq) 1 0 3 NJ 1530 NJ 1530 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_0.external_connection,(SLAVE)linnux_support_reduced_uarts.uart_0_external_connection) 1 0 3 NJ 1640 NJ 1640 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)pio_leds.external_connection,(SLAVE)linnux_support_reduced_uarts.pio_leds) 1 0 3 NJ 1400 NJ 1400 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)GP_FIFO_1_Read_Data.reset,(SLAVE)sd_spi_cs_n.reset,(SLAVE)fmc_present.reset,(SLAVE)pio_leds.reset,(SLAVE)hires_timer.reset,(SLAVE)uart_internal_disable.reset,(SLAVE)sd_spi_mosi.reset,(SLAVE)sd_spi_miso.reset,(SLAVE)uart_enabled.reset,(SLAVE)uart_13.reset,(SLAVE)GP_FIFO_0_Control.reset,(SLAVE)GP_FIFO_0_Flags.reset,(SLAVE)uart_10.reset,(SLAVE)sd_clk.reset,(SLAVE)spi_master_to_maxv.reset,(SLAVE)GP_FIFO_0_Read_Data.reset,(SLAVE)GP_FIFO_1_Flags.reset,(SLAVE)uart_7.reset,(SLAVE)pio_dips.reset,(SLAVE)GP_FIFO_1_Control.reset,(SLAVE)uart_0.reset,(SLAVE)pio_button.reset,(SLAVE)counter_64_bit_0.reset,(SLAVE)uart_is_regfile.reset,(MASTER)clk_50.clk_reset,(SLAVE)uart_internal_enable.reset,(SLAVE)generic_hdl_info.reset,(SLAVE)mm_bridge_0.reset) 1 1 2 410 2950 590
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_7.irq,(SLAVE)linnux_support_reduced_uarts.uart_7_irq) 1 0 3 NJ 1790 NJ 1790 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_internal_enable.external_connection,(SLAVE)linnux_support_reduced_uarts.uart_internal_enable_external_connection) 1 0 3 NJ 2690 NJ 2690 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.gp_fifo_1_read_data,(SLAVE)GP_FIFO_1_Read_Data.external_connection) 1 0 3 NJ 610 NJ 610 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.sd_spi_mosi,(SLAVE)sd_spi_mosi.external_connection) 1 0 3 NJ 2360 NJ 2360 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)sd_spi_miso.external_connection,(SLAVE)linnux_support_reduced_uarts.sd_spi_miso) 1 0 3 NJ 2250 NJ 2250 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.gp_fifo_1_flags,(SLAVE)GP_FIFO_1_Flags.external_connection) 1 0 3 NJ 500 NJ 500 NJ
+preplace netloc FAN_OUT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_7.s1,(SLAVE)uart_is_regfile.s1,(SLAVE)uart_13.s1,(SLAVE)generic_hdl_info.s1,(SLAVE)counter_64_bit_0.avalon_slave_0,(SLAVE)sd_spi_mosi.s1,(SLAVE)GP_FIFO_0_Flags.s1,(SLAVE)GP_FIFO_1_Control.s1,(SLAVE)fmc_present.s1,(SLAVE)GP_FIFO_0_Control.s1,(SLAVE)GP_FIFO_1_Read_Data.s1,(SLAVE)uart_internal_enable.s1,(SLAVE)sd_spi_cs_n.s1,(SLAVE)pio_leds.s1,(SLAVE)hires_timer.s1,(SLAVE)pio_dips.s1,(SLAVE)sd_spi_miso.s1,(MASTER)mm_bridge_0.m0,(SLAVE)pio_button.s1,(SLAVE)uart_10.s1,(SLAVE)uart_internal_disable.s1,(SLAVE)uart_0.s1,(SLAVE)GP_FIFO_0_Read_Data.s1,(SLAVE)GP_FIFO_1_Flags.s1,(SLAVE)spi_master_to_maxv.spi_control_port,(SLAVE)uart_enabled.s1,(SLAVE)sd_clk.s1) 1 2 1 610
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)uart_10.irq,(SLAVE)linnux_support_reduced_uarts.uart_10_irq) 1 0 3 NJ 1920 NJ 1920 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)sd_spi_cs_n.external_connection,(SLAVE)linnux_support_reduced_uarts.sd_spi_cs_n) 1 0 3 NJ 2140 NJ 2140 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)linnux_support_reduced_uarts.pio_button_irq,(SLAVE)pio_button.irq) 1 0 3 NJ 1180 NJ 1180 NJ
+preplace netloc EXPORT<net_container>linnux_support_reduced_uarts</net_container>(SLAVE)spi_master_to_maxv.external,(SLAVE)linnux_support_reduced_uarts.spi_master_to_maxv) 1 0 3 NJ 1510 NJ 1510 NJ
+levelinfo -pg 1 0 200 810
+levelinfo -hier linnux_support_reduced_uarts 210 240 480 640 800

@@ -1,0 +1,200 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst NIOS_ApplicationProcessor.uart_6 -pg 1 -lvl 4 -y 4680
+preplace inst NIOS_ApplicationProcessor.sd_spi_miso -pg 1 -lvl 3 -y 2630
+preplace inst NIOS_ApplicationProcessor -pg 1 -lvl 1 -y 40 -regml 14 -regy -20
+preplace inst NIOS_ApplicationProcessor.ap_inserter_1 -pg 1 -lvl 5 -y 2410
+preplace inst NIOS_ApplicationProcessor.uart_internal_disable -pg 1 -lvl 4 -y 3570
+preplace inst NIOS_ApplicationProcessor.uart_7 -pg 1 -lvl 4 -y 4810
+preplace inst NIOS_ApplicationProcessor.sgdma_tx -pg 1 -lvl 3 -y 1560
+preplace inst NIOS_ApplicationProcessor.ap_inserter_2 -pg 1 -lvl 5 -y 2540
+preplace inst NIOS_ApplicationProcessor.uart_8 -pg 1 -lvl 4 -y 4940
+preplace inst NIOS_ApplicationProcessor.ap_inserter_3 -pg 1 -lvl 5 -y 3040
+preplace inst NIOS_ApplicationProcessor.jtag_uart_0 -pg 1 -lvl 4 -y 5400
+preplace inst NIOS_ApplicationProcessor.uart_9 -pg 1 -lvl 4 -y 6100
+preplace inst NIOS_ApplicationProcessor.jtag_uart_1 -pg 1 -lvl 3 -y 1120
+preplace inst NIOS_ApplicationProcessor.clk_100 -pg 1 -lvl 2 -y 2080
+preplace inst NIOS_ApplicationProcessor.tx_dcfifo -pg 1 -lvl 5 -y 2250
+preplace inst NIOS_ApplicationProcessor.sysid -pg 1 -lvl 4 -y 5620
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM -pg 1 -lvl 11 -y 1280
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.afi_clk -pg 1
+preplace inst NIOS_ApplicationProcessor.boot_loader_enable_and_params_pio -pg 1 -lvl 3 -y 70
+preplace inst NIOS_ApplicationProcessor.pio_leds -pg 1 -lvl 4 -y 2180
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.clk_src -pg 1
+preplace inst NIOS_ApplicationProcessor.spi_master_to_maxv -pg 1 -lvl 3 -y 1730
+preplace inst NIOS_ApplicationProcessor.packet_multiplexer -pg 1 -lvl 6 -y 2480
+preplace inst NIOS_ApplicationProcessor.checksum_block -pg 1 -lvl 7 -y 2150
+preplace inst NIOS_ApplicationProcessor.hires_timer -pg 1 -lvl 4 -y 5290
+preplace inst NIOS_ApplicationProcessor.pio_button -pg 1 -lvl 4 -y 1660
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.p2b_adapter -pg 1
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.pll_bridge -pg 1
+preplace inst NIOS_ApplicationProcessor.GP_FIFO_0_Control -pg 1 -lvl 4 -y 730
+preplace inst NIOS_ApplicationProcessor.main_cpu_reset_pio -pg 1 -lvl 3 -y 2200
+preplace inst NIOS_ApplicationProcessor.GP_FIFO_1_Read_Data -pg 1 -lvl 4 -y 1530
+preplace inst NIOS_ApplicationProcessor.controller_block -pg 1 -lvl 8 -y 2070
+preplace inst NIOS_ApplicationProcessor.pio_reset_and_bootloader_request -pg 1 -lvl 4 -y 2290
+preplace inst NIOS_ApplicationProcessor.boot_nios_bridge_to_board_mgmt -pg 1 -lvl 3 -y 880
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.clk_rst -pg 1
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.oct0 -pg 1
+preplace inst NIOS_ApplicationProcessor.clk_150 -pg 1 -lvl 1 -y 1610
+preplace inst NIOS_ApplicationProcessor.mm_clock_crossing_bridge_to_200MHz_to_50MHz -pg 1 -lvl 3 -y 1880
+preplace inst NIOS_ApplicationProcessor.GP_FIFO_0_Read_Data -pg 1 -lvl 4 -y 970
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.p2b -pg 1
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.p0 -pg 1
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.b2p_adapter -pg 1
+preplace inst NIOS_ApplicationProcessor.sd_spi_mosi -pg 1 -lvl 3 -y 2740
+preplace inst NIOS_ApplicationProcessor.udp_inserter_0 -pg 1 -lvl 4 -y 2460
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.afi_half_clk -pg 1
+preplace inst NIOS_ApplicationProcessor.udp_inserter_1 -pg 1 -lvl 4 -y 2820
+preplace inst NIOS_ApplicationProcessor.udp_inserter_2 -pg 1 -lvl 4 -y 2930
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.transacto -pg 1
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.fifo -pg 1
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.pll_ref_clk -pg 1
+preplace inst NIOS_ApplicationProcessor.udp_inserter_3 -pg 1 -lvl 4 -y 3060
+preplace inst NIOS_ApplicationProcessor.TERASIC_SRAM_0 -pg 1 -lvl 3 -y 1290
+preplace inst NIOS_ApplicationProcessor.uart_internal_enable -pg 1 -lvl 4 -y 3680
+preplace inst NIOS_ApplicationProcessor.sys_clk_timer -pg 1 -lvl 4 -y 5510
+preplace inst NIOS_ApplicationProcessor.fmc_present -pg 1 -lvl 4 -y 60
+preplace inst NIOS_ApplicationProcessor.boot_ram -pg 1 -lvl 12 -y 1830
+preplace inst NIOS_ApplicationProcessor.boot_loader_main_nios_pc_monitor -pg 1 -lvl 3 -y 770
+preplace inst NIOS_ApplicationProcessor.mm_bridge_0 -pg 1 -lvl 9 -y 1650
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.s0 -pg 1
+preplace inst NIOS_ApplicationProcessor.boot_loader_timer -pg 1 -lvl 3 -y 1010
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.pll0 -pg 1
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge -pg 1 -lvl 1 -y 1510
+preplace inst NIOS_ApplicationProcessor.clk_0 -pg 1 -lvl 2 -y 2600
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.timing_adt -pg 1
+preplace inst NIOS_ApplicationProcessor.sd_spi_cs_n -pg 1 -lvl 3 -y 2520
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.c0 -pg 1
+preplace inst NIOS_ApplicationProcessor.uart_enabled -pg 1 -lvl 4 -y 3380
+preplace inst NIOS_ApplicationProcessor.pio_dips -pg 1 -lvl 4 -y 2040
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.afi_reset -pg 1
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst NIOS_ApplicationProcessor.multiplexer_ea -pg 1 -lvl 7 -y 2520
+preplace inst NIOS_ApplicationProcessor.sd_clk -pg 1 -lvl 3 -y 2390
+preplace inst NIOS_ApplicationProcessor.jtag_to_avalon_bridge.b2p -pg 1
+preplace inst NIOS_ApplicationProcessor.GP_FIFO_1_Flags -pg 1 -lvl 4 -y 1400
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.afi_reset_export -pg 1
+preplace inst NIOS_ApplicationProcessor.GP_FIFO_0_Flags -pg 1 -lvl 4 -y 860
+preplace inst NIOS_ApplicationProcessor.descriptor_memory -pg 1 -lvl 4 -y 2570
+preplace inst NIOS_ApplicationProcessor.mpfe_0 -pg 1 -lvl 10 -y 1580
+preplace inst NIOS_ApplicationProcessor.sgdma_rx -pg 1 -lvl 9 -y 1440
+preplace inst NIOS_ApplicationProcessor.boot_loader_gpio_out -pg 1 -lvl 3 -y 210
+preplace inst NIOS_ApplicationProcessor.nios2_qsys_0 -pg 1 -lvl 12 -y 1640
+preplace inst NIOS_ApplicationProcessor.tse_mac -pg 1 -lvl 8 -y 3240
+preplace inst NIOS_ApplicationProcessor.nios2_qsys_1 -pg 1 -lvl 2 -y 1490
+preplace inst NIOS_ApplicationProcessor.dma_read_master_0 -pg 1 -lvl 9 -y 2070
+preplace inst NIOS_ApplicationProcessor.uart_0 -pg 1 -lvl 4 -y 3900
+preplace inst NIOS_ApplicationProcessor.GP_FIFO_1_Control -pg 1 -lvl 4 -y 1120
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.global_reset -pg 1
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.soft_reset -pg 1
+preplace inst NIOS_ApplicationProcessor.uart_1 -pg 1 -lvl 4 -y 4030
+preplace inst NIOS_ApplicationProcessor.tse_mac.i_tse_mac -pg 1
+preplace inst NIOS_ApplicationProcessor.counter_64_bit_0 -pg 1 -lvl 4 -y 5200
+preplace inst NIOS_ApplicationProcessor.uart_2 -pg 1 -lvl 4 -y 4160
+preplace inst NIOS_ApplicationProcessor.uart_10 -pg 1 -lvl 4 -y 5070
+preplace inst NIOS_ApplicationProcessor.uart_3 -pg 1 -lvl 4 -y 4290
+preplace inst NIOS_ApplicationProcessor.uart_11 -pg 1 -lvl 4 -y 5710
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.dll0 -pg 1
+preplace inst NIOS_ApplicationProcessor.uart_is_regfile -pg 1 -lvl 4 -y 3790
+preplace inst NIOS_ApplicationProcessor.uart_4 -pg 1 -lvl 4 -y 4420
+preplace inst NIOS_ApplicationProcessor.uart_12 -pg 1 -lvl 4 -y 5840
+preplace inst NIOS_ApplicationProcessor.uart_5 -pg 1 -lvl 4 -y 4550
+preplace inst NIOS_ApplicationProcessor.uart_13 -pg 1 -lvl 4 -y 5970
+preplace inst NIOS_ApplicationProcessor.mm_clock_crossing_bridge_to_200MHz_to_100MHz -pg 1 -lvl 3 -y 2010
+preplace inst NIOS_ApplicationProcessor.ap_inserter_0 -pg 1 -lvl 5 -y 2140
+preplace inst NIOS_ApplicationProcessor.DDR3_SDRAM.as0 -pg 1
+preplace inst NIOS_ApplicationProcessor.generic_hdl_info -pg 1 -lvl 4 -y 170
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.reset_100,(SLAVE)clk_100.clk_in_reset) 1 0 2 NJ 2110 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)boot_loader_enable_and_params_pio.external_connection,(SLAVE)NIOS_ApplicationProcessor.boot_loader_enable_and_params_pio_external_connection) 1 0 3 NJ 100 NJ 100 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)ap_inserter_3.src0,(SLAVE)packet_multiplexer.in3) 1 5 1 3230
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_12_external_connection,(SLAVE)uart_12.external_connection) 1 0 4 NJ 5870 NJ 5870 NJ 5870 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)sgdma_tx.m_read,(SLAVE)mpfe_0.slv_4) 1 3 7 1610 1800 NJ 1800 NJ 1800 NJ 1800 NJ 1800 NJ 1800 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.gp_fifo_1_read_data,(SLAVE)GP_FIFO_1_Read_Data.external_connection) 1 0 4 NJ 1600 NJ 1670 NJ 1540 NJ
+preplace netloc FAN_OUT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_2.clk,(SLAVE)uart_11.clk,(SLAVE)boot_nios_bridge_to_board_mgmt.clk,(SLAVE)sd_spi_miso.clk,(SLAVE)uart_9.clk,(SLAVE)jtag_uart_1.clk,(SLAVE)uart_5.clk,(SLAVE)GP_FIFO_1_Flags.clk,(SLAVE)pio_leds.clk,(SLAVE)boot_loader_enable_and_params_pio.clk,(SLAVE)uart_0.clk,(SLAVE)GP_FIFO_1_Control.clk,(SLAVE)uart_3.clk,(SLAVE)hires_timer.clk,(SLAVE)GP_FIFO_0_Read_Data.clk,(MASTER)clk_0.clk,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_50MHz.m0_clk,(SLAVE)uart_internal_disable.clk,(SLAVE)uart_enabled.clk,(SLAVE)generic_hdl_info.clk,(SLAVE)uart_is_regfile.clk,(SLAVE)pio_reset_and_bootloader_request.clk,(SLAVE)uart_13.clk,(SLAVE)pio_button.clk,(SLAVE)boot_loader_gpio_out.clk,(SLAVE)spi_master_to_maxv.clk,(SLAVE)sd_spi_cs_n.clk,(SLAVE)sd_spi_mosi.clk,(SLAVE)boot_loader_timer.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)uart_1.clk,(SLAVE)uart_6.clk,(SLAVE)GP_FIFO_0_Flags.clk,(SLAVE)uart_7.clk,(SLAVE)uart_4.clk,(SLAVE)main_cpu_reset_pio.clk,(SLAVE)sysid.clk,(SLAVE)uart_internal_enable.clk,(SLAVE)sys_clk_timer.clk,(SLAVE)GP_FIFO_1_Read_Data.clk,(SLAVE)uart_8.clk,(SLAVE)uart_10.clk,(SLAVE)tse_mac.control_port_clock_connection,(SLAVE)boot_loader_main_nios_pc_monitor.clk,(SLAVE)sd_clk.clk,(SLAVE)pio_dips.clk,(SLAVE)uart_12.clk,(SLAVE)fmc_present.clk,(SLAVE)counter_64_bit_0.clock_reset,(SLAVE)GP_FIFO_0_Control.clk,(SLAVE)TERASIC_SRAM_0.clk1) 1 2 6 930 2340 1670 3200 NJ 3200 NJ 3200 NJ 3200 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)dma_read_master_0.Data_Read_Master,(SLAVE)mpfe_0.slv_2) 1 9 1 4790
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_internal_disable.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_internal_disable_external_connection) 1 0 4 NJ 3490 NJ 3490 NJ 3490 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.sd_clk,(SLAVE)sd_clk.external_connection) 1 0 3 NJ 2420 NJ 2420 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_7_external_connection,(SLAVE)uart_7.external_connection) 1 0 4 NJ 4840 NJ 4840 NJ 4840 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.udp_inserter_1_snk,(SLAVE)udp_inserter_1.snk0) 1 0 4 NJ 2870 NJ 2870 NJ 2870 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)tse_mac.pcs_mac_rx_clock_connection,(SLAVE)NIOS_ApplicationProcessor.tse_mac_pcs_mac_rx_clock_connection) 1 0 8 NJ 3450 NJ 3450 NJ 3450 NJ 3520 NJ 3390 NJ 3390 NJ 3390 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)boot_loader_main_nios_pc_monitor.external_connection,(SLAVE)NIOS_ApplicationProcessor.boot_loader_main_nios_pc_monitor_external_connection) 1 0 3 NJ 800 NJ 800 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)mpfe_0.slv_3,(MASTER)sgdma_rx.m_write) 1 9 1 4710
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)mm_bridge_0.m0,(SLAVE)mpfe_0.slv_0) 1 9 1 4730
+preplace netloc INTERCONNECT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)nios2_qsys_1.data_master,(SLAVE)nios2_qsys_0.jtag_debug_module,(MASTER)nios2_qsys_0.data_master,(SLAVE)controller_block.avalon_slave,(SLAVE)sd_spi_miso.s1,(SLAVE)sd_spi_cs_n.s1,(SLAVE)nios2_qsys_1.jtag_debug_module,(SLAVE)boot_ram.s1,(SLAVE)mpfe_0.slv_1,(SLAVE)jtag_uart_1.avalon_jtag_slave,(SLAVE)boot_loader_timer.s1,(MASTER)nios2_qsys_1.instruction_master,(SLAVE)boot_loader_main_nios_pc_monitor.s1,(SLAVE)mm_bridge_0.s0,(SLAVE)sd_clk.s1,(SLAVE)mpfe_0.debug_slv,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_100MHz.s0,(MASTER)nios2_qsys_0.instruction_master,(SLAVE)mpfe_0.slv_5,(SLAVE)boot_loader_enable_and_params_pio.s1,(SLAVE)sd_spi_mosi.s1,(SLAVE)TERASIC_SRAM_0.s1,(SLAVE)main_cpu_reset_pio.s1,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_50MHz.s0,(SLAVE)boot_loader_gpio_out.s1,(MASTER)jtag_to_avalon_bridge.master,(SLAVE)spi_master_to_maxv.spi_control_port,(SLAVE)boot_nios_bridge_to_board_mgmt.s0) 1 1 12 540 1460 890 1720 NJ 1840 NJ 1840 NJ 1840 NJ 1840 3820 1770 4390 1770 4770 1890 NJ 1890 5600 1800 6620
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.reset_150,(SLAVE)clk_150.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.tse_mac_mac_gmii_connection,(SLAVE)tse_mac.mac_gmii_connection) 1 0 8 NJ 3220 NJ 3220 NJ 3220 NJ 3220 NJ 3220 NJ 3220 NJ 3220 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.pio_button,(SLAVE)pio_button.external_connection) 1 0 4 NJ 1690 NJ 1650 NJ 1680 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)dma_read_master_0.Data_Source,(SLAVE)checksum_block.data_sink) 1 6 4 3410 2140 NJ 2250 NJ 2250 4750
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.spi_master_to_maxv_external,(SLAVE)spi_master_to_maxv.external) 1 0 3 NJ 1820 NJ 1820 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)sd_spi_miso.external_connection,(SLAVE)NIOS_ApplicationProcessor.sd_spi_miso) 1 0 3 NJ 2680 NJ 2680 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.clk_100,(SLAVE)clk_100.clk_in) 1 0 2 NJ 2090 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)udp_inserter_0.src0,(SLAVE)ap_inserter_0.snk0) 1 4 1 2410
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_0_external_connection,(SLAVE)uart_0.external_connection) 1 0 4 NJ 3930 NJ 3930 NJ 3930 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_is_regfile.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_is_regfile_external_connection) 1 0 4 NJ 3820 NJ 3820 NJ 3820 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)DDR3_SDRAM.memory,(SLAVE)NIOS_ApplicationProcessor.memory) 1 0 11 NJ 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)udp_inserter_1.src0,(SLAVE)ap_inserter_1.snk0) 1 4 1 2490
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_10.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_10_external_connection) 1 0 4 NJ 5100 NJ 5100 NJ 5100 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.clk,(SLAVE)clk_0.clk_in) 1 0 2 NJ 2610 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)checksum_block.result_source,(SLAVE)controller_block.result_snk) 1 7 1 N
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)multiplexer_ea.out,(SLAVE)tse_mac.transmit) 1 7 1 3700
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)dma_read_master_0.Response_Source,(SLAVE)controller_block.response_snk) 1 7 3 3820 2270 NJ 2270 4650
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_9.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_9_external_connection) 1 0 4 NJ 6130 NJ 6130 NJ 6130 NJ
+preplace netloc INTERCONNECT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_6.reset,(SLAVE)DDR3_SDRAM.soft_reset,(SLAVE)boot_loader_timer.reset,(SLAVE)uart_4.reset,(SLAVE)pio_leds.reset,(SLAVE)boot_nios_bridge_to_board_mgmt.reset,(SLAVE)uart_0.reset,(SLAVE)sd_clk.reset,(SLAVE)uart_7.reset,(SLAVE)sd_spi_miso.reset,(SLAVE)ap_inserter_0.clock_reset,(SLAVE)uart_13.reset,(SLAVE)main_cpu_reset_pio.reset,(SLAVE)udp_inserter_2.clock_reset,(MASTER)nios2_qsys_1.jtag_debug_module_reset,(SLAVE)pio_reset_and_bootloader_request.reset,(SLAVE)sgdma_tx.reset,(SLAVE)sd_spi_cs_n.reset,(SLAVE)uart_3.reset,(MASTER)jtag_to_avalon_bridge.master_reset,(SLAVE)uart_12.reset,(SLAVE)DDR3_SDRAM.mp_cmd_reset_n_0,(MASTER)nios2_qsys_0.jtag_debug_module_reset,(SLAVE)DDR3_SDRAM.mp_wfifo_reset_n_0,(SLAVE)uart_11.reset,(SLAVE)counter_64_bit_0.reset,(MASTER)DDR3_SDRAM.afi_reset,(SLAVE)tse_mac.reset_connection,(SLAVE)GP_FIFO_0_Control.reset,(SLAVE)spi_master_to_maxv.reset,(SLAVE)uart_is_regfile.reset,(SLAVE)uart_9.reset,(SLAVE)udp_inserter_1.clock_reset,(SLAVE)uart_2.reset,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_50MHz.s0_reset,(SLAVE)nios2_qsys_1.reset_n,(SLAVE)checksum_block.clock_reset_reset,(SLAVE)GP_FIFO_1_Control.reset,(SLAVE)GP_FIFO_0_Read_Data.reset,(SLAVE)udp_inserter_3.clock_reset,(SLAVE)uart_enabled.reset,(SLAVE)udp_inserter_0.clock_reset,(SLAVE)multiplexer_ea.reset,(SLAVE)jtag_uart_1.reset,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_100MHz.s0_reset,(SLAVE)ap_inserter_1.clock_reset,(SLAVE)ap_inserter_2.clock_reset,(SLAVE)controller_block.clock_reset_reset,(SLAVE)boot_loader_main_nios_pc_monitor.reset,(SLAVE)boot_loader_gpio_out.reset,(SLAVE)uart_8.reset,(SLAVE)sd_spi_mosi.reset,(SLAVE)descriptor_memory.reset1,(SLAVE)GP_FIFO_0_Flags.reset,(SLAVE)uart_internal_disable.reset,(SLAVE)sys_clk_timer.reset,(SLAVE)boot_ram.reset1,(SLAVE)tx_dcfifo.out_clk_reset,(SLAVE)GP_FIFO_1_Read_Data.reset,(SLAVE)fmc_present.reset,(SLAVE)pio_dips.reset,(SLAVE)boot_loader_enable_and_params_pio.reset,(SLAVE)generic_hdl_info.reset,(SLAVE)DDR3_SDRAM.mp_rfifo_reset_n_0,(SLAVE)sysid.reset,(SLAVE)hires_timer.reset,(SLAVE)DDR3_SDRAM.global_reset,(SLAVE)mm_bridge_0.reset,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_50MHz.m0_reset,(SLAVE)uart_5.reset,(SLAVE)tx_dcfifo.in_clk_reset,(SLAVE)ap_inserter_3.clock_reset,(SLAVE)TERASIC_SRAM_0.reset1,(MASTER)clk_0.clk_reset,(SLAVE)uart_10.reset,(SLAVE)uart_1.reset,(SLAVE)dma_read_master_0.Clock_reset,(SLAVE)nios2_qsys_0.reset_n,(SLAVE)pio_button.reset,(SLAVE)packet_multiplexer.clock_reset,(SLAVE)jtag_uart_0.reset,(SLAVE)jtag_to_avalon_bridge.clk_reset,(SLAVE)uart_internal_enable.reset,(SLAVE)mpfe_0.clock_reset_reset,(SLAVE)sgdma_rx.reset,(SLAVE)GP_FIFO_1_Flags.reset) 1 0 13 250 1470 520 1480 870 2380 1690 2450 2470 2640 3210 2680 3390 2490 3800 2230 4310 1750 4750 1800 5090 1670 5580 1820 6600
+preplace netloc INTERCONNECT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_4.irq,(SLAVE)uart_10.irq,(SLAVE)uart_7.irq,(SLAVE)uart_12.irq,(SLAVE)uart_1.irq,(SLAVE)uart_6.irq,(SLAVE)uart_2.irq,(SLAVE)sgdma_rx.csr_irq,(SLAVE)boot_loader_timer.irq,(SLAVE)uart_8.irq,(SLAVE)hires_timer.irq,(SLAVE)uart_3.irq,(SLAVE)spi_master_to_maxv.irq,(SLAVE)uart_13.irq,(SLAVE)uart_11.irq,(SLAVE)uart_9.irq,(SLAVE)jtag_uart_0.irq,(MASTER)nios2_qsys_0.d_irq,(SLAVE)pio_button.irq,(SLAVE)uart_0.irq,(MASTER)nios2_qsys_1.d_irq,(SLAVE)sgdma_tx.csr_irq,(SLAVE)uart_5.irq,(SLAVE)sys_clk_timer.irq,(SLAVE)jtag_uart_1.irq) 1 2 11 970 1700 1570 1820 NJ 1820 NJ 1820 NJ 1820 NJ 1820 4370 1930 NJ 1930 NJ 1930 NJ 1930 6640
+preplace netloc FAN_OUT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_100MHz.s0_clk,(SLAVE)DDR3_SDRAM.mp_wfifo_clk_0,(SLAVE)DDR3_SDRAM.mp_cmd_clk_0,(SLAVE)nios2_qsys_1.clk,(SLAVE)jtag_to_avalon_bridge.clk,(SLAVE)nios2_qsys_0.clk,(SLAVE)mpfe_0.clock_reset,(SLAVE)dma_read_master_0.Clock,(SLAVE)DDR3_SDRAM.mp_rfifo_clk_0,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_50MHz.s0_clk,(SLAVE)boot_ram.clk1,(SLAVE)checksum_block.clock_reset,(SLAVE)mm_bridge_0.clk,(SLAVE)controller_block.clock_reset,(MASTER)DDR3_SDRAM.afi_half_clk) 1 0 12 230 1450 500 1950 1010 2150 NJ 2030 NJ 2030 NJ 2030 3390 2090 3800 1750 4290 1640 4690 1570 5110 1610 5620
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_8.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_8_external_connection) 1 0 4 NJ 4970 NJ 4970 NJ 4970 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)tse_mac.pcs_mac_tx_clock_connection,(SLAVE)NIOS_ApplicationProcessor.tse_mac_pcs_mac_tx_clock_connection) 1 0 8 NJ 3470 NJ 3470 NJ 3470 NJ 3540 NJ 3410 NJ 3410 NJ 3410 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_internal_enable.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_internal_enable_external_connection) 1 0 4 NJ 3710 NJ 3710 NJ 3710 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_1.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_1_external_connection) 1 0 4 NJ 4060 NJ 4060 NJ 4060 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_11_external_connection,(SLAVE)uart_11.external_connection) 1 0 4 NJ 5740 NJ 5740 NJ 5740 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)DDR3_SDRAM.oct,(SLAVE)NIOS_ApplicationProcessor.oct) 1 0 11 NJ 1390 NJ 1390 NJ 1390 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1470 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)main_cpu_reset_pio.external_connection,(SLAVE)NIOS_ApplicationProcessor.main_cpu_reset_pio_external_connection) 1 0 3 NJ 2230 NJ 2230 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)multiplexer_ea.in,(MASTER)packet_multiplexer.out) 1 6 1 N
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_4.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_4_external_connection) 1 0 4 NJ 4450 NJ 4450 NJ 4450 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.pio_reset_and_bootloader_request_external_connection,(SLAVE)pio_reset_and_bootloader_request.external_connection) 1 0 4 NJ 2360 NJ 2360 NJ 2360 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)GP_FIFO_1_Flags.external_connection,(SLAVE)NIOS_ApplicationProcessor.gp_fifo_1_flags) 1 0 4 NJ 1410 NJ 1410 NJ 1410 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.boot_loader_gpio_out_external_connection,(SLAVE)boot_loader_gpio_out.external_connection) 1 0 3 NJ 240 NJ 240 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)tse_mac.mac_status_connection,(SLAVE)NIOS_ApplicationProcessor.tse_mac_mac_status_connection) 1 0 8 NJ 3350 NJ 3350 NJ 3350 NJ 3350 NJ 3350 NJ 3350 NJ 3350 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)tse_mac.receive,(SLAVE)sgdma_rx.in) 1 8 1 4330
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_6_external_connection,(SLAVE)uart_6.external_connection) 1 0 4 NJ 4710 NJ 4710 NJ 4710 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)tse_mac.mac_mii_connection,(SLAVE)NIOS_ApplicationProcessor.tse_mac_mac_mii_connection) 1 0 8 NJ 3330 NJ 3330 NJ 3330 NJ 3330 NJ 3330 NJ 3330 NJ 3330 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.generic_hdl_info_word,(SLAVE)generic_hdl_info.external_connection) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_13.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_13_external_connection) 1 0 4 NJ 6000 NJ 6000 NJ 6000 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.nios2_qsys_0_cpu_resetrequest_conduit,(SLAVE)nios2_qsys_0.cpu_resetrequest_conduit) 1 0 12 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1690 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.tse_mac_mac_mdio_connection,(SLAVE)tse_mac.mac_mdio_connection) 1 0 8 NJ 3310 NJ 3310 NJ 3310 NJ 3310 NJ 3310 NJ 3310 NJ 3310 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_100MHz.m0_reset,(MASTER)clk_100.clk_reset) 1 2 1 850
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)ap_inserter_3.snk0,(MASTER)udp_inserter_3.src0) 1 4 1 N
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.sd_spi_mosi,(SLAVE)sd_spi_mosi.external_connection) 1 0 3 NJ 2770 NJ 2770 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)GP_FIFO_0_Flags.external_connection,(SLAVE)NIOS_ApplicationProcessor.gp_fifo_0_flags) 1 0 4 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)clk_150.clk_in,(SLAVE)NIOS_ApplicationProcessor.clk_150) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)tse_mac.receive_clock_connection,(SLAVE)udp_inserter_2.clock,(SLAVE)packet_multiplexer.clock,(SLAVE)mm_clock_crossing_bridge_to_200MHz_to_100MHz.m0_clk,(SLAVE)udp_inserter_1.clock,(SLAVE)udp_inserter_3.clock,(SLAVE)descriptor_memory.clk1,(SLAVE)ap_inserter_2.clock,(SLAVE)multiplexer_ea.clk,(SLAVE)sgdma_tx.clk,(SLAVE)tse_mac.transmit_clock_connection,(SLAVE)ap_inserter_3.clock,(SLAVE)ap_inserter_0.clock,(SLAVE)ap_inserter_1.clock,(SLAVE)sgdma_rx.clk,(SLAVE)tx_dcfifo.in_clk,(MASTER)clk_100.clk,(SLAVE)udp_inserter_0.clock,(SLAVE)tx_dcfifo.out_clk,(SLAVE)DDR3_SDRAM.pll_ref_clk) 1 2 9 990 2320 1590 2430 2450 2510 3190 2660 3410 2510 3740 2510 4270 1580 NJ 1490 N
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)packet_multiplexer.in1,(MASTER)ap_inserter_1.src0) 1 5 1 3150
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)controller_block.cmd_src,(SLAVE)dma_read_master_0.Command_Sink) 1 8 1 N
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)uart_3.external_connection,(SLAVE)NIOS_ApplicationProcessor.uart_3_external_connection) 1 0 4 NJ 4320 NJ 4320 NJ 4320 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)NIOS_ApplicationProcessor.nios2_qsys_0_program_counter,(MASTER)nios2_qsys_0.program_counter) 1 12 2 NJ 1750 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)DDR3_SDRAM.avl_0,(MASTER)mpfe_0.avalon_master) 1 10 1 5050
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_5_external_connection,(SLAVE)uart_5.external_connection) 1 0 4 NJ 4580 NJ 4580 NJ 4580 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_2_external_connection,(SLAVE)uart_2.external_connection) 1 0 4 NJ 4190 NJ 4190 NJ 4190 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)packet_multiplexer.in2,(MASTER)ap_inserter_2.src0) 1 5 1 N
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.udp_inserter_3_snk,(SLAVE)udp_inserter_3.snk0) 1 0 4 NJ 3110 NJ 3110 NJ 3110 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.udp_inserter_0_snk,(SLAVE)udp_inserter_0.snk0) 1 0 4 NJ 2510 NJ 2510 NJ 2510 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.sd_spi_cs_n,(SLAVE)sd_spi_cs_n.external_connection) 1 0 3 NJ 2550 NJ 2550 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)GP_FIFO_0_Control.external_connection,(SLAVE)NIOS_ApplicationProcessor.gp_fifo_0_control) 1 0 4 NJ 760 NJ 760 NJ 760 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.fmc_present_external_connection,(SLAVE)fmc_present.external_connection) 1 0 4 NJ 40 NJ 40 NJ 40 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)tse_mac.mac_misc_connection,(SLAVE)NIOS_ApplicationProcessor.tse_mac_mac_misc_connection) 1 0 8 NJ 3430 NJ 3430 NJ 3430 NJ 3500 NJ 3370 NJ 3370 NJ 3370 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.pio_dips,(SLAVE)pio_dips.external_connection) 1 0 4 NJ 2170 NJ 2170 NJ 2170 NJ
+preplace netloc INTERCONNECT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)generic_hdl_info.s1,(SLAVE)uart_11.s1,(SLAVE)sys_clk_timer.s1,(SLAVE)uart_1.s1,(SLAVE)udp_inserter_0.s0,(SLAVE)udp_inserter_2.s0,(SLAVE)fmc_present.s1,(SLAVE)sgdma_rx.csr,(SLAVE)uart_enabled.s1,(SLAVE)pio_reset_and_bootloader_request.s1,(SLAVE)uart_7.s1,(SLAVE)sysid.control_slave,(SLAVE)pio_leds.s1,(SLAVE)GP_FIFO_1_Read_Data.s1,(MASTER)sgdma_rx.descriptor_write,(MASTER)mm_clock_crossing_bridge_to_200MHz_to_100MHz.m0,(SLAVE)uart_13.s1,(SLAVE)uart_internal_enable.s1,(SLAVE)GP_FIFO_1_Control.s1,(SLAVE)uart_12.s1,(SLAVE)tse_mac.control_port,(SLAVE)uart_is_regfile.s1,(SLAVE)uart_6.s1,(SLAVE)uart_10.s1,(MASTER)sgdma_rx.descriptor_read,(SLAVE)udp_inserter_1.s0,(SLAVE)uart_9.s1,(SLAVE)hires_timer.s1,(SLAVE)uart_internal_disable.s1,(MASTER)sgdma_tx.descriptor_write,(SLAVE)pio_dips.s1,(SLAVE)sgdma_tx.csr,(SLAVE)counter_64_bit_0.avalon_slave_0,(SLAVE)descriptor_memory.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)udp_inserter_3.s0,(SLAVE)GP_FIFO_1_Flags.s1,(SLAVE)uart_4.s1,(SLAVE)GP_FIFO_0_Control.s1,(MASTER)mm_clock_crossing_bridge_to_200MHz_to_50MHz.m0,(SLAVE)uart_5.s1,(SLAVE)uart_8.s1,(MASTER)sgdma_tx.descriptor_read,(SLAVE)uart_3.s1,(SLAVE)pio_button.s1,(SLAVE)uart_2.s1,(SLAVE)GP_FIFO_0_Flags.s1,(SLAVE)uart_0.s1,(SLAVE)GP_FIFO_0_Read_Data.s1) 1 2 8 1010 1520 1630 1390 NJ 1390 NJ 1390 NJ 1390 3780 1480 4350 1600 4650
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.gp_fifo_1_control,(SLAVE)GP_FIFO_1_Control.external_connection) 1 0 4 NJ 1240 NJ 1240 NJ 1240 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)sgdma_tx.out,(SLAVE)tx_dcfifo.in) 1 3 2 1710 2410 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)GP_FIFO_0_Read_Data.external_connection,(SLAVE)NIOS_ApplicationProcessor.gp_fifo_0_read_data) 1 0 4 NJ 1000 NJ 1000 NJ 1000 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)packet_multiplexer.in4,(MASTER)tx_dcfifo.out) 1 5 1 3170
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.uart_enabled_word,(SLAVE)uart_enabled.external_connection) 1 0 4 NJ 3410 NJ 3410 NJ 3410 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.pio_leds,(SLAVE)pio_leds.external_connection) 1 0 4 NJ 2190 NJ 2190 NJ 2190 NJ
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)ap_inserter_2.snk0,(MASTER)udp_inserter_2.src0) 1 4 1 2510
+preplace netloc POINT_TO_POINT<net_container>NIOS_ApplicationProcessor</net_container>(MASTER)ap_inserter_0.src0,(SLAVE)packet_multiplexer.in0) 1 5 1 3230
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)udp_inserter_2.snk0,(SLAVE)NIOS_ApplicationProcessor.udp_inserter_2_snk) 1 0 4 NJ 2980 NJ 2980 NJ 2980 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)NIOS_ApplicationProcessor.reset) 1 0 2 NJ 2630 NJ
+preplace netloc EXPORT<net_container>NIOS_ApplicationProcessor</net_container>(SLAVE)NIOS_ApplicationProcessor.ddr3_sdram_status,(SLAVE)DDR3_SDRAM.status) 1 0 11 NJ 1280 NJ 1280 NJ 1280 NJ 1280 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ
+levelinfo -pg 1 0 200 6950
+levelinfo -hier NIOS_ApplicationProcessor 210 320 630 1350 2250 3020 3270 3470 4090 4430 4900 5400 6350 6720 6740

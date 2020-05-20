@@ -1,0 +1,10 @@
+; This contents file was created with HelpScribble 5.2.0
+; *** UNREGISTERED ***
+
+:BASE autorepair.hlp
+:TITLE AutoRepair Tool
+:LINK BCB4VCL.HLP
+1 AutoRepair=Scribble10
+1 Reed-Solomon=Scribble20
+1 Hamming SEC=Scribble30
+1 Hamming SEC/DED=Scribble40

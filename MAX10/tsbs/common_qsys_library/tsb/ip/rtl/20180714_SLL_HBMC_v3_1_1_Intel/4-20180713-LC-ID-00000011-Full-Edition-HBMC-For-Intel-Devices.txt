@@ -1,0 +1,168 @@
+
+# == START OF LICENCE CREDENTIAL WITH EMBEDDED QUARTUS LICENSE KEY ==
+#
+#
+# License key installation instructions: 
+#    Please install (copy and paste) the entire License Credential with Embedded License Key 
+#    into Quartus Prime.   If required, search the phrase 
+#         “Intel FPGA Software Installation and Licensing Quick Start” 
+#    on the Internet to find instructions on how to install License Keys into Quartus Prime. 
+#
+#
+# License Credential Number:  
+#   LC-ID-00000011 		
+#
+# Issued by the Authorised IP Licensor:
+#   Synaptic Laboratories Ltd (SLL)
+#   Company ID 41272593
+#
+# Issued on:
+#   13 July 2018
+#	
+# Associated with Quote:
+#   Not associated with a Quote. 
+#
+# Associated with and incorporated by reference into the License Agreement: 
+#   License and Confidentiality Agreement (the ‘Agreement’) for the use of 
+#   Synaptic Laboratories Ltd. (SLL) Intellectual Property (IP), 13 July 2018. 
+#   SLL Legal Agreement Number: LA-IDX-00000218
+#   Link to full text:
+#     https://synaptic-labs.s3.amazonaws.com/agreements/20180713-LA-IDX-00000218-Agreement.pdf
+#   SHA-256 digest of the full text:
+#     a71bb1df37ce5dafd9f5d21f93bc8f0b1c5cbd46c35d5e8b3e561ce8b8e358c1
+#
+# The Extended Terms included in the License Agreement: 
+#   Definitions, Extended Terms and Conditions
+#   Version 1.01, 1 July 2018
+#   SLL Legal Agreement Number: LA-ID-0007
+#   Link to full text:
+#     https://synaptic-labs.s3.amazonaws.com/licenses/20180701-LA-ID-0007-ExtendedTerms.pdf
+#   SHA-256 digest of the full text:
+#     087f874181beb7fe49b2f3898a887c60bc0c33ca7538c99592cb100a750f7bfc
+#
+# NOTICE:	
+#   BY DOWNLOADING, INSTALLING, COPYING OR USING THE LICENSED PRODUCT 
+#   You acknowledge that You have read the above Agreement, understand it, 
+#   accept it and agree to be bound by all its Provisions.
+#
+# Name of Licensed Product:  
+#   Free Trial Licence for the Full Edition of S/Labs HBMC IP for Intel FPGA 
+#   with 10 minute runtime and no license expiration date.
+#
+# Also grants rights to the following Licensed Product:
+#   Free Trial Licence for S/Labs Memory Region Bridge IP for HBMC IP for Intel FPGA Devices
+#
+# Associated with Network Interface Card (NIC) identifier: 
+#   Can be used with any NIC identifier.
+#
+# License Type:  
+#   Free Trial License
+#
+# Target Application:  
+#   During the License Period, and prior to the purchase of a paid license, 
+#   and subject to the Provisions of the Agreement LA-IDX-00000218, the Licensee 
+#    may only use the Licensed Product to:
+#     (a)  design with, parameterise, compile, route, and generate 
+#          programming files with the Licensed Product, 
+#          solely for implementation in one or more Supported Device/s 
+#     (b)  program Supported Device/s owned by the Licensee with the 
+#          Licensed Product;
+#     (c)  exercise the rights granted in Sections (a) and (b) above 
+#          through Authorised Contractors;
+#     (d)  install the Licensed Product on any computer owned by the Licensee 
+#         or the Authorised Contractor,
+#   solely for the purposes of Product evaluation.
+#		
+#   Use of the Licensed Product for any other purpose/s requires an 
+#   amendment to this Agreement or a separate license agreement authorising 
+#   the use of the Licensed Product for the other purpose/s.
+#
+#   This License Credential does not grant any sub-licensing.  
+#
+#   This License Credential does not grant the FPGA bitstream generated 
+#   under this credential to be sold, leased or used in any commercial 
+#   capacity by the Licensee.  
+#
+#   Analysis of any source code, binaries, and operation of the Licensed
+#   Product for development of competing software and/or hardware is 
+#   strictly prohibited.
+#
+#   See the License Agreement for the full Provisions of this Agreement.
+#
+# Licence Expiration:
+#   This License Credential never expires.  Use for the Target Application 
+#   may continue unless the License Period is terminated in accordance 
+#   with the Provisions of the Agreement.
+#
+# DISCLAIMER OF WARRANTY:
+#   PRODUCT IS PROVIDED TO LICENSEE 'AS IS’, WITH ALL FAULTS, 
+#   AND WITH NO WARRANTY 
+#
+# Maintenance:
+#   SLL may provide updates, upgrades, new versions of the 
+#   Licensed Product to You for Use with this License Credential 
+#   solely at SLL's  discretion. 
+#
+#   Visit Synaptic Labs website page to check for latest version of the HBMC IP: 
+#      https://synaptic-labs.force.com/s/free-trials-intel-fpga
+#
+#   Email info@synaptic-labs.com to opt-in to S/Labs HBMC IP
+#   mailing list for updates, enhancements and bug fix news.  
+#
+#   You can also request further information at info@synaptic-labs.com  
+#
+# Support:
+#   Limited email and phone support to a level sufficient to enable the 
+#   Licensee to install and use known working reference designs on their 
+#   respective COTS FPGA development boards is provided for this 
+#   Free Trial License by SLL solely at SLL’s discretion.
+#
+# Permitted FPGA/ASIC Vendor:
+#   Intel Corp.
+#
+# Supported Device/s:  
+#   Intel : Cyclone IV
+#   Intel : Cyclone 10 LP family
+#   Intel : MAX 10
+#
+# License Key lock type: 
+#   Tethered without node-locking. 
+#
+# Number of Seats: 
+#   Unlimited
+#
+# Associated with Network Interface Card (NIC) Identifier: 
+#   Can be used with any NIC identifier.
+#	
+# Licensed Product is tethered to the desktop at runtime: 
+#   True
+#
+# FPGA bitstream can be programmed into FPGA SRAM: 
+#   Yes, has .SOF support
+# 
+# FPGA bitstream can be programmed into Flash:
+#   No, does not have .POF support
+#
+# Simulation Support: 
+#   No
+#
+# Runtime Limiter Embedded in the Soft IP: 
+#   True 
+#
+# Runtime Limiter Embedded in the Soft IP triggers after: 
+#   10 minutes
+#
+# How to get the Licensed Product associated with this License Credential:
+#   The HBMC IP is provided in the bundle supplied to you. 
+#   Contact SLL ( info@synaptic-labs.com ) for more information.
+#
+# License Key:
+#
+FEATURE AE7C_0014 alterad 2018.09 permanent uncounted 54A13E93564B \	VENDOR_STRING="cggY1gd9k38qh6sPn3T1zj8hai4O9k0GF2GjJ880lyDgdhXfAGRczbIkJsRz4YJUGfJZJ8PFGMpzG0QaVChISXxtKsi3ske7EuHlACYVMyCuam5WpOCHBtJxCqDNowAkWUNwy$ia9TlmM$6" \
+	HOSTID=ANY \
+	NOTICE=SLL_CA_HBC_T001_Hyperbus_Memory_Controller_10min_trial_edition \
+	TS_OK SIGN="1138 78F6 D8C8 3560 78C3 B872 1608 4424 C7A3 2267 \
+	FA27 98FF 8728 AA32 E4B5 0291 441A 9725 09D9 7CAD FE9F E0E2 \
+	58FF 5C7A 68AB 5823 3C54 6386 ED72 AD38"
+#
+# == END OF LICENCE CREDENTIAL WITH EMBEDDED QUARTUS LICENSE KEY ==

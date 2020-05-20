@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/quartus_13_1_bin64"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.transceivers.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.app.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.designs.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.gui.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.jar"/>
+	<classpathentry kind="lib" path="C:/altera/91/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.debugger.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.elf.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.jtag.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.memory.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.pli.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.scripting.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.utilities.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.Avalon_Fast_Downloader.jar"/>
+	<classpathentry kind="lib" path="D:/altera/13.1/quartus/sopc_builder/model/lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

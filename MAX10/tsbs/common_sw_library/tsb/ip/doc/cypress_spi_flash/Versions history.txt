@@ -1,0 +1,78 @@
+* Versions History.txt - Text file containing the change history
+* of the different SLLD versions
+*****************************************************************
+* Copyright 2009 Spansion LLC. All Rights Reserved. 
+*
+* Version: 9.2.0
+* Date:    April, 16th 2009
+*****************************************************************
+
+Version 5.1.1 - March, 18th 2005
+--------------------------------
+- First SPI released version
+- Support SPI basic functionality
+- Support only single I/O SPI's
+
+
+Version 8.4.0 - November, 14th 2008
+-----------------------------------
+- Add Multi I/O SPI's support (FL-P)
+- Add device type selection in slld.h
+- Update the SLLD's user guide
+
+
+Version 9.2.0 - April, 16th 2009
+--------------------------------
+- Add FL-T new features support
+- Simplify the HAL layer and make it use 
+  two simple functions: FLASH_READ() and
+  FLASH_WRITE()
+- Adapt slld.c to make it use the new HAL
+  functions
+- Add S/W trace feature
+- Update the SLLD's user guide
+
+version 11.1.0 - March 8th, 2011
+--------------------------------
+- Add FL-K new features support
+- Update the SLLD's user guide
+
+version 11.4.1 - December 8th, 2011
+--------------------------------
+- Added slld_ReadOp and slld_WriteOp functions
+- Disabled trace define
+- Updated Copyright
+- Updated User Guide
+- others
+
+version 12.2.1 - April 5th, 2012
+--------------------------------
+- Change register value in ABTRD and ABTWR command from 1byte to 4bytes 
+- Change ASP register value in slld_WASPCmd and slld_RASPCmd from 1 byte to 2 bytes  
+- Make slld_ReadModeResetCmd available for FL-S.  
+- Remove HAS_STATBIT5_ERROR and HAS_STATBIT6_ERROR flags for FL-K.
+- Add support for FL-2K, including new command and op, slld_BlockEraseCmd and slld_BlockEraseOp, for FL-2K 
+
+
+version 12.2.2 - June 1st, 2012
+--------------------------------
+Added type casting to remove the compile errors on Windows Compact 7.
+
+version 12.2.3 - June 11th, 2012
+--------------------------------
+Match declaration with definition for slld_WASPOp slld_ABWROp.
+
+
+version 13.1.1 - Feb 15th, 2013
+--------------------------------
+Added SLLD support for FL1K and FL127S devices
+
+
+version 13.2.1 - June 20th, 2013
+--------------------------------
+
+1. Fixed Req# 266 - SLLD example HAL only passes 3B of address for the 4B address commands
+2. Fixed Req# 256 - need to support 4B addressing for APIs called by Spansion BD
+3. Added FSS support
+4. Added status2 write approach for FL127S
+

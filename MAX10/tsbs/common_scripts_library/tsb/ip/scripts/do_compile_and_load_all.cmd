@@ -1,0 +1,2 @@
+source do_compile_hw_and_sw.cmd
+source do_load_all.cmd

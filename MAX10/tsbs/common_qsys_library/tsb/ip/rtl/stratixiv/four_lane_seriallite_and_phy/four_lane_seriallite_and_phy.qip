@@ -1,0 +1,23 @@
+set_global_assignment -name IP_TOOL_NAME "SerialLite II"
+set_global_assignment -name IP_TOOL_VERSION "14.1"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Stratix IV}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "four_lane_seriallite_and_phy.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "four_lane_seriallite_and_phy_slite2_wrapper.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "four_lane_seriallite_and_phy_slite2_unenc.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "four_lane_seriallite_and_phy_slite2_xcvr.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "four_lane_seriallite_and_phy_slite2_top.v"]
+set_global_assignment -name SEARCH_PATH  [file join $::quartus(qip_path) "." ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_bb.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.cmp ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.bsf ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_constraints.tcl ]
+set_global_assignment -name OCP_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_reset_logic_gx.ocp ]
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.sdc ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.ppf ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_slite2_top.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_slite2_xcvr.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_slite2_unenc.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy_slite2_wrapper.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.qip ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) four_lane_seriallite_and_phy.html ]

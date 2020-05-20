@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element clk_100
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element clk_125_enet_base
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element clk_50
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_10
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element mm_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element tse
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element tse.avalon_slave
+   {
+      datum baseAddress
+      {
+         value = "262144";
+         type = "String";
+      }
+   }
+   element tse_w_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element tse_w_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element tse_w_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+   element tse_w_sfp
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria V";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="EP4SGX230KF40C2" />
+ <parameter name="deviceFamily" value="Stratix IV" />
+ <parameter name="deviceSpeedGrade" value="2" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="clk_10" internal="clock_10.in_clk" type="clock" dir="end" />
+ <interface name="clk_100" internal="clk_100.clk_in" type="clock" dir="end" />
+ <interface
+   name="clk_125_enet_base_in_clk"
+   internal="clk_125_enet_base.in_clk"
+   type="clock"
+   dir="end" />
+ <interface name="clk_50" internal="clk_50.clk_in" type="clock" dir="end" />
+ <interface
+   name="mm_bridge_0_s0"
+   internal="mm_bridge_0.s0"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="reset_100"
+   internal="clk_100.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface name="reset_50" internal="clk_50.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="tse_sgdma_rx_csr_irq"
+   internal="tse.sgdma_rx_csr_irq"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="tse_sgdma_rx_m_write"
+   internal="tse.sgdma_rx_m_write"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="tse_sgdma_tx_csr_irq"
+   internal="tse.sgdma_tx_csr_irq"
+   type="interrupt"
+   dir="end" />
+ <interface
+   name="tse_sgdma_tx_m_read"
+   internal="tse.sgdma_tx_m_read"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="tse_sgdma_tx_out"
+   internal="tse.sgdma_tx_out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="tse_tse_mac_mac_gmii_connection"
+   internal="tse.tse_mac_mac_gmii_connection" />
+ <interface
+   name="tse_tse_mac_mac_mdio_connection"
+   internal="tse.tse_mac_mac_mdio_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="tse_tse_mac_mac_mii_connection"
+   internal="tse.tse_mac_mac_mii_connection" />
+ <interface
+   name="tse_tse_mac_mac_misc_connection"
+   internal="tse.tse_mac_mac_misc_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="tse_tse_mac_mac_status_connection"
+   internal="tse.tse_mac_mac_status_connection" />
+ <interface
+   name="tse_tse_mac_pcs_mac_rx_clock_connection"
+   internal="tse.tse_mac_pcs_mac_rx_clock_connection" />
+ <interface
+   name="tse_tse_mac_pcs_mac_tx_clock_connection"
+   internal="tse.tse_mac_pcs_mac_tx_clock_connection" />
+ <interface
+   name="tse_tse_mac_serdes_control_connection"
+   internal="tse.tse_mac_serdes_control_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="tse_tse_mac_serial_connection"
+   internal="tse.tse_mac_serial_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="tse_tse_mac_status_led_connection"
+   internal="tse.tse_mac_status_led_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="tse_tse_mac_tbi_connection"
+   internal="tse.tse_mac_tbi_connection" />
+ <interface
+   name="tse_tse_mac_transmit"
+   internal="tse.tse_mac_transmit"
+   type="avalon_streaming"
+   dir="end" />
+ <module name="clk_100" kind="clock_source" version="14.1" enabled="1">
+  <parameter name="clockFrequency" value="100000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="clk_125_enet_base"
+   kind="altera_clock_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="125000000" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module name="clk_50" kind="clock_source" version="14.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module name="clock_10" kind="altera_clock_bridge" version="14.1" enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="10000000" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ </module>
+ <module
+   name="mm_bridge_0"
+   kind="altera_avalon_mm_bridge"
+   version="14.1"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="ADDRESS_WIDTH" value="19" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="LINEWRAPBURSTS" value="0" />
+  <parameter name="MAX_BURST_SIZE" value="1" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="19" />
+  <parameter name="USE_AUTO_ADDRESS_WIDTH" value="0" />
+ </module>
+ <module name="tse" kind="tse_w_sgdma" version="1.0" enabled="1">
+  <parameter name="AUTO_CLK_100_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_100_CLOCK_RATE" value="100000000" />
+  <parameter name="AUTO_CLK_100_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_10_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_CLK_10_CLOCK_RATE" value="10000000" />
+  <parameter name="AUTO_CLK_10_RESET_DOMAIN" value="6" />
+  <parameter name="AUTO_CLK_50_CLOCK_DOMAIN" value="4" />
+  <parameter name="AUTO_CLK_50_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_CLK_50_RESET_DOMAIN" value="4" />
+  <parameter name="AUTO_DEVICE" value="EP4SGX230KF40C2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix IV" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter
+     name="AUTO_TSE_MAC_PCS_REF_CLK_CLOCK_CONNECTION_CLOCK_DOMAIN"
+     value="3" />
+  <parameter
+     name="AUTO_TSE_MAC_PCS_REF_CLK_CLOCK_CONNECTION_CLOCK_RATE"
+     value="125000000" />
+  <parameter
+     name="AUTO_TSE_MAC_PCS_REF_CLK_CLOCK_CONNECTION_RESET_DOMAIN"
+     value="3" />
+  <parameter name="AUTO_UNIQUE_ID" value="tse_w_sfp_tse" />
+  <parameter name="LEGACY_ITEMS_SUSBSYTEM_ENABLED" value="0" />
+  <parameter name="VME_FIFO_SUBSYSTEM_ENABLED" value="0" />
+ </module>
+ <connection
+   kind="avalon"
+   version="14.1"
+   start="mm_bridge_0.m0"
+   end="tse.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00040000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="mm_bridge_0.clk" />
+ <connection kind="clock" version="14.1" start="clk_100.clk" end="tse.clk_100" />
+ <connection kind="clock" version="14.1" start="clk_50.clk" end="tse.clk_50" />
+ <connection kind="clock" version="14.1" start="clock_10.out_clk" end="tse.clk_10" />
+ <connection
+   kind="clock"
+   version="14.1"
+   start="clk_125_enet_base.out_clk"
+   end="tse.tse_mac_pcs_ref_clk_clock_connection" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="mm_bridge_0.reset" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_100.clk_reset"
+   end="tse.reset_100" />
+ <connection
+   kind="reset"
+   version="14.1"
+   start="clk_50.clk_reset"
+   end="tse.reset_50" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

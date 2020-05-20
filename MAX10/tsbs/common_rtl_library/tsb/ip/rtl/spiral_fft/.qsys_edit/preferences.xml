@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="1" showDebugLogEntries="1" />
+ <systemtable filter="All Interfaces" showClockDomains="1" showResetDomains="0">
+  <columns>
+   <connections preferredWidth="47" visible="1" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="485" />
+   <description preferredWidth="288" />
+   <export preferredWidth="608" />
+   <defaultSlave visible="0" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="1920" height="1160" x="0" y="0" />
+ <hdlexample language="VERILOG" />
+ <generation path="" simulation="NONE" />
+</preferences>

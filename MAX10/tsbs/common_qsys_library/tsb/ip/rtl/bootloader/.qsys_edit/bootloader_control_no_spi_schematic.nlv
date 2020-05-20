@@ -1,0 +1,33 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst bootloader_control.mm_bridge_private -pg 1 -lvl 2 -y 290
+preplace inst bootloader_control.main_cpu_reset_pio -pg 1 -lvl 3 -y 660
+preplace inst bootloader_control.boot_loader_enable_and_params_pio -pg 1 -lvl 3 -y 30
+preplace inst bootloader_control.mm_bridge_joint -pg 1 -lvl 2 -y 380
+preplace inst bootloader_control.clk_50 -pg 1 -lvl 1 -y 480
+preplace inst bootloader_control.spi_master_to_maxv -pg 1 -lvl 3 -y 880
+preplace inst bootloader_control.jtag_uart_1 -pg 1 -lvl 3 -y 550
+preplace inst bootloader_control -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst bootloader_control.pio_reset_and_bootloader_request -pg 1 -lvl 3 -y 770
+preplace inst bootloader_control.boot_loader_gpio_out -pg 1 -lvl 3 -y 140
+preplace inst bootloader_control.boot_loader_main_nios_pc_monitor -pg 1 -lvl 3 -y 250
+preplace inst bootloader_control.boot_loader_timer -pg 1 -lvl 3 -y 440
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)jtag_uart_1.irq,(SLAVE)bootloader_control.jtag_uart_1_irq) 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc FAN_OUT<net_container>bootloader_control</net_container>(SLAVE)boot_loader_timer.clk,(SLAVE)main_cpu_reset_pio.clk,(MASTER)clk_50.clk,(SLAVE)mm_bridge_private.clk,(SLAVE)boot_loader_enable_and_params_pio.clk,(SLAVE)boot_loader_gpio_out.clk,(SLAVE)boot_loader_main_nios_pc_monitor.clk,(SLAVE)spi_master_to_maxv.clk,(SLAVE)pio_reset_and_bootloader_request.clk,(SLAVE)mm_bridge_joint.clk,(SLAVE)jtag_uart_1.clk) 1 1 2 410 490 630
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)boot_loader_main_nios_pc_monitor.external_connection,(SLAVE)bootloader_control.boot_loader_main_nios_pc_monitor) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)boot_loader_enable_and_params_pio.external_connection,(SLAVE)bootloader_control.boot_loader_enable_and_params_pio) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)bootloader_control.reset_50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)pio_reset_and_bootloader_request.external_connection,(SLAVE)bootloader_control.pio_reset_and_bootloader_request) 1 0 3 NJ 800 NJ 800 NJ
+preplace netloc FAN_OUT<net_container>bootloader_control</net_container>(SLAVE)boot_loader_main_nios_pc_monitor.reset,(SLAVE)pio_reset_and_bootloader_request.reset,(SLAVE)mm_bridge_private.reset,(MASTER)clk_50.clk_reset,(SLAVE)mm_bridge_joint.reset,(SLAVE)boot_loader_enable_and_params_pio.reset,(SLAVE)main_cpu_reset_pio.reset,(SLAVE)boot_loader_timer.reset,(SLAVE)spi_master_to_maxv.reset,(SLAVE)jtag_uart_1.reset,(SLAVE)boot_loader_gpio_out.reset) 1 1 2 430 620 650
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)bootloader_control.boot_loader_gpio_out,(SLAVE)boot_loader_gpio_out.external_connection) 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc FAN_OUT<net_container>bootloader_control</net_container>(SLAVE)spi_master_to_maxv.spi_control_port,(SLAVE)jtag_uart_1.avalon_jtag_slave,(MASTER)mm_bridge_private.m0,(SLAVE)boot_loader_timer.s1) 1 2 1 610
+preplace netloc FAN_OUT<net_container>bootloader_control</net_container>(SLAVE)pio_reset_and_bootloader_request.s1,(SLAVE)boot_loader_enable_and_params_pio.s1,(SLAVE)boot_loader_main_nios_pc_monitor.s1,(SLAVE)boot_loader_gpio_out.s1,(SLAVE)main_cpu_reset_pio.s1,(MASTER)mm_bridge_joint.m0) 1 2 1 670
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)clk_50.clk_in,(SLAVE)bootloader_control.clk_50) 1 0 1 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)boot_loader_timer.irq,(SLAVE)bootloader_control.boot_loader_timer_irq) 1 0 3 NJ 470 NJ 470 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)main_cpu_reset_pio.external_connection,(SLAVE)bootloader_control.main_cpu_reset_pio) 1 0 3 NJ 690 NJ 690 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)bootloader_control.spi_master_to_maxv_irq,(SLAVE)spi_master_to_maxv.irq) 1 0 3 NJ 930 NJ 930 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)mm_bridge_private.s0,(SLAVE)bootloader_control.avalon_mm_slave_private) 1 0 2 NJ 340 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)mm_bridge_joint.s0,(SLAVE)bootloader_control.avalon_mm_slave_joint) 1 0 2 NJ 430 NJ
+preplace netloc EXPORT<net_container>bootloader_control</net_container>(SLAVE)spi_master_to_maxv.external,(SLAVE)bootloader_control.spi_master_to_maxv_external) 1 0 3 NJ 910 NJ 910 NJ
+levelinfo -pg 1 0 200 940
+levelinfo -hier bootloader_control 210 240 490 730 890
