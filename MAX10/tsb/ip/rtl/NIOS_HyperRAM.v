@@ -238,35 +238,7 @@ assign B3_L7 = clock_1MHz;
 
 //*************************************** UART ************************************//
 
-logic [19:0] PMT_TX_UART;
-logic [19:0] PMT_RX_UART;
-
-assign {TX_UART19, TX_UART18, TX_UART17, TX_UART16, TX_UART15,
-				TX_UART14, TX_UART13, TX_UART12, TX_UART11, TX_UART10,
-				TX_UART9,  TX_UART8,  TX_UART7,  TX_UART6,  TX_UART5,
-				TX_UART4,  TX_UART3,  TX_UART2,  TX_UART1,  TX_UART0
-				} = PMT_TX_UART;
-
-assign PMT_RX_UART = {RX_UART19, RX_UART18, RX_UART17, RX_UART16, RX_UART15,
-														RX_UART14, RX_UART13, RX_UART12, RX_UART11, RX_UART10,
-														RX_UART9,  RX_UART8,  RX_UART7,  RX_UART6,  RX_UART5,
-														RX_UART4,  RX_UART3,  RX_UART2,  RX_UART1,  RX_UART0
-														};
-
-
-logic [4:0] UART_SEL; // This signal should be controlled by pins coming from the enlustra module with accepted vales: [0,19]
-assign UART_SEL = {FPGA_UART_SEL4,FPGA_UART_SEL3,FPGA_UART_SEL2,FPGA_UART_SEL1,FPGA_UART_SEL0};
-
-
-/* UART RX MUX */
-simple_mux #(32) nios_uart_rx_mux(
-	.data({{12{1'b0}},PMT_RX_UART}),
-	.sel(UART_SEL),
-	.out(FPGA_UART_RX)
-);
-
-
-/* UART TX MUX */
-assign PMT_TX_UART = ~( {20{1'b1}} & (({{19{1'b0}},~FPGA_UART_TX}) << UART_SEL) );
+assign TX_UART12 = FPGA_UART_TX;
+assign FPGA_UART_RX = RX_UART12;
 
 endmodule
